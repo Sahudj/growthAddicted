@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/magnific-popup.css">
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/aos.css">
     <link rel="shortcut icon" type="image/png" href="{{url('public/frontend/home/')}}/assets/images/favicon.png"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <div class="main-wrapper">
 
             <!-- NAV BAR START HERE  -->
-            <div class="nav-bar">
+            <div class="nav-bar" id="navbar">
                 <div class="nav-bar-wrap">
                     <div class="nav-wrap-left">
 
@@ -80,7 +81,20 @@
     <script src="{{url('public/frontend/home/')}}/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/coustom.js"></script> -->
-    
+    <script>
+        $(document).ready(function() {
+            var navbar = $('#navbar');
+
+            $('#home-page').scroll(function() {
+                if ($('#home-page').scrollTop() >= 80) {
+                    navbar.addClass('scrolled');
+                } else {
+                    navbar.removeClass('scrolled');
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
