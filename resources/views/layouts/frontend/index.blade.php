@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/all.min.css">
     <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/style.css"> -->
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.css?<?php echo time(); ?>">
-    <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/magnific-popup.css">
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/aos.css">
-    <link rel="shortcut icon" type="image/png" href="{{url('public/frontend/home/')}}/assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="{{url('public/frontend/home/')}}/assets/images/favicon.png"> -->
 </head>
 
 <body>
@@ -73,13 +73,13 @@
 
     <!-- about our missiong section end -->
     <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
-    <script src="{{url('public/frontend/home/')}}/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="{{url('public/frontend/home/')}}/assets/js/bootstrap.bundle.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/SmoothScroll.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
-    <script src="{{url('public/frontend/home/')}}/assets/js/coustom.js"></script>
+    <script src="{{url('public/frontend/home/')}}/assets/js/coustom.js"></script> -->
     
 </body>
 

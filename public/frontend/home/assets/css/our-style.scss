@@ -430,8 +430,14 @@ html {
                             transform: rotate3d(0);
                             transition: transform 0.5s ease;
                             transform-origin: center;
-                            &:hover{
-                                transform: rotate3d(1,0,0,8deg);
+
+                            &:nth-child(1) {
+                                
+
+                            }
+
+                            &:hover {
+                                transform: rotate3d(1, 0, 0, 8deg);
                                 transition: transform 0.5s ease;
                             }
                         }
