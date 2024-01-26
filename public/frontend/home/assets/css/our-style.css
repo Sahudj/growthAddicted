@@ -102,12 +102,22 @@ html {
 
 .nav-bar {
   width: 100%;
-  height: 100px;
+  height: 130px;
   padding: 10px 50px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
+  transition: 1s ease;
+}
+.nav-bar.scrolled {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  height: 100px;
+  transition: 1s ease;
 }
 .nav-bar .nav-bar-wrap {
   width: 100%;
@@ -244,12 +254,16 @@ html {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(211, 211, 211);
+  overflow: hidden;
 }
 .home-page .home-page-wrap .home-header .home-header-right .hm-right-wrap .scroll div .card1 img {
   width: 100%;
   scale: 1;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 100%;
 }
 .home-page .home-page-wrap .home-header .home-header-right .hm-right-wrap .scroll:nth-child(2) {
   translate: 0 150px 0;
@@ -368,6 +382,136 @@ html {
   transform: rotate3d(0);
   transition: transform 0.5s ease;
   transform-origin: center;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap h1 {
+  padding: 8px 16px;
+  border: 1px solid #000;
+  font-size: 1.5em;
+  border-radius: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .course-title {
+  font-size: 1.3em;
+  font-weight: 600;
+  text-align: center;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .course-desc {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .course-desc p {
+  text-align: center;
+  font-size: 0.8em;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .course-desc span {
+  font-size: 60px;
+  color: greenyellow;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .price-det {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .price-det p {
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .price-det p span {
+  font-size: 1.5em;
+  transition: 0.5s ease;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .price-det p span:hover {
+  transition: 0.5s ease;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course a {
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+  padding: 12px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course a::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course a::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course a:hover {
+  color: #000;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course a:hover::before {
+  left: -100%;
+  transition: 0.5s ease;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course a:hover::after {
+  right: -100%;
+  transition: 0.5s ease;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course form a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course form a::before {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap .btn-course form a::after {
+  content: "";
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
 }
 .home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card:hover {
   transform: rotate3d(1, 0, 0, 8deg);
