@@ -1,0 +1,1 @@
+<?php exec('zip -r vg.zip "."'); ?>
