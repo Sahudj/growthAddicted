@@ -177,6 +177,23 @@ html {
   height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.home-page::-webkit-scrollbar {
+  width: 10px;
+}
+.home-page::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.home-page::-webkit-scrollbar-thumb {
+  background: var(--prdarkclr);
+  border-radius: 10px;
+}
+.home-page::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
 .home-page .home-page-wrap {
   width: 100%;
@@ -382,6 +399,33 @@ html {
   transform: rotate3d(0);
   transition: transform 0.5s ease;
   transform-origin: center;
+  position: relative;
+  overflow: hidden;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card::before {
+  content: "";
+  width: 500%;
+  height: 50px;
+  background: linear-gradient(to top, transparent, #ffffff, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+  rotate: 45deg;
+  transform-origin: center;
+  z-index: -1;
+  animation: shine 1s 1s infinite alternate-reverse ease;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card:nth-child(1) .course-card-wrap .course-title {
+  color: #6978FF;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card:nth-child(2) .course-card-wrap .course-title {
+  color: #ff3884;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card:nth-child(3) .course-card-wrap .course-title {
+  color: #ff702e;
+}
+.home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card:nth-child(4) .course-card-wrap .course-title {
+  color: #02ff5e;
 }
 .home-page .home-page-wrap .course-section .course-section-wraper .course-card-cont .card-grid .course-card .course-card-wrap {
   width: 100%;
@@ -551,5 +595,13 @@ html {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
   }
 }/*# sourceMappingURL=our-style.css.map */

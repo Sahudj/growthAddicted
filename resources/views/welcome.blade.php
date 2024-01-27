@@ -160,6 +160,7 @@
                 ?>
                 @endauth()
                 <div class="course-card-cont">
+                
                     <div class="card-grid">
 
                         @foreach($allPackages as $row)
