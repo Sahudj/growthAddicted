@@ -2,8 +2,8 @@
 
 :root {
 
-    --prdarkclr: #e26eff;
-    --sddarkclr: #6a79ff;
+    --prdarkclr: #7c83fd;
+    --sddarkclr: #f2d600;
     --prlightclr: #f3c2ff;
     --sdclightlr: #d6c8ff;
 
@@ -60,138 +60,104 @@ html {
         box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.25);
 
     }
-
-    span {
-        background: linear-gradient(88deg, #6978FF 29.43%, #E16BFF 61.87%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 800;
-        font-size: 1.5em;
-        letter-spacing: 5.1px;
-    }
 }
 
-.secondary-btn {
-    cursor: pointer;
-    height: 55px;
-    text-align: center;
-    border: none;
-    padding: 18px 45px;
-    background: #fff;
-    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
-    border-radius: 10px;
+// .secondary-btn {
+//     cursor: pointer;
+//     height: 55px;
+//     text-align: center;
+//     border: none;
+//     padding: 18px 45px;
+//     background: #fff;
+//     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+//     border-radius: 10px;
 
-    &:hover {
+//     &:hover {
 
-        span {
-            background-position: 100% 0;
-            -o-transition: all .4s ease-in-out;
-            -webkit-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
-        }
-    }
+//         span {
+//             background-position: 100% 0;
+//             -o-transition: all .4s ease-in-out;
+//             -webkit-transition: all .4s ease-in-out;
+//             transition: all .4s ease-in-out;
+//         }
+//     }
 
-    span {
-        background-image: linear-gradient(to right, #6978FF, #E16BFF, #764ba2, #6B8DD6, );
-        // background: linear-gradient(88deg, #6978FF 29.43%, #E16BFF 61.87%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-weight: 800;
-        font-size: 2.1em;
-        letter-spacing: 5.1px;
-        background-size: 300% 100%;
-        -o-transition: all .4s ease-in-out;
-        -webkit-transition: all .4s ease-in-out;
-        transition: all .4s ease-in-out;
-    }
-}
+//     span {
+//         background-image: linear-gradient(to right, #6978FF, #E16BFF, #764ba2, #6B8DD6, );
+//         // background: linear-gradient(88deg, #6978FF 29.43%, #E16BFF 61.87%);
+//         background-clip: text;
+//         -webkit-background-clip: text;
+//         -webkit-text-fill-color: transparent;
+//         font-weight: 800;
+//         font-size: 2.1em;
+//         letter-spacing: 5.1px;
+//         background-size: 300% 100%;
+//         -o-transition: all .4s ease-in-out;
+//         -webkit-transition: all .4s ease-in-out;
+//         transition: all .4s ease-in-out;
+//     }
+// }
 
-.gradient {
-    --size: 350px;
-    --speed: 30s;
-    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
-
-    width: var(--size);
-    height: var(--size);
-    filter: blur(calc(var(--size) / 5));
-    background-image: linear-gradient(#6978FF, #E16BFF);
-    animation: gradrot var(--speed) var(--easing) alternate infinite;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    position: absolute;
-}
-
-
-
-// NAV BAR STYLE
 .nav-bar {
     width: 100%;
-    height: 130px;
-    padding: 10px 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    transition: 1s ease;
+    height: 80px;
+    background: #fff;
 
-    &.scrolled{
-        border: 1px solid rgba(255, 255, 255, .25);
-        background-color: rgba(255, 255, 255, 0.45);
-        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(15px);
-        height: 100px;
-        transition: 1s ease;
-    }
     .nav-bar-wrap {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 150px;
 
-        .nav-wrap-left {
-            height: 100%;
+        .nav-wrap-left {}
 
+        .nav-wrap-middle {
             .menu {
                 display: flex;
                 justify-content: flex-start;
-                gap: 30px;
                 align-items: center;
+                gap: 20px;
                 list-style: none;
-                height: 100%;
 
-                li:nth-child(1) {
-                    margin-right: 100px;
-                }
-
-                li {
+                .item {
                     a {
                         font-size: 1.2em;
                         text-decoration: none;
                         padding: 6px 16px;
                         color: #000;
                         font-weight: 400;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
                         border-bottom: 2px solid transparent;
                         position: relative;
+                        z-index: 1;
 
                         &::before {
                             content: '';
-                            width: 0px;
-                            height: 3px;
+                            width: 30px;
+                            height: 100%;
+                            border-radius: 50%;
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
                             background: var(--prdarkclr);
                             position: absolute;
                             bottom: 0px;
                             transition: 0.5s ease;
+                            z-index: -1;
+                            transform-origin: bottom left;
+                            opacity: 0;
+                            transition: rotate 0.5s ease, width 0.5s ease 0.5s;
+
                         }
 
                         &:hover {
                             &::before {
-                                width: 60%;
                                 transition: 0.5s ease;
+                                animation: rotateAndResize 1s forwards;
+                                opacity: 1;
                             }
                         }
                     }
@@ -200,15 +166,38 @@ html {
         }
 
         .nav-wrap-right {
-            height: 100%;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
+            gap: 30px;
+
+            .action-btn {
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                .sign-up {}
+
+                .login {
+                    padding: 12px 35px;
+                    color: #fff;
+                    border-radius: 30px;
+                    background: var(--prdarkclr);
+                }
+
+                .shoping {
+                    padding: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    background: #c3c6ff4d;
+                }
+            }
         }
     }
 }
-
-// HOME PAGE
 
 .home-page {
     width: 100%;
@@ -221,444 +210,141 @@ html {
 
         .home-header {
             width: 100%;
-            height: 100vh;
-            background: url('../images/bg1.png');
-            background-size: cover;
-            background-position: center bottom;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .home-header-left {
-                width: 60%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .hm-left-wrap {
-                    width: 100%;
-                    padding: 0 50px;
-                    display: flex;
-                    gap: 15px;
-                    flex-direction: column;
-
-                    h1 {
-                        font-size: 6.5em;
-                        font-weight: 400;
-                    }
-
-                    h3 {
-                        font-size: 1.5em;
-                    }
-                }
-            }
-
-            .home-header-right {
-                width: 40%;
-                height: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .hm-right-wrap {
-                    width: 70%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 15px;
-                    gap: 20px;
-                    transform: translateY(50px) rotate(-45deg);
-
-                    .scroll {
-                        width: 1fr;
-                        height: 500px;
-                        flex: 1;
-                        position: relative;
-                        display: flex;
-                        flex-direction: column;
-                        overflow: hidden;
-                        mask-image: linear-gradient(180deg, transparent, #fff 20%, #fff 80%, transparent);
-                        -webkit-mask-image: linear-gradient(180deg, transparent, #fff 20%, #fff 80%, transparent);
-
-                        div {
-                            white-space: nowrap;
-                            display: flex;
-                            align-items: center;
-                            gap: 20px;
-                            flex-direction: column;
-                            animation: verscrl var(--t) linear infinite;
-
-                            .card1 {
-                                height: 220px;
-                                width: 90%;
-                                background: #fff;
-                                border-radius: 10px;
-                                box-shadow: 0 0 10px rgb(211, 211, 211);
-                                   overflow: hidden;
-                                img {
-                                    width: 100%;
-                                    scale: 1;
-                                    object-position: center;
-                                    object-fit: fill;
-                                    height: 100%;
-                                }
-                            }
-
-                        }
-
-                        &:nth-child(2) {
-                            translate: 0 150px 0;
-
-                            div {
-                                animation: verscrl2 var(--t) linear infinite;
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        .video-section {
-            width: 100%;
-            height: 100vh;
-            background: url('../images/video-section-bg.png');
-            background-size: cover;
-
-            .video-section-wraper {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: flex-end;
-                flex-direction: column;
-                gap: 50px;
-                padding: 50px;
-                position: relative;
-
-                &::before {
-                    content: '';
-                    width: 500px;
-                    background: url('../images/arrow1.png');
-                    background-size: cover;
-                    position: absolute;
-                    height: 500px;
-                    top: 30%;
-                    left: 40%;
-                    animation: arrowmove 1.5s alternate-reverse infinite;
-
-                }
-
-                &::after {
-                    content: '';
-                    width: 500px;
-                    background: url('../images/arrow2.png');
-                    background-size: cover;
-                    position: absolute;
-                    height: 500px;
-                    top: 30%;
-                    left: 30%;
-                    animation: arrowmove 1.5s alternate-reverse infinite;
-                }
-
-                .video-cont {
-                    width: 700px;
-                    height: 400px;
-                    border-radius: 30px;
-                    overflow: hidden;
-
-                    video {
-                        width: 100%;
-                        height: 100%;
-                        background: black;
-                    }
-                }
-            }
-        }
-
-        .course-section {
-            width: 100%;
-            height: 100vh;
+            height: 95vh;
+            // background: url('../images/section1-bg.png');
             display: flex;
             justify-content: center;
-            align-items: center;
-            position: relative;
+            align-items: flex-start;
 
-            .course-section-wraper {
-                width: 100%;
-                height: 100%;
+            .home-header-inner {
+                width: 92%;
+                height: 90%;
+                background: #c3c6ff4d;
+                border-radius: 30px;
                 display: flex;
-                flex-direction: column;
-                gap: 20px;
+                justify-content: center;
                 align-items: center;
-                padding: 50px;
-                position: relative;
-                z-index: 5;
 
-                .title {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    gap: 10px;
+                .home-header-left {
+                    width: 50%;
+                    height: 100%;
 
-                    h1 {
-                        text-align: center;
-                        font-size: 4em;
-                        text-transform: uppercase;
-                        text-decoration: dotted;
-                        font-family: var(--sdfont);
-                        letter-spacing: 5px;
+                    .hm-left-wrap {
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        flex-direction: column;
+                        gap: 20px;
+                        padding-left: 85px;
 
+                        img {
+                            width: 150px;
+                            height: 150px;
+                            position: absolute;
+                            top: 60px;
+                            right: 140px;
+                        }
+
+                        .section1-heading {
+                            font-size: 4.5em;
+                            font-weight: 600;
+                            z-index: 2;
+                        }
+
+                        .section1-btn-cont {
+                            width: 100%;
+                            height: 50px;
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            gap: 30px;
+
+                            .btn-cont-left {
+                               padding: 20px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background: var(--prdarkclr);
+                                border-radius: 34px;
+                                text-decoration: none;
+                                color: #fff;
+                                font-weight: 500;
+                            }
+                            .btn-cont-right {
+                                padding: 0px 20px 0px  0px ;
+                                display: flex;
+                                align-items: center;
+                                justify-content: start;
+                                background: #fff;
+                                color: #000;
+                                text-decoration: none;
+                                border-radius: 34px;
+                                .circle{
+                                    border-radius: 50%;
+                                    background: var(--sddarkclr) ;
+                                    padding: 16px;
+                                    span{
+                                        box-sizing: border-box;
+                                        font-size: 30px ;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
-                .course-card-cont {
-                    width: 100%;
+                .home-header-right {
+                    width: 50%;
+                    height: 100%;
 
-                    .card-grid {
+                    .hm-right-wrap {
+                        height: 100%;
                         width: 100%;
-                        display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-                        grid-template-rows: auto;
-                        gap: 20px;
-                        perspective: 1000px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
 
-                        .course-card {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-between;
-                            max-width: 500px;
-                            min-height: 400px;
-                            padding: 35px;
+                        .img1 {
+                            width: 700px;
+                            height: 700px;
+                            position: absolute;
+                            bottom: -35px;
+                            right: -17px;
+                        }
 
-                            border: 1px solid rgba(255, 255, 255, .25);
-                            border-radius: 20px;
-                            background-color: rgba(255, 255, 255, 0.45);
-                            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-                            backdrop-filter: blur(15px);
-                            transform: rotate3d(0);
-                            transition: transform 0.5s ease;
-                            transform-origin: center;
+                        .img2 {
+                            width: 820px;
+                            // height: 500px;
+                            position: absolute;
+                            bottom: 0px;
+                            left: -50px;
+                            z-index: 1;
+                        }
 
-                            &:nth-child(1) {}
-
-                            .course-card-wrap {
-                                width: 100%;
-                                height: 100%;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-between;
-
-                                h1 {
-                                    padding: 8px 16px;
-                                    border: 1px solid #000;
-                                    font-size: 1.5em;
-                                    border-radius: 24px;
-                                    font-weight: 500;
-                                    text-align: center;
-
-                                }
-
-
-                                .course-title {
-                                    font-size: 1.3em;
-                                    font-weight: 600;
-                                    text-align: center;
-                                }
-
-                                .course-desc {
-                                    display: flex;
-                                    justify-content: left;
-                                    align-items: center;
-                                    flex-direction: column;
-
-                                    p {
-                                        text-align: center;
-                                        font-size: 0.8em;
-                                    }
-
-                                    span {
-                                        font-size: 60px;
-                                        color: greenyellow;
-                                    }
-
-                                }
-
-                                .price-det {
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 20px;
-                                    align-items: center;
-
-                                    p {
-                                        font-size: 1em;
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 10px;
-
-                                        del {}
-
-                                        span {
-                                            font-size: 1.5em;
-                                            transition: 0.5s ease;
-
-                                            &:hover {
-
-                                                transition: 0.5s ease;
-
-                                            }
-                                        }
-                                    }
-                                }
-
-                                .btn-course {
-                                    border-radius: 24px;
-                                    overflow: hidden;
-                                    border: 1px solid #000;
-
-                                    a {
-                                        text-decoration: none;
-                                        color: white;
-                                        z-index: 2;
-                                        padding: 12px 32px;
-                                        display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        position: relative;
-                                        overflow: hidden;
-                                        &::before{
-                                            content: '';
-                                            width: 100%;
-                                            height: 50%;
-                                            position: absolute;
-                                            top: 0;
-                                            left: 0;
-                                            background: black;
-                                            z-index: -1;
-                                            transition: 0.5s ease;
-
-                                        }
-                                        &::after{
-                                            content: '';
-                                            width: 100%;
-                                            height: 50%;
-                                            position: absolute;
-                                            bottom: 0;
-                                            right: 0;
-                                            background: black;
-                                            z-index: -1;
-                                            transition: 0.5s ease;
-
-                                        }
-                                        &:hover{
-                                            color: #000;
-                                           &::before{
-                                            left: -100%;
-                                            transition: 0.5s ease;
-
-                                           } 
-                                           &::after{
-                                            right: -100%;
-                                            transition: 0.5s ease;
-                                           }
-                                        }
-                                    }
-
-                                    form {
-                                        a {
-                                            text-decoration: none;
-                                            color: white;
-                                            padding: 8px 16px;
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            z-index: 2;
-                                            &::before{
-                                                content: '';
-                                                width: 100%;
-                                                height: 50%;
-                                                position: absolute;
-                                                top: 0;
-                                                left: 0;
-                                                background: black;
-    
-                                            }
-                                            &::after{
-                                                content: '';
-                                                width: 100%;
-                                                height: 50%;
-                                                position: absolute;
-                                                bottom: 0;
-                                                right: 0;
-                                                background: black;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            &:hover {
-                                transform: rotate3d(1, 0, 0, 8deg);
-                                transition: transform 0.5s ease;
-
-                            }
-
-
+                        .img3 {
+                            width: 50px;
+                            position: absolute;
+                            bottom: 300px;
+                            right: 57px;
+                            z-index: 1;
                         }
                     }
                 }
             }
         }
-
-        .dummy {
-            height: 100Vh;
-        }
-
     }
 }
 
-@keyframes verscrl {
-    0% {
-        transform: translateY(0%);
+@keyframes rotateAndResize {
+    50% {
+        rotate: 0deg;
     }
 
     100% {
-        transform: translateY(-130%);
-    }
-
-}
-
-@keyframes verscrl2 {
-    0% {
-        transform: translateY(-130%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-
-}
-
-@keyframes arrowmove {
-    0% {
-        transform: translateX(-20px);
-    }
-
-    100% {
-        transform: translateX(10px);
-    }
-
-}
-
-@keyframes gradrot {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
+        width: 100%;
+        border-radius: 24px;
     }
 }
