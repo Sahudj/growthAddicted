@@ -24,12 +24,12 @@
                             NAVIGATE THE<br> DIGITAL <br> FRONTIER
                         </div>
                         <div class="section1-btn-cont">
-
                             <a class="btn-cont-left" href="">GET STARTED <span style="margin-left: 10px;" class="material-symbols-outlined">
                                     east
                                 </span></a>
                             <a class="btn-cont-right" href="">
                                 <div class="circle">
+
                                     <span class="material-symbols-outlined">
                                         play_arrow
                                     </span>

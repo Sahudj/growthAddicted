@@ -133,6 +133,23 @@ html {
   height: 100svh;
   overflow-x: hidden;
   overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.home-page::-webkit-scrollbar {
+  width: 10px;
+}
+.home-page::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.home-page::-webkit-scrollbar-thumb {
+  background: var(--prdarkclr);
+  border-radius: 10px;
+}
+.home-page::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
 }
 .home-page .home-page-wrap {
   width: 100%;
@@ -173,6 +190,7 @@ html {
   position: absolute;
   top: 60px;
   right: 140px;
+
 }
 .home-page .home-page-wrap .home-header .home-header-inner .home-header-left .hm-left-wrap .section1-heading {
   font-size: 4.5em;
@@ -258,5 +276,13 @@ html {
   100% {
     width: 100%;
     border-radius: 24px;
+  }
+}
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
   }
 }/*# sourceMappingURL=our-style.css.map */
