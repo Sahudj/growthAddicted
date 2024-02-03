@@ -111,7 +111,7 @@ html {
         align-items: center;
         padding: 0 150px;
 
-        .nav-wrap-left {}
+        // .nav-wrap-left {}
 
         .nav-wrap-middle {
             .menu {
@@ -123,40 +123,40 @@ html {
 
                 .item {
                     a {
-                        font-size: 1.2em;
+                        font-size: 16px;
                         text-decoration: none;
                         padding: 6px 16px;
                         color: #000;
                         font-weight: 400;
-                        // display: flex;
-                        // justify-content: center;
-                        // align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         border-bottom: 2px solid transparent;
                         position: relative;
                         z-index: 1;
 
                         &::before {
                             content: '';
-                            width: 30px;
-                            height: 100%;
-                            border-radius: 50%;
-                            border-top-left-radius: 0;
-                            border-bottom-left-radius: 0;
+                            width: 0px;
+                            height:3px;
+                            border-radius: 10px;
                             background: var(--prdarkclr);
                             position: absolute;
-                            bottom: 0px;
+                            bottom: 0;
                             transition: 0.5s ease;
-                            z-index: -1;
-                            transform-origin: bottom left;
                             opacity: 0;
-                            transition: rotate 0.5s ease, width 0.5s ease 0.5s;
-
+                            visibility: hidden;
+                            z-index: -1;
+                            transition: 0.5s ease;
+                            
                         }
 
                         &:hover {
+                            
                             &::before {
                                 transition: 0.5s ease;
-                                animation: rotateAndResize 1s forwards;
+                                visibility: visible;
+                                width: 100%;
                                 opacity: 1;
                             }
                         }

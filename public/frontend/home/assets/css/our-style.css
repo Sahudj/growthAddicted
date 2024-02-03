@@ -73,34 +73,36 @@ html {
   list-style: none;
 }
 .nav-bar .nav-bar-wrap .nav-wrap-middle .menu .item a {
-  font-size: 1.2em;
+  font-size: 16px;
   text-decoration: none;
   padding: 6px 16px;
   color: #000;
   font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 2px solid transparent;
   position: relative;
   z-index: 1;
 }
 .nav-bar .nav-bar-wrap .nav-wrap-middle .menu .item a::before {
   content: "";
-  width: 30px;
-  height: 100%;
-  border-radius: 50%;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  width: 0px;
+  height: 3px;
+  border-radius: 10px;
   background: var(--prdarkclr);
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   transition: 0.5s ease;
-  z-index: -1;
-  transform-origin: bottom left;
   opacity: 0;
-  transition: rotate 0.5s ease, width 0.5s ease 0.5s;
+  visibility: hidden;
+  z-index: -1;
+  transition: 0.5s ease;
 }
 .nav-bar .nav-bar-wrap .nav-wrap-middle .menu .item a:hover::before {
   transition: 0.5s ease;
-  animation: rotateAndResize 1s forwards;
+  visibility: visible;
+  width: 100%;
   opacity: 1;
 }
 .nav-bar .nav-bar-wrap .nav-wrap-right {
@@ -190,7 +192,6 @@ html {
   position: absolute;
   top: 60px;
   right: 140px;
-
 }
 .home-page .home-page-wrap .home-header .home-header-inner .home-header-left .hm-left-wrap .section1-heading {
   font-size: 4.5em;
