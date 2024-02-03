@@ -31,33 +31,35 @@
             <div class="nav-bar" id="navbar">
                 <div class="nav-bar-wrap">
                     <div class="nav-wrap-left">
-
-                        <!-- MOBILE MENU  -->
-                        <!-- <div class="mobile-menu">
-
-                        </div> -->
+                        <img class="logo" width="135" src="{{url('public/frontend/home/')}}/assets/images/Logo2.png" alt="logo-img">
+                    </div>
+                    <div class="nav-wrap-middle">
                         <ul class="menu">
                             <li class="item">
-                                <img class="logo" width="200" src="{{url('public/frontend/home/')}}/assets/images/Logo2.png" alt="logo-img">
+                                <a href="">HOME</a>
                             </li>
                             <li class="item">
-                                <a href="">Home</a>
+                                <a href="">ABOUT</a>
                             </li>
                             <li class="item">
-                                <a href="">About</a>
+                                <a href="">COURSES</a>
                             </li>
                             <li class="item">
-                                <a href="">Courses</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Contact</a>
+                                <a href="">CAREERS</a>
                             </li>
                         </ul>
                     </div>
                     <div class="nav-wrap-right">
                         <div class="action-btn">
-                            <button class="primary-btn"><span>Login</span> </button>
-
+                            <a href="#" class="sign-up">SIGN UP</a>
+                        </div>
+                        <div class="action-btn">
+                            <a href="#" class="login">LOGIN</a>
+                        </div>
+                        <div class="action-btn">
+                            <a href="#" class="shoping">
+                                <span class="material-symbols-outlined">shopping_cart</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -82,17 +84,25 @@
     <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/coustom.js"></script> -->
     <script>
-        $(document).ready(function() {
-            var navbar = $('#navbar');
+        // $(document).ready(function() {
+        //     var navbar = $('#navbar');
 
-            $('#home-page').scroll(function() {
-                if ($('#home-page').scrollTop() >= 80) {
-                    navbar.addClass('scrolled');
-                } else {
-                    navbar.removeClass('scrolled');
-                }
-            });
-        });
+        //     $('#home-page').scroll(function() {
+        //         if ($('#home-page').scrollTop() >= 80) {
+        //             navbar.addClass('scrolled');
+        //         } else {
+        //             navbar.removeClass('scrolled');
+        //         }
+        //     });
+        // });
+        document.addEventListener('mousemove', (e)=>{
+            document.querySelectorAll('.layer').forEach(layer =>{
+                const speed = layer.getAttribute('data-speed');
+                const x = (window.innerWidth - e.pageX * speed)/100;
+                const y = (window.innerHeight - e.pageY * speed)/100;
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            })
+        })
     </script>
 
 </body>
