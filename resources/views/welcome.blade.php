@@ -83,54 +83,30 @@
                     <p style="margin-top:30px;font-weight:500; font-size:1.5em">Go beyond the digital realm</p>
                 </div>
                 <div class="cluster-section-cont">
-                    <?php
-                    $packageId = '';
-                    $orderStatus = '';
-                    ?>
 
-                    <?php
-
-                    function encryptor($action, $string)
-                    {
-                        $output = false;
-
-                        $encrypt_method = "AES-256-CBC";
-                        //pls set your unique hashing key
-                        $secret_key = 'aman#$gyan13*&som@$#';
-                        $secret_iv = 'aman#$gyan13*&som@$#';
-
-                        // hash
-                        $key = hash('sha256', $secret_key);
-
-                        // iv - encrypt method AES-256-CBC expects 16 bytes - else you will get a warning
-                        $iv = substr(hash('sha256', $secret_iv), 0, 16);
-
-                        //do the encyption given text/string/number
-                        if ($action == 'encrypt') {
-                            $output = openssl_encrypt($string, $encrypt_method, $key, 0, $iv);
-                            $output = base64_encode($output);
-                        } else if ($action == 'decrypt') {
-                            //decrypt the given text/string/number
-                            $output = openssl_decrypt(base64_decode($string), $encrypt_method, $key, 0, $iv);
-                        }
-
-                        return $output;
-                    }
-                    $allPackages = DB::table('packages')->select('*')->where('status', 1)->get();
-
-                    ?>
-                      @auth()
-                    
-                    <?php
-                        $packageId = (auth()->user()->package_id) ? auth()->user()->package_id : 0;
-                        $orderStatus = auth()->user()->order_status;
-                        $packages = DB::table('packages')->select(DB::raw('group_concat(id) as packageId'))->where('id', '>', $packageId)->first(); 
-                        $tempArr = !empty($packages->packageId) ? explode(',', $packages->packageId) : [] ;
-                    ?>
-                @endauth()
-                    <div class="cluster-section-inner">
-
+                    <div class="open-card">
+                        <div class="open-card-up">
+                            <img src="{{url('public/frontend/home/')}}/assets/images/opencard1.jpg" alt="">
+                        </div>
+                        <div class="open-card-down">
+                        </div>
                     </div>
+                    <div class="closed-card">
+                    </div>
+                    <div class="closed-card">
+                    </div>
+                    <div class="closed-card">
+                    </div>
+
+                </div>
+            </div>
+            <!-- backgound section3 -->
+            <div class="section3-background">
+                <div class="box-cont">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                    <div class="box4"></div>
                 </div>
             </div>
         </div>

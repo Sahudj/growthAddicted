@@ -101,7 +101,7 @@ html {
     padding: 15px 0;
     position: relative;
     display: inline;
-    
+
     // justify-content: flex-start;
     // align-items: center;
     text-align: left;
@@ -513,6 +513,52 @@ html {
     align-items: center;
     gap: 10px;
     margin: 100px 0;
+    position: relative;
+
+    .section3-background {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        z-index: -1;
+
+        .box-cont {
+            width: 92%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+
+            .box1 {
+                width: 15%;
+                height: 100%;
+                background: #e3e5ff;
+                border: none;
+                margin-left: 30px;
+
+            }
+
+            .box2 {
+                width: 20%;
+                height: 100%;
+                background: #eff0ff;
+                border: none;
+
+            }
+
+            .box3 {
+                width: 25%;
+                height: 100%;
+                background: #f7f8ff;
+                border: none;
+            }
+
+        }
+    }
 
     .our-dig-inner {
         width: 92%;
@@ -522,12 +568,45 @@ html {
         flex-direction: column;
 
         .cluster-section-cont {
-                width: 100px;
-                height: 60%;
-            .cluster-section-inner {
-    
-    
+            margin-top: 50px;
+            width: 100%;
+            height: 65%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .open-card{
+                width: 40%;
+                height: 100%;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 15px;
+                .open-card-up{
+                    width: 100%;
+                    height: 60%;
+                    border-top-right-radius: 15px;
+                    border-top-left-radius: 15px;
+                    overflow: hidden;
+                    
+                    img{
+                        width: 100%;
+                       object-fit: cover;
+                    }
+                }
+                .open-card-down{
+                    width: 100%;
+                    height: 40%;
+                    background: #fff;
+                }
             }
+            .closed-card{
+                width: 15%;
+                height: 100%;
+                border: 1px solid #000;
+            }
+            
         }
     }
 
