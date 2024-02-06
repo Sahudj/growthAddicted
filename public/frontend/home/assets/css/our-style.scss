@@ -29,8 +29,7 @@ html {
 .main-section {
     width: 100vw;
     height: 100svh;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
 
     .main-wrapper {
         width: 100%;
@@ -212,8 +211,6 @@ html {
                     text-decoration: none;
                     color: #000;
                 }
-
-                .sign-up {}
 
                 .login {
                     padding: 12px 35px;
@@ -570,43 +567,53 @@ html {
         .cluster-section-cont {
             margin-top: 50px;
             width: 100%;
-            height: 65%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            .open-card{
-                width: 40%;
-                height: 100%;
+            gap: 15px;
+
+            .course-card {
+                width: 900px;
+                height: 900px;
                 border: none;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 border-radius: 15px;
-                .open-card-up{
+
+                &.open {
+                    width: 900px;
+                    height: 900px;
+
+                }
+
+                .open-card-up {
                     width: 100%;
                     height: 60%;
                     border-top-right-radius: 15px;
                     border-top-left-radius: 15px;
                     overflow: hidden;
-                    
-                    img{
+
+                    img {
                         width: 100%;
-                       object-fit: cover;
+                        object-fit: cover;
                     }
                 }
-                .open-card-down{
+
+                .open-card-down {
                     width: 100%;
                     height: 40%;
                     background: #fff;
                 }
             }
-            .closed-card{
-                width: 15%;
-                height: 100%;
-                border: 1px solid #000;
+
+            .closed-card {
+                // width: 15%;
+                // height: 100%;
+                // border: 1px solid #000;
             }
-            
+
         }
     }
 
