@@ -82,141 +82,7 @@
                     <h1 class="heading-with-bar-right"> OUR DIGITAL CLUSTERS </h1>
                     <p style="margin-top:30px;font-weight:500; font-size:1.5em">Go beyond the digital realm</p>
                 </div>
-                <div class="cluster-section-cont">
-                    <?php
-                    $packageId = '';
-                    $orderStatus = '';
-                    ?>
 
-                    <?php
-
-                    function encryptor($action, $string)
-                    {
-                        $output = false;
-
-                        $encrypt_method = "AES-256-CBC";
-                        //pls set your unique hashing key
-                        $secret_key = 'aman#$gyan13*&som@$#';
-                        $secret_iv = 'aman#$gyan13*&som@$#';
-
-                        // hash
-                        $key = hash('sha256', $secret_key);
-
-                        // iv - encrypt method AES-256-CBC expects 16 bytes - else you will get a warning
-                        $iv = substr(hash('sha256', $secret_iv), 0, 16);
-
-                        //do the encyption given text/string/number
-                        if ($action == 'encrypt') {
-                            $output = openssl_encrypt($string, $encrypt_method, $key, 0, $iv);
-                            $output = base64_encode($output);
-                        } else if ($action == 'decrypt') {
-                            //decrypt the given text/string/number
-                            $output = openssl_decrypt(base64_decode($string), $encrypt_method, $key, 0, $iv);
-                        }
-
-                        return $output;
-                    }
-                    $allPackages = DB::table('packages')->select('*')->where('status', 1)->get();
-
-                    ?>
-
-                    @auth()
-
-                    <?php
-                    $packageId = (auth()->user()->package_id) ? auth()->user()->package_id : 0;
-                    $orderStatus = auth()->user()->order_status;
-                    $packages = DB::table('packages')->select(DB::raw('group_concat(id) as packageId'))->where('id', '>', $packageId)->first();
-                    $tempArr = !empty($packages->packageId) ? explode(',', $packages->packageId) : [];
-                    ?>
-                    @endauth()
-
-
-                    @foreach($allPackages as $row)   
-
-                    <!-- <div class="col-lg-4 col-md-6 col-md-12" style="padding: 10px;">
-                        <div class="wc-class-inner aos-init aos-animate" data-aos="{{($row->id == 2) ? 'fade-right' : (($row->id == 3) ? 'fade-down' : 'fade-left') }}" data-aos-duration="{{($row->id == 2) ? 2000 : (($row->id == 3) ? 900 : 2000) }}">
-                            <div class="{{($row->id == 2) ? 'wc-class-img' : (($row->id == 3) ? 'wc-class-img wc-cls-3d' : (  ($row->id == 4) ? 'wc-class-img wc-cls-4d' : 'wc-class-img wc-cls-5d' )) }}">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/{{($row->id == 2) ? 'ALPHA 3D 2.png' : (($row->id == 3) ? 'DIDI S PNG 3D.png' : ( ($row->id == 4) ? '2-PERSONAL PNG 3D.png' : 'iconic.jpeg' ) ) }}" alt="blog">
-                                @if($row->package_status == 1)
-                                <p class="new">Best Package</p>
-                                @endif
-                            </div>
-                            <div class="{{($row->id == 2) ? 'wc-class-data' : (($row->id == 3) ? 'wc-class-data wc-text-hover' : 'wc-class-data wc-cls-hover1') }}">
-                                <h4>{{$row->name}}</h4>
-                                @if($row->id == 2)
-                                    <p>2 course</p>
-                                @elseif($row->id == 3)
-                                    <p>3COURSES + 2 BONUS COURSES </p>
-                                @elseif($row->id == 4)
-                                    <p>5 COURSES, 3+2 BONUS COURSES</p> 
-                                @else
-                                    <p>10 COURSES + 11 BONUS COURSES</p>
-                                @endif
-                                
-                                @if(!empty($tempArr) && $orderStatus == 1 && in_array($row->id,$tempArr))
-                                    <?php 
-                                        $getNewPrice = DB::table('package_comm')->where(['from_package' => $packageId, 'to_package_id'=> $row->id])->first();
-                                    ?>
-                                @if(auth()->user()->role != 1)<p class="price"><del>₹{{$row->market_price}}</del> - <span>₹{{$getNewPrice->amount}}</span></p>
-                                @endif
-                                    <div class="btn-small btn-course">
-                                        
-                                        <form method="POST" name="banner-form" id="packages{{$row->id}}" action="{{url('user/upgrade-courses')}}" enctype="multipart/form-data">
-                                        {{ csrf_field() }}
-                                        <input type="hidden" name="_sessionToken" value="{{encryptor('encrypt', $row->id)}}">
-                                            <a href="javascript:void(0);" onclick="document.getElementById('packages{{$row->id}}').submit();">Upgrade Now</a>
-                                        </form>
-                                    </div>
-                                
-                                    @elseif(auth()->user() && $orderStatus == 0)
-                                    <p class="price"><del>₹{{$row->market_price}}</del> - <span>₹{{$row->amount}}</span></p>
-                                    <div class="btn-small btn-course">
-                                        <form method="POST" name="banner-form" id="packages{{$row->id}}" action="{{url('user/upgrade-courses')}}" enctype="multipart/form-data">
-                                        {{ csrf_field() }}
-                                        <input type="hidden" name="_sessionToken" value="{{encryptor('encrypt', $row->id)}}">
-                                            <a href="javascript:void(0);" onclick="document.getElementById('packages{{$row->id}}').submit();">BUY NOW</a>
-                                        </form>
-                                    </div>    
-                                 @elseif($packageId != $row->id && $packageId < $row->id)
-                                 <p class="price"><del>₹{{$row->market_price}}</del> - <span>₹{{$row->amount}}</span></p>
-                                <div class="btn-small btn-course">
-                                         <a href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}">BUY NOW </a>  
-                                     </div>
-                                @endif
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="{{ ((row->id ==2) ? 'course-card':((row->id==3) ? 'course-card' : ((row->id==4) ? 'course-card') ))}}">
-                        <div class="open-card-up">
-                            <img src="{{url('public/frontend/home/')}}/assets/images/opencard1.jpg" alt="">
-                        </div>
-                        <div class="open-card-down">
-                            <div class="course-title">
-
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-
-                    <!-- <div class="open-card">
-                        <div class="open-card-up">
-                            <img src="{{url('public/frontend/home/')}}/assets/images/opencard1.jpg" alt="">
-                        </div>
-                        <div class="open-card-down">
-                            <div class="course-title">
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="closed-card">
-                    </div>
-                    <div class="closed-card">
-                    </div>
-                    <div class="closed-card">
-                    </div> -->
-
-                </div>
             </div>
             <!-- backgound section3 -->
             <div class="section3-background">
@@ -225,6 +91,35 @@
                     <div class="box2"></div>
                     <div class="box3"></div>
                     <div class="box4"></div>
+                </div>
+            </div>
+        </div>
+        <!-- OUR MISSION SECTION   -->
+        <div class="our-mission-section">
+            <img class="layer img1" data-speed="-8" src="{{url('public/frontend/home/')}}/assets/images/section1-img1.png" alt="">
+            <img class="layer img2" data-speed="-2" src="{{url('public/frontend/home/')}}/assets/images/section1-img1.png" alt="">
+            <img class="layer img3" data-speed="-4" src="{{url('public/frontend/home/')}}/assets/images/section1-img1.png" alt="">
+            <div class="inner-section">
+                <h1 class="heading-with-bar-right-white" style="color:#fff"> OUR DIGITAL CLUSTERS </h1>
+                <div class="din-content">
+                    Growth Addtcted Mission Is To Help Learners Of All Ages Reach Their Full Potential Through Inspired Teaching And Personalized Learning. We Do This By Providing Clear Pathways For Learners To Expand Their Skills, Explore Their Options, And Change Their Lives
+                </div>
+            </div>
+        </div>
+        <!-- DISCOVER US ANY THING ANY TIME -->
+        <div class="discover-us-section">
+            <img class=" phone-img" src="{{url('public/frontend/home/')}}/assets/images/phone1.png" alt="">
+            <img class=" laptop-img" src="{{url('public/frontend/home/')}}/assets/images/laptop.png" alt="">
+            <img class=" logo-img" src="{{url('public/frontend/home/')}}/assets/images/Logo2.png" alt="">
+
+            <h1 class="heading">DISCOVER US <br>
+                ANY TIME ANY WHERE</h1>
+            <div class="inner-section-du">
+                <div class="text-cont">
+                    <p>
+                        Our platform is designed for seamless access, ensuring you can embark on your journey of discovery whenever it suits you. No matter the time zone or location, we're here for you.
+                        📱 Mobile-Friendly: Take your
+                    </p>
                 </div>
             </div>
         </div>
