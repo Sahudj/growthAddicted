@@ -212,7 +212,11 @@ html {
 .nav-bar {
     width: 100%;
     height: 80px;
-    background: #5e67ea;
+    background: rgba(255, 255, 255, 0.15); /* Background color with alpha transparency */
+    backdrop-filter: blur(10px); /* Adjust the blur amount for frosted glass effect */
+    border-radius: 12px; /* Rounded corners for a modern look */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Border to enhance visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
     .nav-bar-wrap {
         width: 100%;
@@ -292,7 +296,7 @@ html {
                     padding: 10px 35px;
                     color: #fff;
                     border: 1px solid #fff;
-                    background: #fff;
+                    background: #c18181;
                     opacity: 0.1;
                 }
 
@@ -315,7 +319,7 @@ html {
     height: 100svh;
     overflow-x: hidden;
     overflow-y: auto;
-
+    background: rgb(128, 128, 240);
 
     /* width */
     &::-webkit-scrollbar {
@@ -350,7 +354,7 @@ html {
             justify-content: center;
             align-items: flex-start;
 
-           
+
         }
     }
 }
