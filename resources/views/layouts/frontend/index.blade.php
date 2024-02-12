@@ -31,7 +31,7 @@
             <div class="nav-bar" id="navbar">
                 <div class="nav-bar-wrap">
                     <div class="nav-wrap-left">
-                        <img class="logo" width="135" src="{{url('public/frontend/home/')}}/assets/images/Logo2.png" alt="logo-img">
+                        <img class="logo" width="200" src="{{url('public/frontend/home/')}}/assets/images/logo3.png" alt="logo-img">
                     </div>
                     <div class="nav-wrap-middle">
                         <ul class="menu">
@@ -84,17 +84,17 @@
     <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/coustom.js"></script> -->
     <script>
-        // $(document).ready(function() {
-        //     var navbar = $('#navbar');
+         $(document).ready(function() {
+             var navbar = $('#navbar');
 
-        //     $('#home-page').scroll(function() {
-        //         if ($('#home-page').scrollTop() >= 80) {
-        //             navbar.addClass('scrolled');
-        //         } else {
-        //             navbar.removeClass('scrolled');
-        //         }
-        //     });
-        // });
+             $('#home-page').scroll(function() {
+                 if ($('#home-page').scrollTop() >= 80) {
+                     navbar.addClass('scrolled');
+                } else {
+                     navbar.removeClass('scrolled');
+                 }
+             });
+        });
         document.addEventListener('mousemove', (e)=>{
             document.querySelectorAll('.layer').forEach(layer =>{
                 const speed = layer.getAttribute('data-speed');

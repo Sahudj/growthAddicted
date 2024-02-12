@@ -16,22 +16,42 @@
     <div class="home-page-wrap">
         <!-- HEADER SECTION  -->
         <div class="home-header">
-           <div class="home-header-top">
-            <div class="top-hd-bg"></div>
-            <div class="top-hd-fg">
-                <h3>TOP WEB DESIGN AGENCY</h3>
-                <div class="fg-title">
-                    <h1>WE GROW BRANDS ONLINE</h1>
-                    <h4>CUSTOM WEBSITES, BRANDING & DIGITAL MARKETING SOLUTIONS</h4>
-                </div>
-                <div>
-                    <a href="#">Get Started</a>
+            <div class="home-header-top">
+                <div class="top-hd-bg">
+                    <div class="top-hd-fg">
+                        <h3>DIGITAL MASTERY HUB</h3>
+                        <div class="fg-title">
+                            <h1>Crafting Digital Success</h1>
+                            <h4>Achieve online success through dynamic learning branding, and digital marketing.</h4>
+                        </div>
+                        <div>
+                            <a class="pri-btn" href="#">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="moving-screen">
+                        <div class="temp-scroll" style="--t:20s;">
+                            <div>
+                                <div class="momnts-card"></div>
+                                <div class="momnts-card"></div>
+                                <div class="momnts-card"></div>
+                                <div class="momnts-card"></div>
+                                <!-- <div class="momnts-card"></div> -->
+                            </div>
+                            <div>
+                                <div class="momnts-card"></div>
+                                <div class="momnts-card"></div>
+                                <div class="momnts-card"></div>
+                                <div class="momnts-card"></div>
+                                <!-- <div class="momnts-card"></div> -->
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-           </div>
-           <div class="home-header-bottom"></div>
+            <div class="home-header-bottom"></div>
         </div>
-       
+
 
     </div>
 </div>
