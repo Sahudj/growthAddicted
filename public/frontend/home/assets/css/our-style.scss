@@ -33,6 +33,7 @@ html {
 
     .main-wrapper {
         width: 100%;
+        // background: #8080f0;
     }
 
 }
@@ -212,11 +213,12 @@ html {
 .nav-bar {
     width: 100%;
     height: 80px;
-    background: rgba(255, 255, 255, 0.15); /* Background color with alpha transparency */
-    backdrop-filter: blur(10px); /* Adjust the blur amount for frosted glass effect */
-    border-radius: 12px; /* Rounded corners for a modern look */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Border to enhance visibility */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: transparent;
+
 
     .nav-bar-wrap {
         width: 100%;
@@ -241,7 +243,7 @@ html {
                         font-size: 16px;
                         text-decoration: none;
                         padding: 6px 16px;
-                        color: #000;
+                        color: #ffffff;
                         font-weight: 400;
                         display: flex;
                         justify-content: center;
@@ -255,7 +257,7 @@ html {
                             width: 0px;
                             height: 3px;
                             border-radius: 10px;
-                            background: var(--prdarkclr);
+                            background: #fff;
                             position: absolute;
                             bottom: 0;
                             transition: 0.5s ease;
@@ -289,15 +291,24 @@ html {
             .action-btn {
                 a {
                     text-decoration: none;
-                    color: #000;
+                    color: #ffffff;
                 }
 
                 .login {
                     padding: 10px 35px;
                     color: #fff;
-                    border: 1px solid #fff;
-                    background: #c18181;
-                    opacity: 0.1;
+                    background: rgba(255, 255, 255, 0.15);
+                    backdrop-filter: blur(18px);
+                    -webkit-backdrop-filter: blur(18px);
+                    border: 2px solid #fff;
+                    z-index: 10;
+                    color: rgb(255, 255, 255);
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        transition: 0.5s ease;
+                        background: rgba(255, 255, 255, 0.318);
+                    }
                 }
 
                 .shoping {
@@ -319,7 +330,7 @@ html {
     height: 100svh;
     overflow-x: hidden;
     overflow-y: auto;
-    background: rgb(128, 128, 240);
+    // background: rgb(128, 128, 240);
 
     /* width */
     &::-webkit-scrollbar {
@@ -345,15 +356,50 @@ html {
 
     .home-page-wrap {
         width: 100%;
+        background: #041215;
 
         .home-header {
             width: 100%;
-            height: 95vh;
             // background: url('../images/section1-bg.png');
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
 
+            .home-header-top {
+                height: 200vh;
+                width: 100%;
+                background: linear-gradient(45deg, transparent, #2c8bffd4, #aa6afdb1 );
+                background-size: 600% 100% ; 
+                animation: gradbg 15s linear infinite alternate;
+                border: 1px solid green;
+                
+                .top-hd-bg{
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::before{
+                        content: 'GROWTHADDICTED';
+                        position: absolute;
+                        font-size: 11rem;
+                        rotate: -22deg;
+                        
+                    }
+                    &::after{
+                        content: '';
+                        width: 100%;
+                        height: 100%;
+                        //  background: linear-gradient(45deg, blue , purple,transparent, blue, purple);
+                        //  background-size: 600% 100% ;
+                        //  animation: gradbg 16s linear infinite alternate;
+
+                    }
+                }
+            }
+            .home-header-bottom {
+                height: 100vh;
+                width: 100%;
+                border: 1px solid green;
+            }
 
         }
     }
@@ -361,25 +407,13 @@ html {
 
 
 
-@keyframes rotateAndResize {
-    50% {
-        rotate: 0deg;
-    }
-
-    100% {
-        width: 100%;
-        border-radius: 24px;
-    }
-}
-
-@keyframes shine {
+@keyframes gradbg {
     0% {
-        left: -100%;
-
+      background-position: 0%;
     }
 
     100% {
-        left: 100%;
+        background-position: 100%;
 
     }
 }
