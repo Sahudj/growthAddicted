@@ -29,24 +29,89 @@
                         </div>
                     </div>
                     <div class="moving-screen">
-                        <div class="temp-scroll" style="--t:20s;">
-                            <div>
-                                <div class="momnts-card"></div>
-                                <div class="momnts-card"></div>
-                                <div class="momnts-card"></div>
-                                <div class="momnts-card"></div>
-                                <!-- <div class="momnts-card"></div> -->
+                        <div class="temp-scroll" style="--t:25s;">
+                            <div class="mar-grp">
+                                <div class="momnts-card">1</div>
+                                <div class="momnts-card">2</div>
+                                <div class="momnts-card">3</div>
+                                <div class="momnts-card">4</div>
+                                <!-- <div class="momnts-card">5</div> -->
                             </div>
-                            <div>
-                                <div class="momnts-card"></div>
-                                <div class="momnts-card"></div>
-                                <div class="momnts-card"></div>
-                                <div class="momnts-card"></div>
-                                <!-- <div class="momnts-card"></div> -->
+                            <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
+                                <div class="momnts-card">6</div>
+                                <div class="momnts-card">7</div>
+                                <div class="momnts-card">8</div>
+                                <div class="momnts-card">9</div>
+                                <!-- <div class="momnts-card">10</div> -->
                             </div>
                         </div>
-                    </div>
 
+                        <div class="temp-scroll" style="--t:25s;">
+                            <div class="mar-grp">
+                                <div class="momnts-card">1</div>
+                                <div class="momnts-card">2</div>
+                                <div class="momnts-card">3</div>
+                                <div class="momnts-card">4</div>
+                                <!-- <div class="momnts-card">5</div> -->
+                            </div>
+                            <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
+                                <div class="momnts-card">6</div>
+                                <div class="momnts-card">7</div>
+                                <div class="momnts-card">8</div>
+                                <div class="momnts-card">9</div>
+                                <!-- <div class="momnts-card">10</div> -->
+                            </div>
+                        </div>
+
+                        <div class="temp-scroll" style="--t:25s;">
+                            <div class="mar-grp">
+                                <div class="momnts-card">1</div>
+                                <div class="momnts-card">2</div>
+                                <div class="momnts-card">3</div>
+                                <div class="momnts-card">4</div>
+                                <!-- <div class="momnts-card">5</div> -->
+                            </div>
+                            <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
+                                <div class="momnts-card">6</div>
+                                <div class="momnts-card">7</div>
+                                <div class="momnts-card">8</div>
+                                <div class="momnts-card">9</div>
+                                <!-- <div class="momnts-card">10</div> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="ovly-sec">
+                        <h1>Creative Web Agency <br> Delivering Custom Solutions</h1>
+                        <div class="center-cont">
+                            <div class="center-cont-top">
+                                <div class="text">Engaging Social Media Content Creation</div>
+                                <div class="shine"></div>
+                                <div class="text">Webinars and Virtual Events for Thought Leadership</div>
+                                <div class="shine"></div>
+                                <div class="text">Inclusive and Accessible Marketing Practices</div>
+                                <div class="shine"></div>
+                            </div>
+                            <div class="center-cont-top" style="margin-top: 70px;">
+                                <div class="text">
+                                    5 Star DesignRush Reviews
+                                </div>
+                                <div class="shine"></div>
+                                <div class="text">Latest Web Design Award</div>
+                            </div>
+                            <div class="center-video-cont">
+                                <div class="play-btn">
+                                </div>
+                                <div class="play-text">
+                                    <h5></h5>
+                                    <h3></h3>
+                                    <h5></h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
             <div class="home-header-bottom"></div>
