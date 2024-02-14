@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Iceberg&family=Righteous&family=Rubik+Mono+One&display=swap");
 :root {
-  --prdarkclr: #7c83fd;
+  --prlightclr: #7c83fd;
+  --prdarkclr: #000528;
   --sddarkclr: #f2d600;
   --prlightclr: #f3c2ff;
   --sdclightlr: #d6c8ff;
   --sdfont: "Iceberg", sans-serif;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 30s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
 }
 
 * {
@@ -332,6 +338,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 .home-page .home-page-wrap .home-header .home-header-top .top-hd-bg {
   width: 100%;
@@ -414,9 +421,10 @@ html {
 .home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen {
   width: 100%;
   position: absolute;
-  top: 200px;
+  top: 530px;
   left: 0;
   z-index: 3;
+  rotate: -22deg;
 }
 .home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll {
   display: flex;
@@ -425,40 +433,73 @@ html {
   position: relative;
   mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
   -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  margin-top: 15px;
 }
-.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll div {
-  white-space: nowrap;
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll:nth-child(2) .mar-grp {
+  animation: scroll-x 20s linear infinite;
+  animation-direction: reverse;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll:nth-child(3) .mar-grp {
+  animation: scroll-x 25s linear infinite;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll .mar-grp {
+  flex-shrink: 0;
   display: flex;
-  gap: 10px;
-  animation: movscr 20s linear infinite;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll-x var(--duration) linear infinite;
 }
-.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll div:nth-child(2) {
-  animation: movscr2 var(--t) linear infinite;
-}
-.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll div:nth-child(2) .momnts-card {
-  background: white;
-}
-.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll div .momnts-card {
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll .mar-grp .momnts-card {
   width: 400px;
-  height: 300px;
-  background: rgb(255, 49, 49);
+  height: 270px;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
 }
-
-@keyframes movscr {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .ovly-sec {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, transparent, rgba(0, 5, 40, 0.6941176471), #000528);
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-@keyframes movscr2 {
-  0% {
-    transform: translateX(100%);
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .ovly-sec h1 {
+  margin-top: 200px;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .ovly-sec .center-cont {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .ovly-sec .center-cont .center-cont-top {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: #fff;
+  font-size: 1.2em;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .ovly-sec .center-cont .center-cont-top .text {
+  text-align: center;
+  position: relative;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--scroll-start));
   }
-  100% {
-    transform: translateX(-200%);
+  to {
+    transform: translateX(var(--scroll-end));
   }
 }
 @keyframes gradrot {
