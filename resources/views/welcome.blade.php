@@ -83,30 +83,33 @@
 
                     </div>
                     <div class="ovly-sec">
-                        <h1>Creative Web Agency <br> Delivering Custom Solutions</h1>
+                        <h1>Crafting Success in the Digital Arena<br> Personalized Marketing Mastery</h1>
                         <div class="center-cont">
                             <div class="center-cont-top">
-                                <div class="text">Engaging Social Media Content Creation</div>
-                                <div class="shine"></div>
-                                <div class="text">Webinars and Virtual Events for Thought Leadership</div>
-                                <div class="shine"></div>
-                                <div class="text">Inclusive and Accessible Marketing Practices</div>
-                                <div class="shine"></div>
-                            </div>
-                            <div class="center-cont-top" style="margin-top: 70px;">
-                                <div class="text">
-                                    5 Star DesignRush Reviews
+                                <div class="content-box">
+                                    <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/content-creator.png" alt="content creator">
+                                    <div class="text">Engaging Social Media Content Creation</div>
                                 </div>
-                                <div class="shine"></div>
-                                <div class="text">Latest Web Design Award</div>
+                                <div class="content-box">
+                                    <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/leadership.png" alt="content creator">
+                                    <div class="text">Webinars and Virtual Events for Thought Leadership</div>
+                                </div>
+
+                                <div class="content-box">
+                                    <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/practice.png" alt="content creator">
+                                    <div class="text">Inclusive and Accessible Marketing Practices</div>
+                                </div>
+
                             </div>
+
                             <div class="center-video-cont">
                                 <div class="play-btn">
+                                    <span class="material-symbols-outlined">
+                                        play_arrow
+                                    </span>
                                 </div>
                                 <div class="play-text">
-                                    <h5></h5>
-                                    <h3></h3>
-                                    <h5></h5>
+                                    See Our Work
                                 </div>
                             </div>
                         </div>
@@ -116,7 +119,29 @@
             </div>
             <div class="home-header-bottom"></div>
         </div>
-
+        <!-- HEADER SECTION  -->
+        <!-- VIDEO SECTION START HERE  -->
+        <div class="video-section">
+            <div class="video-section-wrapper">
+                <div class="v-thumb">
+                    <div class="v-section-left">
+                        <h1>Lets l<span>e</span>arn <br> beyond the limits</h1>
+                        <div class="text-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, consequuntur aliquam dolorem totam cupiditate consequatur est impedit repellat deserunt accusamus nesciunt beatae vitae dolorum officia dignissimos cumque sapiente. Voluptate, laborum?
+                        </div>
+                    </div>
+                    <div class="v-section-right open">
+                        <div class="video-box">
+                            <video src="" controls></video>
+                        </div>
+                        <span class="material-symbols-outlined">
+                            play_circle
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- VIDEO SECTION END HERE  -->
 
     </div>
 </div>
