@@ -143,6 +143,35 @@
         </div>
         <!-- VIDEO SECTION END HERE  -->
 
+        <!-- EDUCATION SECTION START HERE  -->
+        <div class="education-section">
+            <div class="edtn-sec-wrapper">
+                <div class="edtn-left">
+                    <div class="left-wrapper">
+                        <h1>The scaffolding of a successful future is constructed through education.</h1>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit ea debitis minima, tempore ratione id? Autem iure omnis, quis amet et, laboriosam aut accusamus, deserunt ratione ad ut officia!</h3>
+                        <div class="btn-cont">
+                            <a href="" class="pri-btn">BOOST YOUR LEARING</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="edtn-right">
+                    <div class="right-wrapper">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/education-girl.png" alt="content creator">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- EDUCATION SECTION END HERE  -->
+
+        <!-- OUR LEARNING OPPORTUNITY START HERE  -->
+        <div class="learning-opty">
+            <div class="l-o-wrapper">
+                <h1>OUR LEARNING OPPORTUNITY</h1>
+            </div>
+        </div>
+        <!-- OUR LEARNING OPPORTUNITY END HERE  -->
+        <div class="courses"></div>
     </div>
 </div>
 <!-- banner section end -->
