@@ -167,11 +167,188 @@
         <!-- OUR LEARNING OPPORTUNITY START HERE  -->
         <div class="learning-opty">
             <div class="l-o-wrapper">
-                <h1>OUR LEARNING OPPORTUNITY</h1>
+                <div class="text-cont">
+                    <h4>CLIENTS ACROSS INDUSTRIES</h4>
+                    <h1>OUR LEARNING OPPORTUNITY</h1>
+                    <h3>From startups to Fortune 500 companies,</h3>
+                    <h2>we create custom solutions that grow brands online</h2>
+                </div>
+                <div class="moving-screen">
+                    <div class="temp-scroll" style="--t:25s;">
+                        <div class="mar-grp">
+                            <div class="momnts-card">
+                                <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                        </div>
+                        <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>0</div>
+                        </div>
+                    </div>
+                    <div class="temp-scroll" style="--t:25s;">
+                        <div class="mar-grp">
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                        </div>
+                        <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>
+                            </div>
+                            <div class="momnts-card">
+                                  <span class="material-symbols-outlined">
+                                    stars
+                                </span>
+                                <h1>Personal development</h1>
+                                <h3>300</h3>0</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- OUR LEARNING OPPORTUNITY END HERE  -->
-        <div class="courses"></div>
+        <div class="courses-section">
+            <div class="courses-wrapper">
+                <h1>Our Courses</h1>
+                <h3>Education knows no borders; it is the key to unlocking a world of endless possibilities </h3>
+                <div class="course-card">
+                    <div class="left-crs">
+                       <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/ALPHA_3D_2.png" alt="content creator">
+                    </div>
+                    <div class="right-crs">
+                        <div class="right-wrapper">
+                            <h3>Marketing Mastery</h3>
+                            <p>They say that good marketing makes the company look smart and great marketing makes the customer feel smart.This bundle shall teach you how to master this very important skill. In this age of digital content creation digital marketing is what you need to put yourself or your clients on the map.</p>
+                           <div class="buy-cont">
+                               <h2>3999 /-</h2> 
+                               <a class="pri-btn" href="#" style="color:#000">Buy Now</a>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!-- banner section end -->
