@@ -84,25 +84,27 @@
     <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/coustom.js"></script> -->
     <script>
-         $(document).ready(function() {
-             var navbar = $('#navbar');
+        $(document).ready(function() {
+            var navbar = $('#navbar');
 
-             $('#home-page').scroll(function() {
-                 if ($('#home-page').scrollTop() >= 80) {
-                     navbar.addClass('scrolled');
+            $('#home-page').scroll(function() {
+                if ($('#home-page').scrollTop() >= 80) {
+                    navbar.addClass('scrolled');
                 } else {
-                     navbar.removeClass('scrolled');
-                 }
-             });
+                    navbar.removeClass('scrolled');
+                }
+            });
         });
-        document.addEventListener('mousemove', (e)=>{
-            document.querySelectorAll('.layer').forEach(layer =>{
+        document.addEventListener('mousemove', (e) => {
+            document.querySelectorAll('.layer').forEach(layer => {
                 const speed = layer.getAttribute('data-speed');
-                const x = (window.innerWidth - e.pageX * speed)/100;
-                const y = (window.innerHeight - e.pageY * speed)/100;
+                const x = (window.innerWidth - e.pageX * speed) / 100;
+                const y = (window.innerHeight - e.pageY * speed) / 100;
                 layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
             })
         })
+
+    
     </script>
 
 </body>
