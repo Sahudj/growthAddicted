@@ -389,7 +389,7 @@
                         <div class="left-crs">
                             <!-- <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/ALPHA_3D_21.png" alt="content creator">
                          -->
-                            <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/{{($row->id == 2) ? 'ALPHA_3D_21.png' : (($row->id == 3) ? 'DIDIS3D.png' : ( ($row->id == 4) ? '2-PERSONAL3D2.png' : 'course4-3D-img.png' ) ) }}" alt="blog">
+                            <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/{{($row->id == 2) ? 'ALPHA_3D_21.png' : (($row->id == 3) ? 'DIDIS3D.png' : ( ($row->id == 4) ? '2-PERSONAL3D2.png' : 'rocketman.png' ) ) }}" alt="blog">
 
                         </div>
                         <div class="right-crs">
@@ -503,6 +503,108 @@
                             <h3>Certificates</h3>
 
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Instructors section  -->
+        <div class="instructors-section">
+            <div class="instructor-wrapper">
+                <div class="heading">
+                    <h1>Creative Instructors</h1>
+                    <h2>
+                        Make Us Skillful
+                    </h2>
+                </div>
+
+                <div class="crousal-wrapper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Animesh Mishra</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- plants section  -->
+        <div class="plant-section">
+            <div class="plant-section-wrapper">
+                <div class="left-cont">
+                <img src="{{url('public/frontend/home/')}}/assets/images/plants-sec-img.gif" alt="content creator">
+
+                </div>
+                <div class="right-cont">
+                    <h1>An insatiable desire for growth propels the addiction to cultivate flourishing plants.</h1>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+        <!-- why we are best from other section  -->
+        <div class="best-f-other-section">
+            <div class="other-sec-wrapper">
+                <h1>why we are best from other</h1>
+                <div class="card-cont">
+                    <div class="special-card">
+                        <div class="card-img">
+                        </div>
+                        <h3></h3>
+                        <p></p>
                     </div>
                 </div>
             </div>

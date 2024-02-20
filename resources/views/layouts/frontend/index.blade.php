@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/all.min.css">
     <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/style.css"> -->
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.css?<?php echo time(); ?>">
-    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/swiper-bundle.min.css">
+    <!-- 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -76,9 +77,9 @@
 
     <!-- about our missiong section end -->
     <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
-    <!-- <script src="{{url('public/frontend/home/')}}/assets/js/bootstrap.bundle.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="{{url('public/frontend/home/')}}/assets/js/bootstrap.bundle.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/SmoothScroll.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/jquery.magnific-popup.min.js"></script>
     <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
@@ -104,7 +105,23 @@
             })
         })
 
-    
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true
+        });
     </script>
 
 </body>

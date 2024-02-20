@@ -895,6 +895,18 @@ html {
   align-items: center;
   position: relative;
 }
+.home-page .home-page-wrap .courses-section .courses-wrapper .course-card-wrapper .course-card:nth-child(1) .right-crs .right-wrapper h3 {
+  color: #2b85fc;
+}
+.home-page .home-page-wrap .courses-section .courses-wrapper .course-card-wrapper .course-card:nth-child(2) .right-crs .right-wrapper h3 {
+  color: #ff439d;
+}
+.home-page .home-page-wrap .courses-section .courses-wrapper .course-card-wrapper .course-card:nth-child(3) .right-crs .right-wrapper h3 {
+  color: #fcb32b;
+}
+.home-page .home-page-wrap .courses-section .courses-wrapper .course-card-wrapper .course-card:nth-child(4) .right-crs .right-wrapper h3 {
+  color: #ff2951;
+}
 .home-page .home-page-wrap .courses-section .courses-wrapper .course-card-wrapper .course-card:hover .badge {
   top: 35%;
   transition: 1s ease;
@@ -1157,6 +1169,127 @@ html {
 .home-page .home-page-wrap .steps-grwt-section .steps-grwt-wrapper .steps-cont .steps .stp:nth-child(3) span {
   color: rgb(6, 78, 202);
   animation-delay: 1s;
+}
+.home-page .home-page-wrap .instructors-section {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #000528;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .heading h1 {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  top: -40px;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#9a9a9a 50%, #9a9a9a 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .heading h2 {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #000528);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .crousal-wrapper {
+  width: 100%;
+  height: 80%;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .crousal-wrapper .swiper {
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .crousal-wrapper .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 5, 40, 0.318);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .crousal-wrapper .swiper .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .crousal-wrapper .swiper .swiper-wrapper .swiper-slide .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient(to bottom, transparent, #000528);
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 10px;
+}
+.home-page .home-page-wrap .instructors-section .instructor-wrapper .crousal-wrapper .swiper .swiper-wrapper .swiper-slide .overlay h3 {
+  text-align: left;
+  color: #fff;
+}
+.home-page .home-page-wrap .plant-section {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.home-page .home-page-wrap .plant-section .plant-section-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-page .home-page-wrap .plant-section .plant-section-wrapper .left-cont {
+  width: 50%;
+  height: 100%;
+}
+.home-page .home-page-wrap .plant-section .plant-section-wrapper .right-cont {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @keyframes scroll-x {
