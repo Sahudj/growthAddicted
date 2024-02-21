@@ -586,12 +586,14 @@
         <div class="plant-section">
             <div class="plant-section-wrapper">
                 <div class="left-cont">
-                <img src="{{url('public/frontend/home/')}}/assets/images/plants-sec-img.gif" alt="content creator">
+                    <img src="{{url('public/frontend/home/')}}/assets/images/plant1.gif" alt="content creator">
 
                 </div>
                 <div class="right-cont">
                     <h1>An insatiable desire for growth propels the addiction to cultivate flourishing plants.</h1>
                     <a href="">Learn more</a>
+                    <img src="{{url('public/frontend/home/')}}/assets/images/plant2.gif" alt="content creator">
+
                 </div>
             </div>
         </div>

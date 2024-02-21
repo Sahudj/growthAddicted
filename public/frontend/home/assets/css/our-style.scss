@@ -1630,6 +1630,14 @@ html {
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+                    position: relative;
+
+                    img{
+                        position: absolute;
+                        bottom: 0;
+                        right: 30px;
+                        width: 200px;
+                    }
                 }
             }
         }

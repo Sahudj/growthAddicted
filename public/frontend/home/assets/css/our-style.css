@@ -1290,6 +1290,13 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+}
+.home-page .home-page-wrap .plant-section .plant-section-wrapper .right-cont img {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 200px;
 }
 
 @keyframes scroll-x {
