@@ -590,8 +590,24 @@
 
                 </div>
                 <div class="right-cont">
-                    <h1>An insatiable desire for growth propels the addiction to cultivate flourishing plants.</h1>
-                    <a href="">Learn more</a>
+                    <div class="anim-cont">
+                        <p>An insatiable desire for </p>
+                        <section class="dytxt">
+                            <div class="first">
+                                <div>Growth</div>
+                            </div>
+                            <div class="second">
+                                <div>Inspiration</div>
+                            </div>
+                            <div class="third">
+                                <div>Challenges</div>
+                            </div>
+                        </section>
+                        <p> propels the addiction to cultivate flourishing plants. </p>
+                    </div>
+                    <div class="btn-cont">
+                        <a class="third-btn" href="">Learn more</a>
+                    </div>
                     <img src="{{url('public/frontend/home/')}}/assets/images/plant2.gif" alt="content creator">
 
                 </div>
@@ -600,13 +616,80 @@
         <!-- why we are best from other section  -->
         <div class="best-f-other-section">
             <div class="other-sec-wrapper">
-                <h1>why we are best from other</h1>
+                <!-- <img src="{{url('public/frontend/home/')}}/assets/images/we_best.png" alt="content creator"> -->
+                <h1>why we are best from others</h1>
                 <div class="card-cont">
                     <div class="special-card">
-                        <div class="card-img">
+                        <div class="front">
+                            <div class="card-img">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/weBest1.png" alt="content creator">
+                            </div>
+                            <h3>Grow Quicker with Affordable Learning</h3>
                         </div>
-                        <h3></h3>
-                        <p></p>
+                        <div class="back">
+                            <h3>You are an inch away to be the best</h3>
+                            <a>Start Now</a>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <div class="front">
+                            <div class="card-img">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/weBest5.png" alt="content creator">
+                            </div>
+                            <h3>One Platform for Every Need</h3>
+                        </div>
+                        <div class="back">
+                            <h3>You are an inch away to be the best</h3>
+                            <a>Start Now</a>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <div class="front">
+                            <div class="card-img">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/weBest2.png" alt="content creator">
+                            </div>
+                            <h3>With Growth Addicted Discover Exclusive Opportunities to Offer Value and Earn More</h3>
+                        </div>
+                        <div class="back">
+                            <h3>You are an inch away to be the best</h3>
+                            <a>Start Now</a>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <div class="front">
+                            <div class="card-img">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/weBest3.png" alt="content creator">
+                            </div>
+                            <h3>Dedicated Support System</h3>
+                        </div>
+                        <div class="back">
+                            <h3>You are an inch away to be the best</h3>
+                            <a>Start Now</a>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <div class="front">
+                            <div class="card-img">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/weBest4.png" alt="content creator">
+                            </div>
+                            <h3>24/7 Accessibility</h3>
+                        </div>
+                        <div class="back">
+                            <h3>You are an inch away to be the best</h3>
+                            <a>Start Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- instragram section  -->
+        <div class="instgram-section">
+            <div class="insta-wrapper">
+                <div class="content-cont">
+                    <h1>Follow Us For More</h1>
+                    <h3>Infotainment Content</h3>
+                    <div>
+                        <a href="">@growthaddicted</a>
                     </div>
                 </div>
             </div>

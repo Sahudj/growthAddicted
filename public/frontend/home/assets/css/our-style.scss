@@ -158,6 +158,8 @@ html {
 
 }
 
+
+
 .heading-with-bar {
     text-align: center;
     font-size: 1.4em;
@@ -1621,6 +1623,13 @@ html {
                 .left-cont {
                     width: 50%;
                     height: 100%;
+                    position: relative;
+
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                        left: -150px;
+                    }
                 }
 
                 .right-cont {
@@ -1628,11 +1637,106 @@ html {
                     height: 100%;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    // align-items: center;
                     flex-direction: column;
                     position: relative;
+                    gap: 50px;
 
-                    img{
+                    .anim-cont {
+                        p {
+                            font-size: 2em;
+                        }
+
+                        .dytxt {
+                            height: 90px;
+                            overflow: hidden;
+                            margin-left: 1rem;
+                            font-size: 4em;
+
+                            div {
+                                &:first-child {
+                                    animation: txtanim 8s infinite;
+                                }
+
+                                div {
+                                    padding: 0.55rem 0.95rem;
+                                    height: 2.81rem;
+                                    margin-bottom: 2.81rem;
+                                    display: inline-block;
+                                    font-family: "Dancing Script", cursive;
+                                    color: rgb(127, 214, 127);
+                                }
+                            }
+                        }
+                    }
+
+                    .btn-cont {
+                        width: 300px;
+
+                        a {
+                            flex: 0;
+                            text-decoration: none;
+                            padding: 10px 20px;
+                            border-radius: 24px;
+                            background: rgb(127, 214, 127);
+                            color: #fff;
+                            font-size: 1.3em;
+                            font-weight: 700;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            position: relative;
+                            overflow: hidden;
+                            z-index: 1;
+
+                            &::after {
+                                content: '';
+                                width: 20px;
+                                height: 30px;
+                                border-radius: 0 70px;
+                                background: #ffffffda;
+                                position: absolute;
+                                right: 15px;
+                                bottom: 0px;
+                                rotate: 140deg;
+                                z-index: -1;
+                                transition: 0.5s ease;
+                                transform-origin: bottom right;
+                            }
+
+                            &::before {
+                                content: '';
+                                width: 20px;
+                                height: 40px;
+                                border-radius: 0 20px;
+                                background: #ffffff79;
+                                position: absolute;
+                                right: 0px;
+                                bottom: 0px;
+                                rotate: 120deg;
+                                z-index: -1;
+                                transition: 0.5s ease;
+                                transform-origin: bottom right;
+
+                            }
+
+                            &:hover {
+                                &::after {
+                                    rotate: -45deg;
+                                    transition: 0.5s ease;
+
+                                }
+
+                                &::before {
+                                    rotate: 0deg;
+                                    transition: 0.5s ease;
+                                    transition-delay: 0.1s;
+                                }
+                            }
+                        }
+                    }
+
+                    img {
                         position: absolute;
                         bottom: 0;
                         right: 30px;
@@ -1640,6 +1744,227 @@ html {
                     }
                 }
             }
+        }
+
+        // why we are best from other section
+
+        .best-f-other-section {
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+
+
+            .other-sec-wrapper {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                position: relative;
+                flex-direction: column;
+                background: url('../images/we_best.png');
+                background-size: cover;
+                background-position: center top;
+
+
+                h1 {
+                    font-size: 3.5em;
+                    text-transform: uppercase;
+                    letter-spacing: 6px;
+                    color: #000528;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .card-cont {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    .special-card {
+                        width: 280px;
+                        height: 280px;
+                        border-radius: 10px;
+                        border: 1px solid rgba(128, 128, 128, 0.318);
+                        position: relative;
+
+                        &:nth-child(1) {
+                            translate: 0 10px 0;
+                        }
+
+                        &:nth-child(2) {
+                            translate: 0 100px 0;
+
+                        }
+
+                        &:nth-child(3) {
+                            translate: 0 -15px 0;
+
+                        }
+
+                        &:nth-child(4) {
+                            translate: 0 60px 0;
+
+                        }
+
+                        &:nth-child(5) {
+                            translate: 0 -10px 0;
+
+                        }
+
+                        &:hover {
+                            .front {
+                                transform: rotateY(-180deg);
+
+                            }
+
+                            .back {
+                                transform: rotateY(0);
+                            }
+                        }
+
+                        .front,
+                        .back {
+                            position: absolute;
+                            display: flex;
+                            align-items: center;
+                            height: 100%;
+                            width: 100%;
+                            border-radius: 15px;
+                            background-color: rgba(255, 255, 255, 0.119);
+                            border: 2px solid rgba(255, 255, 255, 0.119);
+                            backdrop-filter: blur(8px);
+                            transform-style: preserve-3d;
+                            backface-visibility: hidden;
+                            transition: 1s;
+                            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                        }
+
+                        .front {
+                            justify-content: space-between;
+                            flex-direction: column;
+                            padding: 20px;
+
+                            .card-img {
+                                width: 100px;
+                                height: 100px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
+                                }
+                            }
+
+                            h3 {
+                                text-align: center;
+                                width: 100%;
+                                height: 50%;
+                                font-size: 1.3em;
+
+                            }
+                        }
+
+                        .back {
+                            transform: rotateY(180deg);
+                            padding: 20px;
+                            justify-content: center;
+                            gap: 50px;
+                            flex-direction: column;
+
+                            h3 {
+                                font-size: 1em;
+                                text-align: center;
+                            }
+
+                            a {
+                                text-decoration: none;
+                                padding: 10px 20px;
+                                border-radius: 25px;
+                                background: #000;
+                                color: #fff;
+                                border: none;
+                                outline: none;
+                                display: inline-flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+
+
+                    }
+
+                }
+
+            }
+        }
+
+        // instagram section 
+        .instgram-section {
+            width: 100%;
+            height: 80vh;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+
+            .insta-wrapper {
+                width: 100%;
+                height: 100%;
+                background: url('../images/instaSection.png');
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .content-cont {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+
+                    h1 {
+                        font-size: 4em;
+
+                    }
+
+                    h3 {
+                        font-size: 3.5em;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 20px 40px;
+                        font-family: "Dancing Script", cursive;
+                        font-size: 3em;
+                        background: #d6249f;
+                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                        box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+                        border-radius: 100px;
+                        color: #000;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        transition: 0.5s ease;
+
+                        &:hover {
+                            scale: 1.08;
+                            transition: 0.5s ease;
+
+                        }
+                    }
+                }
+            }
+
         }
     }
 }
@@ -1729,5 +2054,47 @@ html {
 
     100% {
         rotate: 10deg;
+    }
+}
+
+@keyframes txtanim {
+    0% {
+        margin-top: 0;
+    }
+
+    10% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: -4.52rem;
+    }
+
+    30% {
+        margin-top: -4.52rem;
+    }
+
+    40% {
+        margin-top: -9.74rem;
+    }
+
+    60% {
+        margin-top: -9.24rem;
+    }
+
+    70% {
+        margin-top: -4.52rem;
+    }
+
+    80% {
+        margin-top: -4.52rem;
+    }
+
+    90% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 0;
     }
 }
