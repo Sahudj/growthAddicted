@@ -19,12 +19,12 @@
             <div class="home-header-top">
                 <div class="top-hd-bg">
                     <div class="top-hd-fg">
-                        <h3>DIGITAL MASTERY HUB</h3>
+                        <h3 data-aos="fade-up" data-aos-duration="1000">DIGITAL MASTERY HUB</h3>
                         <div class="fg-title">
-                            <h1>Crafting Digital Success</h1>
-                            <h4>Achieve online success through dynamic learning branding, and digital marketing.</h4>
+                            <h1 data-aos="fade-up" data-aos-duration="1500">Crafting Digital Success</h1>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Achieve online success through dynamic learning branding, and digital marketing.</h4>
                         </div>
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="2300">
                             <a class="pri-btn" href="#">Get Started</a>
                         </div>
                     </div>
@@ -83,12 +83,12 @@
 
                     </div>
                     <div class="ovly-sec">
-                        <h1>Crafting Success in the Digital Arena<br> Personalized Marketing Mastery</h1>
+                        <h1 class="aos-init aos-animate" data-aos="fade-up">Crafting Success in the Digital Arena<br> Personalized Marketing Mastery</h1>
                         <div class="center-cont">
                             <div class="center-cont-top">
                                 <div class="content-box">
                                     <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/content-creator.png" alt="content creator">
-                                    <div class="text">Engaging Social Media Content Creation</div>
+                                    <div  class="text">Engaging Social Media Content Creation</div>
                                 </div>
                                 <div class="content-box">
                                     <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/leadership.png" alt="content creator">
@@ -122,6 +122,7 @@
         <!-- HEADER SECTION  -->
         <!-- VIDEO SECTION START HERE  -->
         <div class="video-section">
+            <a data-scroll href="#bazinga">Anchor Link</a>
             <div class="video-section-wrapper">
                 <div class="v-thumb">
                     <div class="v-section-left">
@@ -453,20 +454,20 @@
             </div>
         </div>
         <!-- WHY GROWTH ADDICTED -->
-        <div class="growth-add-section">
+        <div class="growth-add-section" id="whygrthaddicted">
             <div class="grwt-add-wrapper">
                 <h1 class="heading">Why Growth Addicted</h1>
                 <div class="grwt-add-cont">
                     <div class="count-cont">
-                        <h1>1K +</h1>
+                        <h1><span id="animval1"></span> +</h1>
                         <h2>Tutors</h2>
                     </div>
                     <div class="count-cont">
-                        <h1>3K +</h1>
+                        <h1><span id="animval2"></span> +</h1>
                         <h2>Subjects</h2>
                     </div>
                     <div class="count-cont">
-                        <h1>15K +</h1>
+                        <h1><span id="animval3"></span> K+</h1>
                         <h2>Students</h2>
                     </div>
                 </div>
