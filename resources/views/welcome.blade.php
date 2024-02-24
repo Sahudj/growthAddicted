@@ -88,7 +88,7 @@
                             <div class="center-cont-top">
                                 <div class="content-box">
                                     <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/content-creator.png" alt="content creator">
-                                    <div  class="text">Engaging Social Media Content Creation</div>
+                                    <div class="text">Engaging Social Media Content Creation</div>
                                 </div>
                                 <div class="content-box">
                                     <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/leadership.png" alt="content creator">
@@ -692,6 +692,151 @@
                     <div>
                         <a href="">@growthaddicted</a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- student feedback section  -->
+        <div class="testimonialt-section">
+            <div class="testimonial-wrapper">
+                <h1 class="heading">Journeys to Excellence</h1>
+                <div class="testimonial-cont">
+                    <div class="left-wrap">
+                        <div class="swiper testimonial-crousal">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Animesh Mishra</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Animesh Mishra</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Animesh Mishra</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Animesh Mishra</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                    <!-- <div class="right-wrap">
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- book section  -->
+        <div class="book-section">
+            <div class="imgLoader"></div>
+            <div class="book-sec-wrapper">
+                <div class="text-cont">
+                    <h1>Maximize Online Impact</h1>
+                    <h3> Grab Your 2024 Branding Guide</h3>
+                </div>
+                <div class="book">
+                    <div class="gap"></div>
+                    <div class="pages">
+                        <div class="page"></div>
+                        <div class="page"></div>
+                        <div class="page"></div>
+                        <div class="page"></div>
+                        <div class="page"></div>
+                        <div class="page"></div>
+                    </div>
+                    <div class="flips">
+                        <div class="flip flip1">
+                            <div class="flip flip2">
+                                <div class="flip flip3">
+                                    <div class="flip flip4">
+                                        <div class="flip flip5">
+                                            <div class="flip flip6">
+                                                <div class="flip flip7"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-btn">
+                    <a class="pri-btn" href="https://testimonial.to/resources/16-video-testimonials-examples">Download Now</a>
                 </div>
             </div>
         </div>

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/all.min.css">
     <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/style.css"> -->
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.css?<?php echo time(); ?>">
-    <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/magnific-popup.css">
     <link rel="shortcut icon" type="image/png" href="{{url('public/frontend/home/')}}/assets/images/favicon.png"> -->
-    
+
     <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/aos.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
@@ -88,7 +89,8 @@
 
     <!-- about our missiong section end -->
     <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
-    <script src="{{url('public/frontend/home/')}}/assets/js/swiper-bundle.min.js"></script>
+    <!-- <script src="{{url('public/frontend/home/')}}/assets/js/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- <script src="{{url('public/frontend/home/')}}/assets/js/bootstrap.bundle.min.js"></script>
@@ -200,6 +202,24 @@
             window.requestAnimationFrame(step);
         }
         const obj = document.getElementById("value");
+
+        var testiCrousal = new Swiper(".testimonial-crousal", {
+            direction: "vertical",
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            observer: true,
+            observeParents: true,
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 60,
+            centeredSlides: true,
+        });
     </script>
 
 </body>
