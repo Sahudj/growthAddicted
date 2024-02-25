@@ -18,6 +18,7 @@
     <script src="{{url('public/frontend/home/')}}/assets/js/smooth-scrollbar.js"></script>
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -77,11 +78,72 @@
             </div>
             <!-- NAV BAR END HERE  -->
             <div class="dynamic-section">
-
                 @yield('content')
-
             </div>
 
+            <!-- FOOTER  -->
+            <div class="footer-section">
+                <div class="footeer-wrapper">
+                    <div class="cols1">
+                        <img class="logo" width="200" src="{{url('public/frontend/home/')}}/assets/images/logo3.png" alt="logo-img">
+                        <p>Growth Addicted is more than a platform, it is your trusted partner to help you do what you do best: help as many PEOPLE as possible TO fulfill their dreams & get best career options. Access to top learning on your finger tip.</p>
+                    </div>
+                    <div class="cols2">
+                        <h1>INFORMATION</h1>
+                        <ul>
+                            <li><a href="">Disclaimer</a></li>
+                            <li><a href="">Refund Policy</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Terms & Conditions</a></li>
+                            <li><a href="">Msme Certificate</a></li>
+                        </ul>
+                    </div>
+                    <div class="cols3">
+                        <h1>GET IN TOUCH</h1>
+                        <div class="info-cont">
+                            <div class="phone-cont">
+                                <span class="material-symbols-outlined">
+                                    call
+                                </span> +91 8962479929
+                            </div>
+                            <div class="phone-cont">
+                                <span class="material-symbols-outlined">
+                                    mail
+                                </span> care@growthaddicted.com
+                            </div>
+                            <div class="phone-cont">
+                                <span class="material-symbols-outlined">
+                                    apartment
+                                </span> H-70, Ward No. 31, Shivaji Nagar, Near JP Hospital, Bhopal
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cols4">
+                        <h1>LATEST UPDATES</h1>
+                        <div class="latest-update-cont">
+                            <input type="text" placeholder="Your Email Address ">
+                            <button class="pri-btn">send</button>
+                            <div class="social-icon-cont">
+                                <a href="https://www.facebook.com/groups/549766590256463/">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://instagram.com/growthaddicted.official?igshid=YmMyMTA2M2Y=">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCGDfFz8ubROUpZbVxvAefWg">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -103,7 +165,7 @@
         $(document).ready(function() {
             var navbar = $('#navbar');
             var lastScrollTop = 0;
-            $('#home-page').scroll(function() {
+            $(window).scroll(function() {
 
                 var scrollTop = $(this).scrollTop();
 
@@ -120,8 +182,8 @@
             });
 
 
-            $('#home-page').scroll(function() {
-                if ($('#home-page').scrollTop() >= 80) {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= 80) {
                     navbar.addClass('scrolled');
                 } else {
                     navbar.removeClass('scrolled');

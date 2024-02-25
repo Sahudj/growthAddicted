@@ -102,7 +102,7 @@
 
                             </div>
 
-                            <div class="center-video-cont">
+                            <div class="center-video-cont"  data-aos="fade-up" data-aos-duration="2300">
                                 <div class="play-btn">
                                     <span class="material-symbols-outlined">
                                         play_arrow
@@ -690,7 +690,7 @@
                     <h1>Follow Us For More</h1>
                     <h3>Infotainment Content</h3>
                     <div>
-                        <a href="">@growthaddicted</a>
+                        <a href="https://instagram.com/growthaddicted.official?igshid=YmMyMTA2M2Y=">@growthaddicted.official</a>
                     </div>
                 </div>
             </div>
@@ -837,6 +837,58 @@
 
                 <div class="download-btn">
                     <a class="pri-btn" href="https://testimonial.to/resources/16-video-testimonials-examples">Download Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- book section  -->
+
+        <div class="faq-section">
+            <div class="faq-sec-wrapper">
+                <div class="faq-text-cont">
+                    <h1>Feed Your Curiosity </h1>
+                    <h3>Answers to Your Burning Questions</h3>
+                </div>
+                <div class="main-cont">
+                    <details>
+                        <summary>WHAT IS GROWTH ADDICTED?</summary>
+                        <p>We provide a variety of online courses on career, soft skills, and business development on our ed-tech platform, Growth Addicted. By bridging the gap between education and entrepreneurship, what began as a plan to create jobs during the epidemic has evolved into a revolution in the gig economy.</p>
+                    </details>
+                    <details>
+                        <summary>IS THERE ANY TIME LIMIT OF COURSES?</summary>
+                        <p>No, there is no time limit of courses. you can access it anytime and anywhere you want.</p>
+                    </details>
+                    <details>
+                        <summary>Will i get certificate after course?</summary>
+                        <p>Yes, after finishing the courses, you get an organizational certification. Not only that, but our courses also bear the MSME certification, which further increases their legitimacy. You will obtain a certificate at the end of these courses, which attests to your accomplishment.</p>
+                    </details>
+                    <details>
+                        <summary>What opportunity you provide?</summary>
+                        <p>Growth Addicted provides its students with countless options, including mentoring them in all areas of their careers and helping them advance their level of expertise. Additionally, it improves your social media presence, which helps in platform monetization.</p>
+                    </details>
+                    <details>
+                        <summary>What kind of skill based courses do you provide?</summary>
+                        <p>Website Development, Instagram , Digital Marketing, Affiliate Marketing Mastery, Facebook Ads , Stock Market , and many more skill-based courses are available at Growth Addicted. Additionally, Growth Addicted offers top-notch training sessions under the "In-demand" sector.</p>
+                    </details>
+                    <details>
+                        <summary>Is my payment information secure?</summary>
+                        <p>Yes, we do take your payment information security very seriously. To guarantee the security of your payment information, we employ secure payment gateways and industry-standard encryption.</p>
+                    </details>
+                    <details>
+                        <summary>Can i contact support if i have questions or issues?</summary>
+                        <p>Of course! Our committed support team is available to help. You can use the contact details on our website to get in touch with our support team if you need help, have any queries, or are experiencing technical issues.</p>
+                    </details>
+                    <details>
+                        <summary>How do these courses help me to start my freelancing journey?</summary>
+                        <p>You can launch your freelance career after finishing a course and becoming an expert in a particular field. You may set up your freelancing profile on numerous websites, such as Fiverr, Freelancer, Upwork, and many more, and start taking on different assignments. In fact, this might assist you in earning a respectable sum of money.</p>
+                    </details>
+                    <details>
+                        <summary>Is it one time fee or monthly fee?</summary>
+                        <p>very package you purchase just requires a one-time payment, and you will have lifelong access to the course.</p>
+                    </details>
+                    <details>
+                        <summary>Is growth addicted government verified?</summary>
+                        <p>Yes, we are Udhyam registered.</p>
+                    </details>
                 </div>
             </div>
         </div>
