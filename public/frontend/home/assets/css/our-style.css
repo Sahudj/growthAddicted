@@ -964,11 +964,14 @@ html::-webkit-scrollbar-thumb:hover {
 .home-page .home-page-wrap .courses-section .courses-wrapper h1 {
   text-align: center;
   color: #000528;
+  text-transform: uppercase;
   font-size: 3em;
 }
 .home-page .home-page-wrap .courses-section .courses-wrapper h3 {
   text-align: center;
   font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 .home-page .home-page-wrap .courses-section .courses-wrapper .course-card-wrapper {
   margin: 200px 0 0 0;
@@ -1113,6 +1116,7 @@ html::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 .home-page .home-page-wrap .growth-add-section .grwt-add-wrapper .heading::before {
   content: "";
@@ -1169,6 +1173,7 @@ html::-webkit-scrollbar-thumb:hover {
 .home-page .home-page-wrap .steps-grwt-section .steps-grwt-wrapper .heading {
   font-size: 3em;
   text-align: center;
+  text-transform: uppercase;
 }
 .home-page .home-page-wrap .steps-grwt-section .steps-grwt-wrapper .steps-cont {
   height: 80%;

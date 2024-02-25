@@ -1192,12 +1192,15 @@ html {
                 h1 {
                     text-align: center;
                     color: #000528;
+                    text-transform: uppercase;
                     font-size: 3em;
                 }
 
                 h3 {
                     text-align: center;
                     font-size: 1.5em;
+                    margin-top: 20px;
+                    text-transform: uppercase;
                 }
 
                 .course-card-wrapper {
@@ -1403,6 +1406,7 @@ html {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    text-transform: uppercase;
 
                     &::before {
                         content: '';
@@ -1471,6 +1475,7 @@ html {
                 .heading {
                     font-size: 3em;
                     text-align: center;
+                    text-transform: uppercase;
                 }
 
                 .steps-cont {

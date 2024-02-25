@@ -83,21 +83,21 @@
 
                     </div>
                     <div class="ovly-sec">
-                        <h1 class="aos-init aos-animate" data-aos="fade-up">Crafting Success in the Digital Arena<br> Personalized Marketing Mastery</h1>
+                        <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Crafting Success in the Digital Arena<br> Personalized Marketing Mastery</h1>
                         <div class="center-cont">
                             <div class="center-cont-top">
                                 <div class="content-box">
-                                    <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/content-creator.png" alt="content creator">
-                                    <div class="text">Engaging Social Media Content Creation</div>
+                                    <img data-aos="zoom-in-down" data-aos-duration="1000" width="200px" src="{{url('public/frontend/home/')}}/assets/images/content-creator.png" alt="content creator">
+                                    <div class="text" data-aos="fade-up" data-aos-duration="1000">Engaging Social Media Content Creation</div>
                                 </div>
                                 <div class="content-box">
-                                    <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/leadership.png" alt="content creator">
-                                    <div class="text">Webinars and Virtual Events for Thought Leadership</div>
+                                    <img data-aos="zoom-in-down" data-aos-duration="1300" width="200px" src="{{url('public/frontend/home/')}}/assets/images/leadership.png" alt="content creator">
+                                    <div class="text" data-aos="fade-up" data-aos-duration="1300">Webinars and Virtual Events for Thought Leadership</div>
                                 </div>
 
                                 <div class="content-box">
-                                    <img width="200px" src="{{url('public/frontend/home/')}}/assets/images/practice.png" alt="content creator">
-                                    <div class="text">Inclusive and Accessible Marketing Practices</div>
+                                    <img data-aos="zoom-in-down" data-aos-duration="1500" width="200px" src="{{url('public/frontend/home/')}}/assets/images/practice.png" alt="content creator">
+                                    <div class="text" data-aos="fade-up" data-aos-duration="1500">Inclusive and Accessible Marketing Practices</div>
                                 </div>
 
                             </div>
@@ -122,7 +122,6 @@
         <!-- HEADER SECTION  -->
         <!-- VIDEO SECTION START HERE  -->
         <div class="video-section">
-            <a data-scroll href="#bazinga">Anchor Link</a>
             <div class="video-section-wrapper">
                 <div class="v-thumb">
                     <div class="v-section-left">
@@ -333,8 +332,8 @@
         <!-- OUR LEARNING OPPORTUNITY END HERE  -->
         <div class="courses-section">
             <div class="courses-wrapper">
-                <h1>Our Courses</h1>
-                <h3>Education knows no borders; it is the key to unlocking a world of endless possibilities </h3>
+                <h1 data-aos="fade-up" data-aos-duration="1000">Our Courses</h1>
+                <h3 data-aos="fade-up" data-aos-duration="1500">Education knows no borders; it is the key to unlocking a world of endless possibilities </h3>
                 <?php
                 $packageId = '';
                 $orderStatus = '';
@@ -456,7 +455,7 @@
         <!-- WHY GROWTH ADDICTED -->
         <div class="growth-add-section" id="whygrthaddicted">
             <div class="grwt-add-wrapper">
-                <h1 class="heading">Why Growth Addicted</h1>
+                <h1 class="heading" data-aos="fade-up" data-aos-duration="1000">Why Growth Addicted</h1>
                 <div class="grwt-add-cont">
                     <div class="count-cont">
                         <h1><span id="animval1"></span> +</h1>
@@ -484,20 +483,20 @@
                         <div class="sbar"></div>
                     </div>
                     <div class="steps">
-                        <div class="stp">
+                        <div class="stp" data-aos="flip-up" data-aos-duration="1000">
                             <span class="material-symbols-outlined">
                                 search
                             </span>
                             <h3>Find Course</h3>
                         </div>
-                        <div class="stp">
+                        <div class="stp" data-aos="flip-up" data-aos-duration="1000">
                             <span class="material-symbols-outlined">
                                 stars
                             </span>
                             <h3>Book Seat</h3>
 
                         </div>
-                        <div class="stp">
+                        <div class="stp" data-aos="flip-up" data-aos-duration="1000">
                             <span class="material-symbols-outlined">
                                 editor_choice
                             </span>
@@ -620,7 +619,7 @@
                 <!-- <img src="{{url('public/frontend/home/')}}/assets/images/we_best.png" alt="content creator"> -->
                 <h1>why we are best from others</h1>
                 <div class="card-cont">
-                    <div class="special-card">
+                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="1000">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest1.png" alt="content creator">
@@ -632,7 +631,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card">
+                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="1500">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest5.png" alt="content creator">
@@ -644,7 +643,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card">
+                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="2000">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest2.png" alt="content creator">
@@ -656,7 +655,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card">
+                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="2500">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest3.png" alt="content creator">
@@ -668,7 +667,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card">
+                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="3000">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest4.png" alt="content creator">
