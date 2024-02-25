@@ -183,7 +183,33 @@ html {
 
 }
 
-
+.modal {
+    position: fixed;
+    display: none;
+    padding: 10px;
+    // box-shadow: 0 0 10px 10px #ccc;
+    z-index: 100;
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    background: #000;
+    top: 50%;
+    transition: all 0.5s ease-in;  
+    transform: translate(-50%,-50%);
+    .modalClose{
+        position: absolute;
+        top:20px;
+        right:-40px;
+        background: transparent;
+        font-size: 2em;
+        color: #fff;
+        height: 30px;
+        width: 30px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+  }
 
 .heading-with-bar {
     text-align: center;
@@ -449,6 +475,14 @@ html {
                     align-items: center;
                     border-radius: 50%;
                     background: #c3c6ff4d;
+                }
+            }
+
+            .menu-btn {
+                display: none;
+
+                span {
+                    color: #fff;
                 }
             }
         }
@@ -820,6 +854,7 @@ html {
                                 }
 
                                 .play-btn {
+                                    text-decoration: none;
                                     height: 80px;
                                     width: 80px;
                                     // border-radius: 50%;
@@ -945,7 +980,7 @@ html {
                         //     border-radius: 0;
                         //     transition: 1s ease;
                         // }
-                        &:hover {
+                        &.open {
                             width: 100%;
                             height: 100%;
                             border-radius: 0;
@@ -957,24 +992,24 @@ html {
                                 height: 100%;
                                 display: block;
                                 transition: 0.5 ease;
-
-                                video {
-                                    width: 100%;
-                                    height: 100%;
-
-                                }
+                                .v-frame{
+                                    display: block;
+                                  }
                             }
                         }
 
                         span {
                             font-size: 7em;
                             color: #ffffff96;
-
+                            cursor: pointer;
                         }
 
                         .video-box {
                             display: none;
                             transition: 0.5 ease;
+                            .v-frame{
+                              display: none;
+                            }
                         }
 
                     }
@@ -2768,4 +2803,26 @@ html {
     100% {
         margin-top: 0;
     }
+}
+
+
+//   media screen for 991px 
+@media only screen and (max-width: 991px) {
+    .nav-bar {
+        .nav-bar-wrap {
+           .nav-wrap-middle{
+
+           } 
+           .nav-wrap-right{
+
+           }
+        }
+    }
+    // .menu-btn {
+    //     display: block;
+
+    //     span {
+    //         color: #fff;
+    //     }
+    // }
 }

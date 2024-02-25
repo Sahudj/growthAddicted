@@ -156,6 +156,33 @@ html::-webkit-scrollbar-thumb:hover {
   transition: 0.5s ease;
 }
 
+.modal {
+  position: fixed;
+  display: none;
+  padding: 10px;
+  z-index: 100;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  background: #000;
+  top: 50%;
+  transition: all 0.5s ease-in;
+  transform: translate(-50%, -50%);
+}
+.modal .modalClose {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  background: transparent;
+  font-size: 2em;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
 .heading-with-bar {
   text-align: center;
   font-size: 1.4em;
@@ -378,6 +405,12 @@ html::-webkit-scrollbar-thumb:hover {
   align-items: center;
   border-radius: 50%;
   background: rgba(195, 198, 255, 0.3019607843);
+}
+.nav-bar .nav-bar-wrap .nav-wrap-right .menu-btn {
+  display: none;
+}
+.nav-bar .nav-bar-wrap .nav-wrap-right .menu-btn span {
+  color: #fff;
 }
 
 .footer-section {
@@ -676,6 +709,7 @@ html::-webkit-scrollbar-thumb:hover {
   transition: width 0.5s ease;
 }
 .home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .ovly-sec .center-cont .center-video-cont .play-btn {
+  text-decoration: none;
   height: 80px;
   width: 80px;
   color: #fff;
@@ -772,30 +806,33 @@ html::-webkit-scrollbar-thumb:hover {
   z-index: 2;
   transition: 1s ease;
 }
-.home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right:hover {
+.home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right.open {
   width: 100%;
   height: 100%;
   border-radius: 0;
   transition: 1s ease;
   padding: 20px;
 }
-.home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right:hover .video-box {
+.home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right.open .video-box {
   width: 100%;
   height: 100%;
   display: block;
   transition: 0.5 ease;
 }
-.home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right:hover .video-box video {
-  width: 100%;
-  height: 100%;
+.home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right.open .video-box .v-frame {
+  display: block;
 }
 .home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right span {
   font-size: 7em;
   color: rgba(255, 255, 255, 0.5882352941);
+  cursor: pointer;
 }
 .home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right .video-box {
   display: none;
   transition: 0.5 ease;
+}
+.home-page .home-page-wrap .video-section .video-section-wrapper .v-thumb .v-section-right .video-box .v-frame {
+  display: none;
 }
 .home-page .home-page-wrap .education-section {
   width: 100%;

@@ -73,6 +73,11 @@
                                 <span class="material-symbols-outlined">shopping_cart</span>
                             </a>
                         </div>
+                        <div class="menu-btn">
+                            <span class="material-symbols-outlined">
+                                menu
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -281,6 +286,40 @@
             slidesPerView: 1,
             spaceBetween: 60,
             centeredSlides: true,
+        });
+
+        $("#playBtnmodal").on("click", function(e) {
+            var wrapper = $("#video-modal");
+            var href = $(this).attr("href");
+            var customFrame = '<iframe src=' + href + ' width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>';
+            $(wrapper).append(customFrame);
+            $('.modal').show();
+            e.preventDefault();
+        });
+        $("#modalClose").on("click", function(e) {
+            var wrapper = $("#video-modal");
+            $(wrapper).html('');
+            $('.modal').hide();
+            e.preventDefault();
+        });
+
+        $("#v-play-btn").on("click", function(e) {
+            var vidWrap = $(".video-box");
+            var customFrame = '<iframe src=' + 'https://www.youtube.com/embed/CTUd15B5rGc?si=BJISJXGYcQXGNvSf' + ' width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>';
+            $('.v-section-right').addClass('open');
+            $(vidWrap).append(customFrame);
+            $('#v-close-btn').show();
+            $('#v-play-btn').hide();
+            e.preventDefault();
+        });
+
+        $("#v-close-btn").on("click", function(e) {
+            var vidWrap = $(".video-box");
+            $('.v-section-right').removeClass('open');
+            $(vidWrap).html('');
+            $('#v-close-btn').hide();
+            $('#v-play-btn').show();
+            e.preventDefault();
         });
     </script>
 

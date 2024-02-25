@@ -13,6 +13,17 @@
 </style>
 <!-- banner section start -->
 <div class="home-page" id="home-page">
+    <!-- modal start here  -->
+    <div class="modal">
+        <button id="modalClose" class="modalClose"><span class="material-symbols-outlined">
+                close
+            </span></button>
+        <div id="video-modal" style="width: 100%; height:100%;">
+
+        </div>
+    </div>
+    <!-- modal end here  -->
+
     <div class="home-page-wrap">
         <!-- HEADER SECTION  -->
         <div class="home-header">
@@ -102,12 +113,12 @@
 
                             </div>
 
-                            <div class="center-video-cont"  data-aos="fade-up" data-aos-duration="2300">
-                                <div class="play-btn">
+                            <div class="center-video-cont" data-aos="fade-up" data-aos-duration="2300">
+                                <a class="play-btn" id="playBtnmodal" href="https://www.youtube.com/embed/7GkGArj-ugk?si=cgmWLK7QyBWj5Trn">
                                     <span class="material-symbols-outlined">
                                         play_arrow
                                     </span>
-                                </div>
+                                </a>
                                 <div class="play-text">
                                     See Our Work
                                 </div>
@@ -130,12 +141,16 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, consequuntur aliquam dolorem totam cupiditate consequatur est impedit repellat deserunt accusamus nesciunt beatae vitae dolorum officia dignissimos cumque sapiente. Voluptate, laborum?
                         </div>
                     </div>
-                    <div class="v-section-right open">
+                    <div class="v-section-right ">
                         <div class="video-box">
-                            <video src="" controls></video>
+                            <!-- <video src="https://youtu.be/CTUd15B5rGc?si=0x_d4DBtYnV1U70E" controls></video> -->
+
                         </div>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined" id="v-play-btn">
                             play_circle
+                        </span>
+                        <span style="display:none;" class="material-symbols-outlined" id="v-close-btn">
+                            cancel
                         </span>
                     </div>
                 </div>
@@ -606,7 +621,7 @@
                         <p> propels the addiction to cultivate flourishing plants. </p>
                     </div>
                     <div class="btn-cont">
-                        <a class="third-btn" href="">Learn more</a>
+                        <a class="third-btn" href="https://www.instagram.com/plantwithgrowthaddicted?igsh=eWRkMHc1Z3czdXFo&utm_source=qr">Learn more</a>
                     </div>
                     <img src="{{url('public/frontend/home/')}}/assets/images/plant2.gif" alt="content creator">
 
@@ -619,7 +634,7 @@
                 <!-- <img src="{{url('public/frontend/home/')}}/assets/images/we_best.png" alt="content creator"> -->
                 <h1>why we are best from others</h1>
                 <div class="card-cont">
-                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="1000">
+                    <div class="special-card" data-aos="zoom-out-up" data-aos-duration="1000">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest1.png" alt="content creator">
@@ -631,7 +646,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="1500">
+                    <div class="special-card" data-aos="zoom-out-up" data-aos-duration="1500">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest5.png" alt="content creator">
@@ -643,7 +658,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="2000">
+                    <div class="special-card" data-aos="zoom-out-up" data-aos-duration="2000">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest2.png" alt="content creator">
@@ -655,7 +670,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="2500">
+                    <div class="special-card" data-aos="zoom-out-up" data-aos-duration="2500">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest3.png" alt="content creator">
@@ -667,7 +682,7 @@
                             <a>Start Now</a>
                         </div>
                     </div>
-                    <div class="special-card" data-aos="zoom-out-up"  data-aos-duration="3000">
+                    <div class="special-card" data-aos="zoom-out-up" data-aos-duration="3000">
                         <div class="front">
                             <div class="card-img">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/weBest4.png" alt="content creator">
