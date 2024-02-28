@@ -643,6 +643,15 @@ html::-webkit-scrollbar-thumb:hover {
   height: 270px;
   background: rgb(255, 255, 255);
   border-radius: 10px;
+  overflow: hidden;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen .temp-scroll .mar-grp .momnts-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .ovly-sec {
   width: 100%;

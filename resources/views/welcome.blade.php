@@ -42,51 +42,99 @@
                     <div class="moving-screen">
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
-                                <div class="momnts-card">1</div>
-                                <div class="momnts-card">2</div>
-                                <div class="momnts-card">3</div>
-                                <div class="momnts-card">4</div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1460.jpg?updatedAt=1709053885255" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1038.jpg?updatedAt=1709053875997" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1391.jpg?updatedAt=1709053872881" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1411.jpg?updatedAt=1709053873945" alt="">
+                                </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
-                                <div class="momnts-card">6</div>
-                                <div class="momnts-card">7</div>
-                                <div class="momnts-card">8</div>
-                                <div class="momnts-card">9</div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1460.jpg?updatedAt=1709053885255" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1480.jpg?updatedAt=1709053885183" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0716.jpg?updatedAt=1709053870975" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE9564.jpg?updatedAt=1709053879246" alt="">
+                                </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
                         </div>
 
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
-                                <div class="momnts-card">1</div>
-                                <div class="momnts-card">2</div>
-                                <div class="momnts-card">3</div>
-                                <div class="momnts-card">4</div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1028.jpg?updatedAt=1709053868630" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0844.jpg?updatedAt=1709053869521" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0782.jpg?updatedAt=1709053870383" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0879.jpg?updatedAt=1709053870566" alt="">
+                                </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
-                                <div class="momnts-card">6</div>
-                                <div class="momnts-card">7</div>
-                                <div class="momnts-card">8</div>
-                                <div class="momnts-card">9</div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0873.jpg?updatedAt=1709053870826" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0704.jpg?updatedAt=1709053868094" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-26%20at%206.05.25%20PM.jpeg?updatedAt=1708976257573" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0988.jpg?updatedAt=1709053866197" alt="">
+                                </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
                         </div>
 
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
-                                <div class="momnts-card">1</div>
-                                <div class="momnts-card">2</div>
-                                <div class="momnts-card">3</div>
-                                <div class="momnts-card">4</div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0939.jpg?updatedAt=1709053862024" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.32.01%20PM.jpeg?updatedAt=1708976253799" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.32.14%20PM.jpeg?updatedAt=1708976253702" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.31.44%20PM.jpeg?updatedAt=1708976253592" alt="">
+                                </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
-                                <div class="momnts-card">6</div>
-                                <div class="momnts-card">7</div>
-                                <div class="momnts-card">8</div>
-                                <div class="momnts-card">9</div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.28.41%20PM.jpeg?updatedAt=1708976253705" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-26%20at%206.03.01%20PM.jpeg?updatedAt=1708976253709" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE9564.jpg?updatedAt=1709053879246" alt="">
+                                </div>
+                                <div class="momnts-card">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-26%20at%206.04.59%20PM.jpeg?updatedAt=1708976257353" alt="">
+                                </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
                         </div>
@@ -94,7 +142,7 @@
 
                     </div>
                     <div class="ovly-sec">
-                        <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Crafting Success in the Digital Arena<br> Personalized Marketing Mastery</h1>
+                        <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Start Where You're We'll Take You<br> Where You Want to Go! </h1>
                         <div class="center-cont">
                             <div class="center-cont-top">
                                 <div class="content-box">
@@ -138,7 +186,7 @@
                     <div class="v-section-left">
                         <h1>Lets l<span>e</span>arn <br> beyond the limits</h1>
                         <div class="text-desc">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, consequuntur aliquam dolorem totam cupiditate consequatur est impedit repellat deserunt accusamus nesciunt beatae vitae dolorum officia dignissimos cumque sapiente. Voluptate, laborum?
+                        Making education affordable. and accessible accross the  INDIA
                         </div>
                     </div>
                     <div class="v-section-right ">
@@ -164,7 +212,7 @@
                 <div class="edtn-left">
                     <div class="left-wrapper">
                         <h1>The scaffolding of a successful future is constructed through education.</h1>
-                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum fugit ea debitis minima, tempore ratione id? Autem iure omnis, quis amet et, laboriosam aut accusamus, deserunt ratione ad ut officia!</h3>
+                        <h3>Growth Addicted: Your gateway to unparalleled digital marketing success. Elevate your brand with cutting-edge strategies, expert insights, and data-driven solutions. Unleash the power of targeted campaigns, SEO mastery, and social media dominance. Join the journey to exponential growth and make your online presence a force to be reckoned with. Dive into the future of marketing with Growth Addicted – where success is not an option, but a certainty</h3>
                         <div class="btn-cont">
                             <a href="" class="pri-btn">BOOST YOUR LEARING</a>
                         </div>
@@ -183,10 +231,10 @@
         <div class="learning-opty">
             <div class="l-o-wrapper">
                 <div class="text-cont">
-                    <h4>CLIENTS ACROSS INDUSTRIES</h4>
+                    <!-- <h4>CLIENTS ACROSS INDUSTRIES</h4> -->
                     <h1>OUR LEARNING OPPORTUNITY</h1>
-                    <h3>From startups to Fortune 500 companies,</h3>
-                    <h2>we create custom solutions that grow brands online</h2>
+                    <h3>Find the best course to grow your skills</h3>
+                    <!-- <h2>Find the best course to grow your skills</h2> -->
                 </div>
                 <div class="moving-screen">
                     <div class="temp-scroll" style="--t:25s;">
@@ -195,36 +243,36 @@
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Affiliate Marketing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Digital Marketing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Website Development</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Stock market</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Linkdin Mastermind</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                         </div>
                         <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
@@ -232,36 +280,36 @@
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Art of Storytelling</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Content Writing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Social Media Marketing (SMM)</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Freelancing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>0
+                                <h1>Mobile Video Editing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                         </div>
                     </div>
@@ -271,36 +319,36 @@
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Professtional Video Editing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Graphic Designing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Facebook Ads</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Instagram Marketing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Canva Editing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                         </div>
                         <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
@@ -308,36 +356,36 @@
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Email Marketing</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Public Speaking</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Youtube Guide</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>
+                                <h1>Meditation & Yoga classes</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                             <div class="momnts-card">
                                 <span class="material-symbols-outlined">
                                     stars
                                 </span>
-                                <h1>Personal development</h1>
-                                <h3>300</h3>0
+                                <h1>Art of Sales</h1>
+                                <!-- <h3>300</h3> -->
                             </div>
                         </div>
                     </div>
@@ -502,20 +550,20 @@
                             <span class="material-symbols-outlined">
                                 search
                             </span>
-                            <h3>Find Course</h3>
+                            <h3>Explore</h3>
                         </div>
                         <div class="stp" data-aos="flip-up" data-aos-duration="1000">
                             <span class="material-symbols-outlined">
-                                stars
+                                menu_book
                             </span>
-                            <h3>Book Seat</h3>
+                            <h3>learn</h3>
 
                         </div>
                         <div class="stp" data-aos="flip-up" data-aos-duration="1000">
                             <span class="material-symbols-outlined">
-                                editor_choice
+                                trending_up
                             </span>
-                            <h3>Certificates</h3>
+                            <h3>Grow</h3>
 
                         </div>
                     </div>
@@ -538,19 +586,19 @@
                             <div class="swiper-slide">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Aman Upadhayay</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Aman Parmar</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Sagar Deshmukh</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
