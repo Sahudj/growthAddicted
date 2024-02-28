@@ -62,12 +62,22 @@
                         </ul>
                     </div>
                     <div class="nav-wrap-right">
+                        @if(!auth()->user())
                         <div class="action-btn">
-                            <a href="#" class="sign-up">SIGN UP</a>
+                            <a href="{{ route('login') }}" class="sign-up">SIGN UP</a>
                         </div>
                         <div class="action-btn">
-                            <a href="#" class="login">LOGIN</a>
+                            <a href="{{ route('login') }}" class="login">LOGIN</a>
                         </div>
+                        @endif
+                        @auth()
+                        @if(auth()->user()->role == 1)
+                        <li><a class="login" href="{{ url('admin/dashboard') }}" data-hover="Page">Dashboard</a></li>
+                        @else
+                        <li><a class="login" href="{{ url('user/dashboard') }}" data-hover="Page">Dashboard</a></li>
+                        @endif
+
+                        @endauth
                         <div class="action-btn">
                             <a href="#" class="shoping">
                                 <span class="material-symbols-outlined">shopping_cart</span>

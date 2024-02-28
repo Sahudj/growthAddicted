@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{url('public/frontend/login')}}/assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{url('public/frontend/login')}}/assets/css/style.css">
+    <link rel="stylesheet" href="{{url('public/frontend/login')}}/assets/css/style.css?<?php echo time(); ?>">
     <!----------- favicon link --------->
     <!-- <link rel="shortcut icon" href="assets/images/Logo.ico" type="image/x-icon"> -->
     <link rel="shortcut icon" type="image/png" href="{{url('public/frontend/login')}}/assets/images/favicon.png">

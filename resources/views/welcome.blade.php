@@ -36,7 +36,7 @@
                             <h4 data-aos="fade-up" data-aos-duration="2000">Achieve online success through dynamic learning branding, and digital marketing.</h4>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="2300">
-                            <a class="pri-btn" href="#">Get Started</a>
+                            <a class="pri-btn" href="{{ url('signup') }}">Get Started</a>
                         </div>
                     </div>
                     <div class="moving-screen">
