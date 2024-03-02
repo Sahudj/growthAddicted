@@ -1788,6 +1788,7 @@ html::-webkit-scrollbar-thumb:hover {
   padding: 25px;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 .home-page .home-page-wrap .testimonialt-section .testimonial-wrapper .testimonial-cont .left-wrap .testimonial-crousal .testi-card .testi-card-wrap .img-box .img-box-wrap .play-btn span {
   font-size: 5em;
@@ -1835,19 +1836,19 @@ html::-webkit-scrollbar-thumb:hover {
 }
 @keyframes preLoad {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
   }
   10% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
   }
   30% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
   }
   100% {
     display: none;
@@ -1929,19 +1930,19 @@ html::-webkit-scrollbar-thumb:hover {
 }
 @keyframes nextPage {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
   }
 }
 .home-page .home-page-wrap .book-section .book-sec-wrapper .gap {
@@ -2050,364 +2051,364 @@ html::-webkit-scrollbar-thumb:hover {
 }
 @keyframes nextFlip1 {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -178px -2px;
     transform: rotateY(0deg);
   }
   10% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -210px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -178px -2px;
     transform: rotateY(0deg);
   }
   30% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -210px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -178px -2px;
     transform: rotateY(0deg);
   }
   50% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -210px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -178px -2px;
     transform: rotateY(0deg);
   }
   70% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -210px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -178px -2px;
     transform: rotateY(0deg);
   }
   90% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -210px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip2 {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   10.5% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   30.5% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   50.5% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   70.5% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -148px -2px;
     transform: rotateY(0deg);
   }
   90.5% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -238px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip3 {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   11% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   31% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   51% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   71% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -118px -2px;
     transform: rotateY(0deg);
   }
   91% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -268px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip4 {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   11.5% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   31.5% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   51.5% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   71.5% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -88px -2px;
     transform: rotateY(0deg);
   }
   91.5% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -298px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip5 {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -58px -2px;
     transform: rotateY(0deg);
   }
   12% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -328px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -58px -2px;
     transform: rotateY(0deg);
   }
   32% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -328px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -58px -2px;
     transform: rotateY(0deg);
   }
   52% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -328px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -58px -2px;
     transform: rotateY(0deg);
   }
   72% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -328px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -58px -2px;
     transform: rotateY(0deg);
   }
   92% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -328px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip6 {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -28px -2px;
     transform: rotateY(0deg);
   }
   12.5% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -358px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -28px -2px;
     transform: rotateY(0deg);
   }
   32.5% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -358px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -28px -2px;
     transform: rotateY(0deg);
   }
   52.5% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -358px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -28px -2px;
     transform: rotateY(0deg);
   }
   72.5% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -358px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -28px -2px;
     transform: rotateY(0deg);
   }
   92.5% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -358px -2px;
     transform: rotateY(180deg);
   }
 }
 @keyframes nextFlip7 {
   0% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -2px -2px;
     transform: rotateY(0deg);
   }
   13% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -388px -2px;
     transform: rotateY(180deg);
   }
   20% {
-    background-image: url("https://picsum.photos/420/300?random=2");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261");
     background-position: -2px -2px;
     transform: rotateY(0deg);
   }
   33% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -388px -2px;
     transform: rotateY(180deg);
   }
   40% {
-    background-image: url("https://picsum.photos/420/300?random=3");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398");
     background-position: -2px -2px;
     transform: rotateY(0deg);
   }
   53% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -388px -2px;
     transform: rotateY(180deg);
   }
   60% {
-    background-image: url("https://picsum.photos/420/300?random=4");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175");
     background-position: -2px -2px;
     transform: rotateY(0deg);
   }
   73% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -388px -2px;
     transform: rotateY(180deg);
   }
   80% {
-    background-image: url("https://picsum.photos/420/300?random=5");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354");
     background-position: -2px -2px;
     transform: rotateY(0deg);
   }
   93% {
-    background-image: url("https://picsum.photos/420/300?random=1");
+    background-image: url("https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170");
     background-position: -388px -2px;
     transform: rotateY(180deg);
   }

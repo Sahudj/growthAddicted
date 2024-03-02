@@ -186,7 +186,7 @@
                     <div class="v-section-left">
                         <h1>Lets l<span>e</span>arn <br> beyond the limits</h1>
                         <div class="text-desc">
-                        Making education affordable. and accessible accross the  INDIA
+                            Making education affordable. and accessible accross the INDIA
                         </div>
                     </div>
                     <div class="v-section-right ">
@@ -460,17 +460,33 @@
                             <div class="right-wrapper">
                                 <h3>{{$row->name}}</h3>
                                 @if($row->id == 2)
-                                <p>2 course</p>
-                                <p>Discover mastery in the Alpha Category with courses like "Affiliate Marketing Brahmastra," "Lead Generation Mastery," "Freelancing Masterclass," "Reselling Mastery," and "MS Word Mastery." Elevate your skills, stay updated, and unlock new opportunities. This curated selection ensures you thrive in affiliate marketing, lead generation, freelancing, reselling, and MS Word proficiency. Your path to success starts here!</p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        book_2
+                                    </span>2 course</p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Learn how to become a freelance social media manager with our training course! Discover essential skills like content creation, audience engagement, and analytics tracking. Get ready to kickstart your freelance career and help businesses thrive online!</p>
                                 @elseif($row->id == 3)
-                                <p>3COURSES + 2 BONUS COURSES </p>
-                                <p>Welcome to the Digital Skills Hub, your destination for mastery in essential digital skills. From conquering sales closure to securing your first sale, mastering Instagram, and excelling in MS Excel, these courses empower you to thrive in the dynamic digital landscape. Elevate your expertise and stay ahead in the world of digital skills with our curated offerings.</p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        book_2
+                                    </span>3COURSES + 2 BONUS COURSES </p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Join our digital skills hub bundle to learn how to succeed in the online world! We'll teach you everything from using social media effectively to marketing online. Get ready to boost your career and stay ahead in today's digital age!</p>
                                 @elseif($row->id == 4)
-                                <p>5 COURSES, 3+2 BONUS COURSES</p>
-                                <p>Welcome to the Personal Branding Hub, a premium collection of courses tailored for individuals seeking to elevate their online presence. Master YouTube, Facebook Ads, Mobile Editing, Canva, Reels & Shorts, and Video Marketing. Propel your personal brand to new heights with cutting-edge skills designed to captivate and engage your audience.</p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        book_2
+                                    </span>5 COURSES, 3+2 BONUS COURSES</p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Discover the power of personal branding! Our course will guide you through creating a unique online presence that reflects your strengths and values. Learn how to effectively showcase your skills, build credibility, and stand out in your industry. Elevate your personal brand and unlock new opportunities!</p>
                                 @else
-                                <p>10 COURSES + 11 BONUS COURSES</p>
-                                <p>Welcome to the Iconic Category – where excellence meets distinction. Elevate your skills with our extra premium courses, including the Art of Storytelling, Communication Mastery, Content and Copywriting, Email Marketing, English Speaking, LinkedIn Mastery, Public Speaking, Time Management, and Website Development. Unleash your potential in this exclusive collection and transcend ordinary learning.</p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        book_2
+                                    </span>10 COURSES + 11 BONUS COURSES</p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Explore our diverse range of skillful courses! From mastering social media to honing digital marketing techniques, we offer something for everyone. Elevate your skills and unlock new opportunities with our iconic courses!</p>
                                 @endif
 
                                 <div class="buy-cont">
@@ -770,7 +786,7 @@
                                         <div class="img-box">
                                             <div class="img-box-wrap">
                                                 <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
-                                                <div class="play-btn">
+                                                <div class="play-btn" id="testimonal-play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
                                                     </span>
@@ -779,14 +795,14 @@
                                         </div>
                                         <div class="desc">
                                             <div class="desc-wrap">
-                                                <h1>Animesh Mishra</h1>
+                                                <h1>Aman Parmar</h1>
                                                 <div class="rating">★ ★ ★ ★ ★</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                                <p>After joining Growth Addicted, I've not only acquired invaluable knowledge and skills in digital marketing but also witnessed a transformative journey, gaining insights that have elevated my confidence and proficiency in the field.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide testi-card ">
+                                <!-- <div class="swiper-slide testi-card ">
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
@@ -848,7 +864,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                             </div>
                             <div class="swiper-button-next"></div>
@@ -898,7 +914,7 @@
                 </div>
 
                 <div class="download-btn">
-                    <a class="pri-btn" href="https://testimonial.to/resources/16-video-testimonials-examples">Download Now</a>
+                    <a class="pri-btn" href="https://ik.imagekit.io/muwui4v4k/book_growth_addicted.pdf?updatedAt=1709222800754" download target="_blank">Download Now</a>
                 </div>
             </div>
         </div>
