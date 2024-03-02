@@ -321,6 +321,32 @@
             $('#v-play-btn').show();
             e.preventDefault();
         });
+
+        $("#testimonal-play-btn").on("click", function(e) {
+            e.preventDefault(); // Prevent the default behavior of the link
+
+            var wrapper = $("#video-modal");
+            var href = $(this).attr("href");
+
+            // Embed YouTube video URL with autoplay
+            var videoUrl = 'https://www.youtube.com/embed/9kzWnVhk4XI?autoplay=1&rel=0&modestbranding=1';
+
+            // Create an iframe element with the YouTube video URL
+            var customFrame = '<iframe width="100%" height="100%" src="' + videoUrl + '" frameborder="0" allowfullscreen></iframe>';
+
+            // Append the iframe to the modal wrapper
+            $(wrapper).html(customFrame);
+
+            // Show the modal
+            $('.modal').show();
+        });
+
+        // Add another event handler to close the modal
+        $("#close-modal-btn").on("click", function(e) {
+            var wrapper = $("#video-modal");
+            $(wrapper).html(''); // Remove the iframe content
+            $('.modal').hide(); // Hide the modal
+        });
     </script>
 
 </body>
