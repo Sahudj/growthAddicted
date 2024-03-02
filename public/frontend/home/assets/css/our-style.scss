@@ -813,7 +813,7 @@ html {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                gap: 25px;
+                                gap: 160px;
                                 color: #fff;
                                 font-weight: 700;
                                 font-size: 1.2em;
@@ -1207,6 +1207,13 @@ html {
                                 h3 {
                                     color: #fff;
                                     font-size: 1em;
+                                }
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                    object-position: center;
                                 }
                             }
                         }
@@ -2303,7 +2310,7 @@ html {
                 url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261'),
                 url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398'),
                 url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175'),
-                url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(109).png?updatedAt=1709225411354'),
+                url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(112).png?updatedAt=1709400541979'),
                 url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170');
             // $images: url('https://picsum.photos/420/300?random=1'),
             //     url('https://picsum.photos/420/300?random=2'),

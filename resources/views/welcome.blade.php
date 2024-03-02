@@ -43,31 +43,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1460.jpg?updatedAt=1709053885255" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1480.jpg?updatedAt=1709402141728" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1038.jpg?updatedAt=1709053875997" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1460.jpg?updatedAt=1709402140118" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1391.jpg?updatedAt=1709053872881" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1451.jpg?updatedAt=1709402140067" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1411.jpg?updatedAt=1709053873945" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE9564.jpg?updatedAt=1709402142394" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1460.jpg?updatedAt=1709053885255" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1411.jpg?updatedAt=1709402139946" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1480.jpg?updatedAt=1709053885183" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1038.jpg?updatedAt=1709402139891" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0716.jpg?updatedAt=1709053870975" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1391.jpg?updatedAt=1709402139877" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE9564.jpg?updatedAt=1709053879246" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1028.jpg?updatedAt=1709402139822" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
@@ -76,31 +76,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE1028.jpg?updatedAt=1709053868630" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0939.jpg?updatedAt=1709402136518" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0844.jpg?updatedAt=1709053869521" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0879.jpg?updatedAt=1709402136320" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0782.jpg?updatedAt=1709053870383" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0844.jpg?updatedAt=1709402136109" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0879.jpg?updatedAt=1709053870566" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0716.jpg?updatedAt=1709402136013" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0873.jpg?updatedAt=1709053870826" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.04.59%20PM.jpeg?updatedAt=1709402136018" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0704.jpg?updatedAt=1709053868094" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0704.jpg?updatedAt=1709402135917" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-26%20at%206.05.25%20PM.jpeg?updatedAt=1708976257573" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0873.jpg?updatedAt=1709402135696" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0988.jpg?updatedAt=1709053866197" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.05.25%20PM.jpeg?updatedAt=1709402135637" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
@@ -109,31 +109,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE0939.jpg?updatedAt=1709053862024" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_DSC3540.jpg?updatedAt=1709402135591" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.32.01%20PM.jpeg?updatedAt=1708976253799" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE07821.jpg?updatedAt=1709402135543" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.32.14%20PM.jpeg?updatedAt=1708976253702" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.30.20%20PM.jpeg?updatedAt=1709402132779" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.31.44%20PM.jpeg?updatedAt=1708976253592" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.41%20PM.jpeg?updatedAt=1709402132786" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-25%20at%2010.28.41%20PM.jpeg?updatedAt=1708976253705" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.32.14%20PM.jpeg?updatedAt=1709402132793" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-26%20at%206.03.01%20PM.jpeg?updatedAt=1708976253709" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.03.43%20PM.jpeg?updatedAt=1709402132753" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/_ONE9564.jpg?updatedAt=1709053879246" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.53%20PM.jpeg?updatedAt=1709402132655" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection/WhatsApp%20Image%202024-02-26%20at%206.04.59%20PM.jpeg?updatedAt=1708976257353" alt="">
+                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.31.44%20PM.jpeg?updatedAt=1709402132650" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
@@ -142,21 +142,21 @@
 
                     </div>
                     <div class="ovly-sec">
-                        <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Start Where You're We'll Take You<br> Where You Want to Go! </h1>
+                        <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Learn New Skills When<br> And Where You Like</h1>
                         <div class="center-cont">
                             <div class="center-cont-top">
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1000" width="200px" src="{{url('public/frontend/home/')}}/assets/images/content-creator.png" alt="content creator">
-                                    <div class="text" data-aos="fade-up" data-aos-duration="1000">Engaging Social Media Content Creation</div>
+                                    <img data-aos="zoom-in-down" data-aos-duration="1000" width="200px" src="https://ik.imagekit.io/muwui4v4k/headerSection1/flexonlinecouses.png?updatedAt=1709411315211" alt="content creator">
+                                    <div class="text" data-aos="fade-up" data-aos-duration="1000">Flexible Online Courses</div>
                                 </div>
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1300" width="200px" src="{{url('public/frontend/home/')}}/assets/images/leadership.png" alt="content creator">
-                                    <div class="text" data-aos="fade-up" data-aos-duration="1300">Webinars and Virtual Events for Thought Leadership</div>
+                                    <img data-aos="zoom-in-down" data-aos-duration="1300" width="200px" src="https://ik.imagekit.io/muwui4v4k/headerSection1/livevirtual.png?updatedAt=1709411315274" alt="content creator">
+                                    <div class="text" data-aos="fade-up" data-aos-duration="1300">Live Virtual Workshop</div>
                                 </div>
 
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1500" width="200px" src="{{url('public/frontend/home/')}}/assets/images/practice.png" alt="content creator">
-                                    <div class="text" data-aos="fade-up" data-aos-duration="1500">Inclusive and Accessible Marketing Practices</div>
+                                    <img data-aos="zoom-in-down" data-aos-duration="1500" width="200px" src="https://ik.imagekit.io/muwui4v4k/headerSection1/247.png?updatedAt=1709411315298" alt="content creator">
+                                    <div class="text" data-aos="fade-up" data-aos-duration="1500">27/7 Access to Resources</div>
                                 </div>
 
                             </div>
@@ -207,7 +207,7 @@
         <!-- VIDEO SECTION END HERE  -->
 
         <!-- EDUCATION SECTION START HERE  -->
-        <div class="education-section">
+        <!-- <div class="education-section">
             <div class="edtn-sec-wrapper">
                 <div class="edtn-left">
                     <div class="left-wrapper">
@@ -224,7 +224,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- EDUCATION SECTION END HERE  -->
 
         <!-- OUR LEARNING OPPORTUNITY START HERE  -->
@@ -240,152 +240,164 @@
                     <div class="temp-scroll" style="--t:25s;">
                         <div class="mar-grp">
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Affiliate Marketing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Affiliate%20Marketing.png?updatedAt=1709404669882" alt="">
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Digital Marketing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Digimark.png?updatedAt=1709405462380" alt="">
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Website Development</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/stockmark.png?updatedAt=1709405940782" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Stock market</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/contentwrit.png?updatedAt=1709406088037" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Linkdin Mastermind</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/webdev.png?updatedAt=1709406691336" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/lnkdmaster.png?updatedAt=1709407143199" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofstory.png?updatedAt=1709407284631" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/socialmed.png?updatedAt=1709407622412" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/freelancing.png?updatedAt=1709407743090" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/mobvidedit.png?updatedAt=1709408134795" alt="">
                             </div>
                         </div>
                         <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Art of Storytelling</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Affiliate%20Marketing.png?updatedAt=1709404669882" alt="">
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Content Writing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Digimark.png?updatedAt=1709405462380" alt="">
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Social Media Marketing (SMM)</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/stockmark.png?updatedAt=1709405940782" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Freelancing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/contentwrit.png?updatedAt=1709406088037" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Mobile Video Editing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/webdev.png?updatedAt=1709406691336" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/lnkdmaster.png?updatedAt=1709407143199" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofstory.png?updatedAt=1709407284631" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/socialmed.png?updatedAt=1709407622412" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/freelancing.png?updatedAt=1709407743090" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/mobvidedit.png?updatedAt=1709408134795" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="temp-scroll" style="--t:25s;">
                         <div class="mar-grp">
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Professtional Video Editing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/profvidediting.png?updatedAt=1709408772395" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Graphic Designing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/graphicdesg.png?updatedAt=1709409007243" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Facebook Ads</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/facebookads.png?updatedAt=1709409141432" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Instagram Marketing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/instamark.png?updatedAt=1709409334949" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Canva Editing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/canvaediting.png?updatedAt=1709409664114" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/emailmarketing.png?updatedAt=1709409942921" alt="">
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/pubspek.png?updatedAt=1709410067902" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/ytguide.png?updatedAt=1709410265314" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/medyog.png?updatedAt=1709410423921" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofsales.png?updatedAt=1709410857037" alt="">
+
                             </div>
                         </div>
                         <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Email Marketing</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/profvidediting.png?updatedAt=1709408772395" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Public Speaking</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/graphicdesg.png?updatedAt=1709409007243" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Youtube Guide</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/facebookads.png?updatedAt=1709409141432" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Meditation & Yoga classes</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/instamark.png?updatedAt=1709409334949" alt="">
+
                             </div>
                             <div class="momnts-card">
-                                <span class="material-symbols-outlined">
-                                    stars
-                                </span>
-                                <h1>Art of Sales</h1>
-                                <!-- <h3>300</h3> -->
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/canvaediting.png?updatedAt=1709409664114" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/emailmarketing.png?updatedAt=1709409942921" alt="">
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/pubspek.png?updatedAt=1709410067902" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/ytguide.png?updatedAt=1709410265314" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/medyog.png?updatedAt=1709410423921" alt="">
+
+                            </div>
+                            <div class="momnts-card">
+                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofsales.png?updatedAt=1709410857037" alt="">
+
                             </div>
                         </div>
                     </div>

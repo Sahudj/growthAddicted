@@ -291,7 +291,7 @@
         $("#playBtnmodal").on("click", function(e) {
             var wrapper = $("#video-modal");
             var href = $(this).attr("href");
-            var customFrame = '<iframe src=' + href + ' width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>';
+            var customFrame = '<iframe src=' + href + ' width="100%" height="100%" frameborder="0" scrolling="no" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             $(wrapper).append(customFrame);
             $('.modal').show();
             e.preventDefault();
@@ -347,6 +347,8 @@
             $(wrapper).html(''); // Remove the iframe content
             $('.modal').hide(); // Hide the modal
         });
+
+        
     </script>
 
 </body>
