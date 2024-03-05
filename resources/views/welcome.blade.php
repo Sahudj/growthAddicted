@@ -30,10 +30,22 @@
             <div class="home-header-top">
                 <div class="top-hd-bg">
                     <div class="top-hd-fg">
-                        <h3 data-aos="fade-up" data-aos-duration="1000">DIGITAL MASTERY HUB</h3>
+                        <div class="anim-cont">
+                            <section class="dytxt" style="text-align: right;">
+                                <div class="first">
+                                    <div>SHURUWAT</div>
+                                </div>
+                                <div class="second">
+                                    <div>शुरुवात</div>
+                                </div>
+                            </section>
+                            <p>Yahi Se hai</p>
+                        </div>
+                        <!-- <h3 data-aos="fade-up" data-aos-duration="1000">Shuruwat Yahi Se hai</h3> -->
                         <div class="fg-title">
-                            <h1 data-aos="fade-up" data-aos-duration="1500">Crafting Digital Success</h1>
-                            <h4 data-aos="fade-up" data-aos-duration="2000">Achieve online success through dynamic learning branding, and digital marketing.</h4>
+                            <h1 data-aos="fade-up" data-aos-duration="1500">Let's Learn Beyond The Limits</h1>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Making Education affordable and accessible accross</h4>
+                            <h3 data-aos="fade-up" data-aos-duration="2050" class="india-color">INDIA</h3>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="2300">
                             <a class="pri-btn" href="#">Get Started</a>
@@ -184,10 +196,10 @@
             <div class="video-section-wrapper">
                 <div class="v-thumb">
                     <div class="v-section-left">
-                        <h1>Lets l<span>e</span>arn <br> beyond the limits</h1>
-                        <div class="text-desc">
-                            Making education affordable. and accessible accross the INDIA
-                        </div>
+                        <h1>START WHERE YOU <span>ARE</span> <br></h1>
+                        <h2>
+                            WE'LL TAKE YOU WHERE YOU WANT TO GO !
+                        </h2>
                     </div>
                     <div class="v-section-right ">
                         <div class="video-box">
@@ -407,8 +419,8 @@
         <!-- OUR LEARNING OPPORTUNITY END HERE  -->
         <div class="courses-section">
             <div class="courses-wrapper">
-                <h1 data-aos="fade-up" data-aos-duration="1000">Our Courses</h1>
-                <h3 data-aos="fade-up" data-aos-duration="1500">Education knows no borders; it is the key to unlocking a world of endless possibilities </h3>
+                <h1 data-aos="fade-up" data-aos-duration="1000">OUR EDUCATIONAL BUNDLES</h1>
+                <h3 data-aos="fade-up" data-aos-duration="1500">EXPLORE A VARIETY OF COURSES AIMED AT MASTERING THE SECRETS TO SUCCEEDING IN THIS SOCIAL MEDIA ERA</h3>
                 <?php
                 $packageId = '';
                 $orderStatus = '';
@@ -554,7 +566,7 @@
                     </div>
                     <div class="count-cont">
                         <h1><span id="animval2"></span> +</h1>
-                        <h2>Subjects</h2>
+                        <h2>Trainings</h2>
                     </div>
                     <div class="count-cont">
                         <h1><span id="animval3"></span> K+</h1>

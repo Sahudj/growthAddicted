@@ -194,12 +194,13 @@ html {
     left: 50%;
     background: #000;
     top: 50%;
-    transition: all 0.5s ease-in;  
-    transform: translate(-50%,-50%);
-    .modalClose{
+    transition: all 0.5s ease-in;
+    transform: translate(-50%, -50%);
+
+    .modalClose {
         position: absolute;
-        top:20px;
-        right:-40px;
+        top: 20px;
+        right: -40px;
         background: transparent;
         font-size: 2em;
         color: #fff;
@@ -209,7 +210,7 @@ html {
         border: none;
         outline: none;
     }
-  }
+}
 
 .heading-with-bar {
     text-align: center;
@@ -688,13 +689,44 @@ html {
                         position: absolute;
                         top: 150px;
                         left: 0;
-                        z-index: 3;
+                        z-index: 6;
                         color: white;
                         display: flex;
                         justify-content: flex-start;
                         align-items: center;
                         flex-direction: column;
                         gap: 30px;
+
+                        .anim-cont {
+                            display: flex;
+                            align-items: center;
+
+                            p {
+                                font-size: 2em;
+                                text-transform: uppercase;
+                            }
+
+                            .dytxt {
+                                height: 50px;
+                                overflow: hidden;
+                                margin-left: 1rem;
+                                font-size: 2em;
+
+                                div {
+                                    &:first-child {
+                                        animation: txtanim1 6s infinite;
+                                    }
+
+                                    div {
+                                        padding: 0.55rem 0.95rem;
+                                        height: 2.81rem;
+                                        // margin-bottom: 2.81rem;
+                                        display: inline-block;
+                                        color: rgb(255, 255, 255);
+                                    }
+                                }
+                            }
+                        }
 
                         h3 {
                             text-align: center;
@@ -723,6 +755,14 @@ html {
                                 text-transform: uppercase;
                                 text-align: center;
 
+                            }
+                            .india-color{
+                                font-weight: 700;
+                                background: -webkit-linear-gradient(45deg, #ff671f ,#fff, #046A38);
+                                background-clip: text;
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                font-size: 3.5rem;
                             }
                         }
                     }
@@ -773,7 +813,8 @@ html {
                                     background: rgb(255, 255, 255);
                                     border-radius: 10px;
                                     overflow: hidden;
-                                    img{
+
+                                    img {
                                         width: 100%;
                                         height: 100%;
                                         object-fit: cover;
@@ -999,9 +1040,10 @@ html {
                                 height: 100%;
                                 display: block;
                                 transition: 0.5 ease;
-                                .v-frame{
+
+                                .v-frame {
                                     display: block;
-                                  }
+                                }
                             }
                         }
 
@@ -1014,8 +1056,9 @@ html {
                         .video-box {
                             display: none;
                             transition: 0.5 ease;
-                            .v-frame{
-                              display: none;
+
+                            .v-frame {
+                                display: none;
                             }
                         }
 
@@ -1209,7 +1252,7 @@ html {
                                     font-size: 1em;
                                 }
 
-                                img{
+                                img {
                                     width: 100%;
                                     height: 100%;
                                     object-fit: cover;
@@ -1671,6 +1714,7 @@ html {
                 align-items: center;
                 gap: 20px;
                 position: relative;
+                padding: 20px 0;
 
                 &::before {
                     content: '';
@@ -1684,6 +1728,7 @@ html {
 
                 // gap: 50px;
                 .heading {
+
                     h1 {
                         text-align: center;
                         // font-size: 2.5em;
@@ -1691,9 +1736,9 @@ html {
                         z-index: 2;
                         // color: #ffffffb5;
                         text-transform: uppercase;
-                        top: -40px;
-                        font-size: 72px;
-                        background: -webkit-linear-gradient(#9a9a9a 50%, #9a9a9a 50%);
+                        // top: -40px;
+                        font-size: 3rem;
+                        background: #fff;
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -1706,8 +1751,8 @@ html {
                         z-index: 2;
                         // color: #ffffffb5;
                         text-transform: uppercase;
-                        font-size: 72px;
-                        background: -webkit-linear-gradient(#eee, #000528);
+                        font-size: 3rem;
+                        background: #fff;
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -2825,20 +2870,40 @@ html {
         margin-top: 0;
     }
 }
+@keyframes txtanim1 {
+    0% {
+        margin-top: 0;
+    }
+
+    20% {
+        margin-top: 0rem;
+    }
+    40% {
+        margin-top: -1.9rem;
+    }
+
+    60% {
+        margin-top: -1.9rem;
+    }
+    80% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
 
 
 //   media screen for 991px 
 @media only screen and (max-width: 991px) {
     .nav-bar {
         .nav-bar-wrap {
-           .nav-wrap-middle{
+            .nav-wrap-middle {}
 
-           } 
-           .nav-wrap-right{
-
-           }
+            .nav-wrap-right {}
         }
     }
+
     // .menu-btn {
     //     display: block;
 

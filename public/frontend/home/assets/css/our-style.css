@@ -573,13 +573,36 @@ html::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: 150px;
   left: 0;
-  z-index: 3;
+  z-index: 6;
   color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   gap: 30px;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .top-hd-fg .anim-cont {
+  display: flex;
+  align-items: center;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .top-hd-fg .anim-cont p {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .top-hd-fg .anim-cont .dytxt {
+  height: 50px;
+  overflow: hidden;
+  margin-left: 1rem;
+  font-size: 2em;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .top-hd-fg .anim-cont .dytxt div:first-child {
+  animation: txtanim1 6s infinite;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .top-hd-fg .anim-cont .dytxt div div {
+  padding: 0.55rem 0.95rem;
+  height: 2.81rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
 }
 .home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .top-hd-fg h3 {
   text-align: center;
@@ -604,6 +627,14 @@ html::-webkit-scrollbar-thumb:hover {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+}
+.home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .top-hd-fg .fg-title .india-color {
+  font-weight: 700;
+  background: -webkit-linear-gradient(45deg, #ff671f, #fff, #046A38);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
 }
 .home-page .home-page-wrap .home-header .home-header-top .top-hd-bg .moving-screen {
   width: 100%;
@@ -1340,6 +1371,7 @@ html::-webkit-scrollbar-thumb:hover {
   align-items: center;
   gap: 20px;
   position: relative;
+  padding: 20px 0;
 }
 .home-page .home-page-wrap .instructors-section .instructor-wrapper::before {
   content: "";
@@ -1355,9 +1387,8 @@ html::-webkit-scrollbar-thumb:hover {
   position: relative;
   z-index: 2;
   text-transform: uppercase;
-  top: -40px;
-  font-size: 72px;
-  background: -webkit-linear-gradient(#9a9a9a 50%, #9a9a9a 50%);
+  font-size: 3rem;
+  background: #fff;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1367,8 +1398,8 @@ html::-webkit-scrollbar-thumb:hover {
   position: relative;
   z-index: 2;
   text-transform: uppercase;
-  font-size: 72px;
-  background: -webkit-linear-gradient(#eee, #000528);
+  font-size: 3rem;
+  background: #fff;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2573,6 +2604,26 @@ html::-webkit-scrollbar-thumb:hover {
     margin-top: -4.52rem;
   }
   90% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@keyframes txtanim1 {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0rem;
+  }
+  40% {
+    margin-top: -1.9rem;
+  }
+  60% {
+    margin-top: -1.9rem;
+  }
+  80% {
     margin-top: 0;
   }
   100% {
