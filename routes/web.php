@@ -26,6 +26,10 @@ Auth::routes(['register' => false]);
 Route::get('/signup/{token?}', [UserController::class, 'signup']);
 
 Route::get('/about-us', [UserController::class, 'aboutUs']);
+Route::get('/alpha-course', [UserController::class, 'alphaCourse']);
+Route::get('/digital-skill-hub', [UserController::class, 'digitalSkillHub']);
+Route::get('/personal-branding-hub', [UserController::class, 'personalBrandingHub']);
+Route::get('/iconic', [UserController::class, 'iconic']);
 Route::get('/contact-us', [UserController::class, 'contactUs']);
 Route::get('/courses', [UserController::class, 'courses']);
 Route::get('/terms-conditions', [UserController::class, 'termsCondition']);

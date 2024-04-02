@@ -993,5 +993,18 @@ try {
 
         return $html;
     }
+
+    public function alphaCourse(Request $request){
+        return view('alpha-course');
+    }
+    public function digitalSkillHub(Request $request){
+        return view('digital-skill-hub');
+    }
+    public function personalBrandingHub(Request $request){
+        return view('personal-branding-hub');
+    }
+    public function iconic(Request $request){
+        return view('iconic');
+    }
     
 }

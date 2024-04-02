@@ -484,33 +484,97 @@
                             <div class="right-wrapper">
                                 <h3>{{$row->name}}</h3>
                                 @if($row->id == 2)
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        book_2
-                                    </span>2 course</p>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            book_2
+                                        </span>05 COURSES</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            schedule
+                                        </span>25+ HOURS</p>
+                                </div>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>LIVE Q&A</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>COUSTOMER SUPPORT</p>
+                                </div>
                                 <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                         check
-                                    </span>Learn how to become a freelance social media manager with our training course! Discover essential skills like content creation, audience engagement, and analytics tracking. Get ready to kickstart your freelance career and help businesses thrive online!</p>
+                                    </span>CERTIFICATES </p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Alpha course designed for ambitious individuals hungry for exponential growth. Dive into the world of affiliate marketing, reselling, and freelancing with cutting-edge strategies and hands-on skills. Unleash your potential, master the art of generating passive income streams, and carve your path to success in the digital landscape with Alpha.</p>
                                 @elseif($row->id == 3)
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        book_2
-                                    </span>3COURSES + 2 BONUS COURSES </p>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            book_2
+                                        </span>04 COURSES + 5 BONUS COURSES</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            schedule
+                                        </span>25+ HOURS</p>
+                                </div>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>LIVE Q&A</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>COUSTOMER SUPPORT</p>
+                                </div>
                                 <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                         check
-                                    </span>Join our digital skills hub bundle to learn how to succeed in the online world! We'll teach you everything from using social media effectively to marketing online. Get ready to boost your career and stay ahead in today's digital age!</p>
+                                    </span>CERTIFICATES </p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Digital Skills Hub is your gateway to mastering the ever-evolving kingdom of digital marketing and Instagram domination. Elevate your online presence, explore and utilise the power of social media and unlock the secrets to creating compelling digital campaigns. Dive into advanced strategies, develop a loyal audience and drive your brand to new heights in the digital age with Digital Skills Hub.</p>
                                 @elseif($row->id == 4)
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        book_2
-                                    </span>5 COURSES, 3+2 BONUS COURSES</p>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            book_2
+                                        </span>06 COURSES + 9 BONUS COURSES</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            schedule
+                                        </span>25+ HOURS</p>
+                                </div>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>LIVE Q&A</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>COUSTOMER SUPPORT</p>
+                                </div>
                                 <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                         check
-                                    </span>Discover the power of personal branding! Our course will guide you through creating a unique online presence that reflects your strengths and values. Learn how to effectively showcase your skills, build credibility, and stand out in your industry. Elevate your personal brand and unlock new opportunities!</p>
+                                    </span>CERTIFICATES </p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Step into the Personal Branding Hub, where we teach you how to make a big impact online. Learn how to build your personal brand, become a pro at YouTube, master short videos like reels, and become skilled in video marketing and editing. With our easy-to-follow guidance, you'll boost your online presence and reach your goals faster than ever before!</p>
                                 @else
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        book_2
-                                    </span>10 COURSES + 11 BONUS COURSES</p>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            book_2
+                                        </span>10 COURSES + 15 BONUS COURSES</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            schedule
+                                        </span>25+ HOURS</p>
+                                </div>
+                                <div style="display:flex; gap:30px; ">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>LIVE Q&A</p>
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>COUSTOMER SUPPORT</p>
+                                </div>
                                 <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                         check
-                                    </span>Explore our diverse range of skillful courses! From mastering social media to honing digital marketing techniques, we offer something for everyone. Elevate your skills and unlock new opportunities with our iconic courses!</p>
+                                    </span>CERTIFICATES </p>
+                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                        check
+                                    </span>Dive into the ultimate growth experience with our flagship course, Iconic. Unlock the secrets of online marketing while honing essential soft skills like communication, public speaking, and storytelling. This top-tier package is your comprehensive toolkit for success, equipping you with the expertise to excel in the digital landscape and beyond. Join us on the journey to become an icon in your industry.</p>
                                 @endif
 
                                 <div class="buy-cont">
@@ -544,8 +608,17 @@
                                     @elseif($packageId != $row->id && $packageId < $row->id)
                                         <p class="price"><del>₹{{$row->market_price}}</del> - <span>₹{{$row->amount}}</span></p>
                                         <div class="btn-cont1">
-                                            <a class="sec-btn anim" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span></a>
-                                        </div>
+                                        <!-- <a class="sec-btn anim" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span></a> -->
+                                        @if($row->id == 2)
+                                        <a class="sec-btn anim" href="{{ url('/alpha-course') }}"><span>BUY NOW</span></a>
+                                        @elseif($row->id == 3)
+                                        <a class="sec-btn anim" href="{{ url('/digital-skill-hub') }}"><span>BUY NOW</span></a>
+                                        @elseif($row->id == 4)
+                                        <a class="sec-btn anim" href="{{ url('/personal-branding-hub') }}"><span>BUY NOW</span></a>
+                                        @else
+                                        <a class="sec-btn anim" href="{{ url('/iconic') }}"><span>BUY NOW</span></a>
+                                        @endif
+                                    </div>
                                         @endif
                                 </div>
                             </div>
