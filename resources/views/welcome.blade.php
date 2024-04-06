@@ -588,7 +588,6 @@
                                     @if(auth()->user()->role != 1)<p class="price"><del>₹{{$row->market_price}}</del> - <span>₹{{$getNewPrice->amount}}</span></p>
                                     @endif
                                     <div class="btn-cont1">
-
                                         <form method="POST" name="banner-form" id="packages{{$row->id}}" action="{{url('user/upgrade-courses')}}" enctype="multipart/form-data">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_sessionToken" value="{{encryptor('encrypt', $row->id)}}">
@@ -608,17 +607,17 @@
                                     @elseif($packageId != $row->id && $packageId < $row->id)
                                         <p class="price"><del>₹{{$row->market_price}}</del> - <span>₹{{$row->amount}}</span></p>
                                         <div class="btn-cont1">
-                                        <!-- <a class="sec-btn anim" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span></a> -->
-                                        @if($row->id == 2)
-                                        <a class="sec-btn anim" href="{{ url('/alpha-course') }}"><span>BUY NOW</span></a>
-                                        @elseif($row->id == 3)
-                                        <a class="sec-btn anim" href="{{ url('/digital-skill-hub') }}"><span>BUY NOW</span></a>
-                                        @elseif($row->id == 4)
-                                        <a class="sec-btn anim" href="{{ url('/personal-branding-hub') }}"><span>BUY NOW</span></a>
-                                        @else
-                                        <a class="sec-btn anim" href="{{ url('/iconic') }}"><span>BUY NOW</span></a>
-                                        @endif
-                                    </div>
+                                            <!-- <a class="sec-btn anim" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span></a> -->
+                                            @if($row->id == 2)
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            @elseif($row->id == 3)
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            @elseif($row->id == 4)
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            @else
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            @endif
+                                        </div>
                                         @endif
                                 </div>
                             </div>

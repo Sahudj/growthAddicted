@@ -37,6 +37,9 @@ Route::get('/privacy-policy', [UserController::class, 'privacyPolicy']);
 Route::get('/refund-policy', [UserController::class, 'refundPolicy']);
 Route::get('/faq', [UserController::class, 'faq']);
 
+// new routes
+Route::get('/elob-courses/{id}', [UserController::class, 'eloboratedSpecificCourse'])->name('elob-courses');
+// Route::post('/elob-courses', [CoursesController::class, 'eloboratedSpecificCourse'])->name('elob-courses');
 Route::get('/birthday-wish', [CommonController::class, 'birthdayWish']);
 
 Route::get('/test-email', [UserController::class, 'testEmail']);
@@ -110,6 +113,7 @@ Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPass
             Route::get('/courses', [CoursesController::class, 'courses'])->name('courses');
             Route::get('/generatePDF/{courseId}', [CoursesController::class, 'generatePDF'])->name('generatePDF');
             Route::post('/upgrade-courses', [CoursesController::class, 'upgradeCourses'])->name('upgrade-courses');
+            
          
          
             Route::get('/my-courses/{packageId}/{folderId}/{courseName}', [CoursesController::class, 'myCourses'])->name('my-courses');

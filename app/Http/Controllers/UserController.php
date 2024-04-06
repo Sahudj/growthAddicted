@@ -1006,5 +1006,10 @@ try {
     public function iconic(Request $request){
         return view('iconic');
     }
+
+    public function eloboratedSpecificCourse($id)
+    {
+        return view('elob-courses', compact('id'));  
+    }
     
 }

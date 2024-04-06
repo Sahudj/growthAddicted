@@ -202,6 +202,7 @@
             $tempArr = !empty($packages->packageId) ? explode(',', $packages->packageId) : [];
             ?>
             @endauth()
+          
             <div class="course-card-wrapper">
                 @foreach($allPackages as $row)
                 @if($row->id == 2)
