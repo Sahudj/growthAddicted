@@ -255,6 +255,31 @@
             // Start observing the target element
             observer.observe(animatedDiv);
         });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the target element
+            const animatedDiv = document.getElementById('alsc');
+
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // If the div is in the viewport, add your animation logic here
+                        animateValue(document.getElementById("alsc1"), 0, 5, 1000);
+                        animateValue(document.getElementById("alsc2"), 0, 25, 1000);
+                        animateValue(document.getElementById("alsc3"), 0, 100, 1000);
+                        // Add any other animations or modifications as needed
+                    }
+                });
+            }, {
+                // Set the root to 'null' for the viewport
+                root: null,
+                // Set a threshold for when the callback should be triggered
+                threshold: 0.5
+            });
+
+            // Start observing the target element
+            observer.observe(animatedDiv);
+        });
 
         function animateValue(obj, start, end, duration) {
             let startTimestamp = null;
