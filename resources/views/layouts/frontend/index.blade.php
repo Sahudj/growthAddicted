@@ -169,6 +169,7 @@
         AOS.init();
         $(document).ready(function() {
             var navbar = $('#navbar');
+            var bottombuybtn=$('#bbnb');
             var lastScrollTop = 0;
             $(window).scroll(function() {
 
@@ -190,8 +191,11 @@
             $(window).scroll(function() {
                 if ($(window).scrollTop() >= 80) {
                     navbar.addClass('scrolled');
+                    bottombuybtn.addClass('scrolled');
                 } else {
                     navbar.removeClass('scrolled');
+                    bottombuybtn.removeClass('scrolled');
+
                 }
             });
 
@@ -267,6 +271,81 @@
                         animateValue(document.getElementById("alsc1"), 0, 5, 1000);
                         animateValue(document.getElementById("alsc2"), 0, 25, 1000);
                         animateValue(document.getElementById("alsc3"), 0, 100, 1000);
+                        // Add any other animations or modifications as needed
+                    }
+                });
+            }, {
+                // Set the root to 'null' for the viewport
+                root: null,
+                // Set a threshold for when the callback should be triggered
+                threshold: 0.5
+            });
+
+            // Start observing the target element
+            observer.observe(animatedDiv);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the target element
+            const animatedDiv = document.getElementById('dses');
+
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // If the div is in the viewport, add your animation logic here
+                        animateValue(document.getElementById("dses1"), 0, 4, 1000);
+                        animateValue(document.getElementById("dses2"), 0, 25, 1000);
+                        animateValue(document.getElementById("dses3"), 0, 100, 1000);
+                        // Add any other animations or modifications as needed
+                    }
+                });
+            }, {
+                // Set the root to 'null' for the viewport
+                root: null,
+                // Set a threshold for when the callback should be triggered
+                threshold: 0.5
+            });
+
+            // Start observing the target element
+            observer.observe(animatedDiv);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the target element
+            const animatedDiv = document.getElementById('pesc');
+
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // If the div is in the viewport, add your animation logic here
+                        animateValue(document.getElementById("pesc1"), 0, 6, 1000);
+                        animateValue(document.getElementById("pesc2"), 0, 25, 1000);
+                        animateValue(document.getElementById("pesc3"), 0, 100, 1000);
+                        // Add any other animations or modifications as needed
+                    }
+                });
+            }, {
+                // Set the root to 'null' for the viewport
+                root: null,
+                // Set a threshold for when the callback should be triggered
+                threshold: 0.5
+            });
+
+            // Start observing the target element
+            observer.observe(animatedDiv);
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the target element
+            const animatedDiv = document.getElementById('iesc');
+
+            // Create an Intersection Observer
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // If the div is in the viewport, add your animation logic here
+                        animateValue(document.getElementById("iesc1"), 0, 10, 1000);
+                        animateValue(document.getElementById("iesc2"), 0, 25, 1000);
+                        animateValue(document.getElementById("iesc3"), 0, 100, 1000);
                         // Add any other animations or modifications as needed
                     }
                 });

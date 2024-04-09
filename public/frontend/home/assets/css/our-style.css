@@ -2778,154 +2778,45 @@ html::-webkit-scrollbar-thumb:hover {
   font-size: 1.8em;
   font-weight: 700;
 }
-.elobcourses-page .alpha-elob-section {
-  width: 100%;
-}
-
-.alpha-page {
-  width: 100%;
-}
-.alpha-page .alpha-page-wrap {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-.alpha-page .alpha-page-wrap .alpha-top {
-  height: 100px;
-  width: 100%;
-  background: #000528;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom {
-  height: calc(100% - 200px);
-  background: #ffffff;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper {
-  margin: 200px 0 0 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 150px;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card {
-  width: 90%;
-  height: 400px;
-  border-radius: 10px;
-  background: rgb(0, 5, 40);
-  box-shadow: 0 0 15px rgba(0, 5, 40, 0.318);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:nth-child(1) .right-crs .right-wrapper h3 {
-  color: #2b85fc;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:nth-child(2) .right-crs .right-wrapper h3 {
-  color: #ff439d;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:nth-child(3) .right-crs .right-wrapper h3 {
-  color: #fcb32b;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:nth-child(4) .right-crs .right-wrapper h3 {
-  color: #ff2951;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:hover .badge {
-  top: 35%;
-  transition: 1s ease;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .badge {
-  position: absolute;
-  top: 20px;
-  right: 0;
-  padding: 10px 5px;
-  font-size: 1em;
-  color: #fff;
-  font-weight: 500;
-  background: #d82029;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  text-transform: uppercase;
-  transition: 1s ease;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:nth-child(even) .badge {
+.elobcourses-page .bottom-buy-now-btn {
+  position: fixed;
+  bottom: -100%;
   left: 0;
-  flex: 0;
-  width: 26px;
-  border-radius: 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  width: 100%;
+  transition: 2s ease;
+  z-index: 6;
 }
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card:nth-child(even) .left-crs img {
-  transform-origin: bottom right;
-  left: -85px;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .left-crs {
-  height: 100%;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .left-crs img {
-  position: absolute;
+.elobcourses-page .bottom-buy-now-btn.scrolled {
+  transition: 2s ease;
   bottom: 0;
-  left: 10px;
-  width: 130%;
-  height: 130%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: 0.5s ease;
 }
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .left-crs img:hover {
-  transition: 0.5s ease;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .right-crs {
+.elobcourses-page .bottom-buy-now-btn .bottom-buy-cont {
+  width: 100%;
   height: 100%;
-  width: 70%;
+}
+.elobcourses-page .bottom-buy-now-btn .bottom-buy-cont .btn-cont1 {
+  width: 100%;
+  height: 100%;
+}
+.elobcourses-page .bottom-buy-now-btn .bottom-buy-cont .btn-cont1 .bottm-buybtn {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
-  color: #fff;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .right-crs .right-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  height: 100%;
-  gap: 10px;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .right-crs .right-wrapper h3 {
-  text-align: left;
-  font-size: 3em;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .right-crs .right-wrapper .buy-cont {
-  align-items: center;
-  display: flex;
-  gap: 100px;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .right-crs .right-wrapper .buy-cont .price del {
-  font-size: 1.3em;
-}
-.alpha-page .alpha-page-wrap .alpha-bottom .course-card-wrapper .course-card .right-crs .right-wrapper .buy-cont .price span {
-  font-size: 1.8em;
+  border: none;
+  outline: none;
+  background: var(--prdarkclr);
+  color: white;
+  border: 1px solid rgb(212, 212, 212);
+  font-size: 2.5em;
   font-weight: 700;
+  text-decoration: none;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 15px;
 }
-.alpha-page .alpha-page-wrap .alpha-bottom .course-details {
-  background-color: red !important;
-  height: 500px;
+.elobcourses-page .alpha-elob-section {
   width: 100%;
 }
 

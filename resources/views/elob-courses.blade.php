@@ -328,16 +328,7 @@
                         @elseif($packageId != $row->id && $packageId < $row->id)
                             <p class="price"><del>₹{{$row->market_price}}</del> - <span>₹{{$row->amount}}</span></p>
                             <div class="btn-cont1">
-                                <!-- <a class="sec-btn anim" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span></a> -->
-                                @if($row->id == 2)
-                                <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
-                                @elseif($row->id == 3)
-                                <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
-                                @elseif($row->id == 4)
-                                <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
-                                @else
-                                <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
-                                @endif
+                                <a class="sec-btn anim" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span> </a>
                             </div>
                             @endif
                     </div>
@@ -1303,9 +1294,610 @@
     </div>
     @else
     <div class="iconic-elob-sec">
-        <h1>Iconic</h1>
+        <div class="course-count-details" id="iesc">
+            <div class="course-count-inner">
+                <div class="count-cont">
+                    <div class="count"><span id="iesc1"></span></div>
+                    <div class="count-head">Course</div>
+                </div>
+                <div class="count-cont">
+                    <div class="count"><span id="iesc2"></span>K+</div>
+                    <div class="count-head">Students</div>
+                </div>
+                <div class="count-cont">
+                    <div class="count"><span id="iesc3"></span>+</div>
+                    <div class="count-head">Tutors</div>
+                </div>
+            </div>
+        </div>
+        <!-- course details section start here  -->
+        <h1 class="course-details-heading">
+            courses of Iconic
+        </h1>
+        <div class="course-detail-wrapper">
+            <!-- 1 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/art%20of%20story%20telling.png?updatedAt=1711553276247" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            ART OF STORYTELLING
+                        </div>
+                        <div class="sec-card-description">
+                            Explore our Art of Storytelling course! Learn how to tell captivating stories that keep your audience engaged. Whether you're new to storytelling or want to improve your skills, this course is for you. Join us and become a great storyteller!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1> 3 BENIFITS OF ART OF STORY TELLING COURSE 👇</h1>
+
+                                    <p>1.The course covers a wide range of storytelling techniques</p>
+
+                                    <p>2.We offer practical exercises and assignments to help students apply theoretical concepts in real-world storytelling scenarios.</p>
+
+                                    <p>3.The course is designed to be flexible and accessible</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our standout courses is 'The Art of Storytelling,' where we teach you how to master the art of storytelling. Here's what you can expect to learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Comprehensive Storytelling Training: Whether you're new to storytelling or have some experience, this course covers everything you need to know to become a skilled storyteller.</p>
+
+                                        <p>2. Understanding the Power of Storytelling: Learn why storytelling is important and how it can help you connect with your audience, inspire action, and make an impact.</p>
+
+                                        <p>3. Crafting Compelling Stories: Discover techniques for crafting engaging and memorable stories that captivate your audience's attention and leave a lasting impression.</p>
+
+                                        <p>4. Story Structure and Elements: Explore the key elements of storytelling, including plot, characters, setting, conflict, and resolution. Learn how to structure your stories for maximum impact.</p>
+
+                                        <p>5. Finding Your Unique Voice Uncover your unique storytelling voice and style. Learn how to infuse your personality and perspective into your stories to make them authentic and relatable.</p>
+
+                                        <p class="mar-top">
+                                            Enroll in our 'Art of Storytelling' course today and unlock your potential to become a master storyteller. Whether you're a business professional, marketer, educator, or aspiring storyteller this course will help you unleash the power of storytelling to achieve your goals and inspire others."
+                                        </p>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/communication%20mastery.png?updatedAt=1711553276077" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            COMMUNICATION MASTERY
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to Communication Mastery! Learn how to communicate effectively in any situation. From speaking confidently to active listening, this course covers essential skills for success. Whether you're a beginner or looking to improve, join us and master communication!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF COMMUNICATION MASTERY 👇</h1>
+
+                                    <p>1.Enhance your communication abilities from foundational principles to advanced techniques with Comprehensive Communication Skills Development.</p>
+                                    <p>2.Navigate digital communication platforms seamlessly and craft impactful messages with Mastering Digital Communication Channels.</p>
+                                    <p>3.Master the art of persuasion and influence outcomes effectively with Enhanced Influence and Persuasion.</p>
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our top courses is called 'Communication Mastery.' This course is all about teaching you how to be really good at talking to people. Here's what you'll learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Learn Everything About Communication: Whether you're just starting out or you've talked to a lot of people before, this course covers everything you need to know about communicating well.</p>
+
+                                        <p>2. Understand Why Communication Is Important: Find out why it's so important to be able to communicate effectively, whether it's at work, with friends, or in your everyday life.</p>
+
+                                        <p>3. Learn to Talk Clearly: We'll teach you how to say what you mean in a way that's easy for others to understand, both with your words and your body language.</p>
+
+                                        <p>4. Listen Better: Discover how to be a better listener, so you can really understand what others are saying and respond appropriately.</p>
+
+                                        <p>5. Be More Confident: Learn how to speak up for yourself and express your ideas with confidence, whether you're talking to one person or a group.</p>
+                                        <p class="mar-top">
+                                            Sign up for our 'Communication Mastery' course now and start improving your communication skills. Whether you're at work, with friends, or anywhere else, this course will help you become a better communicator and achieve more success in all areas of your life.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/content%20writing%20mastery.png?updatedAt=1711553276238" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            CONTENT WRITING MASTERY
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to Content Writing Mastery! Learn how to create engaging and impactful content for any platform. From crafting compelling headlines to structuring articles, this course covers all aspects of content writing. Whether you're new to writing or want to sharpen your skills, join us and become a content writing expert!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENEFITS OF CONTENT WRITING MASTERY COURSE 👇</h1>
+
+                                    <p>1.Learn diverse writing techniques for versatile content creation.</p>
+                                    <p>2.Engage in practical exercises to apply theoretical concepts effectively.</p>
+                                    <p>3.Enjoy the flexibility of a course designed to suit your schedule and preferences.</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            Our Content Writing Mastery course is designed to hone your skills in crafting compelling written content. Here's what you can expect:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1.Comprehensive Content Writing Training: Whether you're a novice or seasoned writer, this course provides comprehensive training to enhance your content writing abilities.</p>
+
+                                        <p>2.Understanding the Importance of Content: Discover why effective content creation is crucial in today's digital landscape, whether it's for websites, blogs, social media, or other platforms.</p>
+
+                                        <p>3.Clarity and Conciseness: Learn techniques to convey your message clearly and concisely, ensuring that your writing resonates with your audience.</p>
+
+                                        <p>4.Active Listening: Explore the importance of active listening in content creation, enabling you to understand your audience's needs and preferences better.</p>
+
+                                        <p>5.Boost Confidence in Writing: Develop confidence in expressing your ideas through writing, whether it's for marketing materials, articles, or storytelling.</p>
+                                        <p class="mar-top">
+                                            Enroll in our Content Writing Mastery course today and elevate your writing skills to new heights. Whether you're aiming to improve your business's online presence or pursue a career in content creation, this course equips you with the tools to succeed.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/copy%20writing%20mastery.png?updatedAt=1711553276206" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            COPY WRITING MASTERY
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to Copywriting Mastery! Learn the art of persuasive writing to create compelling copy that sells. From crafting catchy headlines to writing convincing product descriptions, this course covers all aspects of copywriting. Whether you're a beginner or looking to improve your skills, join us and become a master copywriter!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF COPY WRITING 👇</h1>
+
+                                    <p>1.Enhancing your creativity and ability to think outside the box</p>
+
+                                    <p>2.Understanding consumer psychology and behavior to create effective campaigns</p>
+
+                                    <p>3.Developing the skills to create compelling and engaging content</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our top courses is 'Content Writing.' This course teaches you all about creating great content. Here's what you'll learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Learn Everything About Content Writing: Whether you're just starting out or you've written a lot before this course covers everything you need to know about writing great content.</p>
+
+                                        <p>2. Understand Why Content Writing Is Important: Find out why it's so important to be able to write well, whether it's for your website, blog, social media, or any other platform.</p>
+
+                                        <p>3. Learn to Write Clearly: We'll teach you how to write in a way that's easy for others to understand whether you're explaining something complex or writing for a specific audience.</p>
+
+                                        <p>4. Engage Your Readers: Discover how to capture your readers' attention and keep them interested from start to finish.</p>
+
+                                        <p>5. Create Compelling Headlines: Learn how to craft headlines that grab attention and entice readers to click and read your content.</p>
+
+                                        <p class="mar-top">
+                                            Sign up for our 'Copy Writing' course now and start creating amazing content. Whether you're a blogger, marketer, entrepreneur or just someone who loves to write, this course will help you become a better content creator and achieve more success online.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 5 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/email%20marketing%20mastery.png?updatedAt=1711553276102" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            EMAIL MARKETING MASTERY
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to Email Marketing Mastery! Learn how to send emails that get results for your business. From writing good content to reaching the right people, this course covers everything about email marketing. Join us and become an pro Email Marketer!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF EMAIL MARKETING 👇</h1>
+
+                                    <p>1.Discover how to set up automated email campaigns for better engagement</p>
+
+                                    <p>2.Learn to craft attention-grabbing subject lines that boost open rates.</p>
+
+                                    <p>3.Understanding email deliverability and how to avoid being marked as spam</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our top courses is 'Email Marketing.' This course is all about learning how to use emails to communicate effectively with your audience. Here's what you'll learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Learn Everything About Email Marketing: Whether you're just starting out or you've sent a lot of emails before, this course covers everything you need to know about using emails to promote your business.</p>
+
+                                        <p>2. Understand Why Email Marketing Is Important: Find out why sending emails is so important for businesses, and how it can help you reach more people and make more sales.</p>
+
+                                        <p>3. Build and Grow Your Email List: Discover ways to collect email addresses from people who are interested in what you have to offer, and learn how to keep growing your list over time.</p>
+
+                                        <p>4. Create Emails That People Want to Read: Learn how to write emails that grab people's attention and make them want to open and read them.</p>
+
+                                        <p>5. Make Your Emails Look Great: Explore ways to design your emails so they look professional and appealing to your readers.</p>
+
+                                        <p class="mar-top">
+                                            Sign up for our 'Email Marketing' course now and start using the power of emails to grow your business. Whether you're a small business owner, marketer, or entrepreneur this course will help you get better at using emails to connect with your audience and achieve your goals.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 6 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/English%20speaking%20mastery.png?updatedAt=1711553276235" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            ENGLISH SPEAKING MASTERY
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to English Speaking Mastery! Improve your English speaking skills with our course. Learn how to speak confidently, improve your pronunciation, and expand your vocabulary. Whether you're a beginner or looking to enhance your skills, join us and master English speaking!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF ENGLISH SPEAKING COURSE 👇</h1>
+
+                                    <p>1.Polish your grammar skills for more accurate and precise English usage.</p>
+
+                                    <p>2.Learn new words and expressions to enrich your communication skills.</p>
+
+                                    <p>3.Work on improving your fluency to speak more smoothly and naturally</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our top courses is 'English Speaking.' This course is designed to improve your spoken English skills. Here's what you can expect to learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Comprehensive Speaking Training: Whether you're a beginner or have some experience, this course covers everything you need to know to become a confident English speaker.</p>
+
+                                        <p>2. Improving Pronunciation: Learn how to pronounce words correctly and speak with clarity and confidence.</p>
+
+                                        <p>3. Expanding Vocabulary: Discover new words and phrases to expand your vocabulary and express yourself more effectively.</p>
+
+                                        <p>4. Building Confidence: Gain confidence in speaking English by practicing speaking exercises and participating in conversations.</p>
+
+                                        <p>5. Enhancing Fluency: Improve your fluency in English by practicing speaking regularly and learning common conversational phrases.</p>
+
+                                        <p class="mar-top">
+                                            Sign up for our 'English Speaking' course now and start improving your spoken English skills. Whether you're a student, professional or anyone looking to enhance their English communication skills this course will help you become a better English speaker and achieve your goals.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 7 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/linkedin%20mastery.png?updatedAt=1711553279502" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            LINKDIN MASTERY
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to LinkedIn Mastery! Learn how to leverage LinkedIn for networking, job searching, and personal branding. From creating a standout profile to engaging with your network, this course covers all aspects of LinkedIn. Whether you're new to LinkedIn or want to enhance your skills, join us and become a LinkedIn pro!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF LINKDIN MASTERY 👇</h1>
+
+                                    <p>1.Gain insights on how to effectively network and build relationships on LinkedIn.</p>
+
+                                    <p>2.Learn how to use LinkedIn for lead generation and prospecting for your business.</p>
+
+                                    <p>3.Understand how to use LinkedIn for personal branding and showcasing your expertise.</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our flagship courses is 'LinkedIn Mastery,' designed to help you excel on the LinkedIn platform. Here's what you can expect to learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Comprehensive LinkedIn Training: Whether you're new to LinkedIn or looking to enhance your presence, this course covers everything you need to know to master the platform.</p>
+
+                                        <p>2. Optimizing Your Profile: Learn how to create a standout LinkedIn profile that showcases your skills, experience, and achievements effectively.</p>
+
+                                        <p>3. Building a Professional Network: Discover strategies for expanding your network and connecting with relevant professionals in your industry.</p>
+
+                                        <p>4. Engaging Content Creation: Explore techniques for creating engaging content on LinkedIn, including articles, posts, and videos, to position yourself as a thought leader in your field.</p>
+
+                                        <p>5. Effective Networking and Relationship Building: Learn how to network strategically on LinkedIn, engage with your connections, and build meaningful professional relationships.</p>
+                                        <p class="mar-top">
+                                            Enroll in our 'LinkedIn Mastery' course today and unlock your potential to leverage LinkedIn effectively for professional growth and networking success. Whether you're a job seeker, entrepreneur, or professional looking to expand your network, this course will equip you with the skills and knowledge to thrive on LinkedIn.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 8 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/Public%20speaking%20course.png?updatedAt=1711553281113" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            PUBLIC SPEAKING MASTERY
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to Public Speaking Mastery! Learn how to speak confidently and effectively in front of any audience. From overcoming stage fright to delivering memorable presentations this course covers all aspects of Public Speaking. Whether you're a beginner or looking to improve your skills join us and become a confident Public Speaker!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF PUBLIC SPEAKING COURSE 👇</h1>
+
+                                    <p>1.Overcoming fear of public speaking</p>
+
+                                    <p>2.Enhanced presentation skills</p>
+
+                                    <p>3.Increased ability to persuade and influence others</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our flagship courses is 'Public Speaking Mastery,' aimed at helping you become a confident and effective public speaker. Here's what you can expect to learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Comprehensive Public Speaking Training: Whether you're a beginner or have some experience, this course covers everything you need to know to master the art of public speaking.</p>
+
+                                        <p>2. Overcoming Fear and Nervousness: Learn practical techniques to overcome stage fright and nervousness, allowing you to speak confidently in front of any audience.</p>
+
+                                        <p>3. Developing Compelling Content: Discover how to structure your speeches effectively, craft engaging stories, and deliver powerful messages that resonate with your audience.</p>
+
+                                        <p>4. Improving Delivery Skills: Explore techniques for enhancing your vocal variety, body language, and overall delivery to captivate and engage your audience.</p>
+
+                                        <p>5. Adapting to Different Audiences: Gain insights into tailoring your message and delivery style to suit different audiences and speaking environments.</p>
+
+                                        <p class="mar-top">
+                                            Enroll in our 'Public Speaking Mastery' course today and unlock your potential to become a skilled and influential public speaker. Whether you're a professional, educator, entrepreneur, or anyone seeking to enhance their communication skills, this course will equip you with the tools and techniques to excel in public speaking.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 9 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/Time%20management%20course.png?updatedAt=1711553282472" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            TIME MANAGEMENT
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to Time Management Mastery! Learn how to manage your time effectively and get more done. From setting goals to prioritizing tasks, this course covers all aspects of time management. Whether you're a busy professional or just looking to be more productive, join us and master the art of time management!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF TIME MANAGEMENT COURSES 👇</h1>
+
+                                    <p>1.Time management courses often cover goal-setting techniques that can help you set realistic and achievable goals, both short-term and long-term.</p>
+
+                                    <p>2.With better time management skills, you'll be able to focus on high-priority tasks, leading to enhanced performance and results in your work or studies.</p>
+
+                                    <p>3. By learning how to eliminate distractions and stay focused on the task at hand, you'll be able to work more efficiently and with greater concentration.</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our standout courses is 'Time Management Mastery,' designed to help you effectively manage your time and boost productivity. Here's what you can expect to learn:
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Comprehensive Time Management Training: Whether you struggle with managing your time or want to enhance your skills further, this course covers everything you need to know to master the art of time management.</p>
+
+                                        <p>2.Understanding the Importance of Time Management: Learn why effective time management is crucial for personal and professional success, and how it can help you achieve your goals more efficiently.</p>
+
+                                        <p>3. Setting Goals and Priorities: Discover techniques for setting clear and achievable goals, and prioritizing tasks based on their importance and urgency.</p>
+
+                                        <p>4. Planning and Organization: Explore strategies for planning your day, week, and month effectively, and organizing your tasks and schedule for maximum productivity.</p>
+
+                                        <p>5. Overcoming Procrastination: Learn practical tips and tools for overcoming procrastination and staying focused and motivated to accomplish your tasks and goals.</p>
+
+                                        <p class="mar-top">
+                                            Enroll in our 'Time Management Mastery' course today and unlock your potential to take control of your time and achieve greater productivity and success. Whether you're a student, professional, entrepreneur or anyone looking to make the most of their time this course will equip you with the skills and strategies to effectively manage your time and accomplish your goals.
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10 -->
+            <div class="secondry-card">
+                <div class="secondry-card-wrapper">
+                    <div class="img-box">
+                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/website%20development%20course.png?updatedAt=1711553282853" alt="">
+                    </div>
+                    <div class="card-text-cont-box">
+                        <div class="sec-card-heading">
+                            WEBSITE DEVELOPMENT
+                        </div>
+                        <div class="sec-card-description">
+                            Welcome to Website Development! Learn how to create and design websites from scratch. From basic HTML to advanced CSS and JavaScript, this course covers everything you need to know to build your own website. Whether you're a beginner or looking to enhance your skills, join us and become a website development pro!
+                        </div>
+                        <div class="learmore-sec-card">
+                            <details>
+                                <summary class="btn-learn-more">LEARN MORE <i class="fa-solid fa-angles-right" style="margin-left: 10px;"></i></summary>
+                                <div class="learn-more-details">
+                                    <h1>3 BENIFITS OF WEBSITE DEVELOPMENT COURSES 👇</h1>
+
+                                    <p>1.You'll learn about design principles that can help you create visually appealing and user-friendly websites.</p>
+
+                                    <p>2.Learn how to create websites that not only look great but also provide an intuitive and smooth user experience, keeping visitors engaged.</p>
+
+                                    <p>3.Understand how to build e-commerce websites, including payment gateway integration, product listings, and security measures.</p>
+
+                                    <h1 class="mar-top">Description</h1>
+
+                                    <div>
+                                        <p>
+                                            One of our flagship courses is 'Website Development,' designed to teach you how to build and design websites. Here's what you can expect to learn:
+
+                                        </p>
+
+                                        <p class="mar-top">
+                                            Key Highlights:
+                                        </p>
+
+                                        <p>1. Comprehensive Website Development Training: Whether you're a beginner or have some experience, this course covers everything you need to know to master the art of building websites.</p>
+
+                                        <p>2. Understanding the Basics: Learn the fundamental concepts of website development, including HTML, CSS, and JavaScript, to create and customize web pages.</p>
+
+                                        <p>3. Choosing the Right Tools: Explore different website development tools and platforms, such as WordPress, Wix, and Squarespace, to build websites efficiently and effectively.</p>
+
+                                        <p>4. Design Principles: Discover principles of web design, including layout, typography, color theory, and user experience (UX) design, to create visually appealing and user-friendly websites.</p>
+
+                                        <p>5. Responsive Design: Learn how to design websites that are responsive and adaptable to different devices and screen sizes, ensuring a seamless user experience across desktops, tablets, and mobile phones.</p>
+
+                                        <p class="mar-top">
+                                            Enroll in our 'Website Development' course today and unlock your potential to become a skilled website developer. Whether you're a student, entrepreneur or aspiring web developer this course will equip you with the skills and knowledge to create professional and functional websites that meet the needs of your clients or business."
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     @endif
+
+    <div class="bottom-buy-now-btn" id="bbnb">
+        @foreach($allPackages as $row)
+        @if($row->id == $id)
+        <div class="bottom-buy-cont">
+            <!-- <h2>3999 /-</h2>
+                                    <a class="pri-btn" href="#" style="color:#000">Buy Now</a> -->
+
+            @if(!empty($tempArr) && $orderStatus == 1 && in_array($row->id,$tempArr))
+
+            <div class="btn-cont1">
+                <form method="POST" name="banner-form" id="packages{{$row->id}}" action="{{url('user/upgrade-courses')}}" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="_sessionToken" value="{{encryptor('encrypt', $row->id)}}">
+                    <a class="bottm-buybtn" href="javascript:void(0);" onclick="document.getElementById('packages{{$row->id}}').submit();">Upgrade Now</a>
+                </form>
+            </div>
+
+            @elseif(auth()->user() && $orderStatus == 0)
+            <div class="btn-cont1">
+                <form method="POST" name="banner-form" id="packages{{$row->id}}" action="{{url('user/upgrade-courses')}}" enctype="multipart/form-data">
+                    {{ csrf_field() }}
+                    <input type="hidden" name="_sessionToken" value="{{encryptor('encrypt', $row->id)}}">
+                    <a class="bottm-buybtn" href="javascript:void(0);" onclick="document.getElementById('packages{{$row->id}}').submit();"><span>BUY NOW</span></a>
+                </form>
+            </div>
+            @elseif($packageId != $row->id && $packageId < $row->id)
+                <div class="btn-cont1">
+                    <a class="bottm-buybtn" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span> </a>
+                </div>
+                @endif
+        </div>
+        @endif
+        @endforeach
+
+    </div>
 </div>
 
 
