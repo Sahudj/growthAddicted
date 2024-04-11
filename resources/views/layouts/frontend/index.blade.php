@@ -48,10 +48,10 @@
                     <div class="nav-wrap-middle">
                         <ul class="menu">
                             <li class="item">
-                                <a href="">HOME</a>
+                                <a href="{{url('/')}}">HOME</a>
                             </li>
                             <li class="item">
-                                <a href="">ABOUT</a>
+                                <a href="{{url('/about-us')}}">ABOUT</a>
                             </li>
                             <li class="item">
                                 <a href="">COURSES</a>
@@ -63,13 +63,13 @@
                     </div>
                     <div class="nav-wrap-right">
                         <div class="action-btn">
-                            <a href="#" class="sign-up">SIGN UP</a>
+                            <a href="{{ url('signup') }}" class="sign-up">SIGN UP</a>
                         </div>
                         <div class="action-btn">
-                            <a href="#" class="login">LOGIN</a>
+                            <a href="{{ url('login') }}" class="login">LOGIN</a>
                         </div>
                         <div class="action-btn">
-                            <a href="#" class="shoping">
+                            <a href="{{ url('signup') }}" class="shoping">
                                 <span class="material-symbols-outlined">shopping_cart</span>
                             </a>
                         </div>

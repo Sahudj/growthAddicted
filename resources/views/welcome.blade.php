@@ -48,7 +48,7 @@
                             <h3 data-aos="fade-up" data-aos-duration="2050" class="india-color">INDIA</h3>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="2300">
-                            <a class="pri-btn" href="#">Get Started</a>
+                            <a class="pri-btn" href="{{ url('signup') }}">Get Started</a>
                         </div>
                     </div>
                     <div class="moving-screen">
