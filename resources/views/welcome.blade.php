@@ -884,7 +884,7 @@
                                         <div class="img-box">
                                             <div class="img-box-wrap">
                                                 <img src="https://ik.imagekit.io/muwui4v4k/Students/Adnan?updatedAt=1712869416117" alt="content creator">
-                                                <div class="play-btn" id="testimonal-play-btn">
+                                                <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
                                                     </span>
@@ -1052,7 +1052,7 @@
                                         <div class="img-box">
                                             <div class="img-box-wrap">
                                                 <img src="https://ik.imagekit.io/muwui4v4k/Students/Madhuri%20Chheda?updatedAt=1712870553837" alt="content creator">
-                                                <div class="play-btn">
+                                                <div class="play-btn" id="madhu">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
                                                     </span>
@@ -1073,7 +1073,7 @@
                                         <div class="img-box">
                                             <div class="img-box-wrap">
                                                 <img src="https://ik.imagekit.io/muwui4v4k/Students/Sanchita%20Yagale?updatedAt=1712870651361" alt="content creator">
-                                                <div class="play-btn">
+                                                <div class="play-btn" id="sanchi">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
                                                     </span>

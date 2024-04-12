@@ -65,8 +65,9 @@ html {
     .main-wrapper {
         width: 100%;
         overflow-x: hidden;
+
         // background: #8080f0;
-        .nav-side-bar{
+        .nav-side-bar {
             position: fixed;
             width: 100%;
             height: 100svh;
@@ -76,16 +77,19 @@ html {
             z-index: 20;
             padding: 25px;
             transition: 0.5s ease;
-            &.open{
+
+            &.open {
                 right: 0;
                 transition: 0.5s ease;
             }
-            .close-btn{
+
+            .close-btn {
                 width: 100%;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-                button{
+
+                button {
                     width: 30px;
                     height: 30px;
                     background: transparent;
@@ -95,15 +99,18 @@ html {
                 }
 
             }
-            .menu{
+
+            .menu {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 30px;
-                .item{
+
+                .item {
                     width: 100%;
-                    a{
+
+                    a {
                         display: block;
                         width: 100%;
                         padding: 8px 18px;
@@ -113,11 +120,11 @@ html {
                         font-weight: 600;
                         transition: 0.5s ease;
 
-                        &:hover{
+                        &:hover {
                             background: rgba(209, 209, 209, 0.245);
                             transition: 0.5s ease;
                         }
-                        
+
                     }
 
                 }
@@ -559,7 +566,7 @@ html {
                 }
             }
         }
-        
+
     }
 }
 
@@ -3249,14 +3256,14 @@ html {
             padding-bottom: 10px;
             position: relative;
             margin-bottom: 40px;
-    
+
             &:hover {
                 &::after {
                     width: 60%;
                     transition: 0.5s ease;
                 }
             }
-    
+
             &::after {
                 content: '';
                 position: absolute;
@@ -3284,17 +3291,20 @@ html {
                 flex-direction: column;
                 position: relative;
                 overflow: hidden;
-                .card-img-box{
+
+                .card-img-box {
                     height: 100%;
                     width: 100%;
-                    img{
-                           height: 100%;
-                           width: 100%;
-                           object-fit: cover;
-                           object-position: center top;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center top;
                     }
                 }
-                .card-text-cont{
+
+                .card-text-cont {
                     position: absolute;
                     bottom: 0;
                     left: 0;
@@ -3305,15 +3315,17 @@ html {
                     flex-direction: column;
                     align-items: center;
                     gap: 10px;
-                    background: linear-gradient(to bottom ,transparent,rgba(0, 0, 0, 0.799));
+                    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.799));
                     color: #fff;
                     padding: 25px;
-                    h1{
+
+                    h1 {
                         text-transform: uppercase;
-                        font-size:1em;
+                        font-size: 1em;
                         text-align: center;
                     }
-                    a{
+
+                    a {
                         text-decoration: none;
                         padding: 10px 15px;
                         display: flex;
@@ -4110,7 +4122,8 @@ html {
                                             .img-box-wrap {
                                                 width: 100%;
                                                 height: 100%;
-                                                img{
+
+                                                img {
                                                     width: 100%;
                                                     height: 100%;
                                                     object-fit: cover;
@@ -4223,6 +4236,7 @@ html {
 
     .footer-section {
         height: auto;
+        padding-bottom: 50px;
 
         .footeer-wrapper {
             flex-direction: column;
@@ -4323,12 +4337,188 @@ html {
         }
     }
 
+    .elobcourses-page {
+        width: 100%;
+
+        // alpha section 
+        .course-details-heading {
+            
+            font-size: 1.4em;
+            &::after {    
+                height: 3px;
+            }
+        }
+
+        .course-detail-wrapper {
+            .secondry-card {
+                .secondry-card-wrapper {
+                    flex-direction: column;
+                    .img-box {
+                        width: 90%;
+                        img {
+                            width: 100%;
+                        }
+
+                    }
+
+                    .card-text-cont-box {
+                        .sec-card-heading {
+                            font-size: 1.5em;
+                        }
+
+                        .sec-card-description {
+                            font-size: 0.8em;
+                        }
+
+                        .learmore-sec-card {
+                            details {
+
+                                .learn-more-details {
+                                    h1{
+                                        font-size: 1.2em;
+                                    }
+                                    p{
+                                        font-size: 1em;
+                                        margin: 5px 0;
+                                    }
+
+                                }
+                            }
+
+
+                        }
+
+
+                    }
+                }
+
+            }
+
+        }
+
+        .course-count-details {
+            .course-count-inner {
+                .count-cont {
+                    .count {
+                        font-size: 1.5em; 
+                    }
+                    .count-head {
+                        font-size: 1em;   
+                    }
+                }
+            }
+
+        }
+
+        .course-card-wrapper {
+            margin: 50px 0 0 0;
+
+            .course-card {
+                height: auto;
+                flex-direction: column;
+                padding: 15px 0;
+
+                &:nth-child(even) {
+                    flex-direction: column;
+
+                    .badge {
+                        left: 0;
+                        flex: 0;
+                        width: 26px;
+                        border-radius: 0;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+
+                    .left-crs {
+                        width: 100%;
+                        height: auto;
+
+                        img {
+                            position: relative;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .left-crs {
+                    width: 100%;
+                    height: auto;
+
+                    img {
+                        position: relative;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .right-crs {
+                    width: 100%;
+                    height: auto;
+                    padding: 10px;
+
+                    .right-wrapper {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        height: 100%;
+                        gap: 10px;
+
+                        h3 {
+                            text-align: left;
+                            font-size: 1.8em;
+                        }
+
+                        .buy-cont {
+                            flex-direction: column;
+                            gap: 30px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .bottom-buy-now-btn {
+            .bottom-buy-cont {
+                .btn-cont1 {
+                    .bottm-buybtn {
+                        font-size: 1em; 
+                    }
+                }
+            }
+        }
+
+        .bottom-sug-card-cont {
+            .course-details-heading1 {
+             
+                font-size: 1em;
+                padding: 0 15px;
+                padding-bottom: 10px;
+
+                &::after {
+                    height: 2px;
+                }
+            }
+
+            .sug-card-wrapper {
+                
+                flex-wrap: wrap;
+            }
+        }
+
+        .alpha-elob-section {
+            width: 100%;
+
+            // background: #000528;
+            // min-height: 100vh;
+
+        }
+    }
+
 }
-
-
-
-
-
-
-
-

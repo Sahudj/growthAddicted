@@ -457,14 +457,32 @@
             e.preventDefault();
         });
 
-        $("#testimonal-play-btn").on("click", function(e) {
+        $("#madhu").on("click", function(e) {
             e.preventDefault(); // Prevent the default behavior of the link
 
             var wrapper = $("#video-modal");
             var href = $(this).attr("href");
 
             // Embed YouTube video URL with autoplay
-            var videoUrl = 'https://www.youtube.com/embed/9kzWnVhk4XI?autoplay=1&rel=0&modestbranding=1';
+            var videoUrl = "https://www.youtube.com/embed/dH5GnjVT7Lc?si=-xJinpQZUYQFsiaB";
+
+            // Create an iframe element with the YouTube video URL
+            var customFrame = '<iframe width="100%" height="100%" src="' + videoUrl + '" frameborder="0" allowfullscreen></iframe>';
+
+            // Append the iframe to the modal wrapper
+            $(wrapper).html(customFrame);
+
+            // Show the modal
+            $('.modal').show();
+        });
+        $("#sanchi").on("click", function(e) {
+            e.preventDefault(); // Prevent the default behavior of the link
+
+            var wrapper = $("#video-modal");
+            var href = $(this).attr("href");
+
+            // Embed YouTube video URL with autoplay
+            var videoUrl = "https://www.youtube.com/embed/epiLga8m36M?si=CQFxNm2fMHBnUGwQ";
 
             // Create an iframe element with the YouTube video URL
             var customFrame = '<iframe width="100%" height="100%" src="' + videoUrl + '" frameborder="0" allowfullscreen></iframe>';

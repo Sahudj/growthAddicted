@@ -3538,6 +3538,7 @@ html::-webkit-scrollbar-thumb:hover {
   }
   .footer-section {
     height: auto;
+    padding-bottom: 50px;
   }
   .footer-section .footeer-wrapper {
     flex-direction: column;
@@ -3620,5 +3621,120 @@ html::-webkit-scrollbar-thumb:hover {
     text-decoration: none;
     color: #FFF;
     font-size: 1.5em;
+  }
+  .elobcourses-page {
+    width: 100%;
+  }
+  .elobcourses-page .course-details-heading {
+    font-size: 1.4em;
+  }
+  .elobcourses-page .course-details-heading::after {
+    height: 3px;
+  }
+  .elobcourses-page .course-detail-wrapper .secondry-card .secondry-card-wrapper {
+    flex-direction: column;
+  }
+  .elobcourses-page .course-detail-wrapper .secondry-card .secondry-card-wrapper .img-box {
+    width: 90%;
+  }
+  .elobcourses-page .course-detail-wrapper .secondry-card .secondry-card-wrapper .img-box img {
+    width: 100%;
+  }
+  .elobcourses-page .course-detail-wrapper .secondry-card .secondry-card-wrapper .card-text-cont-box .sec-card-heading {
+    font-size: 1.5em;
+  }
+  .elobcourses-page .course-detail-wrapper .secondry-card .secondry-card-wrapper .card-text-cont-box .sec-card-description {
+    font-size: 0.8em;
+  }
+  .elobcourses-page .course-detail-wrapper .secondry-card .secondry-card-wrapper .card-text-cont-box .learmore-sec-card details .learn-more-details h1 {
+    font-size: 1.2em;
+  }
+  .elobcourses-page .course-detail-wrapper .secondry-card .secondry-card-wrapper .card-text-cont-box .learmore-sec-card details .learn-more-details p {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  .elobcourses-page .course-count-details .course-count-inner .count-cont .count {
+    font-size: 1.5em;
+  }
+  .elobcourses-page .course-count-details .course-count-inner .count-cont .count-head {
+    font-size: 1em;
+  }
+  .elobcourses-page .course-card-wrapper {
+    margin: 50px 0 0 0;
+  }
+  .elobcourses-page .course-card-wrapper .course-card {
+    height: auto;
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  .elobcourses-page .course-card-wrapper .course-card:nth-child(even) {
+    flex-direction: column;
+  }
+  .elobcourses-page .course-card-wrapper .course-card:nth-child(even) .badge {
+    left: 0;
+    flex: 0;
+    width: 26px;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .elobcourses-page .course-card-wrapper .course-card:nth-child(even) .left-crs {
+    width: 100%;
+    height: auto;
+  }
+  .elobcourses-page .course-card-wrapper .course-card:nth-child(even) .left-crs img {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .elobcourses-page .course-card-wrapper .course-card .left-crs {
+    width: 100%;
+    height: auto;
+  }
+  .elobcourses-page .course-card-wrapper .course-card .left-crs img {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .elobcourses-page .course-card-wrapper .course-card .right-crs {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .elobcourses-page .course-card-wrapper .course-card .right-crs .right-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+  }
+  .elobcourses-page .course-card-wrapper .course-card .right-crs .right-wrapper h3 {
+    text-align: left;
+    font-size: 1.8em;
+  }
+  .elobcourses-page .course-card-wrapper .course-card .right-crs .right-wrapper .buy-cont {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .elobcourses-page .bottom-buy-now-btn .bottom-buy-cont .btn-cont1 .bottm-buybtn {
+    font-size: 1em;
+  }
+  .elobcourses-page .bottom-sug-card-cont .course-details-heading1 {
+    font-size: 1em;
+    padding: 0 15px;
+    padding-bottom: 10px;
+  }
+  .elobcourses-page .bottom-sug-card-cont .course-details-heading1::after {
+    height: 2px;
+  }
+  .elobcourses-page .bottom-sug-card-cont .sug-card-wrapper {
+    flex-wrap: wrap;
+  }
+  .elobcourses-page .alpha-elob-section {
+    width: 100%;
   }
 }/*# sourceMappingURL=our-style.css.map */
