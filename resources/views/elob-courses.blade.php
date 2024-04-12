@@ -1,136 +1,3 @@
-<!-- <style>
-    .course-count-details {
-        margin-top: 20px;
-        width: 100%;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .course-count-details .course-count-inner {
-        width: 70%;
-        height: 100%;
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .course-count-details .course-count-inner .count-cont {
-        width: 300px;
-        height: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .course-count-details .course-count-inner .count-cont .count {
-        font-size: 4em;
-        color: rgb(0, 89, 255);
-        font-weight: 700;
-
-    }
-
-    .course-count-details .course-count-inner .count-cont .count-head {
-        font-size: 2em;
-        font-weight: 600;
-
-    }
-
-
-
-    .course-detail-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-    }
-
-    .course-detail-wrapper .secondry-card {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        overflow: hidden;
-
-    }
-
-    .course-detail-wrapper .secondry-card .secondry-card-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        flex-direction: row;
-    }
-
-    .course-detail-wrapper .secondry-card .secondry-card-wrapper .img-box {
-        width: 40%;
-        height: 360px;
-        display: flex;
-        justify-content: center;
-
-    }
-
-    .course-detail-wrapper .secondry-card .secondry-card-wrapper .img-box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-
-    }
-
-    .course-detail-wrapper .secondry-card .secondry-card-wrapper .card-text-cont-box {
-        width: 60%;
-        padding-left: 80px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-    }
-
-    .course-detail-wrapper .secondry-card .secondry-card-wrapper .card-text-cont-box .sec-card-heading {
-        font-size: 2em;
-        font-weight: 600;
-    }
-
-    .course-detail-wrapper .secondry-card .secondry-card-wrapper .card-text-cont-box .sec-card-description {
-        font-size: 1.2em;
-        font-weight: 500;
-    }
-
-    .learmore-sec-card {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 10px 50px;
-    }
-
-    .btn-learn-more {
-        height: 50px;
-        width: 200px;
-        background: #01052970;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 22px;
-        color: #fff;
-
-    }
-
-    .learn-more-details {
-        margin-top: 30px;
-        width: 100%;
-    }
-
-    .mar-top {
-        margin-top: 15px;
-    }
-</style> -->
 @extends('layouts.frontend.index')
 
 @section('content')
@@ -1897,6 +1764,77 @@
         @endif
         @endforeach
 
+    </div>
+
+    <div class="bottom-sug-card-cont">
+        @if($id == 2)
+
+        @elseif($id == 3)
+        <div class="sug-card-wrapper">
+            <div class="sug-card">
+                <div class="card-img-box">
+                    <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/ALPHA_3D_21.png" alt="">
+                </div>
+                <div class="card-text-cont">
+                    <h1>alpha</h1>
+                    <a href="{{ url('/elob-courses/2') }}">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        @elseif($id == 4)
+        <div class="sug-card-wrapper">
+            <div class="sug-card">
+                <div class="card-img-box">
+                    <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/ALPHA_3D_21.png" alt="">
+                </div>
+                <div class="card-text-cont">
+                    <h1>alpha</h1>
+                    <a href="{{ url('/elob-courses/2') }}">Learn More</a>
+                </div>
+            </div>
+            <div class="sug-card">
+                <div class="card-img-box">
+                    <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/DIDIS3D.png" alt="">
+                </div>
+                <div class="card-text-cont">
+                    <h1>digital skills hub</h1>
+                    <a href="{{ url('/elob-courses/3') }}">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        @else
+        <div class="sug-card-wrapper">
+        <div class="sug-card">
+                <div class="card-img-box">
+                    <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/ALPHA_3D_21.png" alt="">
+                </div>
+                <div class="card-text-cont">
+                    <h1>alpha</h1>
+                    <a href="{{ url('/elob-courses/2') }}">Learn More</a>
+                </div>
+            </div>
+            <div class="sug-card">
+                <div class="card-img-box">
+                    <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/2-PERSONAL3D2.png" alt="">
+                </div>
+                <div class="card-text-cont">
+                    <h1>digital skills hub</h1>
+                    <a href="{{ url('/elob-courses/3') }}">Learn More</a>
+                </div>
+            </div>
+            <div class="sug-card">
+                <div class="card-img-box">
+                    <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/DIDIS3D.png" alt="">
+                </div>
+                <div class="card-text-cont">
+                    <h1>personal branding hub</h1>
+                    <a href="{{ url('/elob-courses/4') }}">Learn More</a>
+                </div>
+            </div>
+        </div>
+        @endif
     </div>
 </div>
 
