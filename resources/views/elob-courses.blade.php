@@ -70,8 +70,8 @@
             <div class="right-crs">
 
                 <div class="right-wrapper">
-                    <h3>{{$row->name}}</h3>
                     @if($id == 2)
+                    <h3>{{$row->name}}</h3>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 book_2
@@ -95,6 +95,7 @@
                             check
                         </span>Alpha course designed for ambitious individuals hungry for exponential growth. Dive into the world of affiliate marketing, reselling, and freelancing with cutting-edge strategies and hands-on skills. Unleash your potential, master the art of generating passive income streams, and carve your path to success in the digital landscape with Alpha.</p>
                     @elseif($id == 3)
+                    <h3 style="color:#ff439d;">{{$row->name}}</h3>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 book_2
@@ -118,6 +119,7 @@
                             check
                         </span>Digital Skills Hub is your gateway to mastering the ever-evolving kingdom of digital marketing and Instagram domination. Elevate your online presence, explore and utilise the power of social media and unlock the secrets to creating compelling digital campaigns. Dive into advanced strategies, develop a loyal audience and drive your brand to new heights in the digital age with Digital Skills Hub.</p>
                     @elseif($id == 4)
+                    <h3 style="color:#fcb32b;">{{$row->name}}</h3>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 book_2
@@ -141,6 +143,7 @@
                             check
                         </span>Step into the Personal Branding Hub, where we teach you how to make a big impact online. Learn how to build your personal brand, become a pro at YouTube, master short videos like reels, and become skilled in video marketing and editing. With our easy-to-follow guidance, you'll boost your online presence and reach your goals faster than ever before!</p>
                     @else
+                    <h3 style="color:#ff2951;">{{$row->name}}</h3>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 book_2
@@ -1770,6 +1773,7 @@
         @if($id == 2)
 
         @elseif($id == 3)
+        <h1 class="course-details-heading1" >Previous Courses Added to Your Subscription</h1>
         <div class="sug-card-wrapper">
             <div class="sug-card">
                 <div class="card-img-box">
@@ -1783,6 +1787,7 @@
         </div>
 
         @elseif($id == 4)
+        <h1 class="course-details-heading1" >Previous Courses Added to Your Subscription</h1>
         <div class="sug-card-wrapper">
             <div class="sug-card">
                 <div class="card-img-box">
@@ -1805,6 +1810,7 @@
         </div>
 
         @else
+        <h1 class="course-details-heading1" >Previous Courses Added to Your Subscription</h1>
         <div class="sug-card-wrapper">
         <div class="sug-card">
                 <div class="card-img-box">

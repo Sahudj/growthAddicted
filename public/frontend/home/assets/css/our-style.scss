@@ -3236,9 +3236,40 @@ html {
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        flex-direction: column;
+
+        .course-details-heading1 {
+            text-transform: uppercase;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            font-weight: 600;
+            padding-bottom: 10px;
+            position: relative;
+            margin-bottom: 40px;
+    
+            &:hover {
+                &::after {
+                    width: 60%;
+                    transition: 0.5s ease;
+                }
+            }
+    
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 40%;
+                height: 5px;
+                transition: 0.5s ease;
+                background: var(--prdarkclr);
+            }
+        }
 
         .sug-card-wrapper {
-            width: 90%;
+            width: 100%;
             display: flex;
             justify-content: center;
             gap: 30px;
