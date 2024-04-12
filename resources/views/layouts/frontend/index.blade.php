@@ -6,34 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Growthaddicted</title>
-    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/all.min.css">
-    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/style.css"> -->
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.css?<?php echo time(); ?>">
-    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <script src="{{url('public/frontend/home/')}}/assets/js/smooth-scrollbar.js"></script>
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/magnific-popup.css">
-    <link rel="shortcut icon" type="image/png" href="{{url('public/frontend/home/')}}/assets/images/favicon.png"> -->
-
-    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/aos.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
-    <!-- <div class="wc-copywrtting-wrapper" style="overflow-x:hidden"> -->
 
 
     <div class="main-section">
@@ -43,7 +29,7 @@
             <div class="nav-bar" id="navbar">
                 <div class="nav-bar-wrap">
                     <div class="nav-wrap-left">
-                        <img class="logo" width="200" src="{{url('public/frontend/home/')}}/assets/images/logo3.png" alt="logo-img">
+                        <img class="logo"  src="{{url('public/frontend/home/')}}/assets/images/logo3.png" alt="logo-img">
                     </div>
                     <div class="nav-wrap-middle">
                         <ul class="menu">
@@ -51,10 +37,10 @@
                                 <a href="">HOME</a>
                             </li>
                             <li class="item">
-                                <a href="">ABOUT</a>
+                                <a href="{{url('/about-us')}}">ABOUT</a>
                             </li>
                             <li class="item">
-                                <a href="">COURSES</a>
+                                <a href="{{url('/courses')}}">COURSES</a>
                             </li>
                             <li class="item">
                                 <a href="">CAREERS</a>
@@ -66,7 +52,7 @@
                             <a href="#" class="sign-up">SIGN UP</a>
                         </div>
                         <div class="action-btn">
-                            <a href="#" class="login">LOGIN</a>
+                            <a href="{{ route('login') }}" class="login">LOGIN</a>
                         </div>
                         <div class="action-btn">
                             <a href="#" class="shoping">
@@ -74,9 +60,11 @@
                             </a>
                         </div>
                         <div class="menu-btn">
-                            <span class="material-symbols-outlined">
-                                menu
-                            </span>
+                            <button>
+                                <span class="material-symbols-outlined">
+                                    menu
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -154,22 +142,17 @@
 
 
 
-    <!-- about our missiong section end -->
     <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
-    <!-- <script src="{{url('public/frontend/home/')}}/assets/js/swiper-bundle.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- <script src="{{url('public/frontend/home/')}}/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="{{url('public/frontend/home/')}}/assets/js/SmoothScroll.min.js"></script>
-    <script src="{{url('public/frontend/home/')}}/assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
-    <script src="{{url('public/frontend/home/')}}/assets/js/coustom.js"></script> -->
+
     <script>
         AOS.init();
+        var windowWidth = window.innerWidth;
         $(document).ready(function() {
             var navbar = $('#navbar');
-            var bottombuybtn=$('#bbnb');
+            var bottombuybtn = $('#bbnb');
             var lastScrollTop = 0;
             $(window).scroll(function() {
 
@@ -216,7 +199,7 @@
         })
 
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
+            slidesPerView: windowWidth <=960 ? 1 :3,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
@@ -375,10 +358,10 @@
         const obj = document.getElementById("value");
 
         var testiCrousal = new Swiper(".testimonial-crousal", {
-            direction: "vertical",
+            direction: "horizontal",
             autoplay: {
                 delay: 5000,
-                disableOnInteraction: true,
+                disableOnInteraction: windowWidth <=960 ? false :true,
             },
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -451,8 +434,6 @@
             $(wrapper).html(''); // Remove the iframe content
             $('.modal').hide(); // Hide the modal
         });
-
-        
     </script>
 
 </body>

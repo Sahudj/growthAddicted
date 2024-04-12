@@ -55,31 +55,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1480.jpg?updatedAt=1709402141728" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1480.jpg?updatedAt=1709402141728" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1460.jpg?updatedAt=1709402140118" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1460.jpg?updatedAt=1709402140118" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1451.jpg?updatedAt=1709402140067" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1451.jpg?updatedAt=1709402140067" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE9564.jpg?updatedAt=1709402142394" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE9564.jpg?updatedAt=1709402142394" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1411.jpg?updatedAt=1709402139946" alt="">
+                                    <img loading="lazy"  src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1411.jpg?updatedAt=1709402139946" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1038.jpg?updatedAt=1709402139891" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1038.jpg?updatedAt=1709402139891" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1391.jpg?updatedAt=1709402139877" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1391.jpg?updatedAt=1709402139877" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1028.jpg?updatedAt=1709402139822" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1028.jpg?updatedAt=1709402139822" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
@@ -88,31 +88,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0939.jpg?updatedAt=1709402136518" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0939.jpg?updatedAt=1709402136518" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0879.jpg?updatedAt=1709402136320" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0879.jpg?updatedAt=1709402136320" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0844.jpg?updatedAt=1709402136109" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0844.jpg?updatedAt=1709402136109" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0716.jpg?updatedAt=1709402136013" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0716.jpg?updatedAt=1709402136013" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.04.59%20PM.jpeg?updatedAt=1709402136018" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.04.59%20PM.jpeg?updatedAt=1709402136018" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0704.jpg?updatedAt=1709402135917" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0704.jpg?updatedAt=1709402135917" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0873.jpg?updatedAt=1709402135696" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0873.jpg?updatedAt=1709402135696" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.05.25%20PM.jpeg?updatedAt=1709402135637" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.05.25%20PM.jpeg?updatedAt=1709402135637" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
@@ -121,31 +121,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_DSC3540.jpg?updatedAt=1709402135591" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_DSC3540.jpg?updatedAt=1709402135591" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE07821.jpg?updatedAt=1709402135543" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE07821.jpg?updatedAt=1709402135543" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.30.20%20PM.jpeg?updatedAt=1709402132779" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.30.20%20PM.jpeg?updatedAt=1709402132779" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.41%20PM.jpeg?updatedAt=1709402132786" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.41%20PM.jpeg?updatedAt=1709402132786" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">5</div> -->
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.32.14%20PM.jpeg?updatedAt=1709402132793" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.32.14%20PM.jpeg?updatedAt=1709402132793" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.03.43%20PM.jpeg?updatedAt=1709402132753" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.03.43%20PM.jpeg?updatedAt=1709402132753" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.53%20PM.jpeg?updatedAt=1709402132655" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.53%20PM.jpeg?updatedAt=1709402132655" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.31.44%20PM.jpeg?updatedAt=1709402132650" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.31.44%20PM.jpeg?updatedAt=1709402132650" alt="">
                                 </div>
                                 <!-- <div class="momnts-card">10</div> -->
                             </div>
@@ -158,16 +158,16 @@
                         <div class="center-cont">
                             <div class="center-cont-top">
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1000" width="200px" src="https://ik.imagekit.io/muwui4v4k/headerSection1/flexonlinecouses.png?updatedAt=1709411315211" alt="content creator">
+                                    <img data-aos="zoom-in-down" data-aos-duration="1000" src="https://ik.imagekit.io/muwui4v4k/headerSection1/flexonlinecouses.png?updatedAt=1709411315211" alt="content creator">
                                     <div class="text" data-aos="fade-up" data-aos-duration="1000">Flexible Online Courses</div>
                                 </div>
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1300" width="200px" src="https://ik.imagekit.io/muwui4v4k/headerSection1/livevirtual.png?updatedAt=1709411315274" alt="content creator">
+                                    <img data-aos="zoom-in-down" data-aos-duration="1300" src="https://ik.imagekit.io/muwui4v4k/headerSection1/livevirtual.png?updatedAt=1709411315274" alt="content creator">
                                     <div class="text" data-aos="fade-up" data-aos-duration="1300">Live Virtual Workshop</div>
                                 </div>
 
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1500" width="200px" src="https://ik.imagekit.io/muwui4v4k/headerSection1/247.png?updatedAt=1709411315298" alt="content creator">
+                                    <img data-aos="zoom-in-down" data-aos-duration="1500" src="https://ik.imagekit.io/muwui4v4k/headerSection1/247.png?updatedAt=1709411315298" alt="content creator">
                                     <div class="text" data-aos="fade-up" data-aos-duration="1500">27/7 Access to Resources</div>
                                 </div>
 
@@ -650,8 +650,8 @@
         <!-- STEPS OF GROWTH -->
         <div class="steps-grwt-section">
             <div class="steps-grwt-wrapper">
-                <h1 class="heading">Steps Of growth</h1>
-                <div class="steps-cont">
+                <h1 data-aos="fade-up" data-aos-duration="1000" class="heading">Steps Of growth</h1>
+                <div data-aos="fade-up" data-aos-duration="1200" class="steps-cont">
                     <div class="step-bar">
                         <div class="sbar"></div>
                         <div class="sbar"></div>
@@ -696,62 +696,70 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/aman%20shukla.png?updatedAt=1712867835878" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Aman Upadhayay</h3>
+                                    <h3>Aman Shukla</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
-                                <div class="overlay">
-                                    <h3>Aman Parmar</h3>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/sagar%20deshmukh.png?updatedAt=1712867932407" alt="content creator">
                                 <div class="overlay">
                                     <h3>Sagar Deshmukh</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/monica%20limbu.png?updatedAt=1712867932464" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Monica Limbu</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/gautam%20jain.png?updatedAt=1712867932460" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Gautam Jain</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/shashish%20kumar%20tiwari.png?updatedAt=1712867932491" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Satish Kumar</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/Vrinda%20Gupta.png?updatedAt=1712867932546" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Vrinda Gupta</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/vinay%20sahu.png?updatedAt=1712867932542" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Vinay Sahu</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/meha%20sharma.png?updatedAt=1712867932562" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Animesh Mishra</h3>
+                                    <h3>Meha Sharma</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/divya%20bhauwala.png?updatedAt=1712867932581" alt="content creator">
+                                <div class="overlay">
+                                    <h3>Divya Bhauwala</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next">
+                            <span class="material-symbols-outlined">
+                                expand_circle_right
+                            </span>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <span class="material-symbols-outlined">
+                                expand_circle_right
+                            </span>
+                        </div>
                         <!-- <div class="swiper-pagination"></div> -->
                     </div>
                 </div>
@@ -792,7 +800,7 @@
         <div class="best-f-other-section">
             <div class="other-sec-wrapper">
                 <!-- <img src="{{url('public/frontend/home/')}}/assets/images/we_best.png" alt="content creator"> -->
-                <h1>why we are best from others</h1>
+                <h1 data-aos="fade-up" data-aos-duration="500">why we are best from others</h1>
                 <div class="card-cont">
                     <div class="special-card" data-aos="zoom-out-up" data-aos-duration="1000">
                         <div class="front">
@@ -860,13 +868,7 @@
         <!-- instragram section  -->
         <div class="instgram-section">
             <div class="insta-wrapper">
-                <div class="content-cont">
-                    <h1>Follow Us For More</h1>
-                    <h3>Infotainment Content</h3>
-                    <div>
-                        <a href="https://instagram.com/growthaddicted.official?igshid=YmMyMTA2M2Y=">@growthaddicted.official</a>
-                    </div>
-                </div>
+                <a href="https://instagram.com/growthaddicted.official?igshid=YmMyMTA2M2Y="></a>
             </div>
         </div>
         <!-- student feedback section  -->
@@ -881,7 +883,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Adnan?updatedAt=1712869416117" alt="content creator">
                                                 <div class="play-btn" id="testimonal-play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -891,30 +893,9 @@
                                         </div>
                                         <div class="desc">
                                             <div class="desc-wrap">
-                                                <h1>Aman Parmar</h1>
+                                                <h1>Adnan Qureshi</h1>
                                                 <div class="rating">★ ★ ★ ★ ★</div>
-                                                <p>After joining Growth Addicted, I've not only acquired invaluable knowledge and skills in digital marketing but also witnessed a transformative journey, gaining insights that have elevated my confidence and proficiency in the field.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <div class="swiper-slide testi-card ">
-                                    <div class="testi-card-wrap">
-                                        <div class="img-box">
-                                            <div class="img-box-wrap">
-                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
-                                                <div class="play-btn">
-                                                    <span class="material-symbols-outlined">
-                                                        play_circle
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="desc">
-                                            <div class="desc-wrap">
-                                                <h1>Animesh Mishra</h1>
-                                                <div class="rating">★ ★ ★ ★ ★</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                                <p>With a high vision for success, I've always sought opportunities to achieve financial freedom. However, it wasn't until I found this program that my dreams started to materialize. It has provided me with the tools and guidance to turn my aspirations into reality. I'm deeply thankful for the transformative experience and the newfound skills. Thank you, Growth Addicted, for being the catalyst for my success!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -923,7 +904,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Ali%20Haider?updatedAt=1712869641363" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -933,9 +914,9 @@
                                         </div>
                                         <div class="desc">
                                             <div class="desc-wrap">
-                                                <h1>Animesh Mishra</h1>
+                                                <h1>Ali Haider</h1>
                                                 <div class="rating">★ ★ ★ ★ ★</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                                <p>Growth Addicted has been a turning point for me. I've always had the desire to make money, but I never seemed to find the right opportunity. This program has opened doors I never knew existed, allowing me to finally achieve my goal. I'm incredibly grateful for the opportunity and the skills I've gained. Thank you, Growth Addicted, for changing my life!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -944,7 +925,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/boy-00.png" alt="content creator">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Shubham%20Podh?updatedAt=1712870005507" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -954,13 +935,160 @@
                                         </div>
                                         <div class="desc">
                                             <div class="desc-wrap">
-                                                <h1>Animesh Mishra</h1>
+                                                <h1>Shubham Podh</h1>
                                                 <div class="rating">★ ★ ★ ★ ★</div>
-                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cumque quaerat quibusdam, quis ex eum incidunt expedita natus deleniti facere commodi, ratione saepe ducimus porro nam ea aut corporis tenetur!</p>
+                                                <p>Growth Addicted has been a game-changer for me! While working a job, I always dreamt of achieving something bigger but lacked direction. This program transformed my life, providing me with the skills and guidance I needed. Now, I'm earning a lot and couldn't be happier. Thank you, Growth Addicted, for changing my life!</p>
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Rohit%20Kumar?updatedAt=1712870073962" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Rohit Kumar</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Growth Addicted has changed my life! Even while studying in college, I started making money and fulfilling my dream of helping others. I'm incredibly thankful to Growth Addicted for empowering me to achieve my goals.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Sneha%20Sapra?updatedAt=1712870167893" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Sneha Sapra</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Growing up, I was always the quiet, introverted girl. But after joining Growth Addicted, everything changed. The training program helped me become confident in my communication skills. I learned how to effectively convey my ideas and connect with others. Not only did I become great at communication, but I also started making a lot of money, making my parents proud. I'm so grateful to Growth Addicted for helping me grow personally and professionally. I'm proud to be part of such an amazing company!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Sumit%20Pant?updatedAt=1712870263999" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Sumit Pant</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Ever since I was young, I dreamed of being a content creator. However, life always seemed to get in the way. But now, with this training program, I can finally focus on turning that dream into reality. The program has given me the tools and knowledge to create content that resonates with others. I'm so grateful for this opportunity, and I can't wait to see where this journey takes me!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Ankit%20Gole?updatedAt=1712870351968" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Ankit Gole</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Being in college and wanting to support my family was a big responsibility. This training program helped me turn my passion into a source of income. I learned how to create compelling videos that resonated with viewers. With the skills I gained, I started earning money while still in college. It feels incredible to support my family and pursue my dreams at the same time.  Growth Addicted has truly been a life-changing experience for me!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Abhishek%20Verma?updatedAt=1712870431771" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Abhishek Verma</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>After struggling in the corporate sector and feeling like a failure for so long, I decided to take a different path. I became a teacher but still felt unfulfilled. Then, I found this training program, and everything changed. I learned how to create engaging content and monetize it effectively. Now, I'm not only a successful creator but also a successful money maker. I've never been happier in my life. This training program has truly transformed my career and my outlook on life!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Madhuri%20Chheda?updatedAt=1712870553837" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Madhuri Chheda</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>After becoming a mom of two, I always wanted to find a way to earn extra income without sacrificing time with my kids. This platform was a game-changer for me! The content was easy to follow, even with a busy schedule. I started creating videos in my spare time and started earning money! It feels amazing to contribute financially to my family while doing something I love. This Training Program has truly changed my life!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide testi-card ">
+                                    <div class="testi-card-wrap">
+                                        <div class="img-box">
+                                            <div class="img-box-wrap">
+                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Sanchita%20Yagale?updatedAt=1712870651361" alt="content creator">
+                                                <div class="play-btn">
+                                                    <span class="material-symbols-outlined">
+                                                        play_circle
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="desc-wrap">
+                                                <h1>Sanchita Yelgate</h1>
+                                                <div class="rating">★ ★ ★ ★ ★</div>
+                                                <p>Working with Growth Addicted was a game-changer for me! I felt so empowered and equipped with the skills I needed to succeed in content creation. Not only did I improve my content quality, but I also saw a significant increase in my earnings. Within just a month, I was able to start earning money from my videos. The course content was so easy to understand and apply, making it a truly valuable investment in my career!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="swiper-button-next"></div>
