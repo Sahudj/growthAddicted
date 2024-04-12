@@ -25,11 +25,42 @@
     <div class="main-section">
         <div class="main-wrapper">
 
+            <div class="nav-side-bar" id="navsidebar">
+                <div class="close-btn" id="clsbtn">
+                    <button>
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </button>
+                </div>
+                <ul class="menu">
+                    <li class="item">
+                        <a href="{{url('/')}}">HOME</a>
+                    </li>
+                    <li class="item">
+                        <a href="{{url('/')}}">ABOUT</a>
+                    </li>
+                    <li class="item">
+                        <a href="{{url('/')}}">COURSES</a>
+                    </li>
+                    <li class="item">
+                        <a href="{{url('/')}}">CAREERS</a>
+                    </li>
+                    <li class="item">
+                        <a href="{{ url('signup') }}" class="sign-up">SIGN UP</a>
+                    </li>
+                    <li class="item">
+                        <a href="{{ url('login') }}" class="login">LOGIN</a>
+                    </li>
+                </ul>
+
+            </div>
+
             <!-- NAV BAR START HERE  -->
             <div class="nav-bar" id="navbar">
                 <div class="nav-bar-wrap">
                     <div class="nav-wrap-left">
-                        <img class="logo"  src="{{url('public/frontend/home/')}}/assets/images/logo3.png" alt="logo-img">
+                        <img class="logo" src="{{url('public/frontend/home/')}}/assets/images/logo3.png" alt="logo-img">
                     </div>
                     <div class="nav-wrap-middle">
                         <ul class="menu">
@@ -37,10 +68,10 @@
                                 <a href="{{url('/')}}">HOME</a>
                             </li>
                             <li class="item">
-                                <a href="{{url('/about-us')}}">ABOUT</a>
+                                <a href="{{url('/')}}">ABOUT</a>
                             </li>
                             <li class="item">
-                                <a href="{{url('/courses')}}">COURSES</a>
+                                <a href="{{url('/')}}">COURSES</a>
                             </li>
                             <li class="item">
                                 <a href="">CAREERS</a>
@@ -60,13 +91,14 @@
                             </a>
                         </div>
                         <div class="menu-btn">
-                            <button>
+                            <button id="sdbaropenbtn">
                                 <span class="material-symbols-outlined">
                                     menu
                                 </span>
                             </button>
                         </div>
                     </div>
+
                 </div>
             </div>
             <!-- NAV BAR END HERE  -->
@@ -199,7 +231,7 @@
         })
 
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: windowWidth <=960 ? 1 :3,
+            slidesPerView: windowWidth <= 960 ? 1 : 3,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
@@ -361,7 +393,7 @@
             direction: "horizontal",
             autoplay: {
                 delay: 5000,
-                disableOnInteraction: windowWidth <=960 ? false :true,
+                disableOnInteraction: windowWidth <= 960 ? false : true,
             },
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -389,6 +421,22 @@
             $('.modal').hide();
             e.preventDefault();
         });
+        // Side Bar 
+        $("#sdbaropenbtn").on("click", function(e) {
+            var sideBar = $("#navsidebar");
+            sideBar.addClass('open');
+            e.preventDefault();
+        });
+        $("#clsbtn").on("click", function(e) {
+            var sideBar = $("#navsidebar");
+            sideBar.removeClass('open');
+            e.preventDefault();
+        });
+        $("#navsidebar > .menu > .list > a").on("click", function(e) {
+            var sideBar = $("#navsidebar");
+            sideBar.removeClass('open');
+        });
+
 
         $("#v-play-btn").on("click", function(e) {
             var vidWrap = $(".video-box");
