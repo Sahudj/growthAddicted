@@ -30,21 +30,25 @@
             <div class="home-header-top">
                 <div class="top-hd-bg">
                     <div class="top-hd-fg">
-                        <div class="anim-cont">
-                            <section class="dytxt" style="text-align: right;">
-                                <div class="first">
-                                    <div>SHURUWAT</div>
+
+                        <div class="txtrvlanimwrap">
+
+
+                            <div class="positivity">
+                                <div class="positivity__words">
+                                    <span class="change">SHURUWAT</span>
+                                    <span class="change">शुरुवात</span>
+                                    <span class="change">SHURUWAT</span>
+                                    <span class="change">शुरुवात</span>
                                 </div>
-                                <div class="second">
-                                    <div>शुरुवात</div>
-                                </div>
-                            </section>
-                            <p>Yahi Se hai</p>
+                                <span class="positivity__alone">&nbsp;Yahi Se Hai</span>
+                            </div>
+
                         </div>
-                        <!-- <h3 data-aos="fade-up" data-aos-duration="1000">Shuruwat Yahi Se hai</h3> -->
+
                         <div class="fg-title">
                             <h1 data-aos="fade-up" data-aos-duration="1500">Let's Learn Beyond The Limits</h1>
-                            <h4 data-aos="fade-up" data-aos-duration="2000">Making Education affordable and accessible accross</h4>
+                            <h4 data-aos="fade-up" data-aos-duration="2000">Making Education affordable and accessible across</h4>
                             <h3 data-aos="fade-up" data-aos-duration="2050" class="india-color">INDIA</h3>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="2300">
@@ -66,11 +70,11 @@
                                 <div class="momnts-card">
                                     <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE9564.jpg?updatedAt=1709402142394" alt="">
                                 </div>
-                                <!-- <div class="momnts-card">5</div> -->
+
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img loading="lazy"  src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1411.jpg?updatedAt=1709402139946" alt="">
+                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1411.jpg?updatedAt=1709402139946" alt="">
                                 </div>
                                 <div class="momnts-card">
                                     <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1038.jpg?updatedAt=1709402139891" alt="">
@@ -81,7 +85,7 @@
                                 <div class="momnts-card">
                                     <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1028.jpg?updatedAt=1709402139822" alt="">
                                 </div>
-                                <!-- <div class="momnts-card">10</div> -->
+
                             </div>
                         </div>
 
@@ -99,7 +103,7 @@
                                 <div class="momnts-card">
                                     <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0716.jpg?updatedAt=1709402136013" alt="">
                                 </div>
-                                <!-- <div class="momnts-card">5</div> -->
+
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
@@ -114,7 +118,7 @@
                                 <div class="momnts-card">
                                     <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.05.25%20PM.jpeg?updatedAt=1709402135637" alt="">
                                 </div>
-                                <!-- <div class="momnts-card">10</div> -->
+
                             </div>
                         </div>
 
@@ -132,7 +136,7 @@
                                 <div class="momnts-card">
                                     <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.41%20PM.jpeg?updatedAt=1709402132786" alt="">
                                 </div>
-                                <!-- <div class="momnts-card">5</div> -->
+
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
@@ -147,14 +151,14 @@
                                 <div class="momnts-card">
                                     <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.31.44%20PM.jpeg?updatedAt=1709402132650" alt="">
                                 </div>
-                                <!-- <div class="momnts-card">10</div> -->
+
                             </div>
                         </div>
 
 
                     </div>
                     <div class="ovly-sec">
-                        <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Learn New Skills When<br> And Where You Like</h1>
+                        <h1 class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">Building Tomorrow's Leaders <br>Through Digital Education</h1>
                         <div class="center-cont">
                             <div class="center-cont-top">
                                 <div class="content-box">
@@ -168,7 +172,7 @@
 
                                 <div class="content-box">
                                     <img data-aos="zoom-in-down" data-aos-duration="1500" src="https://ik.imagekit.io/muwui4v4k/headerSection1/247.png?updatedAt=1709411315298" alt="content creator">
-                                    <div class="text" data-aos="fade-up" data-aos-duration="1500">27/7 Access to Resources</div>
+                                    <div class="text" data-aos="fade-up" data-aos-duration="1500">24/7 Access to Resources</div>
                                 </div>
 
                             </div>
@@ -203,8 +207,6 @@
                     </div>
                     <div class="v-section-right ">
                         <div class="video-box">
-                            <!-- <video src="https://youtu.be/CTUd15B5rGc?si=0x_d4DBtYnV1U70E" controls></video> -->
-
                         </div>
                         <span class="material-symbols-outlined" id="v-play-btn">
                             play_circle
@@ -218,35 +220,17 @@
         </div>
         <!-- VIDEO SECTION END HERE  -->
 
-        <!-- EDUCATION SECTION START HERE  -->
-        <!-- <div class="education-section">
-            <div class="edtn-sec-wrapper">
-                <div class="edtn-left">
-                    <div class="left-wrapper">
-                        <h1>The scaffolding of a successful future is constructed through education.</h1>
-                        <h3>Growth Addicted: Your gateway to unparalleled digital marketing success. Elevate your brand with cutting-edge strategies, expert insights, and data-driven solutions. Unleash the power of targeted campaigns, SEO mastery, and social media dominance. Join the journey to exponential growth and make your online presence a force to be reckoned with. Dive into the future of marketing with Growth Addicted – where success is not an option, but a certainty</h3>
-                        <div class="btn-cont">
-                            <a href="" class="pri-btn">BOOST YOUR LEARING</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="edtn-right">
-                    <div class="right-wrapper">
-                        <img src="{{url('public/frontend/home/')}}/assets/images/education-girl.png" alt="content creator">
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
         <!-- EDUCATION SECTION END HERE  -->
 
         <!-- OUR LEARNING OPPORTUNITY START HERE  -->
         <div class="learning-opty">
             <div class="l-o-wrapper">
                 <div class="text-cont">
-                    <!-- <h4>CLIENTS ACROSS INDUSTRIES</h4> -->
+
                     <h1>OUR LEARNING OPPORTUNITY</h1>
                     <h3>Find the best course to grow your skills</h3>
-                    <!-- <h2>Find the best course to grow your skills</h2> -->
+
                 </div>
                 <div class="moving-screen">
                     <div class="temp-scroll" style="--t:25s;">
@@ -474,107 +458,117 @@
                         <div class="badge">Best Package</div>
                         @endif
                         <div class="left-crs">
-                            <!-- <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/ALPHA_3D_21.png" alt="content creator">
-                         -->
                             <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/{{($row->id == 2) ? 'ALPHA_3D_21.png' : (($row->id == 3) ? 'DIDIS3D.png' : ( ($row->id == 4) ? '2-PERSONAL3D2.png' : 'rocketman.png' ) ) }}" alt="blog">
-
                         </div>
                         <div class="right-crs">
 
                             <div class="right-wrapper">
                                 <h3>{{$row->name}}</h3>
                                 @if($row->id == 2)
-                                <div style="display:flex; gap:30px; ">
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            book_2
-                                        </span>05 COURSES</p>
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            schedule
-                                        </span>25+ HOURS</p>
+                                <div class="course-card-heading">
+                                    <div class="sneeks">
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                book_2
+                                            </span>05 COURSES</p>
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                schedule
+                                            </span>8+ HOURS</p>
+                                    </div>
+
                                 </div>
-                                <div style="display:flex; gap:30px; ">
+                                <div class="features-list-info">
+                                    <p class="about-course">Alpha course designed for ambitious individuals hungry for exponential growth. Dive into the world of affiliate marketing, reselling, and freelancing with cutting-edge strategies and hands-on skills. Unleash your potential, master the art of generating passive income streams, and carve your path to success in the digital landscape with Alpha.</p>
+                                </div>
+                                <div class="features-list">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>CERTIFICATES </p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
                                         </span>LIVE Q&A</p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
-                                        </span>COUSTOMER SUPPORT</p>
+                                        </span>CUSTOMER SUPPORT</p>
                                 </div>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>CERTIFICATES </p>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>Alpha course designed for ambitious individuals hungry for exponential growth. Dive into the world of affiliate marketing, reselling, and freelancing with cutting-edge strategies and hands-on skills. Unleash your potential, master the art of generating passive income streams, and carve your path to success in the digital landscape with Alpha.</p>
+
                                 @elseif($row->id == 3)
-                                <div style="display:flex; gap:30px; ">
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            book_2
-                                        </span>04 COURSES + 5 BONUS COURSES</p>
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            schedule
-                                        </span>25+ HOURS</p>
+                                <div class="course-card-heading">
+                                    <div class="sneeks">
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                book_2
+                                            </span>04 COURSES + 5 BONUS COURSES</p>
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                schedule
+                                            </span>15+ HOURS</p>
+                                    </div>
                                 </div>
-                                <div style="display:flex; gap:30px; ">
+                                <div class="features-list-info">
+                                    <p class="about-course">Digital Skills Hub is your gateway to mastering the ever-evolving kingdom of digital marketing and Instagram domination. Elevate your online presence, explore and utilise the power of social media and unlock the secrets to creating compelling digital campaigns. Dive into advanced strategies, develop a loyal audience and drive your brand to new heights in the digital age with Digital Skills Hub.</p>
+                                </div>
+                                <div class="features-list">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>CERTIFICATES </p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
                                         </span>LIVE Q&A</p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
-                                        </span>COUSTOMER SUPPORT</p>
+                                        </span>CUSTOMER SUPPORT</p>
                                 </div>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>CERTIFICATES </p>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>Digital Skills Hub is your gateway to mastering the ever-evolving kingdom of digital marketing and Instagram domination. Elevate your online presence, explore and utilise the power of social media and unlock the secrets to creating compelling digital campaigns. Dive into advanced strategies, develop a loyal audience and drive your brand to new heights in the digital age with Digital Skills Hub.</p>
+
                                 @elseif($row->id == 4)
-                                <div style="display:flex; gap:30px; ">
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            book_2
-                                        </span>06 COURSES + 9 BONUS COURSES</p>
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            schedule
-                                        </span>25+ HOURS</p>
+                                <div class="course-card-heading">
+                                    <div class="sneeks">
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                book_2
+                                            </span>06 COURSES + 9 BONUS COURSES</p>
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                schedule
+                                            </span>36+ HOURS</p>
+                                    </div>
                                 </div>
-                                <div style="display:flex; gap:30px; ">
+                                <div class="features-list-info">
+                                    <p class="about-course">Step into the Personal Branding Hub, where we teach you how to make a big impact online. Learn how to build your personal brand, become a pro at YouTube, master short videos like reels, and become skilled in video marketing and editing. With our easy-to-follow guidance, you'll boost your online presence and reach your goals faster than ever before!</p>
+                                </div>
+                                <div class="features-list">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>CERTIFICATES </p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
                                         </span>LIVE Q&A</p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
-                                        </span>COUSTOMER SUPPORT</p>
+                                        </span>CUSTOMER SUPPORT</p>
                                 </div>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>CERTIFICATES </p>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>Step into the Personal Branding Hub, where we teach you how to make a big impact online. Learn how to build your personal brand, become a pro at YouTube, master short videos like reels, and become skilled in video marketing and editing. With our easy-to-follow guidance, you'll boost your online presence and reach your goals faster than ever before!</p>
+
                                 @else
-                                <div style="display:flex; gap:30px; ">
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            book_2
-                                        </span>10 COURSES + 15 BONUS COURSES</p>
-                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                            schedule
-                                        </span>25+ HOURS</p>
+                                <div class="course-card-heading">
+                                    <div class="sneeks">
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                book_2
+                                            </span>10 COURSES + 15 BONUS COURSES</p>
+                                        <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                                schedule
+                                            </span>80+ HOURS</p>
+                                    </div>
                                 </div>
-                                <div style="display:flex; gap:30px; ">
+                                <div class="features-list-info">
+                                    <p class="about-course">Dive into the ultimate growth experience with our flagship course, Iconic. Unlock the secrets of online marketing while honing essential soft skills like communication, public speaking, and storytelling. This top-tier package is your comprehensive toolkit for success, equipping you with the expertise to excel in the digital landscape and beyond. Join us on the journey to become an icon in your industry.</p>
+                                </div>
+                                <div class="features-list">
+                                    <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
+                                            check
+                                        </span>CERTIFICATES </p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
                                         </span>LIVE Q&A</p>
                                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                             check
-                                        </span>COUSTOMER SUPPORT</p>
+                                        </span>CUSTOMER SUPPORT</p>
                                 </div>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>CERTIFICATES </p>
-                                <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
-                                        check
-                                    </span>Dive into the ultimate growth experience with our flagship course, Iconic. Unlock the secrets of online marketing while honing essential soft skills like communication, public speaking, and storytelling. This top-tier package is your comprehensive toolkit for success, equipping you with the expertise to excel in the digital landscape and beyond. Join us on the journey to become an icon in your industry.</p>
+
                                 @endif
 
                                 <div class="buy-cont">
@@ -601,7 +595,7 @@
                                         <form method="POST" name="banner-form" id="packages{{$row->id}}" action="{{url('user/upgrade-courses')}}" enctype="multipart/form-data">
                                             {{ csrf_field() }}
                                             <input type="hidden" name="_sessionToken" value="{{encryptor('encrypt', $row->id)}}">
-                                            <a class="sec-btn anim" href="javascript:void(0);" onclick="document.getElementById('packages{{$row->id}}').submit();"><span>BUY NOW</span></a>
+                                            <a class="sec-btn anim" href="javascript:void(0);" onclick="document.getElementById('packages{{$row->id}}').submit();"><span>Enroll Now</span></a>
                                         </form>
                                     </div>
                                     @elseif($packageId != $row->id && $packageId < $row->id)
@@ -609,13 +603,13 @@
                                         <div class="btn-cont1">
                                             <!-- <a class="sec-btn anim" href="{{ url('signup?guest='.encryptor('encrypt', $row->id)) }}"><span>BUY NOW</span></a> -->
                                             @if($row->id == 2)
-                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>Enroll Now</span></a>
                                             @elseif($row->id == 3)
-                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>Enroll Now</span></a>
                                             @elseif($row->id == 4)
-                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>Enroll Now</span></a>
                                             @else
-                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>BUY NOW</span></a>
+                                            <a class="sec-btn anim" href="{{ url('/elob-courses/' . $row->id) }}"><span>Enroll Now</span></a>
                                             @endif
                                         </div>
                                         @endif
@@ -633,15 +627,15 @@
                 <h1 class="heading" data-aos="fade-up" data-aos-duration="1000">Why Growth Addicted</h1>
                 <div class="grwt-add-cont">
                     <div class="count-cont">
-                        <h1><span id="animval1"></span> +</h1>
+                        <h1><span id="animval1"></span>+</h1>
                         <h2>Tutors</h2>
                     </div>
                     <div class="count-cont">
-                        <h1><span id="animval2"></span> +</h1>
+                        <h1><span id="animval2"></span>+</h1>
                         <h2>Trainings</h2>
                     </div>
                     <div class="count-cont">
-                        <h1><span id="animval3"></span> K+</h1>
+                        <h1><span id="animval3"></span>K+</h1>
                         <h2>Students</h2>
                     </div>
                 </div>
@@ -722,7 +716,7 @@
                             <div class="swiper-slide">
                                 <img src="https://ik.imagekit.io/muwui4v4k/Instructors/shashish%20kumar%20tiwari.png?updatedAt=1712867932491" alt="content creator">
                                 <div class="overlay">
-                                    <h3>Satish Kumar</h3>
+                                    <h3>Shashish Kumar Tiwari</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
@@ -1021,7 +1015,7 @@
                                             <div class="desc-wrap">
                                                 <h1>Ankit Gole</h1>
                                                 <div class="rating">★ ★ ★ ★ ★</div>
-                                                <p>Being in college and wanting to support my family was a big responsibility. This training program helped me turn my passion into a source of income. I learned how to create compelling videos that resonated with viewers. With the skills I gained, I started earning money while still in college. It feels incredible to support my family and pursue my dreams at the same time.  Growth Addicted has truly been a life-changing experience for me!</p>
+                                                <p>Being in college and wanting to support my family was a big responsibility. This training program helped me turn my passion into a source of income. I learned how to create compelling videos that resonated with viewers. With the skills I gained, I started earning money while still in college. It feels incredible to support my family and pursue my dreams at the same time. Growth Addicted has truly been a life-changing experience for me!</p>
                                             </div>
                                         </div>
                                     </div>

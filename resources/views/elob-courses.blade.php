@@ -78,7 +78,7 @@
                             </span>05 COURSES</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 schedule
-                            </span>25+ HOURS</p>
+                            </span>8+ HOURS</p>
                     </div>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
@@ -86,7 +86,7 @@
                             </span>LIVE Q&A</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 check
-                            </span>COUSTOMER SUPPORT</p>
+                            </span>CUSTOMER SUPPORT</p>
                     </div>
                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                             check
@@ -102,7 +102,7 @@
                             </span>04 COURSES + 5 BONUS COURSES</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 schedule
-                            </span>25+ HOURS</p>
+                            </span>15+ HOURS</p>
                     </div>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
@@ -110,7 +110,7 @@
                             </span>LIVE Q&A</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 check
-                            </span>COUSTOMER SUPPORT</p>
+                            </span>CUSTOMER SUPPORT</p>
                     </div>
                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                             check
@@ -126,7 +126,7 @@
                             </span>06 COURSES + 9 BONUS COURSES</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 schedule
-                            </span>25+ HOURS</p>
+                            </span>36+ HOURS</p>
                     </div>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
@@ -134,7 +134,7 @@
                             </span>LIVE Q&A</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 check
-                            </span>COUSTOMER SUPPORT</p>
+                            </span>CUSTOMER SUPPORT</p>
                     </div>
                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                             check
@@ -150,7 +150,7 @@
                             </span>10 COURSES + 15 BONUS COURSES</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 schedule
-                            </span>25+ HOURS</p>
+                            </span>80+ HOURS</p>
                     </div>
                     <div style="display:flex; gap:30px; ">
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
@@ -158,7 +158,7 @@
                             </span>LIVE Q&A</p>
                         <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                                 check
-                            </span>COUSTOMER SUPPORT</p>
+                            </span>CUSTOMER SUPPORT</p>
                     </div>
                     <p><span class="material-symbols-outlined" style="margin-right: 5px; vertical-align: middle;">
                             check
