@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
-  --primy: #fff;
+  --prim-clr: rgb(96, 28, 213);
+  --sec-clr: rgba(91, 94, 255, 0.264);
 }
 
 * {
@@ -12,9 +14,32 @@ body,
 html {
   width: 100vw;
   height: 100svh;
-  border: 1px solid red;
   overflow: hidden;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Karla", sans-serif !important;
+}
+
+.growth-plus-btn {
+  background: rgb(85, 85, 255);
+  color: white !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700 !important;
+  padding: 8px 16px !important;
+}
+.growth-plus-btn:hover {
+  color: var(--prim-clr) !important;
 }
 
 .growth-dash {
@@ -31,12 +56,11 @@ html {
 .growth-dash .growth-dash-wrapper .growth-side-bar {
   width: 250px;
   height: 100%;
-  border: 1px solid green;
+  box-shadow: 0 0 15px rgba(183, 183, 183, 0.612);
 }
 .growth-dash .growth-dash-wrapper .growth-right-container {
   width: calc(100% - 250px);
   height: 100%;
-  border: 1px solid rgb(2, 0, 128);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -44,10 +68,93 @@ html {
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar {
   width: 100%;
   height: 60px;
-  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(183, 183, 183, 0.355);
+  background: white;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-left {
+  width: 50%;
+  height: 100%;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-left ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-left ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(168, 168, 168, 0.714);
+  font-family: "Karla", sans-serif !important;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-left ul li a span {
+  font-size: 1.3em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-left ul li a:hover {
+  background: var(--sec-clr);
+  color: var(--prim-clr);
+  transition: 0.5s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-right {
+  width: 50%;
+  height: 100%;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-right ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-right ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(168, 168, 168, 0.714);
+  font-family: "Karla", sans-serif !important;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-right ul li a img {
+  width: 18px;
+  height: 18px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-right ul li a span {
+  font-size: 1.3em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar .header-wrap .header-right ul li a:hover {
+  background: var(--sec-clr);
+  color: var(--prim-clr);
+  transition: 0.5s ease;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages {
   width: 100%;
   height: calc(100% - 60px);
-  border: 2px solid red;
 }/*# sourceMappingURL=ourcustom.css.map */

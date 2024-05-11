@@ -20,8 +20,8 @@
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
-   <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/materialize.css">
-   <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/style.css">
+   <!-- <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/materialize.css"> -->
+   <!-- <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/style.css"> -->
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/pages/dashboard-modern.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/pages/intro.css">
    <!-- END: Page Level CSS-->
@@ -37,6 +37,7 @@
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/pages/form-select2.css">
 
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/fonts/fontawesome/css/all.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
    <!-- END: Custom CSS-->
    <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script>
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/quill/katex.min.css">
@@ -62,7 +63,13 @@
    <div class="growth-dash">
       <div class="growth-dash-wrapper">
          <div class="growth-side-bar">
-
+            @auth()
+            @if(Auth()->user()->role == 1)
+            @include('sidebar.super-admin')
+            @elseif(Auth()->user()->role == 2)
+            @include('sidebar.user')
+            @endif
+            @endauth
          </div>
          <div class="growth-right-container">
             <!-- header section start -->
@@ -70,16 +77,22 @@
                <div class="header-wrap">
                   <div class="header-left">
                      <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">My Courses</a></li>
-                        <li><a href="#">Become Affiliate</a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">auto_stories</span> My Courses</a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a></li>
                      </ul>
                   </div>
                   <div class="header-right">
                      <ul>
-                        <li><a href="#">Growth PLus</a></li>
-                        <li><a href="#"><i class="fa fa-thin fa-bell"></i></a></li>
-                        <li><a href="#">notifications</a></li>
+                        <li><a href="#" class="growth-plus-btn">Growth Plus +</a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">notifications</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">screen_record</span></a></li>
+                        @if(auth()->user()->profile_pic)
+                        <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
+                        @else
+                        <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
+                        @endif
+                        <li><a href="#"><span class="material-symbols-outlined">more_vert</span></a></li>
                      </ul>
                   </div>
                </div>
@@ -89,8 +102,10 @@
             <!-- dynamic pages start -->
             <div class="growth-dynamic-pages">
                <div class="dynamic-page-wrapper">
+                  home
+                  <i class="fa fa-light fa-house"></i>
 
-               </div> 
+               </div>
             </div>
             <!-- dynamic pages end -->
          </div>
