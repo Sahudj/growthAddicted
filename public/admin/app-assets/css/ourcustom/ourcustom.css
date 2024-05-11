@@ -1,0 +1,53 @@
+:root {
+  --primy: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100svh;
+  border: 1px solid red;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.growth-dash {
+  width: 100%;
+  height: 100%;
+}
+.growth-dash .growth-dash-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar {
+  width: 250px;
+  height: 100%;
+  border: 1px solid green;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container {
+  width: calc(100% - 250px);
+  height: 100%;
+  border: 1px solid rgb(2, 0, 128);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-header-navbar {
+  width: 100%;
+  height: 60px;
+  border: 1px solid black;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages {
+  width: 100%;
+  height: calc(100% - 60px);
+  border: 2px solid red;
+}/*# sourceMappingURL=ourcustom.css.map */
