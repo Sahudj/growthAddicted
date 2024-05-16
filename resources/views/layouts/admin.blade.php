@@ -62,7 +62,7 @@
 
    <div class="growth-dash">
       <div class="growth-dash-wrapper">
-         <div class="growth-side-bar">
+         <div class="growth-side-bar" id="grwth-sidebar">
             @auth()
             @if(Auth()->user()->role == 1)
             @include('sidebar.super-admin')
@@ -142,7 +142,29 @@
    <script src="{{url('public/admin/')}}/app-assets/vendors/select2/select2.full.min.js"></script>
    <script src="{{url('public/admin/')}}/app-assets/js/scripts/form-select2.js"></script>
 
+   <script>
+      $(document).ready(function() {
 
+         $('.drop-dwn-link').on('click', function() {
+            if ($(this).hasClass('dropped')) {
+               $(this).removeClass('dropped');
+            } else {
+               // Otherwise, remove the 'dropped' class from all elements
+               $('.drop-dwn-link').removeClass('dropped');
+               // Add the 'dropped' class to the clicked element
+               $(this).addClass('dropped');
+            }
+         });
+
+         $('#cllps-side-btn').on('click',()=>{
+            $('#grwth-sidebar').addClass('collapsed');
+            $('#or-sd-menu').hide();
+            $('#or-sd-cl-menu').show();
+         })
+
+
+      })
+   </script>
 
    <script type="text/javascript">
       (function(window, document, $) {
@@ -241,6 +263,9 @@
 
             });
          };
+
+
+
 
       });
 

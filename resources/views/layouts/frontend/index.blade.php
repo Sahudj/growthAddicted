@@ -154,15 +154,16 @@
                     <div class="cols1">
                         <img class="logo" width="200" src="{{url('public/frontend/home/')}}/assets/images/logo3.png" alt="logo-img">
                         <p>Growth Addicted is more than a platform, it is your trusted partner to help you do what you do best: help as many PEOPLE as possible TO fulfill their dreams & get best career options. Access to top learning on your finger tip.</p>
+                        <p>&copy; {{ date('Y') }} Growth Addicted. All rights reserved.</p>
                     </div>
                     <div class="cols2">
                         <h1>INFORMATION</h1>
                         <ul>
-                            <li><a href="">Disclaimer</a></li>
-                            <li><a href="">Refund Policy</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Terms & Conditions</a></li>
-                            <li><a href="">Msme Certificate</a></li>
+                            <li><a href="{{url('/')}}">Disclaimer</a></li>
+                            <li><a href="{{url('/refund-policy')}}">Refund Policy</a></li>
+                            <li><a href="{{url('/privacy-policy')}}">Privacy Policy</a></li>
+                            <li><a href="{{url('/terms-conditions')}}">Terms & Conditions</a></li>
+                            <li><a href="{{url('public/frontend/home/')}}/assets/images/msmecertificate.pdf" target="_blank">Msme Certificate</a></li>
                         </ul>
                     </div>
                     <div class="cols3">
@@ -181,7 +182,7 @@
                             <div class="phone-cont">
                                 <span class="material-symbols-outlined">
                                     apartment
-                                </span> H-70, Ward No. 31, Shivaji Nagar, Near JP Hospital, Bhopal
+                                </span> Digamber Jain Mandir, 31, Panchsheel Nagar, Main Road Number 2, Tulsi Nagar, Bhopal, Bhopal, Madhya Pradesh, 462003
                             </div>
                         </div>
                     </div>
