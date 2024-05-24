@@ -102,9 +102,7 @@
             <!-- dynamic pages start -->
             <div class="growth-dynamic-pages">
                <div class="dynamic-page-wrapper">
-                  home
-                  <i class="fa fa-light fa-house"></i>
-
+                  @yield('content')
                </div>
             </div>
             <!-- dynamic pages end -->
@@ -156,7 +154,7 @@
             }
          });
 
-         $('#cllps-side-btn').on('click',()=>{
+         $('#cllps-side-btn').on('click', () => {
             $('#grwth-sidebar').addClass('collapsed');
             $('#or-sd-menu').hide();
             $('#or-sd-cl-menu').show();
