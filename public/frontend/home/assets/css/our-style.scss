@@ -1204,7 +1204,7 @@ html {
                 .v-thumb {
                     width: 80%;
                     height: 80%;
-                    background-image: url(../images/opencardbg.jpg);
+                    background-image: url('../images/opencardbg.jpg');
                     background-size: cover;
                     background-position: center;
                     display: flex;
@@ -2662,12 +2662,12 @@ html {
             $speed: 5s;
             $borderColor: #555;
 
-            $images: url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170'),
-                url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(106).png?updatedAt=1709225411261'),
-                url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(110).png?updatedAt=1709225411398'),
-                url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(108).png?updatedAt=1709225411175'),
-                url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(112).png?updatedAt=1709400541979'),
-                url('https://ik.imagekit.io/muwui4v4k/Screenshot%20(102).png?updatedAt=1709225411170');
+            $images: url('../images/page1.png'),
+                url('../images/page2.png'),
+                url('../images/page3.png'),
+                url('../images/page4.png'),
+                url('../images/page5.png'),
+                url('../images/page1.png');
             // $images: url('https://picsum.photos/420/300?random=1'),
             //     url('https://picsum.photos/420/300?random=2'),
             //     url('https://picsum.photos/420/300?random=3'),
@@ -3096,7 +3096,7 @@ html {
 
         .secondry-card {
             width: 90%;
-            background: url('https://ik.imagekit.io/muwui4v4k/Untitled%20design%20(17).png?updatedAt=1712608007351');
+            background: url('../images/courseCardbg.png');
             background-size: cover;
             background-blend-mode: exclusion;
 

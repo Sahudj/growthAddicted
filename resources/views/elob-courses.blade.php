@@ -238,7 +238,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/Affiliate%20Marketing%20Brambhastra.png?updatedAt=1711553276110" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/AffiliateMarketingBrambhastr.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -302,7 +302,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/Lead%20Generation%20Course.png?updatedAt=1711553279428" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/LeadGenerationCours.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -365,7 +365,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/freelancing%20masterclass.png?updatedAt=1712516420018" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/freelancing masterclass.png" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -431,7 +431,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/smm%20masterclass.png?updatedAt=1712516419947" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/freelancing masterclass.png" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -498,7 +498,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/ms%20word%20mockup.png?updatedAt=1711553279805" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/mswordmocku.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -589,7 +589,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/sales%20closing%20mastery.png?updatedAt=1711553282526" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/salesclosingmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -639,7 +639,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/how%20to%20get%20first%20sale.png?updatedAt=1711553279480" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/howtogetfirstsal.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -694,7 +694,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/instagram%20mastery%20.png?updatedAt=1711553279571" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/instagrammastery.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -748,7 +748,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/ms%20excel%20mastery.png?updatedAt=1711553280868" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/msexcelmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -831,7 +831,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/youtube%20mastery.png?updatedAt=1711553282691" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/youtubemaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -889,7 +889,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/facebook%20ads%20mastery.png?updatedAt=1711553279262" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/facebookadsmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -943,7 +943,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/art%20of%20video%20editing.png?updatedAt=1711553276244" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/artofvideoeditin.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -999,7 +999,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/canva%20editing%20mastery.png?updatedAt=1711553276230" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/canvaeditingmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1054,7 +1054,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/reels%20&%20shorts%20mastery.png?updatedAt=1711553280898" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/reelsshortsmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1109,7 +1109,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/video%20marketing%20mastery.png?updatedAt=1711553282449" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/videomarketingmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1189,7 +1189,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/art%20of%20story%20telling.png?updatedAt=1711553276247" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/artofstorytellin.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1245,7 +1245,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/communication%20mastery.png?updatedAt=1711553276077" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/communicationmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1296,7 +1296,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/content%20writing%20mastery.png?updatedAt=1711553276238" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/contentwritingmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1348,7 +1348,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/copy%20writing%20mastery.png?updatedAt=1711553276206" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/copywritingmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1403,7 +1403,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/email%20marketing%20mastery.png?updatedAt=1711553276102" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/emailmarketingcours.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1458,7 +1458,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/English%20speaking%20mastery.png?updatedAt=1711553276235" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/Englishspeakingmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1513,7 +1513,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/linkedin%20mastery.png?updatedAt=1711553279502" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/linkedinmaster.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1567,7 +1567,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/Public%20speaking%20course.png?updatedAt=1711553281113" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/Publicspeakingcours.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1622,7 +1622,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/Time%20management%20course.png?updatedAt=1711553282472" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/Timemanagementcours.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
@@ -1677,7 +1677,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="https://ik.imagekit.io/muwui4v4k/courses_details/website%20development%20course.png?updatedAt=1711553282853" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/websitedevelopmentcours.jpeg" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">

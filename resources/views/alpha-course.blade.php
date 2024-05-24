@@ -320,7 +320,7 @@
                 <div class="secondry-card">
                     <div class="secondry-card-wrapper">
                         <div class="img-box">
-                            <img src="https://ik.imagekit.io/muwui4v4k/courses_details/Affiliate%20Marketing%20Brambhastra.png?updatedAt=1711553276110" alt="">
+                            <img src="{{url('public/frontend/home/')}}/assets/images/3d-img/ALPHA_3D_21.png" alt="">
                         </div>
                         <div class="card-text-cont-box">
                             <div class="sec-card-heading">

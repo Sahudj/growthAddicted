@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Growthaddicted</title>
     <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/all.min.css">
-    <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.min.css?<?php echo time(); ?>">
-    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.css?<?php echo time(); ?>"> -->
+    <!-- <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.min.css?<?php echo time(); ?>"> -->
+    <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/our-style.css?<?php echo time(); ?>">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

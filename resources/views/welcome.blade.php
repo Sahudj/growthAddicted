@@ -59,31 +59,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1480.jpg?updatedAt=1709402141728" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1411-min (1).JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1460.jpg?updatedAt=1709402140118" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1391-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1451.jpg?updatedAt=1709402140067" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1038-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE9564.jpg?updatedAt=1709402142394" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1028-min.JPG" alt="">
                                 </div>
 
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1411.jpg?updatedAt=1709402139946" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE0988-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1038.jpg?updatedAt=1709402139891" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE0939-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1391.jpg?updatedAt=1709402139877" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE0879-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE1028.jpg?updatedAt=1709402139822" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE0873-min.JPG" alt="">
                                 </div>
 
                             </div>
@@ -92,31 +92,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0939.jpg?updatedAt=1709402136518" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE0782-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0879.jpg?updatedAt=1709402136320" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE0716-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0844.jpg?updatedAt=1709402136109" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE0704-min-1.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0716.jpg?updatedAt=1709402136013" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/WhatsAppImage2024-02-26at6.04.31PM-min (1).jpeg" alt="">
                                 </div>
 
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.04.59%20PM.jpeg?updatedAt=1709402136018" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/WhatsAppImage2024-02-26at6.03.43PM-min.jpeg" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0704.jpg?updatedAt=1709402135917" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/WhatsAppImage2024-02-25at10.32.14PM-min.jpeg" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE0873.jpg?updatedAt=1709402135696" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/WhatsAppImage2024-02-25at10.31.44PM-min.jpeg" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.05.25%20PM.jpeg?updatedAt=1709402135637" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/WhatsAppImage2024-02-25at10.28.53PM-min.jpeg" alt="">
                                 </div>
 
                             </div>
@@ -125,31 +125,31 @@
                         <div class="temp-scroll" style="--t:25s;">
                             <div class="mar-grp">
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_DSC3540.jpg?updatedAt=1709402135591" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE9570-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/_ONE07821.jpg?updatedAt=1709402135543" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE9564-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.30.20%20PM.jpeg?updatedAt=1709402132779" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1480-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.41%20PM.jpeg?updatedAt=1709402132786" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1460-min.JPG" alt="">
                                 </div>
 
                             </div>
                             <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.32.14%20PM.jpeg?updatedAt=1709402132793" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1451-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-26%20at%206.03.43%20PM.jpeg?updatedAt=1709402132753" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/_ONE1449-min.JPG" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.28.53%20PM.jpeg?updatedAt=1709402132655" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/WhatsAppImage2024-02-26at6.05.25PM-min.jpeg" alt="">
                                 </div>
                                 <div class="momnts-card">
-                                    <img loading="lazy" src="https://ik.imagekit.io/muwui4v4k/headerSection1/WhatsApp%20Image%202024-02-25%20at%2010.31.44%20PM.jpeg?updatedAt=1709402132650" alt="">
+                                    <img loading="lazy" src="{{url('public/frontend/home/')}}/assets/images/headerSection/WhatsAppImage2024-02-26at6.04.59PM-min.jpeg" alt="">
                                 </div>
 
                             </div>
@@ -162,16 +162,16 @@
                         <div class="center-cont">
                             <div class="center-cont-top">
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1000" src="https://ik.imagekit.io/muwui4v4k/headerSection1/flexonlinecouses.png?updatedAt=1709411315211" alt="content creator">
+                                    <img data-aos="zoom-in-down" data-aos-duration="1000" src="{{url('public/frontend/home/')}}/assets/images/flexonlinecouses.jpg" alt="content creator">
                                     <div class="text" data-aos="fade-up" data-aos-duration="1000">Flexible Online Courses</div>
                                 </div>
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1300" src="https://ik.imagekit.io/muwui4v4k/headerSection1/livevirtual.png?updatedAt=1709411315274" alt="content creator">
+                                    <img data-aos="zoom-in-down" data-aos-duration="1300" src="{{url('public/frontend/home/')}}/assets/images/livevirtual.jpg" alt="content creator">
                                     <div class="text" data-aos="fade-up" data-aos-duration="1300">Live Virtual Workshop</div>
                                 </div>
 
                                 <div class="content-box">
-                                    <img data-aos="zoom-in-down" data-aos-duration="1500" src="https://ik.imagekit.io/muwui4v4k/headerSection1/247.png?updatedAt=1709411315298" alt="content creator">
+                                    <img data-aos="zoom-in-down" data-aos-duration="1500" src="{{url('public/frontend/home/')}}/assets/images/247.jpg" alt="content creator">
                                     <div class="text" data-aos="fade-up" data-aos-duration="1500">24/7 Access to Resources</div>
                                 </div>
 
@@ -236,163 +236,163 @@
                     <div class="temp-scroll" style="--t:25s;">
                         <div class="mar-grp">
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Affiliate%20Marketing.png?updatedAt=1709404669882" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/Affiliate-Marketing.png" alt="">
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Digimark.png?updatedAt=1709405462380" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/Digimark.png" alt="">
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/stockmark.png?updatedAt=1709405940782" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/stockmark.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/contentwrit.png?updatedAt=1709406088037" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/contentwrit.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/webdev.png?updatedAt=1709406691336" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/webdev.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/lnkdmaster.png?updatedAt=1709407143199" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/lnkdmaster.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofstory.png?updatedAt=1709407284631" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/artofstory.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/socialmed.png?updatedAt=1709407622412" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/Social.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/freelancing.png?updatedAt=1709407743090" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/freelancing.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/mobvidedit.png?updatedAt=1709408134795" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/mobvidedit.png" alt="">
                             </div>
                         </div>
                         <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Affiliate%20Marketing.png?updatedAt=1709404669882" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/Affiliate-Marketing.png" alt="">
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/Digimark.png?updatedAt=1709405462380" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/Digimark.png" alt="">
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/stockmark.png?updatedAt=1709405940782" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/stockmark.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/contentwrit.png?updatedAt=1709406088037" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/contentwrit.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/webdev.png?updatedAt=1709406691336" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/webdev.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/lnkdmaster.png?updatedAt=1709407143199" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/lnkdmaster.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofstory.png?updatedAt=1709407284631" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/artofstory.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/socialmed.png?updatedAt=1709407622412" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/Social.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/freelancing.png?updatedAt=1709407743090" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/freelancing.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/mobvidedit.png?updatedAt=1709408134795" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/mobvidedit.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="temp-scroll" style="--t:25s;">
                         <div class="mar-grp">
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/profvidediting.png?updatedAt=1709408772395" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/profvidediting.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/graphicdesg.png?updatedAt=1709409007243" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/graphicdesg.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/facebookads.png?updatedAt=1709409141432" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/facebookads.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/instamark.png?updatedAt=1709409334949" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/instamark.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/canvaediting.png?updatedAt=1709409664114" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/canvaediting.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/emailmarketing.png?updatedAt=1709409942921" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/emailmarketing.png" alt="">
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/pubspek.png?updatedAt=1709410067902" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/pubspek.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/ytguide.png?updatedAt=1709410265314" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/ytguide.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/medyog.png?updatedAt=1709410423921" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/medyog.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofsales.png?updatedAt=1709410857037" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/artofsales.png" alt="">
 
                             </div>
                         </div>
                         <div class="mar-grp" aria-hidden="true" style="margin-left:20px;">
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/profvidediting.png?updatedAt=1709408772395" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/profvidediting.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/graphicdesg.png?updatedAt=1709409007243" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/graphicdesg.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/facebookads.png?updatedAt=1709409141432" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/facebookads.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/instamark.png?updatedAt=1709409334949" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/instamark.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/canvaediting.png?updatedAt=1709409664114" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/canvaediting.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/emailmarketing.png?updatedAt=1709409942921" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/emailmarketing.png" alt="">
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/pubspek.png?updatedAt=1709410067902" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/pubspek.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/ytguide.png?updatedAt=1709410265314" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/ytguide.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/medyog.png?updatedAt=1709410423921" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/medyog.png" alt="">
 
                             </div>
                             <div class="momnts-card">
-                                <img src="https://ik.imagekit.io/muwui4v4k/courses/artofsales.png?updatedAt=1709410857037" alt="">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/coursesBg/artofsales.png" alt="">
 
                             </div>
                         </div>
@@ -690,55 +690,55 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/aman%20shukla.png?updatedAt=1712867835878" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/amanshukla.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Aman Shukla</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/sagar%20deshmukh.png?updatedAt=1712867932407" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/sagardeshmukh.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Sagar Deshmukh</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/monica%20limbu.png?updatedAt=1712867932464" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/monicalimbu.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Monica Limbu</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/gautam%20jain.png?updatedAt=1712867932460" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/gautamjain.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Gautam Jain</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/shashish%20kumar%20tiwari.png?updatedAt=1712867932491" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/shashishkumartiwari.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Shashish Kumar Tiwari</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/Vrinda%20Gupta.png?updatedAt=1712867932546" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/VrindaGupta.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Vrinda Gupta</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/vinay%20sahu.png?updatedAt=1712867932542" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/vinaysahu.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Vinay Sahu</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/meha%20sharma.png?updatedAt=1712867932562" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/mehasharma.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Meha Sharma</h3>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img src="https://ik.imagekit.io/muwui4v4k/Instructors/divya%20bhauwala.png?updatedAt=1712867932581" alt="content creator">
+                                <img src="{{url('public/frontend/home/')}}/assets/images/instructor/divyabhauwala.png" alt="content creator">
                                 <div class="overlay">
                                     <h3>Divya Bhauwala</h3>
                                 </div>
@@ -877,7 +877,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Adnan?updatedAt=1712869416117" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/AdnanQureshi.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -898,7 +898,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Ali%20Haider?updatedAt=1712869641363" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/AliHaider.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -919,7 +919,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Shubham%20Podh?updatedAt=1712870005507" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/SubhamPodh.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -940,7 +940,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Rohit%20Kumar?updatedAt=1712870073962" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/RohitKumar.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -961,7 +961,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Sneha%20Sapra?updatedAt=1712870167893" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/SnehaSapra.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -982,7 +982,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Sumit%20Pant?updatedAt=1712870263999" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/Sumitpant.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -1003,7 +1003,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Ankit%20Gole?updatedAt=1712870351968" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/AnkitGole.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -1024,7 +1024,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Abhishek%20Verma?updatedAt=1712870431771" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/AbhishekVerma.jpeg" alt="content creator">
                                                 <div class="play-btn">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -1045,7 +1045,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Madhuri%20Chheda?updatedAt=1712870553837" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/MadhuriChheda.jpeg" alt="content creator">
                                                 <div class="play-btn" id="madhu">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
@@ -1066,7 +1066,7 @@
                                     <div class="testi-card-wrap">
                                         <div class="img-box">
                                             <div class="img-box-wrap">
-                                                <img src="https://ik.imagekit.io/muwui4v4k/Students/Sanchita%20Yagale?updatedAt=1712870651361" alt="content creator">
+                                                <img src="{{url('public/frontend/home/')}}/assets/images/student/SanchitaYelgate.jpeg" alt="content creator">
                                                 <div class="play-btn" id="sanchi">
                                                     <span class="material-symbols-outlined">
                                                         play_circle
