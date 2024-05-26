@@ -159,7 +159,7 @@
                     <div class="cols2">
                         <h1>INFORMATION</h1>
                         <ul>
-                            <li><a href="{{url('/')}}">Disclaimer</a></li>
+                            <li><a href="{{url('/disclamer')}}">Disclaimer</a></li>
                             <li><a href="{{url('/refund-policy')}}">Refund Policy</a></li>
                             <li><a href="{{url('/privacy-policy')}}">Privacy Policy</a></li>
                             <li><a href="{{url('/terms-conditions')}}">Terms & Conditions</a></li>

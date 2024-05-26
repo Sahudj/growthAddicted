@@ -872,6 +872,9 @@ try {
     public function faq(Request $request){
         return view('faq');
     }
+    public function disclamer(Request $request){
+        return view('disclamer');
+    }
 
     public function refundPolicy(Request $request){
         return view('refund-policy');

@@ -34,6 +34,7 @@ Route::get('/contact-us', [UserController::class, 'contactUs']);
 Route::get('/courses', [UserController::class, 'courses']);
 Route::get('/terms-conditions', [UserController::class, 'termsCondition']);
 Route::get('/privacy-policy', [UserController::class, 'privacyPolicy']);
+Route::get('/disclamer', [UserController::class, 'disclamer']);
 Route::get('/refund-policy', [UserController::class, 'refundPolicy']);
 Route::get('/faq', [UserController::class, 'faq']);
 
