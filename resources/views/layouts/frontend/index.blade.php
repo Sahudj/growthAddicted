@@ -37,10 +37,10 @@
                         <a href="{{url('/')}}">HOME</a>
                     </li>
                     <li class="item">
-                        <a href="{{url('/')}}">ABOUT</a>
+                        <a href="{{url('/about-us')}}">ABOUT</a>
                     </li>
                     <li class="item">
-                        <a href="{{url('/')}}">COURSES</a>
+                        <a href="{{url('/courses')}}">COURSES</a>
                     </li>
                     <li class="item">
                         <a href="{{url('/')}}">CAREERS</a>
@@ -82,10 +82,10 @@
                                 <a href="{{url('/')}}">HOME</a>
                             </li>
                             <li class="item">
-                                <a href="{{url('/')}}">ABOUT</a>
+                                <a href="{{url('/about-us')}}">ABOUT</a>
                             </li>
                             <li class="item">
-                                <a href="{{url('/')}}">COURSES</a>
+                                <a href="{{url('/courses')}}">COURSES</a>
                             </li>
                             <li class="item">
                                 <a href="">CAREERS</a>
