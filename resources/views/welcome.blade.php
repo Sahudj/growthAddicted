@@ -1132,7 +1132,7 @@
                 </div>
 
                 <div class="download-btn">
-                    <a class="pri-btn" href="https://ik.imagekit.io/muwui4v4k/book_growth_addicted.pdf?updatedAt=1709222800754" download target="_blank">Download Now</a>
+                    <a class="pri-btn" href="{{url('public/frontend/home/')}}/assets/images/welcome-to-growth-addicted.pdf" download target="_blank">Download Now</a>
                 </div>
             </div>
         </div>
