@@ -431,7 +431,7 @@
             <div class="secondry-card">
                 <div class="secondry-card-wrapper">
                     <div class="img-box">
-                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/freelancing masterclass.png" alt="">
+                        <img src="{{url('public/frontend/home/')}}/assets/images/coursesDetail/socialMediaManagt-removebg-preview.png" alt="">
                     </div>
                     <div class="card-text-cont-box">
                         <div class="sec-card-heading">
