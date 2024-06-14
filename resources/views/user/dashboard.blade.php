@@ -134,6 +134,7 @@
     <div class="two-sec-cont">
       <div class="twsecwrap">
         <div class="sec-left">
+          transaction
 
         </div>
         <div class="sec-right">
