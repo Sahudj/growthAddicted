@@ -13,6 +13,7 @@
    <title>Growth Addicted</title>
    <link rel="shortcut icon" type="image/png" href="{{url('public/frontend/home/')}}/assets/images/favicon.png">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="{{url('public/frontend/home/')}}/assets/css/aos.css">
    <!-- BEGIN: VENDOR CSS-->
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/vendors.min.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/animate-css/animate.css">
@@ -139,8 +140,10 @@
    <!--   <script src="{{url('public/admin/')}}/app-assets/js/scripts/form-editor.js"></script> -->
    <script src="{{url('public/admin/')}}/app-assets/vendors/select2/select2.full.min.js"></script>
    <script src="{{url('public/admin/')}}/app-assets/js/scripts/form-select2.js"></script>
+   <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
 
    <script>
+      AOS.init();
       $(document).ready(function() {
 
          $('.drop-dwn-link').on('click', function() {
@@ -157,7 +160,12 @@
          $('#cllps-side-btn').on('click', () => {
             $('#grwth-sidebar').addClass('collapsed');
             $('#or-sd-menu').hide();
-            $('#or-sd-cl-menu').show();
+            $('#or-sd-cl-menu').css({display:"flex"});
+         })
+         $('#opn-side-btn').on('click', () => {
+            $('#grwth-sidebar').removeClass('collapsed');
+            $('#or-sd-menu').css({display:"flex"});
+            $('#or-sd-cl-menu').hide();
          })
 
 

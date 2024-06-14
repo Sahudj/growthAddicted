@@ -155,7 +155,7 @@
           </div>
           <!-- <div class="arrow">
             <span class="material-symbols-outlined">
-              keyboard_arrow_left
+              keyboard_arrow_right
             </span>
           </div> -->
         </a>
@@ -171,7 +171,7 @@
           </div>
           <!-- <div class="arrow">
             <span class="material-symbols-outlined">
-              keyboard_arrow_left
+              keyboard_arrow_right
             </span>
           </div> -->
         </a>
@@ -208,7 +208,7 @@
           </div>
           <div class="arrow">
             <span class="material-symbols-outlined">
-              keyboard_arrow_left
+              keyboard_arrow_right
             </span>
           </div>
         </a>
@@ -295,7 +295,7 @@
           </div>
           <div class="arrow">
             <span class="material-symbols-outlined">
-              keyboard_arrow_left
+              keyboard_arrow_right
             </span>
           </div>
         </a>
@@ -344,7 +344,7 @@
           </div>
           <div class="arrow">
             <span class="material-symbols-outlined">
-              keyboard_arrow_left
+              keyboard_arrow_right
             </span>
           </div>
         </a>
@@ -386,12 +386,233 @@
       </li>
       @endif
     </ul>
+
+
+
+
     <ul class="our-side-collapsed-menu" id="or-sd-cl-menu">
       <li class="logo-cum-btn">
-        <div class="logo-collpse"><a href="#"><img width="100" src="{{url('public/admin/')}}/app-assets/images/logo/Logo2.png" alt="logo"></a><button title="Collapse Sidebar" id="cllps-side-btn" class="collapse-sidebar-btn">
+        <div class="logo-collpse"><a href="#"><img width="50" src="{{url('public/admin/')}}/app-assets/images/logo/favicon.png" alt="logo"></a><button title="Expand Sidebar" id="opn-side-btn" class="opn-sidebar-btn">
             <div class="line">|</div>
           </button></div>
       </li>
+
+      <li class="normal-link">
+        <a title="Dashboard" href="{{url('/user/dashboard')}}" class="{{(url()->current() == url('/user/dashboard')) ? 'active' : '' }}">
+          <div class="lnk-ttl">
+            <span class="material-symbols-outlined">dashboard</span>
+          </div>
+          <!-- <div class="arrow">
+            <span class="material-symbols-outlined">
+              keyboard_arrow_right
+            </span>
+          </div> -->
+        </a>
+      </li>
+
+      @if(auth()->user()->order_status == 1)
+
+      @if(auth()->user()->id != 231)
+      <li class="normal-link">
+        <a title="Startup Video" href="{{url('/user/startup-video')}}" class="{{(url()->current() == url('/user/startup-video')) ? 'active' : '' }}">
+          <div class="lnk-ttl">
+            <span class="material-symbols-outlined">smart_display</span>
+          </div>
+        </a>
+      </li>
+      @endif
+
+
+      @if(auth()->user()->id != 231)
+      @php
+      $openPaths = [
+      'user/affiliate',
+      'user/traffic',
+      'user/funds',
+      'user/offers',
+      'user/marketing-material',
+      'user/leaderboard',
+      'user/change-password'
+      ];
+
+      $isAffiliatedropOpen = false;
+
+      foreach ($openPaths as $path) {
+      if (Request::is($path)) {
+      $isAffiliatedropOpen = true;
+      break;
+      }
+      }
+      @endphp
+      <li class="drop-dwn-link {{ $isAffiliatedropOpen ? 'dropped' : '' }}">
+        <a title="Affiliate" href="JavaScript:void(0)">
+          <div class="lnk-ttl">
+            <span class="material-symbols-outlined">linked_services</span>
+          </div>
+          <div class="arrow">
+            <span class="material-symbols-outlined">
+              keyboard_arrow_up
+            </span>
+          </div>
+        </a>
+        <div class="drop-menu">
+          <div class="drop-menu-item">
+            <a title="Affiliate Link" href="{{url('/user/affiliate')}}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">link</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a title="Traffic" href="{{url('/user/traffic')}}" class="{{(url()->current() == url('/user/traffic')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">web_traffic</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a title="Funds" href="{{url('/user/funds')}}" class="{{(url()->current() == url('/user/funds')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">currency_exchange</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a title="Offers" href="{{url('/user/offers')}}" class="{{(url()->current() == url('/user/offers')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">local_activity</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a href="{{url('/user/marketing-material')}}" class="{{(url()->current() == url('/user/marketing-material')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">grade</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a href="{{url('/user/leaderboard')}}" class="{{(url()->current() == url('/user/leaderboard')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">leaderboard</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a href="{{url('/user/change-password')}}" class="{{(url()->current() == url('/user/change-password')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">lock_reset</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </li>
+      @endif
+      @php
+      $openbankPaths = [
+      'user/bank-details',
+      'user/payouts'
+      ];
+
+      $ispaymentsdropOpen = false;
+
+      foreach ($openbankPaths as $path) {
+      if (Request::is($path)) {
+      $ispaymentsdropOpen = true;
+      break;
+      }
+      }
+      @endphp
+      <li class="drop-dwn-link {{ $ispaymentsdropOpen ? 'dropped' : '' }}">
+        <a href="JavaScript:void(0)">
+          <div class="lnk-ttl">
+            <span class="material-symbols-outlined">payments</span>
+          </div>
+          <div class="arrow">
+            <span class="material-symbols-outlined">
+              keyboard_arrow_up
+            </span>
+          </div>
+        </a>
+        <div class="drop-menu">
+          <div class="drop-menu-item">
+            <a href="{{url('/user/bank-details')}}" class="{{(url()->current() == url('/user/bank-details')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">assured_workload</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a href="{{url('/user/payouts')}}" class="{{(url()->current() == url('/user/payouts')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">receipt_long</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Trainings Section  -->
+      @php
+      $opentrainingPaths = [
+      'user/webinar',
+      'user/training',
+      'user/session'
+      ];
+
+      $istrainingsdropOpen = false;
+
+      foreach ($opentrainingPaths as $path) {
+      if (Request::is($path)) {
+      $istrainingsdropOpen = true;
+      break;
+      }
+      }
+      @endphp
+      <li class="drop-dwn-link {{ $istrainingsdropOpen ? 'dropped' : '' }}">
+        <a href="JavaScript:void(0)">
+          <div class="lnk-ttl">
+            <span class="material-symbols-outlined">model_training</span>
+          </div>
+          <div class="arrow">
+            <span class="material-symbols-outlined">
+              keyboard_arrow_up
+            </span>
+          </div>
+        </a>
+        <div class="drop-menu">
+          <div class="drop-menu-item">
+            <a href="{{url('/user/webinar')}}" class="{{(url()->current() == url('/user/webinar')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">live_tv</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a href="{{url('/user/training')}}" class="{{(url()->current() == url('/user/training')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">browse_activity</span>
+              </div>
+            </a>
+          </div>
+          <div class="drop-menu-item">
+            <a href="{{url('/user/session')}}" class="{{(url()->current() == url('/user/session')) ? 'active' : '' }}">
+              <div class="lnk-ttl">
+                <span class="material-symbols-outlined">help_center</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="normal-link">
+        <a href="{{url('/user/support')}}" class="{{(url()->current() == url('/user/support')) ? 'active' : '' }}">
+          <div class="lnk-ttl">
+            <span class="material-symbols-outlined">call_quality</span>
+          </div>
+        </a>
+      </li>
+      @endif
 
     </ul>
   </div>

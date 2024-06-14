@@ -14,7 +14,7 @@
           <div class="container">
             <div class="section">
              <div id="card-stats" class="pt-0">
-               <h4>Dashboard</h4>
+               <h4>Dashboard Overview</h4>
                <?php   $permission = DB::table('permission')->where('user_id', auth()->user()->id)->first(); ?>
                 @if(isset($permission) && ($permission->is_dashboard == 1))
                 <div class="row">

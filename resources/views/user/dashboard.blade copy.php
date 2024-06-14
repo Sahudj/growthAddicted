@@ -1,149 +1,13 @@
 @extends('layouts.admin')
 
 @section('content')
-
-
-
-<div class="user-dashboard">
-  <div class="user-dash-wrap">
-
-    <div class="usr-dash-header">
-      <div class="dash-title">
-        <h1>Dashboard Overview</h1>
-      </div>
-      @if(auth()->user()->order_status == 1)
-      <div class="user-details">
-        <div class="usr-det-row">
-          <div class="prof-pic">
-            @if(auth()->user()->profile_pic)
-            <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="">
-
-            <!-- <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt=""> -->
-            @else
-            <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="">
-            @endif
-          </div>
-          <div class="user-name">
-            Hello, Welcome {{ ucfirst(auth()->user()->name)}}
-          </div>
-        </div>
-        @if(!empty(auth()->user()->referral_code))
-        <div class="usr-det-row">
-          <p>Referal Code</p>
-          <div class="copytoclipboard">
-            <input disabled value="{{ ucfirst(auth()->user()->referral_code)}}" id="textToCopy">
-
-            <!-- The button to trigger the copy action -->
-            <button id="copyButton"><span class="material-symbols-outlined">
-                content_copy
-              </span></button>
-          </div>
-
-        </div>
-        @endif
-
-      </div>
-      @endif
-    </div>
-
-
-
-    <div class="ads-container">
-      <div class="ads-wrapper">
-        <div class="ad-ttl">Growth Plus Coming Soon</div>
-        <div class="ad-description">Exclusive content, personalized coaching, and advanced resources. Achieve your goals faster with expert guidance. Unlock your potential with Growth Plus!</div>
-        <div class="ad-link">
-          <a href="#">Coming Soon</a>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="grid-cards-container">
-      @if(auth()->user()->id != 231)
-      <div class="grid-card">
-        <a href="{{url('user/commission/1/1')}}">
-          <div class="card-ttl">Today's Earning</div>
-          <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{(!empty($todayEarning) || !empty($todayTeamHelpingBonus)) ? ($todayEarning+$todayTeamHelpingBonus) : 0 }}" data-speed="1500"></div>
-            <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
-              </span></div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-card">
-        <a href="{{url('user/commission/1/4')}}">
-          <div class="card-ttl">Last 7 Days Earning</div>
-          <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($lastSevenEarning) ? $lastSevenEarning : 0 }}" data-speed="1500"></div>
-            <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
-              </span></div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-card">
-        <a href="{{url('user/commission/1/5')}}">
-          <div class="card-ttl">Last 30 Days Earning</div>
-          <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($earningthisMonth) ? $earningthisMonth : 0 }}" data-speed="1500"></div>
-            <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
-              </span></div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-card">
-        <a href="{{url('user/commission/1/3')}}">
-          <div class="card-ttl">All Time Earning</div>
-          <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($alltime) ? $alltime : 0 }}" data-speed="1500"></div>
-            <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
-              </span></div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-card">
-        <a href="{{url('user/team-helping-bonus/2')}}">
-          <div class="card-ttl">Team Helping Bonus</div>
-          <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($teamHelpingBonus) ? $teamHelpingBonus : 0 }}" data-speed="1500"></div>
-            <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
-              </span></div>
-          </div>
-        </a>
-      </div>
-      <div class="grid-card">
-        <a href="{{url('user/commission/1/2')}}">
-          <div class="card-ttl">Pending Amount</div>
-          <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
-            <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
-              </span></div>
-          </div>
-        </a>
-      </div>
-      @endif
-    </div>
-
-    <div class="two-sec-cont">
-      <div class="twsecwrap">
-        <div class="sec-left">
-
-        </div>
-        <div class="sec-right">
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
+<style>
+  .background-round {
+    padding: 1px 10px 6px !important;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .18);
+  }
+</style>
 <div class="row">
   <div class="col s12">
     <div class="container">
@@ -173,7 +37,7 @@
                       </div>
                       <!--   <h5> {{ ucfirst(auth()->user()->name)}}</h5> -->
 
-                      <span>{{ucfirst(auth()->user()->referral_code)}}</span>
+                      <span>{{ ucfirst(auth()->user()->referral_code)}}</span>
 
 
                     </div>
@@ -347,21 +211,6 @@
               </div>
             </div>
 
-            <div class="card-panel border-radius-6 white-text gradient-45deg-purple-deep-orange card-animation-2">
-              <h6><b><a href="#" class="white-text">
-                    <blink> Enroll with Package ! </blink>
-                  </a></b></h6>
-              <span>Click on link to enroll your package and explore more courses.
-              </span>
-              <div class="display-flex justify-content-between flex-wrap">
-                <div class="display-flex align-items-center mt-1">
-                </div>
-                <div class="display-flex right-align social-icon">
-                  <span class=" vertical-align-top"><a target="_blank" href="{{url('/#wc-ourcourses-wapper')}}" class="btn waves-effect waves-light purple lightrn-1">Enroll Now</a></span>
-                </div>
-              </div>
-            </div>
-
             @else
 
             <div class="card-panel border-radius-6 white-text gradient-45deg-purple-deep-orange card-animation-2">
@@ -391,7 +240,6 @@
     <!--   <div class="content-overlay"></div> -->
   </div>
 </div>
-
 
 
 @if(auth()->user()->order_status == 1)
@@ -456,25 +304,6 @@
 <script src="{{url('public/admin/')}}/app-assets/vendors/chartist-js/chartist.min.js"></script>
 <script src="{{url('public/admin/')}}/app-assets/vendors/chartist-js/chartist-plugin-tooltip.js"></script>
 <script src="{{url('public/admin/')}}/app-assets/js/scripts/intro.js"></script>
-
-
-
-<script>
-  $(document).ready(function() {
-    $('#copyButton').click(function() {
-      // Select the text in the input field
-      var textToCopy = $('#textToCopy');
-      textToCopy.select();
-      textToCopy[0].setSelectionRange(0, 99999); // For mobile devices
-
-      // Copy the text inside the input field
-      document.execCommand('copy');
-
-      // Alert the copied text (optional)
-      alert('Copied the text: ' + textToCopy.val());
-    });
-  });
-</script>
 
 <script>
   (function(window, document, $) {
@@ -569,7 +398,8 @@
                 $maxValue
               }
             } ?
-            "ct-point ct-point-circle" : "ct-point ct-point-circle-transperent"
+            "ct-point ct-point-circle" :
+            "ct-point ct-point-circle-transperent"
         })
         data.element.replace(circle)
       }
