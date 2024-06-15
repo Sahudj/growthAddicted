@@ -136,23 +136,14 @@
     </div>
     @endif
 
+    @if(auth()->user()->order_status == 1)
+    @if(auth()->user()->id != 231)
     <div class="two-sec-cont">
       <div class="twsecwrap">
         <div class="sec-left">
           <div class="sec-ttl">
             <h1>Total Transaction</h1>
             <h4>This month transaction</h4>
-
-            <div class="card">
-              <div class="card-content">
-                <h4 class="card-title mb-0">Total Transaction</h4>
-                <p class="medium-small">This month transaction</p>
-                <div class="total-transaction-container">
-                  <div id="total-transaction-line-chart" class="total-transaction-shadow"></div>
-                </div>
-              </div>
-            </div>
-
           </div>
           <div class="sec-graph">
             <div class="total-transaction-container">
@@ -161,10 +152,16 @@
           </div>
         </div>
         <div class="sec-right">
+          <h3>Fuel</h3>
+          <p>your passion,</p>
+          <h3>Master</h3>
+          <p>your growth.</p>
 
         </div>
       </div>
     </div>
+    @endif
+    @endif
   </div>
 </div>
 
