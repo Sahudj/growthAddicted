@@ -50,25 +50,24 @@
 
     <div class="ads-container">
       <div class="ads-wrapper">
-        <div class="ad-ttl">Growth Plus Coming Soon</div>
-        <div class="ad-description">Exclusive content, personalized coaching, and advanced resources. Achieve your goals faster with expert guidance. Unlock your potential with Growth Plus!</div>
         <div class="ad-link">
-          <a href="#">Coming Soon</a>
+          <a href="#">Explore</a>
         </div>
       </div>
     </div>
 
 
-
+    @if(auth()->user()->order_status == 1)
     <div class="grid-cards-container">
       @if(auth()->user()->id != 231)
       <div class="grid-card">
         <a href="{{url('user/commission/1/1')}}">
           <div class="card-ttl">Today's Earning</div>
           <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{(!empty($todayEarning) || !empty($todayTeamHelpingBonus)) ? ($todayEarning+$todayTeamHelpingBonus) : 0 }}" data-speed="1500"></div>
+            <h3 class="formatted-number">₹ <div class="timer count-title count-number" data-to="{{(!empty($todayEarning) || !empty($todayTeamHelpingBonus)) ? ($todayEarning+$todayTeamHelpingBonus) : 0 }}" data-speed="1500"></div>
+            </h3>
             <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
+                finance_mode
               </span></div>
           </div>
         </a>
@@ -77,9 +76,10 @@
         <a href="{{url('user/commission/1/4')}}">
           <div class="card-ttl">Last 7 Days Earning</div>
           <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($lastSevenEarning) ? $lastSevenEarning : 0 }}" data-speed="1500"></div>
+            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($lastSevenEarning) ? $lastSevenEarning : 0 }}" data-speed="1500"></div>
+            </h3>
             <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
+                finance_mode
               </span></div>
           </div>
         </a>
@@ -88,9 +88,10 @@
         <a href="{{url('user/commission/1/5')}}">
           <div class="card-ttl">Last 30 Days Earning</div>
           <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($earningthisMonth) ? $earningthisMonth : 0 }}" data-speed="1500"></div>
+            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($earningthisMonth) ? $earningthisMonth : 0 }}" data-speed="1500"></div>
+            </h3>
             <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
+                finance_mode
               </span></div>
           </div>
         </a>
@@ -99,9 +100,10 @@
         <a href="{{url('user/commission/1/3')}}">
           <div class="card-ttl">All Time Earning</div>
           <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($alltime) ? $alltime : 0 }}" data-speed="1500"></div>
+            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($alltime) ? $alltime : 0 }}" data-speed="1500"></div>
+            </h3>
             <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
+                finance_mode
               </span></div>
           </div>
         </a>
@@ -110,9 +112,10 @@
         <a href="{{url('user/team-helping-bonus/2')}}">
           <div class="card-ttl">Team Helping Bonus</div>
           <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($teamHelpingBonus) ? $teamHelpingBonus : 0 }}" data-speed="1500"></div>
+            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($teamHelpingBonus) ? $teamHelpingBonus : 0 }}" data-speed="1500"></div>
+            </h3>
             <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
+                finance_mode
               </span></div>
           </div>
         </a>
@@ -121,21 +124,41 @@
         <a href="{{url('user/commission/1/2')}}">
           <div class="card-ttl">Pending Amount</div>
           <div class="card-val">
-            <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
+            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
+            </h3>
             <div class="ico"><span class="material-symbols-outlined">
-                currency_rupee
+                finance_mode
               </span></div>
           </div>
         </a>
       </div>
       @endif
     </div>
+    @endif
 
     <div class="two-sec-cont">
       <div class="twsecwrap">
         <div class="sec-left">
-          transaction
+          <div class="sec-ttl">
+            <h1>Total Transaction</h1>
+            <h4>This month transaction</h4>
 
+            <div class="card">
+              <div class="card-content">
+                <h4 class="card-title mb-0">Total Transaction</h4>
+                <p class="medium-small">This month transaction</p>
+                <div class="total-transaction-container">
+                  <div id="total-transaction-line-chart" class="total-transaction-shadow"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="sec-graph">
+            <div class="total-transaction-container">
+              <div id="total-transaction-line-chart" class="total-transaction-shadow"></div>
+            </div>
+          </div>
         </div>
         <div class="sec-right">
 
@@ -172,7 +195,6 @@
                           </p>
                         </div>
                       </div>
-                      <!--   <h5> {{ ucfirst(auth()->user()->name)}}</h5> -->
 
                       <span>{{ucfirst(auth()->user()->referral_code)}}</span>
 
@@ -292,28 +314,7 @@
 
 
             <div class="row">
-              <!-- <a href="#">
-                       <div class="col s12 m6 l6 xl3">
-                          <div class="card gradient-45deg-amber-amber gradient-shadow min-height-100 white-text animate fadeRight">
-                             <div class="padding-4">
-                               
-                             <div class="row">
-                                  <div class="col s12 m12">
-                                  <i class="material-icons background-round mt-5">₹</i> <strong style="font-size:25px">{{ !empty($totalFunds) ? $totalFunds :  0}} </strong>
-                                  </div>
-                               </div>
 
-                               <div class="row">
-                                  <div class="col s12 m12">
-                                  <p>Total Funds</p>
-                                  </div>
-                               </div>
-                            
-                            </div>
-                          </div>
-                        
-                       </div>
-                       </a> -->
               <a href="{{url('user/commission/1/2')}}">
                 <div class="col s12 m6 l6 xl3">
 
@@ -389,7 +390,6 @@
         </div>
       </div>
     </div>
-    <!--   <div class="content-overlay"></div> -->
   </div>
 </div>
 
@@ -583,7 +583,7 @@
 </script>
 
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   (function($) {
     $.fn.countTo = function(options) {
       options = options || {};
@@ -687,6 +687,137 @@
       $this.countTo(options);
     }
   });
-</script>
+</script> -->
 
+<script type="text/javascript">
+  (function($) {
+    $.fn.countTo = function(options) {
+      options = options || {};
+
+      return $(this).each(function() {
+        // set options for current element
+        var settings = $.extend({},
+          $.fn.countTo.defaults, {
+            from: $(this).data("from"),
+            to: $(this).data("to"),
+            speed: $(this).data("speed"),
+            refreshInterval: $(this).data("refresh-interval"),
+            decimals: $(this).data("decimals")
+          },
+          options
+        );
+
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+          increment = (settings.to - settings.from) / loops;
+
+        // references & variables that will change with each update
+        var self = this,
+          $self = $(this),
+          loopCount = 0,
+          value = settings.from,
+          data = $self.data("countTo") || {};
+
+        $self.data("countTo", data);
+
+        // if an existing interval can be found, clear it first
+        if (data.interval) {
+          clearInterval(data.interval);
+        }
+        data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+        // initialize the element with the starting value
+        render(value);
+
+        function updateTimer() {
+          value += increment;
+          loopCount++;
+
+          render(value);
+
+          if (typeof settings.onUpdate == "function") {
+            settings.onUpdate.call(self, value);
+          }
+
+          if (loopCount >= loops) {
+            // remove the interval
+            $self.removeData("countTo");
+            clearInterval(data.interval);
+            value = settings.to;
+
+            if (typeof settings.onComplete == "function") {
+              settings.onComplete.call(self, value);
+            }
+          }
+        }
+
+        function render(value) {
+          var formattedValue = settings.formatter.call(self, value, settings);
+          $self.html(formattedValue);
+        }
+      });
+    };
+
+    $.fn.countTo.defaults = {
+      from: 0, // the number the element should start at
+      to: 0, // the number the element should end at
+      speed: 1000, // how long it should take to count between the target numbers
+      refreshInterval: 100, // how often the element should be updated
+      decimals: 0, // the number of decimal places to show
+      formatter: formatter, // handler for formatting the value before rendering
+      onUpdate: null, // callback method for every time the element is updated
+      onComplete: null // callback method for when the element finishes updating
+    };
+
+    function formatter(value, settings) {
+      var absValue = Math.abs(value);
+      if (absValue >= 1.0e+15) {
+        return (value / 1.0e+15).toFixed(settings.decimals) + ' P'; // Peta
+      } else if (absValue >= 1.0e+12) {
+        return (value / 1.0e+12).toFixed(settings.decimals) + ' T'; // Tera
+      } else if (absValue >= 1.0e+9) {
+        return (value / 1.0e+9).toFixed(settings.decimals) + ' B'; // Billion
+      } else if (absValue >= 1.0e+6) {
+        return (value / 1.0e+6).toFixed(settings.decimals) + ' M'; // Million
+      } else if (absValue >= 1.0e+5) {
+        return (value / 1.0e+5).toFixed(settings.decimals) + ' Lakh'; // Lakh
+      } else if (absValue >= 1.0e+3) {
+        return (value / 1.0e+3).toFixed(settings.decimals) + ' K'; // Thousand
+      }
+      return value.toFixed(settings.decimals);
+    }
+  })(jQuery);
+
+  jQuery(function($) {
+    // custom formatting example
+    $(".count-number").data("countToOptions", {
+      formatter: function(value, options) {
+        var absValue = Math.abs(value);
+        if (absValue >= 1.0e+15) {
+          return (value / 1.0e+15).toFixed(options.decimals) + ' P'; // Peta
+        } else if (absValue >= 1.0e+12) {
+          return (value / 1.0e+12).toFixed(options.decimals) + ' T'; // Tera
+        } else if (absValue >= 1.0e+9) {
+          return (value / 1.0e+9).toFixed(options.decimals) + ' B'; // Billion
+        } else if (absValue >= 1.0e+6) {
+          return (value / 1.0e+6).toFixed(options.decimals) + ' M'; // Million
+        } else if (absValue >= 1.0e+5) {
+          return (value / 1.0e+5).toFixed(options.decimals) + ' Lakh'; // Lakh
+        } else if (absValue >= 1.0e+3) {
+          return (value / 1.0e+3).toFixed(options.decimals) + ' K'; // Thousand
+        }
+        return value.toFixed(options.decimals);
+      }
+    });
+
+    // start all the timers
+    $(".timer").each(count);
+
+    function count(options) {
+      var $this = $(this);
+      options = $.extend({}, options || {}, $this.data("countToOptions") || {});
+      $this.countTo(options);
+    }
+  });
+</script>
 @endsection

@@ -783,7 +783,7 @@ p {
                                 top: 0;
                                 left: 0;
                                 background: #f8f9f9;
-                                z-index: 2;
+                                z-index: 5;
 
 
                                 .dash-title {
@@ -875,14 +875,19 @@ p {
 
                             .ads-container {
                                 width: 100%;
-                                min-height: 200px;
+                                height: 200px;
                                 overflow: hidden;
                                 position: relative;
-                                background: rgb(85, 85, 255);
-                                background: -moz-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
-                                background: -webkit-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
-                                background: linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
-                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5555ff", endColorstr="#7dc1ff", GradientType=1);
+                                background: url("../../images/user/demo.png");
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                border: 1px solid rgb(198, 198, 198);
+                                // background: rgb(85, 85, 255);
+                                // background: -moz-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
+                                // background: -webkit-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
+                                // background: linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
+                                // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5555ff", endColorstr="#7dc1ff", GradientType=1);
                                 border-radius: 10px;
 
                                 &:hover {
@@ -929,15 +934,21 @@ p {
 
                                     .ad-link {
                                         width: 100%;
+                                        position: absolute;
+                                        bottom: 10px;
+                                        right: 20px;
+                                        display: flex;
+                                        justify-content: flex-end;
+
 
                                         a {
                                             padding: 8px 18px;
-                                            display: flex;
+                                            display: inline-flex;
                                             justify-content: center;
                                             align-items: center;
                                             text-decoration: none;
-                                            background: white;
-                                            color: var(--ter-clr);
+                                            background: rgb(0, 0, 0);
+                                            color: white;
                                             border: 2px solid white;
                                             font-weight: 700;
                                             border-radius: 5px;
@@ -946,7 +957,7 @@ p {
                                             text-transform: uppercase;
 
                                             &:hover {
-                                                background: transparent;
+                                                background: var(--ter-clr);
                                                 color: white;
                                                 transition: 0.5s ease;
 
@@ -961,10 +972,12 @@ p {
                                 display: grid;
                                 grid-template-columns: repeat(3, 1fr);
                                 grid-template-rows: auto;
+                                justify-content: space-between;
                                 gap: 20px 20px;
                                 margin: 30px 0;
 
                                 .grid-card {
+                                    min-width: 200px;
                                     min-height: 150px;
                                     border-radius: 8px;
                                     background: rgb(241, 240, 240);
@@ -1002,7 +1015,7 @@ p {
 
                                     &:nth-child(odd) {
                                         a {
-                                            position: relative;
+                                            
 
                                             &::before {
                                                 position: absolute;
@@ -1016,6 +1029,7 @@ p {
                                                 background-size: cover;
                                                 background-position: center;
                                                 opacity: 0.5;
+                                                z-index: 1;
                                             }
                                         }
 
@@ -1048,6 +1062,7 @@ p {
                                         justify-content: space-between;
                                         padding: 15px;
                                         text-decoration: none;
+                                        position: relative;
 
                                         color: black;
 
@@ -1057,6 +1072,8 @@ p {
                                             font-family: "Karla", sans-serif;
                                             font-weight: 800;
                                             font-size: 1em;
+                                            position: relative;
+                                            z-index: 2;
 
                                         }
 
@@ -1064,6 +1081,27 @@ p {
                                             display: flex;
                                             justify-content: space-between;
                                             align-items: center;
+                                            gap: 20px;
+                                            position: relative;
+                                            z-index: 2;
+
+                                            h3 {
+                                                display: flex;
+                                                gap: 10px;
+                                                align-items: center;
+                                                width: 70%;
+                                                white-space: initial;
+                                                overflow-x: scroll;
+                                                text-overflow: ellipsis;
+                                                -ms-overflow-style: none;  /* IE and Edge */
+                                                scrollbar-width: none;  /* Firefox */
+                                                &::-webkit-scrollbar {
+                                                    display: none;
+                                                  }
+
+
+                                               
+                                            }
                                         }
                                     }
                                 }
@@ -1075,5 +1113,34 @@ p {
                 }
             }
         }
+    }
+}
+
+
+
+
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
     }
 }

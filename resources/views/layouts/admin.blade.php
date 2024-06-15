@@ -142,6 +142,35 @@
    <script src="{{url('public/admin/')}}/app-assets/js/scripts/form-select2.js"></script>
    <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
 
+
+
+   <script>
+      function formatNumber(number) {
+         if (number >= 10000000) {
+            return (number / 10000000).toFixed(2) + ' Cr';
+         } else if (number >= 100000) {
+            return (number / 100000).toFixed(2) + ' Lakh';
+         } else if (number >= 1000) {
+            return (number / 1000).toFixed(2) + ' K';
+         }
+         return number.toString();
+      }
+
+      function formatNumbersInElements(selector) {
+         const elements = document.querySelectorAll(selector);
+         elements.forEach(element => {
+            const number = parseFloat(element.innerHTML);
+            if (!isNaN(number)) {
+               element.innerHTML = formatNumber(number);
+            }
+         });
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+            formatNumbersInElements('.formatted-number');
+        });
+   </script>
+
    <script>
       AOS.init();
       $(document).ready(function() {
@@ -160,11 +189,15 @@
          $('#cllps-side-btn').on('click', () => {
             $('#grwth-sidebar').addClass('collapsed');
             $('#or-sd-menu').hide();
-            $('#or-sd-cl-menu').css({display:"flex"});
+            $('#or-sd-cl-menu').css({
+               display: "flex"
+            });
          })
          $('#opn-side-btn').on('click', () => {
             $('#grwth-sidebar').removeClass('collapsed');
-            $('#or-sd-menu').css({display:"flex"});
+            $('#or-sd-menu').css({
+               display: "flex"
+            });
             $('#or-sd-cl-menu').hide();
          })
 

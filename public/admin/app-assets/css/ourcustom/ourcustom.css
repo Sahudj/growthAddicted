@@ -624,7 +624,7 @@ p {
   top: 0;
   left: 0;
   background: #f8f9f9;
-  z-index: 2;
+  z-index: 5;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .usr-dash-header .dash-title h1 {
   font-family: "Karla", sans-serif;
@@ -699,12 +699,14 @@ p {
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .ads-container {
   width: 100%;
-  min-height: 200px;
+  height: 200px;
   overflow: hidden;
   position: relative;
-  background: rgb(85, 85, 255);
-  background: linear-gradient(139deg, rgb(85, 85, 255) 0%, rgb(125, 193, 255) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5555ff", endColorstr="#7dc1ff", GradientType=1);
+  background: url("../../images/user/demo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(198, 198, 198);
   border-radius: 10px;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .ads-container:hover::after {
@@ -744,15 +746,20 @@ p {
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .ads-container .ads-wrapper .ad-link {
   width: 100%;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .ads-container .ads-wrapper .ad-link a {
   padding: 8px 18px;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background: white;
-  color: var(--ter-clr);
+  background: rgb(0, 0, 0);
+  color: white;
   border: 2px solid white;
   font-weight: 700;
   border-radius: 5px;
@@ -761,7 +768,7 @@ p {
   text-transform: uppercase;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .ads-container .ads-wrapper .ad-link a:hover {
-  background: transparent;
+  background: var(--ter-clr);
   color: white;
   transition: 0.5s ease;
 }
@@ -770,10 +777,12 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
+  justify-content: space-between;
   gap: 20px 20px;
   margin: 30px 0;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card {
+  min-width: 200px;
   min-height: 150px;
   border-radius: 8px;
   background: rgb(241, 240, 240);
@@ -800,9 +809,6 @@ p {
   background-position: center;
   opacity: 0.5;
 }
-.growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(odd) a {
-  position: relative;
-}
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(odd) a::before {
   position: absolute;
   top: 0;
@@ -814,6 +820,7 @@ p {
   background-size: cover;
   background-position: center;
   opacity: 0.5;
+  z-index: 1;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(1) {
   background: #ffebc4;
@@ -835,6 +842,7 @@ p {
   justify-content: space-between;
   padding: 15px;
   text-decoration: none;
+  position: relative;
   color: black;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card a .card-ttl {
@@ -843,9 +851,39 @@ p {
   font-family: "Karla", sans-serif;
   font-weight: 800;
   font-size: 1em;
+  position: relative;
+  z-index: 2;
 }
 .growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card a .card-val {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card a .card-val h3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 70%;
+  white-space: initial;
+  overflow-x: scroll;
+  text-overflow: ellipsis;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.growth-dash .growth-dash-wrapper .growth-right-container .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card a .card-val h3::-webkit-scrollbar {
+  display: none;
+}
+
+/* for Firefox */
+/* for Chrome */
+@keyframes my-animation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=ourcustom.css.map */
