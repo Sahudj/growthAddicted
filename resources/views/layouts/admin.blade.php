@@ -33,14 +33,15 @@
 
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/flag-icon/css/flag-icon.min.css">
 
-   <link rel="stylesheet" href="{{url('public/admin/')}}/app-assets/vendors/select2/select2.min.css" type="text/css">
-   <link rel="stylesheet" href="{{url('public/admin/')}}/app-assets/vendors/select2/select2-materialize.css" type="text/css">
+   <!-- <link rel="stylesheet" href="{{url('public/admin/')}}/app-assets/vendors/select2/select2.min.css" type="text/css"> -->
+   <!-- <link rel="stylesheet" href="{{url('public/admin/')}}/app-assets/vendors/select2/select2-materialize.css" type="text/css"> -->
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/pages/form-select2.css">
 
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/fonts/fontawesome/css/all.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
    <!-- END: Custom CSS-->
-   <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script>
+   <!-- <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script> -->
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/quill/katex.min.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/quill/monokai-sublime.min.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/quill/quill.snow.css">
@@ -118,7 +119,7 @@
 
    <!-- END: Footer-->
    <!-- BEGIN VENDOR JS-->
-   <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script>
+   <!-- <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script> -->
    <!-- BEGIN VENDOR JS-->
    <!-- BEGIN PAGE VENDOR JS-->
    <script src="{{url('public/admin/')}}/app-assets/vendors/chartjs/chart.min.js"></script>
@@ -138,39 +139,10 @@
    <script src="{{url('public/admin/')}}/app-assets/vendors/quill/highlight.min.js"></script>
    <script src="{{url('public/admin/')}}/app-assets/vendors/quill/quill.min.js"></script>
    <!--   <script src="{{url('public/admin/')}}/app-assets/js/scripts/form-editor.js"></script> -->
-   <script src="{{url('public/admin/')}}/app-assets/vendors/select2/select2.full.min.js"></script>
-   <script src="{{url('public/admin/')}}/app-assets/js/scripts/form-select2.js"></script>
+   <!-- <script src="{{url('public/admin/')}}/app-assets/vendors/select2/select2.full.min.js"></script> -->
+   <!-- <script src="{{url('public/admin/')}}/app-assets/js/scripts/form-select2.js"></script> -->
    <script src="{{url('public/frontend/home/')}}/assets/js/aos.js"></script>
-
-
-
-   <script>
-      function formatNumber(number) {
-         if (number >= 10000000) {
-            return (number / 10000000).toFixed(2) + ' Cr';
-         } else if (number >= 100000) {
-            return (number / 100000).toFixed(2) + ' Lakh';
-         } else if (number >= 1000) {
-            return (number / 1000).toFixed(2) + ' K';
-         }
-         return number.toString();
-      }
-
-      function formatNumbersInElements(selector) {
-         const elements = document.querySelectorAll(selector);
-         elements.forEach(element => {
-            const number = parseFloat(element.innerHTML);
-            if (!isNaN(number)) {
-               element.innerHTML = formatNumber(number);
-            }
-         });
-      }
-
-      document.addEventListener('DOMContentLoaded', function() {
-            formatNumbersInElements('.formatted-number');
-        });
-   </script>
-
+   <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
    <script>
       AOS.init();
       $(document).ready(function() {
@@ -204,6 +176,36 @@
 
       })
    </script>
+
+
+   <script>
+      function formatNumber(number) {
+         if (number >= 10000000) {
+            return (number / 10000000).toFixed(2) + ' Cr';
+         } else if (number >= 100000) {
+            return (number / 100000).toFixed(2) + ' Lakh';
+         } else if (number >= 1000) {
+            return (number / 1000).toFixed(2) + ' K';
+         }
+         return number.toString();
+      }
+
+      function formatNumbersInElements(selector) {
+         const elements = document.querySelectorAll(selector);
+         elements.forEach(element => {
+            const number = parseFloat(element.innerHTML);
+            if (!isNaN(number)) {
+               element.innerHTML = formatNumber(number);
+            }
+         });
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+            formatNumbersInElements('.formatted-number');
+        });
+   </script>
+
+  
 
    <script type="text/javascript">
       (function(window, document, $) {
@@ -331,42 +333,42 @@
 
       $(document).ready(function() {
          getLink();
+         $('#referral_code').click(function() {
+            var text = $('#userReferralCode').val();
+            var inp = document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value = text;
+            inp.select();
+            document.execCommand('copy', false);
+            inp.remove();
+   
+            alert('Referral code copy successfully !')
+         })
+   
+         $('#orientationLink').click(function() {
+            var text = $('#orientation').val();
+            var inp = document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value = text;
+            inp.select();
+            document.execCommand('copy', false);
+            inp.remove();
+   
+            alert('Link copy successfully !')
+         })
+   
+         $('#copyPackageLink1').click(function() {
+            var text = $('#packageLink1').val();
+            var inp = document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value = text;
+            inp.select();
+            document.execCommand('copy', false);
+            inp.remove();
+   
+            alert('Link copy successfully !')
+         })
       });
-      $('#referral_code').click(function() {
-         var text = $('#userReferralCode').val();
-         var inp = document.createElement('input');
-         document.body.appendChild(inp)
-         inp.value = text;
-         inp.select();
-         document.execCommand('copy', false);
-         inp.remove();
-
-         alert('Referral code copy successfully !')
-      })
-
-      $('#orientationLink').click(function() {
-         var text = $('#orientation').val();
-         var inp = document.createElement('input');
-         document.body.appendChild(inp)
-         inp.value = text;
-         inp.select();
-         document.execCommand('copy', false);
-         inp.remove();
-
-         alert('Link copy successfully !')
-      })
-
-      $('#copyPackageLink').click(function() {
-         var text = $('#packageLink').val();
-         var inp = document.createElement('input');
-         document.body.appendChild(inp)
-         inp.value = text;
-         inp.select();
-         document.execCommand('copy', false);
-         inp.remove();
-
-         alert('Link copy successfully !')
-      })
 
 
       function deleteCourse(id) {
@@ -408,7 +410,7 @@
                'packageId': packageId
             },
             success: function(data) {
-               $('#packageLink').val(data);
+               $('#packageLink1').val(data);
             }
          });
          return false;
