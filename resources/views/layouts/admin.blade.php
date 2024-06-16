@@ -21,8 +21,8 @@
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/chartist-js/chartist-plugin-tooltip.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/data-tables/css/jquery.dataTables.min.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/data-tables/extensions/responsive/css/responsive.dataTables.min.css">
-   <!-- <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/materialize.css"> -->
-   <!-- <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/style.css"> -->
+   <!-- <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/materialize.css">
+   <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/themes/vertical-modern-menu-template/style.css"> -->
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/pages/dashboard-modern.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/css/pages/intro.css">
    <!-- END: Page Level CSS-->
@@ -78,19 +78,31 @@
             <div class="growth-header-navbar">
                <div class="header-wrap">
                   <div class="header-left">
-                     <ul>
+                     <ul class="web-nav-menu">
                         <li><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
                         <li><a href="#"><span class="material-symbols-outlined">auto_stories</span> My Courses</a></li>
                         <li><a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a></li>
                      </ul>
+                     <ul class="mob-nav-menu">
+                        <li><a href="#"><img width="100" src="{{url('public/admin/')}}/app-assets/images/logo/Logo2.png" alt="logo"></li>
+                     </ul>
                   </div>
                   <div class="header-right">
-                     <ul>
+                     <ul class="web-right-menu">
                         <li><a href="#" class="growth-plus-btn">Growth Plus +</a></li>
                         <li><a href="#"><span class="material-symbols-outlined">notifications</span></a></li>
                         <li><a href="#"><span class="material-symbols-outlined">screen_record</span></a></li>
                         @if(auth()->user()->profile_pic)
                         <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
+                        @else
+                        <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
+                        @endif
+                        <li><a href="#"><span class="material-symbols-outlined">more_vert</span></a></li>
+                     </ul>
+                     <ul class="mob-right-menu">
+                        @if(auth()->user()->profile_pic)
+                        <li><a href="#"><img src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="avatar"></a></li>
+                        <!-- <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li> -->
                         @else
                         <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
                         @endif
