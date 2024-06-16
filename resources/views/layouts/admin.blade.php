@@ -72,7 +72,7 @@
             @endif
             @endauth
          </div>
-         <div class="growth-right-container">
+         <div class="growth-right-cont">
             <!-- header section start -->
             <div class="growth-header-navbar">
                <div class="header-wrap">
@@ -83,7 +83,7 @@
                         <li><a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a></li>
                      </ul>
                      <ul class="mob-nav-menu">
-                        <li><a href="#"><img width="100" src="{{url('public/admin/')}}/app-assets/images/logo/Logo2.png" alt="logo"></li>
+                        <li><a href="#"><img width="100" src="{{url('public/admin/')}}/app-assets/images/logo/Logo2.png" alt="logo"></a></li>
                      </ul>
                   </div>
                   <div class="header-right">
@@ -130,7 +130,8 @@
 
    <!-- END: Footer-->
    <!-- BEGIN VENDOR JS-->
-   <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script>
+   <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
+
    <!-- BEGIN VENDOR JS-->
    <!-- BEGIN PAGE VENDOR JS-->
    <script src="{{url('public/admin/')}}/app-assets/vendors/chartjs/chart.min.js"></script>

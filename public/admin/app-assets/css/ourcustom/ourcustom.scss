@@ -26,10 +26,12 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.368); /* Black overlay with 90% opacity */
+    background-color: rgba(0, 0, 0, 0.368);
+    /* Black overlay with 90% opacity */
     justify-content: center;
     align-items: center;
     display: flex;
+
     .modal-content {
         width: 60%;
         max-height: 80%;
@@ -39,6 +41,7 @@
         border-radius: 10px;
         position: relative;
         text-align: center;
+
         .close-ourmodal-btn {
             color: #000000;
             border: 1px solid rgb(178, 178, 178);
@@ -51,6 +54,7 @@
             top: 10px;
             right: 25px;
             cursor: pointer;
+
             &:hover,
             &:focus {
                 color: rgb(75, 75, 75);
@@ -676,32 +680,35 @@ p {
 
                 }
             }
-            .our-custom-bottombar{
-                display: block;
+
+            .our-custom-bottombar {
+                display: none;
                 width: 100%;
                 height: 500px;
                 position: fixed;
                 background: rgb(0, 0, 0);
                 bottom: 0;
                 left: 0;
-                border: 2px solid ;
-                .our-bottombar-wrap{
+                border: 2px solid;
+                z-index: 10;
+
+                .our-bottombar-wrap {
                     width: 100%;
 
-                    .our-bottom-menu{
+                    .our-bottom-menu {
                         width: 100%;
                         display: flex;
-                        grid-template-columns: repeat(5,1fr);
+                        grid-template-columns: repeat(5, 1fr);
                         grid-template-rows: auto;
 
                     }
                 }
 
-                
+
             }
         }
 
-        .growth-right-container {
+        .growth-right-cont {
             flex: 1;
             height: 100%;
             transition: margin-left 0.3s;
@@ -768,7 +775,8 @@ p {
                             }
 
                         }
-                        .mob-nav-menu{
+
+                        .mob-nav-menu {
                             width: 100%;
                             height: 100%;
                             list-style: none;
@@ -828,6 +836,7 @@ p {
 
                             }
                         }
+
                         .mob-right-menu {
                             width: 100%;
                             height: 100%;
@@ -1245,7 +1254,7 @@ p {
                                         border-radius: 8px;
                                         position: relative;
 
-                                        &::before{
+                                        &::before {
                                             content: "";
                                             position: absolute;
                                             top: 0;
@@ -1256,13 +1265,15 @@ p {
                                             background-size: cover;
                                             background-position: center;
                                         }
-                                        h1{
+
+                                        h1 {
                                             position: relative;
                                             z-index: 2;
                                             font-size: 1.3em;
                                             color: white;
                                         }
-                                        h4{
+
+                                        h4 {
                                             position: relative;
                                             font-size: 0.8em;
                                             color: white;
@@ -1282,21 +1293,22 @@ p {
                                             position: relative;
                                             color: rgb(255, 255, 255);
                                             border: 2px solid white;
-                                            background:transparent;
+                                            background: transparent;
                                             font-weight: 700;
                                             border-radius: 6px;
                                             transition: 0.5s ease-in-out;
-                                            
-                                            &:hover{
+
+                                            &:hover {
                                                 background: black;
                                                 transition: 0.5s ease-in-out;
                                             }
-                                            
+
 
                                         }
 
                                     }
-                                    .play-intro-card{
+
+                                    .play-intro-card {
                                         width: 100%;
                                         height: 100%;
                                         display: flex;
@@ -1304,12 +1316,14 @@ p {
                                         justify-content: center;
                                         align-items: center;
                                         background: white;
-                                        .play-ico{
-                                            span{
+
+                                        .play-ico {
+                                            span {
                                                 font-size: 3em;
                                             }
                                         }
-                                        a{
+
+                                        a {
                                             width: auto;
                                             height: auto;
                                             text-decoration: none;
@@ -1317,12 +1331,13 @@ p {
                                             display: inline;
                                             padding: 8px 18px;
                                             border: 2px solid black;
-                                            &:hover{
+
+                                            &:hover {
                                                 background: #000000;
                                                 color: white;
                                             }
 
-                                            
+
                                         }
 
                                     }
@@ -1369,7 +1384,8 @@ p {
                                         justify-content: center;
                                         align-items: center;
                                         transition: 0.5s ease-in-out;
-                                        h3{
+
+                                        h3 {
                                             color: whitesmoke;
                                         }
 
@@ -1390,7 +1406,7 @@ p {
 
                     }
 
-                    .intro-video-content{
+                    .intro-video-content {
                         width: 100%;
                         height: 100%;
                         display: flex;
@@ -1398,15 +1414,16 @@ p {
                         align-items: center;
                         flex-direction: column;
                         margin: 15px 0;
-                       
-                        .intro-vid-wrap{
+
+                        .intro-vid-wrap {
                             width: 95%;
                             height: 300px;
 
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            &::before{
+
+                            &::before {
                                 content: "";
                                 width: 200px;
                                 height: 100%;
@@ -1414,23 +1431,25 @@ p {
                                 background-size: cover;
                                 background-position: left center;
                             }
-                            
-                            iframe{
+
+                            iframe {
                                 width: 100%;
                                 height: 100%;
                                 border-radius: 10px;
                                 overflow: hidden;
 
-                                *::-webkit-scrollbar{
+                                *::-webkit-scrollbar {
                                     display: none !important;
                                 }
                             }
-                        
+
 
                         }
-                        form{
+
+                        form {
                             margin-top: 20px;
-                            button{
+
+                            button {
                                 padding: 8px 16px;
                                 border-radius: 6px;
                                 background: black;
@@ -1439,12 +1458,176 @@ p {
                                 outline: none;
                                 border: 2px solid transparent;
                                 cursor: pointer;
-                                &:hover{
+
+                                &:hover {
                                     background: transparent;
                                     border: 2px solid black;
                                     color: #000000;
                                 }
                             }
+                        }
+                    }
+
+                    .affiliate-link-page {
+                        width: 100%;
+
+                        .affiliate-wrap {
+                            width: 100%;
+
+                            .affli-dash-header {
+                                width: 100%;
+                                padding: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 30px;
+                                position: sticky;
+                                top: 0;
+                                left: 0;
+                                background: #f8f9f9;
+                                z-index: 5;
+
+                                .affli-title {
+                                    h1 {
+                                        font-family: "Karla", sans-serif;
+                                    }
+                                }
+                            }
+
+                            .inner-cont {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                .custom-row {
+                                    display: flex;
+                                    gap: 10px;
+                                    width: 100%;
+
+                                    .crd {
+                                        width: 50%;
+                                        min-height: 200px;
+                                        background: #fff;
+                                        border-top: 4px solid #81A4FF;
+                                        border-radius: 10px;
+                                        padding: 10px;
+                                        box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+                                        display: flex;
+                                        gap: 50px;
+                                        flex-direction: column;
+
+                                        span {
+                                            color: #81A4FF;
+                                        }
+
+                                        .crd-title {
+                                            display: flex;
+                                            text-align: center;
+                                            font-size: 1em;
+                                            gap: 20px;
+
+                                            span {
+                                                font-size: 1.7em;
+                                            }
+                                        }
+
+                                        .crd-detail {
+                                            display: flex;
+                                            gap: 20px;
+
+                                            .custom-input {
+                                                width: 80%;
+                                                font-size: 1.2em;
+                                                height: auto;
+                                                text-wrap: wrap;
+                                                border: none;
+                                            }
+
+                                            .copy-btn {
+                                                padding: 10px;
+                                                background: #fff;
+                                                box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+                                                border-radius: 5px;
+                                                border: none;
+                                                outline: none;
+
+                                                &:hover {
+                                                    scale: 1.1;
+                                                    transition: 0.5s;
+                                                }
+                                            }
+                                        }
+
+                                    }
+
+                                    .crd1 {
+                                        width: 100%;
+                                        min-height: 200px;
+                                        background: #fff;
+                                        border-top: 4px solid #81A4FF;
+                                        border-radius: 10px;
+                                        padding: 10px;
+                                        box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+                                        display: flex;
+                                        gap: 50px;
+                                        flex-direction: column;
+
+                                        span {
+                                            color: #81A4FF;
+                                        }
+
+                                        .crd-title {
+                                            display: flex;
+                                            text-align: center;
+                                            font-size: 1em;
+                                            gap: 20px;
+
+                                            span {
+                                                font-size: 1.7em;
+                                            }
+                                        }
+
+                                        .custom-select1 {
+                                            width: 50%;
+                                            height: 30px;
+                                        }
+
+                                        .crd-detail {
+                                            display: flex;
+                                            gap: 20px;
+
+                                            .custom-input {
+                                                width: 80%;
+                                                font-size: 1.2em;
+                                                height: auto;
+                                                text-wrap: wrap;
+                                                border: none;
+                                            }
+
+                                            .copy-btn {
+                                                padding: 10px;
+                                                background: #fff;
+                                                box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+                                                border-radius: 5px;
+                                                border: none;
+                                                outline: none;
+                                                transition: 0.5s;
+
+                                                &:hover {
+                                                    scale: 1.1;
+                                                    transition: 0.5s;
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+                            }
+
+
                         }
                     }
 
@@ -1506,7 +1689,7 @@ p {
     .growth-dash {
         width: 100%;
         height: 100%;
-    
+
         .growth-dash-wrapper {
             width: 100%;
             height: 100%;
@@ -1514,47 +1697,48 @@ p {
             display: flex;
             justify-content: space-between;
             align-items: center;
-    
+
             .growth-side-bar {
                 width: 0px;
                 overflow: hidden;
-    
+
                 &.collapsed {
                     width: 60px;
                     transition: 0.5s ease-in-out;
                 }
-    
+
                 .our-custom-sidebar {
                     display: none;
                 }
-                .our-custom-bottombar{
+
+                .our-custom-bottombar {
                     display: block;
                     width: 100%;
                     position: fixed;
                     bottom: 0;
                     left: 0;
                     z-index: 6;
-                    border: 2px solid ;
-                    
-                    
+                    border: 2px solid;
+
+
                 }
             }
-    
-            .growth-right-container {
+
+            .growth-right-cont {
                 width: 100%;
                 height: 100%;
                 transition: margin-left 0.3s;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-    
-    
+
+
                 .growth-header-navbar {
                     width: 100%;
                     height: 60px;
                     box-shadow: 0 0 10px rgba(183, 183, 183, 0.355);
                     background: white;
-    
+
                     .header-wrap {
                         width: 100%;
                         height: 100%;
@@ -1562,31 +1746,33 @@ p {
                         justify-content: space-between;
                         align-items: center;
                         padding: 0 25px;
-    
+
                         .header-left {
                             width: 50%;
                             height: 100%;
-    
+
                             .web-nav-menu {
                                 display: none;
                             }
-                            .mob-nav-menu{
+
+                            .mob-nav-menu {
                                 width: 100%;
                                 height: 100%;
                                 display: flex;
-    
+
                             }
-    
-    
+
+
                         }
-    
+
                         .header-right {
                             width: 50%;
                             height: 100%;
-    
+
                             .web-right-menu {
                                 display: none;
                             }
+
                             .mob-right-menu {
                                 width: 100%;
                                 height: 100%;
@@ -1595,7 +1781,7 @@ p {
                                 gap: 10px;
                                 align-items: center;
                                 justify-content: flex-end;
-    
+
                                 li {
                                     a {
                                         text-decoration: none;
@@ -1611,56 +1797,56 @@ p {
                                         justify-content: center;
                                         align-items: center;
                                         overflow: hidden;
-    
+
                                         img {
                                             width: 18px;
                                             height: 18px;
                                         }
-    
+
                                         span {
                                             font-size: 1.3em;
                                         }
-    
+
                                         &:hover {
                                             background: var(--sec-clr);
                                             color: var(--prim-clr);
                                             transition: 0.5s ease;
                                         }
-    
+
                                     }
-    
+
                                 }
                             }
-    
+
                         }
                     }
                 }
-    
+
                 .growth-dynamic-pages {
                     width: 100%;
                     height: calc(100% - 60px);
                     overflow-x: hidden;
                     overflow-y: auto;
                     background: #f8f9f9;
-    
+
                     .dynamic-page-wrapper {
                         padding: 0px;
-    
-    
-    
+
+
+
                         // User Dash Styling
                         .user-dashboard {
                             width: 100%;
-                            
-    
+
+
                             .user-dash-wrap {
                                 width: 100%;
-    
+
                                 .usr-dash-header {
                                     flex-direction: column;
                                     align-items: flex-start;
-                                    padding:  10px;
-                                    
+                                    padding: 10px;
+
                                     .dash-title {
 
                                         h1 {
@@ -1668,50 +1854,51 @@ p {
                                             font-family: "Karla", sans-serif;
                                         }
                                     }
-    
+
                                     .user-details {
                                         width: 100%;
                                         padding: 5px 20px;
                                         background: white;
                                         box-shadow: 0 0 15px rgb(190, 190, 190);
                                         border-radius: 10px;
-    
+
                                         .usr-det-row {
                                             display: flex;
                                             align-items: center;
                                             gap: 10px;
                                             margin: 10px 0;
-    
+
                                             .user-name {
                                                 font-size: 0.8em;
                                             }
-                                            p{
+
+                                            p {
                                                 font-size: 0.8em;
                                             }
-    
+
                                             .copytoclipboard {
                                                 border-radius: 2px;
-    
+
                                                 #textToCopy {
                                                     width: calc(100% - 20px);
                                                     height: 20px;
                                                 }
-    
+
                                                 #copyButton {
                                                     width: 20px;
                                                     height: 20px;
-    
+
                                                     span {
                                                         font-size: 1em;
                                                     }
                                                 }
                                             }
-    
+
                                         }
-    
+
                                     }
                                 }
-    
+
                                 .ads-container {
                                     width: 95%;
                                     margin: 0 auto;
@@ -1726,94 +1913,96 @@ p {
                                         }
                                     }
                                 }
-    
+
                                 .grid-cards-container {
                                     grid-template-columns: repeat(2, 1fr);
                                     gap: 10px 10px;
                                     padding: 10px;
-    
+
                                     .grid-card {
                                         min-width: 150px;
                                         min-height: 150px;
-    
+
                                         a {
-    
+
                                             .card-ttl {
                                                 font-size: 0.8em;
                                             }
                                         }
-    
+
                                         .no-courses-card {
-    
-                                            h1{
+
+                                            h1 {
                                                 font-size: 0.9em;
-                                                
+
                                             }
-                                            h4{ 
+
+                                            h4 {
                                                 font-size: 0.6em;
                                             }
-    
+
                                         }
                                     }
                                 }
-    
+
                                 .two-sec-cont {
                                     width: 100%;
                                     padding: 10px;
-    
+
                                     .twsecwrap {
                                         width: 100%;
                                         display: flex;
                                         flex-direction: column-reverse;
                                         justify-content: space-between;
                                         gap: 20px;
-    
-    
-    
+
+
+
                                         .sec-left {
                                             width: 100%;
                                             padding: 10px;
-    
+
                                             .sec-ttl {
                                                 display: flex;
                                                 flex-direction: column;
                                                 gap: 10px;
-                                                h1{
+
+                                                h1 {
                                                     font-size: 1.5em;
                                                 }
 
                                             }
-    
-    
+
+
                                         }
-    
+
                                         .sec-right {
                                             width: 100%;
                                             background: rgb(41, 41, 41);
                                             flex-direction: row;
 
-                                            h3{
+                                            h3 {
                                                 color: white;
                                             }
-    
+
                                             p {
                                                 font-style: italic;
                                                 color: white;
                                             }
-    
+
                                             &:hover {
                                                 scale: 1.05;
                                                 transition: 0.5s ease-in-out;
                                             }
-    
+
                                         }
                                     }
                                 }
                             }
-    
+
                         }
-    
-                        .intro-video-content{
+
+                        .intro-video-content {
                             width: 100%;
                             height: 100%;
                             display: flex;
@@ -1821,15 +2010,16 @@ p {
                             align-items: center;
                             flex-direction: column;
                             margin: 15px 0;
-                           
-                            .intro-vid-wrap{
+
+                            .intro-vid-wrap {
                                 width: 95%;
                                 height: 300px;
-    
+
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                &::before{
+
+                                &::before {
                                     content: "";
                                     width: 200px;
                                     height: 100%;
@@ -1837,23 +2027,25 @@ p {
                                     background-size: cover;
                                     background-position: left center;
                                 }
-                                
-                                iframe{
+
+                                iframe {
                                     width: 100%;
                                     height: 100%;
                                     border-radius: 10px;
                                     overflow: hidden;
-    
-                                    *::-webkit-scrollbar{
+
+                                    *::-webkit-scrollbar {
                                         display: none !important;
                                     }
                                 }
-                            
-    
+
+
                             }
-                            form{
+
+                            form {
                                 margin-top: 20px;
-                                button{
+
+                                button {
                                     padding: 8px 16px;
                                     border-radius: 6px;
                                     background: black;
@@ -1862,7 +2054,8 @@ p {
                                     outline: none;
                                     border: 2px solid transparent;
                                     cursor: pointer;
-                                    &:hover{
+
+                                    &:hover {
                                         background: transparent;
                                         border: 2px solid black;
                                         color: #000000;
@@ -1870,12 +2063,12 @@ p {
                                 }
                             }
                         }
-    
+
                     }
                 }
             }
         }
     }
 
-    
+
 }
