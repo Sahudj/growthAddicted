@@ -59,7 +59,7 @@
 
     @if(auth()->user()->order_status == 1)
     <div class="grid-cards-container">
-      @if(auth()->user()->id != 231)
+      @if(auth()->user()->id == 231)
       <div class="grid-card">
         <a href="{{url('user/commission/1/1')}}">
           <div class="card-ttl">Today's Earning</div>
@@ -132,6 +132,24 @@
           </div>
         </a>
       </div>
+      @else
+      <div class="grid-card">
+        <div class="no-courses-card">
+          <h1>Enroll with Package !</h1>
+          <h4>Click on link to enroll your package and explore more courses.</h4>
+          <a href="{{url('/#wc-ourcourses-wapper')}}" target="_blank" class="enrl-btn">Enroll Now</a>
+        </div>
+      </div>
+      <div class="grid-card">
+        <div class="play-intro-card">
+          <div class="play-ico">
+            <span class="material-symbols-outlined">
+              play_arrow
+            </span>
+          </div>
+          <a href="{{url('/user/startup-video')}}" class="enrl-btn">PLAY INTRO</a>
+        </div>
+      </div>
       @endif
     </div>
     @endif
@@ -165,7 +183,7 @@
   </div>
 </div>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col s12">
     <div class="container">
       <div class="section">
@@ -388,66 +406,57 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
+
+
+<div id="custom-modal" class="our-modal">
+  <div class="modal-content">
+    <span class="close-ourmodal-btn" id="close-modal-btn">&times;</span>
+    <h2>Introduction</h2>
+    <p>Welcome To Growth Addicted</p>
+
+    <div class="intro-video-content">
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoObject",
+          "name": "1 St Step",
+          "description": "",
+          "thumbnailUrl": [
+            ["https://video.gumlet.io/64b7dbbefccf18bce938d682/64d77049f48f277631a83481/thumbnail-1-0.png?v=1691840637933"]
+          ],
+          "uploadDate": "2023-08-12T11:43:05.833Z",
+          "duration": "PT6M24.149999999999977S",
+          "embedUrl": "https://play.gumlet.io/embed/64d77049f48f277631a83481"
+        }
+      </script>
+      <div class="intro-vid-wrap">
+        <iframe loading="lazy" title="Gumlet video player" src="https://play.gumlet.io/embed/64d77049f48f277631a83481" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;" frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+      <form method="post" name="shares" class="form-horizontal" href="javascript:void(0)" onsubmit=" return startVideo()" id="sharesDetailsForm" autocomplete="off">
+        <p>
+          <label>
+            <input type="checkbox" id="radioPrimary1" name="status" value="1" required>
+            <span>I have already watched the video</span>
+          </label>
+        </p>
+
+        <button type="submit" class="btn indigo align-items-center">
+          Thank You </button>
+      </form>
+
+
+      <script src="https://player.vimeo.com/api/player.js"></script>
+    </div>
+  </div>
+</div>
 
 
 @if(auth()->user()->order_status == 1)
 @if(auth()->user()->is_watch_video == 0)
-<div id="intro">
-  <div class="row">
-    <div class="col s12">
 
-      <div id="img-modal" class="modal white">
-        <div class="modal-content">
-          <div class="bg-img-div"></div>
-          <p class="modal-header right modal-close">
-            Skip Intro <span class="right"><i class="material-icons right-align">clear</i></span>
-          </p>
-          <br>
-          <br>
-          <div style="padding:56.25% 0 0 0;position:relative;">
-            <!-- <iframe src="https://player.vimeo.com/video/746274669?h=214ecce3e1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="1 st Step.mp4"></iframe> -->
-
-            <script type="application/ld+json">
-              {
-                "@context": "https://schema.org",
-                "@type": "VideoObject",
-                "name": "1 St Step",
-                "description": "",
-                "thumbnailUrl": [
-                  ["https://video.gumlet.io/64b7dbbefccf18bce938d682/64d77049f48f277631a83481/thumbnail-1-0.png?v=1691840637933"]
-                ],
-                "uploadDate": "2023-08-12T11:43:05.833Z",
-                "duration": "PT6M24.149999999999977S",
-                "embedUrl": "https://play.gumlet.io/embed/64d77049f48f277631a83481"
-              }
-            </script>
-            <div style="position: relative; padding-top: 56.17%">
-              <iframe loading="lazy" title="Gumlet video player" src="https://play.gumlet.io/embed/64d77049f48f277631a83481" style="border:none; position: absolute; top:0; left:0; height: 100%; width: 100%;" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;" frameborder="0" allowfullscreen>
-              </iframe>
-            </div>
-
-          </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-
-          <form method="post" name="shares" class="form-horizontal" href="javascript:void(0)" onsubmit=" return startVideo()" id="sharesDetailsForm" autocomplete="off">
-            <p>
-              <label>
-                <input type="checkbox" id="radioPrimary1" name="status" value="1" required>
-                <span>I have already watched the video</span>
-              </label>
-            </p>
-
-            <button type="submit" class="btn indigo align-items-center">
-              Thank You </button>
-          </form>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 @endif
 @endif
 

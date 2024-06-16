@@ -6,7 +6,7 @@
     --sec-clr: rgba(91, 192, 255, 0.16);
     --shadow: 0 0 15px rgba(183, 183, 183, 0.612);
     --karla: "Karla", sans-serif;
-    --color-dfdf:rgba(255, 82, 249, 0.1);
+    --color-dfdf: rgba(255, 82, 249, 0.1);
 }
 
 * {
@@ -14,6 +14,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+// Utility Classes
+// ===================================
+.our-modal {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.368); /* Black overlay with 90% opacity */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    .modal-content {
+        width: 60%;
+        max-height: 80%;
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        .close-ourmodal-btn {
+            color: #000000;
+            border: 1px solid rgb(178, 178, 178);
+            padding: 5px;
+            border-radius: 5px;
+            float: right;
+            font-size: 2em;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            cursor: pointer;
+            &:hover,
+            &:focus {
+                color: rgb(75, 75, 75);
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+// ---------------------------------------
 
 body,
 html {
@@ -628,6 +676,29 @@ p {
 
                 }
             }
+            .our-custom-bottombar{
+                display: block;
+                width: 100%;
+                height: 500px;
+                position: fixed;
+                background: rgb(0, 0, 0);
+                bottom: 0;
+                left: 0;
+                border: 2px solid ;
+                .our-bottombar-wrap{
+                    width: 100%;
+
+                    .our-bottom-menu{
+                        width: 100%;
+                        display: flex;
+                        grid-template-columns: repeat(5,1fr);
+                        grid-template-rows: auto;
+
+                    }
+                }
+
+                
+            }
         }
 
         .growth-right-container {
@@ -657,7 +728,7 @@ p {
                         width: 50%;
                         height: 100%;
 
-                        ul {
+                        .web-nav-menu {
                             width: 100%;
                             height: 100%;
                             list-style: none;
@@ -697,6 +768,14 @@ p {
                             }
 
                         }
+                        .mob-nav-menu{
+                            width: 100%;
+                            height: 100%;
+                            list-style: none;
+                            display: none;
+                            gap: 10px;
+                            align-items: center;
+                        }
 
 
                     }
@@ -705,11 +784,55 @@ p {
                         width: 50%;
                         height: 100%;
 
-                        ul {
+                        .web-right-menu {
                             width: 100%;
                             height: 100%;
                             list-style: none;
                             display: flex;
+                            gap: 10px;
+                            align-items: center;
+                            justify-content: flex-end;
+
+                            li {
+                                a {
+                                    text-decoration: none;
+                                    color: black;
+                                    font-size: 0.8em;
+                                    font-weight: 600;
+                                    padding: 8px;
+                                    border-radius: 5px;
+                                    box-shadow: 0 0 10px rgba(168, 168, 168, 0.714);
+                                    font-family: "Karla", sans-serif !important;
+                                    transition: 0.5s ease;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    overflow: hidden;
+
+                                    img {
+                                        width: 18px;
+                                        height: 18px;
+                                    }
+
+                                    span {
+                                        font-size: 1.3em;
+                                    }
+
+                                    &:hover {
+                                        background: var(--sec-clr);
+                                        color: var(--prim-clr);
+                                        transition: 0.5s ease;
+                                    }
+
+                                }
+
+                            }
+                        }
+                        .mob-right-menu {
+                            width: 100%;
+                            height: 100%;
+                            list-style: none;
+                            display: none;
                             gap: 10px;
                             align-items: center;
                             justify-content: flex-end;
@@ -785,6 +908,7 @@ p {
                                 left: 0;
                                 background: #f8f9f9;
                                 z-index: 5;
+                                gap: 20px;
 
 
                                 .dash-title {
@@ -821,7 +945,7 @@ p {
 
                                         .user-name {
                                             font-family: "Karla", sans-serif;
-                                            font-weight: 400;
+                                            font-weight: 700;
                                         }
 
                                         .copytoclipboard {
@@ -981,6 +1105,7 @@ p {
                                     min-width: 200px;
                                     min-height: 150px;
                                     border-radius: 8px;
+                                    overflow: hidden;
                                     background: rgb(241, 240, 240);
                                     border: 1px solid rgb(232, 232, 232);
                                     transition: 0.5s ease;
@@ -1016,7 +1141,7 @@ p {
 
                                     &:nth-child(odd) {
                                         a {
-                                            
+
 
                                             &::before {
                                                 position: absolute;
@@ -1094,37 +1219,136 @@ p {
                                                 white-space: initial;
                                                 overflow-x: scroll;
                                                 text-overflow: ellipsis;
-                                                -ms-overflow-style: none;  /* IE and Edge */
-                                                scrollbar-width: none;  /* Firefox */
+                                                -ms-overflow-style: none;
+                                                /* IE and Edge */
+                                                scrollbar-width: none;
+
+                                                /* Firefox */
                                                 &::-webkit-scrollbar {
                                                     display: none;
-                                                  }
+                                                }
 
 
-                                               
+
                                             }
                                         }
+                                    }
+
+                                    .no-courses-card {
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 10px;
+                                        font-family: var(--karla);
+                                        padding: 15px;
+                                        border-radius: 8px;
+                                        position: relative;
+
+                                        &::before{
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: url("../../images/user/enrollbg.png");
+                                            background-size: cover;
+                                            background-position: center;
+                                        }
+                                        h1{
+                                            position: relative;
+                                            z-index: 2;
+                                            font-size: 1.3em;
+                                            color: white;
+                                        }
+                                        h4{
+                                            position: relative;
+                                            font-size: 0.8em;
+                                            color: white;
+                                            z-index: 2;
+
+
+                                        }
+
+                                        a {
+                                            width: auto;
+                                            height: auto;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            padding: 6px 18px;
+                                            text-decoration: none;
+                                            position: relative;
+                                            color: rgb(255, 255, 255);
+                                            border: 2px solid white;
+                                            background:transparent;
+                                            font-weight: 700;
+                                            border-radius: 6px;
+                                            transition: 0.5s ease-in-out;
+                                            
+                                            &:hover{
+                                                background: black;
+                                                transition: 0.5s ease-in-out;
+                                            }
+                                            
+
+                                        }
+
+                                    }
+                                    .play-intro-card{
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        background: white;
+                                        .play-ico{
+                                            span{
+                                                font-size: 3em;
+                                            }
+                                        }
+                                        a{
+                                            width: auto;
+                                            height: auto;
+                                            text-decoration: none;
+                                            font-family: var(--karla);
+                                            display: inline;
+                                            padding: 8px 18px;
+                                            border: 2px solid black;
+                                            &:hover{
+                                                background: #000000;
+                                                color: white;
+                                            }
+
+                                            
+                                        }
+
                                     }
                                 }
                             }
 
-                            .two-sec-cont{
+                            .two-sec-cont {
                                 width: 100%;
-                                .twsecwrap{
+                                margin-bottom: 100px;
+
+                                .twsecwrap {
                                     width: 100%;
                                     display: flex;
                                     justify-content: space-between;
                                     gap: 20px;
 
-                                    
 
-                                    .sec-left{
+
+                                    .sec-left {
                                         width: calc(100% - 250px);
                                         border: 1px dashed rgb(134, 134, 134);
                                         background: white;
                                         border-radius: 10px;
                                         padding: 15px;
-                                        .sec-ttl{
+
+                                        .sec-ttl {
                                             display: flex;
                                             flex-direction: column;
                                             gap: 10px;
@@ -1132,23 +1356,29 @@ p {
 
 
                                     }
-                                    .sec-right{
+
+                                    .sec-right {
                                         width: 250px;
                                         border-radius: 10px;
                                         padding: 10px;
-                                        border: 3px double black;
                                         font-family: var(--karla);
                                         display: flex;
-                                        background: rgb(222, 238, 255);
+                                        background: rgb(41, 41, 41);
                                         flex-direction: column;
                                         gap: 10px;
                                         justify-content: center;
                                         align-items: center;
                                         transition: 0.5s ease-in-out;
-                                        p{
-                                            font-style: italic;
+                                        h3{
+                                            color: whitesmoke;
                                         }
-                                        &:hover{
+
+                                        p {
+                                            font-style: italic;
+                                            color: whitesmoke;
+                                        }
+
+                                        &:hover {
                                             scale: 1.05;
                                             transition: 0.5s ease-in-out;
                                         }
@@ -1158,6 +1388,64 @@ p {
                             }
                         }
 
+                    }
+
+                    .intro-video-content{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin: 15px 0;
+                       
+                        .intro-vid-wrap{
+                            width: 95%;
+                            height: 300px;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &::before{
+                                content: "";
+                                width: 200px;
+                                height: 100%;
+                                background: url("../../images/user/introbg.gif");
+                                background-size: cover;
+                                background-position: left center;
+                            }
+                            
+                            iframe{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 10px;
+                                overflow: hidden;
+
+                                *::-webkit-scrollbar{
+                                    display: none !important;
+                                }
+                            }
+                        
+
+                        }
+                        form{
+                            margin-top: 20px;
+                            button{
+                                padding: 8px 16px;
+                                border-radius: 6px;
+                                background: black;
+                                color: white;
+                                font-weight: 700;
+                                outline: none;
+                                border: 2px solid transparent;
+                                cursor: pointer;
+                                &:hover{
+                                    background: transparent;
+                                    border: 2px solid black;
+                                    color: #000000;
+                                }
+                            }
+                        }
                     }
 
                 }
@@ -1172,25 +1460,422 @@ p {
 
 /* for Firefox */
 @-moz-keyframes my-animation {
-    from { -moz-transform: translateX(100%); }
-    to { -moz-transform: translateX(-100%); }
-  }
-  
-  /* for Chrome */
-  @-webkit-keyframes my-animation {
-    from { -webkit-transform: translateX(100%); }
-    to { -webkit-transform: translateX(-100%); }
-  }
-  
-  @keyframes my-animation {
     from {
-      -moz-transform: translateX(100%);
-      -webkit-transform: translateX(100%);
-      transform: translateX(100%);
+        -moz-transform: translateX(100%);
     }
+
     to {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
     }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+
+@media screen and (max-width:990px) {
+    .our-modal {
+        .modal-content {
+            width: 90%;
+        }
+    }
+
+
+    .growth-dash {
+        width: 100%;
+        height: 100%;
+    
+        .growth-dash-wrapper {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .growth-side-bar {
+                width: 0px;
+                overflow: hidden;
+    
+                &.collapsed {
+                    width: 60px;
+                    transition: 0.5s ease-in-out;
+                }
+    
+                .our-custom-sidebar {
+                    display: none;
+                }
+                .our-custom-bottombar{
+                    display: block;
+                    width: 100%;
+                    position: fixed;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 6;
+                    border: 2px solid ;
+                    
+                    
+                }
+            }
+    
+            .growth-right-container {
+                width: 100%;
+                height: 100%;
+                transition: margin-left 0.3s;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+    
+                .growth-header-navbar {
+                    width: 100%;
+                    height: 60px;
+                    box-shadow: 0 0 10px rgba(183, 183, 183, 0.355);
+                    background: white;
+    
+                    .header-wrap {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 25px;
+    
+                        .header-left {
+                            width: 50%;
+                            height: 100%;
+    
+                            .web-nav-menu {
+                                display: none;
+                            }
+                            .mob-nav-menu{
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+    
+                            }
+    
+    
+                        }
+    
+                        .header-right {
+                            width: 50%;
+                            height: 100%;
+    
+                            .web-right-menu {
+                                display: none;
+                            }
+                            .mob-right-menu {
+                                width: 100%;
+                                height: 100%;
+                                list-style: none;
+                                display: flex;
+                                gap: 10px;
+                                align-items: center;
+                                justify-content: flex-end;
+    
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                        color: black;
+                                        font-size: 0.8em;
+                                        font-weight: 600;
+                                        padding: 8px;
+                                        border-radius: 5px;
+                                        box-shadow: 0 0 10px rgba(168, 168, 168, 0.714);
+                                        font-family: "Karla", sans-serif !important;
+                                        transition: 0.5s ease;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        overflow: hidden;
+    
+                                        img {
+                                            width: 18px;
+                                            height: 18px;
+                                        }
+    
+                                        span {
+                                            font-size: 1.3em;
+                                        }
+    
+                                        &:hover {
+                                            background: var(--sec-clr);
+                                            color: var(--prim-clr);
+                                            transition: 0.5s ease;
+                                        }
+    
+                                    }
+    
+                                }
+                            }
+    
+                        }
+                    }
+                }
+    
+                .growth-dynamic-pages {
+                    width: 100%;
+                    height: calc(100% - 60px);
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    background: #f8f9f9;
+    
+                    .dynamic-page-wrapper {
+                        padding: 0px;
+    
+    
+    
+                        // User Dash Styling
+                        .user-dashboard {
+                            width: 100%;
+                            
+    
+                            .user-dash-wrap {
+                                width: 100%;
+    
+                                .usr-dash-header {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding:  10px;
+                                    
+                                    .dash-title {
+
+                                        h1 {
+                                            font-size: 1.5em;
+                                            font-family: "Karla", sans-serif;
+                                        }
+                                    }
+    
+                                    .user-details {
+                                        width: 100%;
+                                        padding: 5px 20px;
+                                        background: white;
+                                        box-shadow: 0 0 15px rgb(190, 190, 190);
+                                        border-radius: 10px;
+    
+                                        .usr-det-row {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 10px;
+                                            margin: 10px 0;
+    
+                                            .user-name {
+                                                font-size: 0.8em;
+                                            }
+                                            p{
+                                                font-size: 0.8em;
+                                            }
+    
+                                            .copytoclipboard {
+                                                border-radius: 2px;
+    
+                                                #textToCopy {
+                                                    width: calc(100% - 20px);
+                                                    height: 20px;
+                                                }
+    
+                                                #copyButton {
+                                                    width: 20px;
+                                                    height: 20px;
+    
+                                                    span {
+                                                        font-size: 1em;
+                                                    }
+                                                }
+                                            }
+    
+                                        }
+    
+                                    }
+                                }
+    
+                                .ads-container {
+                                    width: 95%;
+                                    margin: 0 auto;
+                                    height: 100px;
+
+                                    .ads-wrapper {
+                                        .ad-link {
+                                            a {
+                                                padding: 3px 6px;
+                                                font-size: 0.8em;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .grid-cards-container {
+                                    grid-template-columns: repeat(2, 1fr);
+                                    gap: 10px 10px;
+                                    padding: 10px;
+    
+                                    .grid-card {
+                                        min-width: 150px;
+                                        min-height: 150px;
+    
+                                        a {
+    
+                                            .card-ttl {
+                                                font-size: 0.8em;
+                                            }
+                                        }
+    
+                                        .no-courses-card {
+    
+                                            h1{
+                                                font-size: 0.9em;
+                                                
+                                            }
+                                            h4{ 
+                                                font-size: 0.6em;
+                                            }
+    
+                                        }
+                                    }
+                                }
+    
+                                .two-sec-cont {
+                                    width: 100%;
+                                    padding: 10px;
+    
+                                    .twsecwrap {
+                                        width: 100%;
+                                        display: flex;
+                                        flex-direction: column-reverse;
+                                        justify-content: space-between;
+                                        gap: 20px;
+    
+    
+    
+                                        .sec-left {
+                                            width: 100%;
+                                            padding: 10px;
+    
+                                            .sec-ttl {
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 10px;
+                                                h1{
+                                                    font-size: 1.5em;
+                                                }
+
+                                            }
+    
+    
+                                        }
+    
+                                        .sec-right {
+                                            width: 100%;
+                                            background: rgb(41, 41, 41);
+                                            flex-direction: row;
+
+                                            h3{
+                                                color: white;
+                                            }
+    
+                                            p {
+                                                font-style: italic;
+                                                color: white;
+                                            }
+    
+                                            &:hover {
+                                                scale: 1.05;
+                                                transition: 0.5s ease-in-out;
+                                            }
+    
+                                        }
+                                    }
+                                }
+                            }
+    
+                        }
+    
+                        .intro-video-content{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            margin: 15px 0;
+                           
+                            .intro-vid-wrap{
+                                width: 95%;
+                                height: 300px;
+    
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                &::before{
+                                    content: "";
+                                    width: 200px;
+                                    height: 100%;
+                                    background: url("../../images/user/introbg.gif");
+                                    background-size: cover;
+                                    background-position: left center;
+                                }
+                                
+                                iframe{
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 10px;
+                                    overflow: hidden;
+    
+                                    *::-webkit-scrollbar{
+                                        display: none !important;
+                                    }
+                                }
+                            
+    
+                            }
+                            form{
+                                margin-top: 20px;
+                                button{
+                                    padding: 8px 16px;
+                                    border-radius: 6px;
+                                    background: black;
+                                    color: white;
+                                    font-weight: 700;
+                                    outline: none;
+                                    border: 2px solid transparent;
+                                    cursor: pointer;
+                                    &:hover{
+                                        background: transparent;
+                                        border: 2px solid black;
+                                        color: #000000;
+                                    }
+                                }
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+
+    
 }
