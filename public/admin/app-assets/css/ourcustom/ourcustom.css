@@ -1385,6 +1385,7 @@ p {
   border: none;
   outline: none;
   background: transparent;
+  font-weight: 700;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail .copy-btn {
   display: flex;
@@ -1484,6 +1485,7 @@ p {
   text-wrap: wrap;
   border: none;
   background: transparent;
+  font-weight: 700;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail .copy-btn {
   display: flex;
