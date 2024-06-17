@@ -682,24 +682,106 @@ p {
             }
 
             .our-custom-bottombar {
+
                 display: none;
                 width: 100%;
-                height: 500px;
+                max-height: 80px;
                 position: fixed;
-                background: rgb(0, 0, 0);
+                background: rgb(255, 255, 255);
+                box-shadow: 0 0 15px rgb(50, 50, 50);
                 bottom: 0;
                 left: 0;
-                border: 2px solid;
                 z-index: 10;
+                padding: 15px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                transition: 1s ease-in-out;
+                overflow: hidden;
+
+                &.toggle {
+                    max-height: 100%;
+                    transition: 1s ease-in-out;
+
+                    .our-bottombar-wrap {
+                        .our-bottom-menu {
+                            #bottmbar-draw-btn {
+                                a {
+                                    .lnk-ttl {
+                                        span {
+                                            rotate: 180deg;
+                                            transition: 0.5s ease;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                }
 
                 .our-bottombar-wrap {
                     width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
 
                     .our-bottom-menu {
                         width: 100%;
                         display: flex;
-                        grid-template-columns: repeat(5, 1fr);
-                        grid-template-rows: auto;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 15px;
+
+                        &.make-grid {
+                            display: grid;
+                            grid-template-columns: repeat(5, 60px);
+                            grid-template-rows: auto;
+                            gap: 15px 15px;
+                        }
+
+                        .normal-link {
+                            width: 60px;
+                            height: 60px;
+                            border: 1px solid white;
+                            list-style: none;
+
+                            a {
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                color: var(--ter-clr);
+                                text-decoration: none;
+                                border-radius: 6px;
+                                background: rgba(255, 209, 245, 0.76);
+                                color: rgb(0, 0, 0);
+
+                                &.active {
+                                    background: rgb(48, 48, 48);
+                                    color: white;
+                                }
+
+                                .lnk-ttl {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 10px;
+                                    font-size: 0.3em;
+                                    text-align: center;
+                                    font-family: var(--karla);
+
+                                    span {
+                                        transition: 0.5s ease;
+                                    }
+
+                                }
+                            }
+
+                        }
+
 
                     }
                 }
@@ -721,7 +803,8 @@ p {
                 width: 100%;
                 height: 60px;
                 box-shadow: 0 0 10px rgba(183, 183, 183, 0.355);
-                background: white;
+                background: rgb(255, 255, 255);
+                border-bottom: 1px solid rgba(199, 199, 199, 0.582);
 
                 .header-wrap {
                     width: 100%;
@@ -730,6 +813,67 @@ p {
                     justify-content: space-between;
                     align-items: center;
                     padding: 0 25px;
+
+                    .lnk-with-drop {
+                        position: relative;
+
+                        &:hover {
+                            .navdroplinks {
+                                top: 100%;
+                                opacity: 1;
+                                visibility: visible;
+                                transition: 0.5s ease;
+                            }
+
+                        }
+
+                        .online-badge {
+                            border: 2px solid rgb(0, 142, 0);
+                        }
+
+                        .navdroplinks {
+                            min-width: 160px;
+                            padding: 8px;
+                            box-sizing: border-box;
+                            display: flex;
+                            flex-direction: column;
+                            background: rgb(255, 255, 255);
+                            box-shadow: 0 0 15px gray;
+                            position: absolute;
+                            top: 200%;
+                            opacity: 0;
+                            visibility: hidden;
+                            right: 0;
+                            border-bottom: 3px solid var(--ter-clr);
+                            z-index: 7;
+                            border-radius: 8px;
+
+                            a {
+                                width: auto;
+                                height: auto;
+                                display: flex !important;
+                                align-items: center;
+                                padding: 5px !important;
+                                gap: 10px;
+                                justify-content: flex-start !important;
+                                box-shadow: none !important;
+                                text-decoration: none;
+                                background: transparent;
+                                border: none;
+                                outline: none;
+                                border-radius: 0px !important;
+                                font-size: 1em;
+
+                                span {
+                                    font-size: 1em;
+                                }
+
+                                &:hover {
+                                    background: rgba(179, 179, 179, 0.7);
+                                }
+                            }
+                        }
+                    }
 
                     .header-left {
                         width: 50%;
@@ -1173,20 +1317,50 @@ p {
                                     &:nth-child(1) {
                                         background: #ffebc4;
 
+                                        a {
+                                            .card-val {
+                                                span {
+                                                    color: #ed9e00;
+                                                }
+                                            }
+                                        }
+
                                     }
 
                                     &:nth-child(2) {
                                         background: #c4ffd9;
 
-                                        a {}
+                                        a {
+                                            .card-val {
+                                                span {
+                                                    color: #00db4c;
+                                                }
+                                            }
+                                        }
                                     }
 
                                     &:nth-child(3) {
                                         background: #e4cbff;
+
+                                        a {
+                                            .card-val {
+                                                span {
+                                                    color: #7b00ff;
+                                                }
+                                            }
+                                        }
                                     }
 
                                     &:nth-child(4) {
                                         background: #ffcfd4;
+
+                                        a {
+                                            .card-val {
+                                                span {
+                                                    color: #ff0019;
+                                                }
+                                            }
+                                        }
                                     }
 
                                     a {
@@ -1219,6 +1393,10 @@ p {
                                             gap: 20px;
                                             position: relative;
                                             z-index: 2;
+
+                                            span {
+                                                animation: sclblink 0.5s infinite alternate-reverse ease;
+                                            }
 
                                             h3 {
                                                 display: flex;
@@ -1316,6 +1494,8 @@ p {
                                         justify-content: center;
                                         align-items: center;
                                         background: white;
+                                        border: 1px solid black;
+                                        border-radius: 8px;
 
                                         .play-ico {
                                             span {
@@ -1509,23 +1689,52 @@ p {
                                         width: 50%;
                                         min-height: 200px;
                                         background: #fff;
-                                        border-top: 4px solid #81A4FF;
+                                        border: 2px solid #000000;
                                         border-radius: 10px;
-                                        padding: 10px;
+                                        padding: 25px;
                                         box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
                                         display: flex;
-                                        gap: 50px;
+                                        gap: 30px;
+                                        justify-content: center;
                                         flex-direction: column;
+                                        position: relative;
+                                        overflow: hidden;
+                                        transition: 0.5s ease;
+                                        &:hover{
+                                            &::before{
+                                                scale: 1.5;
+                                                transition: 0.5s ease;
+                                            }
+                                        }
+
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: url("../../images/user/affiliatebg.png");
+                                            background-size: cover;
+                                            background-position: center bottom;
+                                            transition: 0.5s ease;
+                                            z-index: 1;
+                                        }
 
                                         span {
-                                            color: #81A4FF;
+                                            color: var(--ter-clr);
                                         }
 
                                         .crd-title {
                                             display: flex;
-                                            text-align: center;
-                                            font-size: 1em;
+                                            align-items: center;
                                             gap: 20px;
+                                            position: relative;
+                                            z-index: 2;
+
+                                            h2 {
+                                                font-size: 1.5em;
+                                            }
 
                                             span {
                                                 font-size: 1.7em;
@@ -1535,26 +1744,38 @@ p {
                                         .crd-detail {
                                             display: flex;
                                             gap: 20px;
+                                            position: relative;
+                                            z-index: 2;
 
                                             .custom-input {
                                                 width: 80%;
                                                 font-size: 1.2em;
-                                                height: auto;
-                                                text-wrap: wrap;
                                                 border: none;
+                                                outline: none;
+                                                background: transparent;
                                             }
 
                                             .copy-btn {
-                                                padding: 10px;
-                                                background: #fff;
-                                                box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                padding: 7px;
+                                                background: var(--ter-clr);
+                                                // box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
                                                 border-radius: 5px;
                                                 border: none;
                                                 outline: none;
+                                                cursor: pointer;
+                                                transition: 0.5s;
 
                                                 &:hover {
                                                     scale: 1.1;
                                                     transition: 0.5s;
+                                                }
+
+                                                span {
+                                                    color: #fff;
+                                                    // font-weight: 700;
                                                 }
                                             }
                                         }
@@ -1565,23 +1786,54 @@ p {
                                         width: 100%;
                                         min-height: 200px;
                                         background: #fff;
-                                        border-top: 4px solid #81A4FF;
+                                        border: 2px solid #000000;
                                         border-radius: 10px;
-                                        padding: 10px;
+                                        padding: 25px;
                                         box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
                                         display: flex;
-                                        gap: 50px;
+                                        gap: 30px;
                                         flex-direction: column;
+                                        justify-content: center;
+                                        position: relative;
+                                        overflow: hidden;
+                                        transition: 0.5s ease;
+
+                                        &:hover{
+                                            &::before{
+                                                scale: 1.5;
+                                                transition: 0.5s ease;
+                                            }
+                                        }
+
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: url("../../images/user/affiliatebg.png");
+                                            background-size: cover;
+                                            background-position: center bottom;
+                                            z-index: 1;
+                                        }
 
                                         span {
-                                            color: #81A4FF;
+                                            color: var(--ter-clr);
                                         }
 
                                         .crd-title {
                                             display: flex;
                                             text-align: center;
+                                            align-items: center;
                                             font-size: 1em;
                                             gap: 20px;
+                                            position: relative;
+                                            z-index: 2;
+
+                                            h2 {
+                                                font-size: 1.5em;
+                                            }
 
                                             span {
                                                 font-size: 1.7em;
@@ -1590,29 +1842,53 @@ p {
 
                                         .custom-select1 {
                                             width: 50%;
-                                            height: 30px;
+                                            height: 50px;
+                                            outline: none;
+                                            border-radius: 5px;
+                                            border: 2px solid #81A4FF;
+                                            font-size: 1em;
+                                            position: relative;
+                                            z-index: 2;
+                                            option {
+                                                background-color: #fff !important;
+                                                color: #333 !important;
+                                                padding: 10px !important;
+                                            }
                                         }
+
 
                                         .crd-detail {
                                             display: flex;
                                             gap: 20px;
+                                            position: relative;
+                                            z-index: 2;
 
                                             .custom-input {
                                                 width: 80%;
                                                 font-size: 1.2em;
+                                                outline: none;
                                                 height: auto;
                                                 text-wrap: wrap;
                                                 border: none;
+                                                background: transparent;
                                             }
 
                                             .copy-btn {
-                                                padding: 10px;
-                                                background: #fff;
-                                                box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                padding: 7px;
+                                                background: var(--ter-clr);
+                                                // box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
                                                 border-radius: 5px;
                                                 border: none;
                                                 outline: none;
+                                                cursor: pointer;
                                                 transition: 0.5s;
+
+                                                span {
+                                                    color: #fff;
+                                                }
 
                                                 &:hover {
                                                     scale: 1.1;
@@ -1677,6 +1953,17 @@ p {
     }
 }
 
+@keyframes sclblink {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.3;
+    }
+
+}
+
 
 @media screen and (max-width:990px) {
     .our-modal {
@@ -1714,11 +2001,106 @@ p {
                 .our-custom-bottombar {
                     display: block;
                     width: 100%;
+                    max-height: 80px;
                     position: fixed;
+                    background: rgb(255, 255, 255);
+                    box-shadow: 0 0 15px rgb(50, 50, 50);
                     bottom: 0;
                     left: 0;
-                    z-index: 6;
-                    border: 2px solid;
+                    z-index: 10;
+                    padding: 15px;
+                    border-top-left-radius: 20px;
+                    border-top-right-radius: 20px;
+                    transition: 1s ease-in-out;
+                    overflow: hidden;
+
+                    &.toggle {
+                        max-height: 100%;
+                        transition: 1s ease-in-out;
+
+                        .our-bottombar-wrap {
+                            .our-bottom-menu {
+                                #bottmbar-draw-btn {
+                                    a {
+                                        .lnk-ttl {
+                                            span {
+                                                rotate: 180deg;
+                                                transition: 0.5s ease;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    .our-bottombar-wrap {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+
+                        .our-bottom-menu {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 15px;
+
+                            &.make-grid {
+                                display: grid;
+                                grid-template-columns: repeat(5, 60px);
+                                grid-template-rows: auto;
+                                gap: 15px 15px;
+                            }
+
+                            .normal-link {
+                                width: 60px;
+                                height: 60px;
+                                border: 1px solid white;
+                                list-style: none;
+
+                                a {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    color: var(--ter-clr);
+                                    text-decoration: none;
+                                    border-radius: 6px;
+                                    background: rgba(255, 209, 245, 0.76);
+                                    color: rgb(0, 0, 0);
+
+                                    &.active {
+                                        background: rgb(48, 48, 48);
+                                        color: white;
+                                    }
+
+                                    .lnk-ttl {
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 10px;
+                                        font-size: 0.3em;
+                                        text-align: center;
+                                        font-family: var(--karla);
+
+                                        span {
+                                            transition: 0.5s ease;
+                                        }
+
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                    }
 
 
                 }
@@ -1746,6 +2128,8 @@ p {
                         justify-content: space-between;
                         align-items: center;
                         padding: 0 25px;
+
+
 
                         .header-left {
                             width: 50%;
@@ -2061,6 +2445,103 @@ p {
                                         color: #000000;
                                     }
                                 }
+                            }
+                        }
+
+
+                        .affiliate-link-page {
+                            width: 100%;
+
+                            .affiliate-wrap {
+                                width: 100%;
+
+                                .affli-dash-header {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    padding: 10px;
+
+                                    .affli-title {
+                                        h1 {
+                                            font-size: 1.5em;
+                                            font-family: "Karla", sans-serif;
+                                        }
+                                    }
+                                }
+
+                                .inner-cont {
+                                    padding: 10px;
+                                    padding-bottom: 100px;
+
+                                    .custom-row {
+                                        flex-direction: column;
+
+                                        .crd {
+                                            width: 100%;
+                                            min-height: auto;
+                                            padding: 15px;
+
+                                            .crd-title {
+
+                                                h2 {
+                                                    font-size: 1em;
+                                                }
+
+                                                span {
+                                                    font-size: 1.4em;
+                                                }
+                                            }
+
+                                            .crd-detail {
+                                                display: flex;
+                                                gap: 20px;
+
+                                                .custom-input {
+                                                    font-size: 1em;
+                                                    font-weight: 600;
+                                                }
+                                            }
+
+                                        }
+
+                                        .crd1 {
+                                            width: 100%;
+                                            min-height: auto;
+                                            padding: 15px;
+
+
+                                            .crd-title {
+
+                                                h2 {
+                                                    font-size: 1em;
+                                                }
+
+                                                span {
+                                                    font-size: 1.4em;
+                                                }
+                                            }
+
+                                            .custom-select1 {
+                                                width: 100%;
+                                                height: 30px;
+                                            }
+
+                                            .crd-detail {
+                                                display: flex;
+                                                gap: 20px;
+
+                                                .custom-input {
+                                                    font-size: 1em;
+                                                    font-weight: 600;
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+                                }
+
+
                             }
                         }
 

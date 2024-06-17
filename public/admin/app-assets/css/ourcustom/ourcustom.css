@@ -547,22 +547,80 @@ p {
 .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar {
   display: none;
   width: 100%;
-  height: 500px;
+  max-height: 80px;
   position: fixed;
-  background: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 15px rgb(50, 50, 50);
   bottom: 0;
   left: 0;
-  border: 2px solid;
   z-index: 10;
+  padding: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: 1s ease-in-out;
+  overflow: hidden;
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar.toggle {
+  max-height: 100%;
+  transition: 1s ease-in-out;
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar.toggle .our-bottombar-wrap .our-bottom-menu #bottmbar-draw-btn a .lnk-ttl span {
+  rotate: 180deg;
+  transition: 0.5s ease;
 }
 .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu {
   width: 100%;
   display: flex;
-  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu.make-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
   grid-template-rows: auto;
+  gap: 15px 15px;
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  list-style: none;
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: var(--ter-clr);
+  text-decoration: none;
+  border-radius: 6px;
+  background: rgba(255, 209, 245, 0.76);
+  color: rgb(0, 0, 0);
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a.active {
+  background: rgb(48, 48, 48);
+  color: white;
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a .lnk-ttl {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.3em;
+  text-align: center;
+  font-family: var(--karla);
+}
+.growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a .lnk-ttl span {
+  transition: 0.5s ease;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont {
   flex: 1;
@@ -576,7 +634,8 @@ p {
   width: 100%;
   height: 60px;
   box-shadow: 0 0 10px rgba(183, 183, 183, 0.355);
-  background: white;
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(199, 199, 199, 0.582);
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap {
   width: 100%;
@@ -585,6 +644,57 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 0 25px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .lnk-with-drop {
+  position: relative;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .lnk-with-drop:hover .navdroplinks {
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.5s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .lnk-with-drop .online-badge {
+  border: 2px solid rgb(0, 142, 0);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .lnk-with-drop .navdroplinks {
+  min-width: 160px;
+  padding: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 15px gray;
+  position: absolute;
+  top: 200%;
+  opacity: 0;
+  visibility: hidden;
+  right: 0;
+  border-bottom: 3px solid var(--ter-clr);
+  z-index: 7;
+  border-radius: 8px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .lnk-with-drop .navdroplinks a {
+  width: auto;
+  height: auto;
+  display: flex !important;
+  align-items: center;
+  padding: 5px !important;
+  gap: 10px;
+  justify-content: flex-start !important;
+  box-shadow: none !important;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0px !important;
+  font-size: 1em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .lnk-with-drop .navdroplinks a span {
+  font-size: 1em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .lnk-with-drop .navdroplinks a:hover {
+  background: rgba(179, 179, 179, 0.7);
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-header-navbar .header-wrap .header-left {
   width: 50%;
@@ -935,14 +1045,26 @@ p {
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(1) {
   background: #ffebc4;
 }
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(1) a .card-val span {
+  color: #ed9e00;
+}
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(2) {
   background: #c4ffd9;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(2) a .card-val span {
+  color: #00db4c;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(3) {
   background: #e4cbff;
 }
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(3) a .card-val span {
+  color: #7b00ff;
+}
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(4) {
   background: #ffcfd4;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card:nth-child(4) a .card-val span {
+  color: #ff0019;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card a {
   width: 100%;
@@ -971,6 +1093,9 @@ p {
   gap: 20px;
   position: relative;
   z-index: 2;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card a .card-val span {
+  animation: sclblink 0.5s infinite alternate-reverse ease;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card a .card-val h3 {
   display: flex;
@@ -1050,6 +1175,8 @@ p {
   justify-content: center;
   align-items: center;
   background: white;
+  border: 1px solid black;
+  border-radius: 8px;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .user-dashboard .user-dash-wrap .grid-cards-container .grid-card .play-intro-card .play-ico span {
   font-size: 3em;
@@ -1201,22 +1328,47 @@ p {
   width: 50%;
   min-height: 200px;
   background: #fff;
-  border-top: 4px solid #81A4FF;
+  border: 2px solid #000000;
   border-radius: 10px;
-  padding: 10px;
+  padding: 25px;
   box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
   display: flex;
-  gap: 50px;
+  gap: 30px;
+  justify-content: center;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd:hover::before {
+  scale: 1.5;
+  transition: 0.5s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/user/affiliatebg.png");
+  background-size: cover;
+  background-position: center bottom;
+  transition: 0.5s ease;
+  z-index: 1;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd span {
-  color: #81A4FF;
+  color: var(--ter-clr);
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-title {
   display: flex;
-  text-align: center;
-  font-size: 1em;
+  align-items: center;
   gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-title h2 {
+  font-size: 1.5em;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-title span {
   font-size: 1.7em;
@@ -1224,73 +1376,129 @@ p {
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail {
   display: flex;
   gap: 20px;
+  position: relative;
+  z-index: 2;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail .custom-input {
   width: 80%;
   font-size: 1.2em;
-  height: auto;
-  text-wrap: wrap;
   border: none;
+  outline: none;
+  background: transparent;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail .copy-btn {
-  padding: 10px;
-  background: #fff;
-  box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  background: var(--ter-clr);
   border-radius: 5px;
   border: none;
   outline: none;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail .copy-btn:hover {
   scale: 1.1;
   transition: 0.5s;
 }
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail .copy-btn span {
+  color: #fff;
+}
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 {
   width: 100%;
   min-height: 200px;
   background: #fff;
-  border-top: 4px solid #81A4FF;
+  border: 2px solid #000000;
   border-radius: 10px;
-  padding: 10px;
+  padding: 25px;
   box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
   display: flex;
-  gap: 50px;
+  gap: 30px;
   flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1:hover::before {
+  scale: 1.5;
+  transition: 0.5s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../images/user/affiliatebg.png");
+  background-size: cover;
+  background-position: center bottom;
+  z-index: 1;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 span {
-  color: #81A4FF;
+  color: var(--ter-clr);
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-title {
   display: flex;
   text-align: center;
+  align-items: center;
   font-size: 1em;
   gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-title h2 {
+  font-size: 1.5em;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-title span {
   font-size: 1.7em;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .custom-select1 {
   width: 50%;
-  height: 30px;
+  height: 50px;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #81A4FF;
+  font-size: 1em;
+  position: relative;
+  z-index: 2;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .custom-select1 option {
+  background-color: #fff !important;
+  color: #333 !important;
+  padding: 10px !important;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail {
   display: flex;
   gap: 20px;
+  position: relative;
+  z-index: 2;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail .custom-input {
   width: 80%;
   font-size: 1.2em;
+  outline: none;
   height: auto;
   text-wrap: wrap;
   border: none;
+  background: transparent;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail .copy-btn {
-  padding: 10px;
-  background: #fff;
-  box-shadow: 0 0 15px rgba(200, 200, 200, 0.725);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  background: var(--ter-clr);
   border-radius: 5px;
   border: none;
   outline: none;
+  cursor: pointer;
   transition: 0.5s;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail .copy-btn span {
+  color: #fff;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail .copy-btn:hover {
   scale: 1.1;
@@ -1305,6 +1513,14 @@ p {
   }
   to {
     transform: translateX(-100%);
+  }
+}
+@keyframes sclblink {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.3;
   }
 }
 @media screen and (max-width: 990px) {
@@ -1337,11 +1553,80 @@ p {
   .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar {
     display: block;
     width: 100%;
+    max-height: 80px;
     position: fixed;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(50, 50, 50);
     bottom: 0;
     left: 0;
-    z-index: 6;
-    border: 2px solid;
+    z-index: 10;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar.toggle {
+    max-height: 100%;
+    transition: 1s ease-in-out;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar.toggle .our-bottombar-wrap .our-bottom-menu #bottmbar-draw-btn a .lnk-ttl span {
+    rotate: 180deg;
+    transition: 0.5s ease;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu.make-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-template-rows: auto;
+    gap: 15px 15px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link {
+    width: 60px;
+    height: 60px;
+    border: 1px solid white;
+    list-style: none;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: var(--ter-clr);
+    text-decoration: none;
+    border-radius: 6px;
+    background: rgba(255, 209, 245, 0.76);
+    color: rgb(0, 0, 0);
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a.active {
+    background: rgb(48, 48, 48);
+    color: white;
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a .lnk-ttl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.3em;
+    text-align: center;
+    font-family: var(--karla);
+  }
+  .growth-dash .growth-dash-wrapper .growth-side-bar .our-custom-bottombar .our-bottombar-wrap .our-bottom-menu .normal-link a .lnk-ttl span {
+    transition: 0.5s ease;
   }
   .growth-dash .growth-dash-wrapper .growth-right-cont {
     width: 100%;
@@ -1594,5 +1879,69 @@ p {
     background: transparent;
     border: 2px solid black;
     color: #000000;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page {
+    width: 100%;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap {
+    width: 100%;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .affli-dash-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .affli-dash-header .affli-title h1 {
+    font-size: 1.5em;
+    font-family: "Karla", sans-serif;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont {
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row {
+    flex-direction: column;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-title h2 {
+    font-size: 1em;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-title span {
+    font-size: 1.4em;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail {
+    display: flex;
+    gap: 20px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd .crd-detail .custom-input {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-title h2 {
+    font-size: 1em;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-title span {
+    font-size: 1.4em;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .custom-select1 {
+    width: 100%;
+    height: 30px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail {
+    display: flex;
+    gap: 20px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .affiliate-link-page .affiliate-wrap .inner-cont .custom-row .crd1 .crd-detail .custom-input {
+    font-size: 1em;
+    font-weight: 600;
   }
 }/*# sourceMappingURL=ourcustom.css.map */

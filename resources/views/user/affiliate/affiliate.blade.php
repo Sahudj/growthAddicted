@@ -39,7 +39,7 @@
           </div>
           <div class="crd-detail">
 
-            <input type="text" id="userReferralCode" readonly class="custom-input form-control @error('name') is-invalid @enderror" value="{{ auth()->user()->referral_code }}" placeholder="Enter First Name" required>
+            <input type="text" id="userReferralCode" readonly class="custom-input form-control @error('name') is-invalid @enderror" value="{{ auth()->user()->referral_code }}" placeholder="Referral Code" required>
 
             <button class="copy-btn" id="referral_code">
               <span class="material-symbols-outlined">
@@ -88,8 +88,8 @@
             @endforeach
           </select>
           <div class="crd-detail">
-            <input type="text" id="packageLink1" readonly class="custom-input customButton form-control" value="{{url('/')}}/Biz/Orientation?uid=7PZWJvE1bb8WrPOUDsSrsg==" placeholder="Enter First Name" required>
-            <button class="copy-btn" id="copyPackageLink1">
+            <input type="text" id="packageLink" readonly class="custom-input customButton form-control" value="{{url('/')}}/Biz/Orientation?uid=7PZWJvE1bb8WrPOUDsSrsg==" placeholder="Enter First Name" required>
+            <button class="copy-btn" id="copyPackageLink">
               <span class="material-symbols-outlined">
                 file_copy
               </span>

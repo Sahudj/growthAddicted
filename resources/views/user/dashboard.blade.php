@@ -59,7 +59,7 @@
 
     @if(auth()->user()->order_status == 1)
     <div class="grid-cards-container">
-      @if(auth()->user()->id == 231)
+      @if(auth()->user()->id != 231)
       <div class="grid-card">
         <a href="{{url('user/commission/1/1')}}">
           <div class="card-ttl">Today's Earning</div>
@@ -410,6 +410,10 @@
 
 
 
+
+
+@if(auth()->user()->order_status == 1)
+@if(auth()->user()->is_watch_video == 0)
 <div id="custom-modal" class="our-modal">
   <div class="modal-content">
     <span class="close-ourmodal-btn" id="close-modal-btn">&times;</span>
@@ -452,11 +456,6 @@
     </div>
   </div>
 </div>
-
-
-@if(auth()->user()->order_status == 1)
-@if(auth()->user()->is_watch_video == 0)
-
 @endif
 @endif
 

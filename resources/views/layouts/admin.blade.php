@@ -92,20 +92,105 @@
                         <li><a href="#"><span class="material-symbols-outlined">notifications</span></a></li>
                         <li><a href="#"><span class="material-symbols-outlined">screen_record</span></a></li>
                         @if(auth()->user()->profile_pic)
-                        <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
+                        <li class="lnk-with-drop">
+                           <a href="#" class="online-badge">
+                              <img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar">
+                           </a>
+                           <div class="navdroplinks">
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">home</span> Home</a>
+                              @if(auth()->user()->order_status == 1)
+                              <a href="{{url('/user/profile')}}" class="{{(url()->current() == url('/user/profile')) ? 'active' : '' }}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+                              <?php $permission = DB::table('permission')->where('user_id', auth()->user()->id)->first(); ?>
+                              @if(isset($permission) && ($permission->is_profile == 1))
+                              <a class="grey-text text-darken-1" href="{{url('/admin/profile')}}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+
+                              <a class="grey-text text-darken-1" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"> <span class="material-symbols-outlined">logout</span> {{ __('Logout') }}</a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                 @csrf
+                              </form>
+                           </div>
+                        </li>
                         @else
-                        <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
+                        <li class="lnk-with-drop">
+                           <a href="#" class="online-badge"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a>
+                           <div class="navdroplinks">
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">home</span> Home</a>
+                              @if(auth()->user()->order_status == 1)
+                              <a href="{{url('/user/profile')}}" class="{{(url()->current() == url('/user/profile')) ? 'active' : '' }}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+                              <?php $permission = DB::table('permission')->where('user_id', auth()->user()->id)->first(); ?>
+                              @if(isset($permission) && ($permission->is_profile == 1))
+                              <a class="grey-text text-darken-1" href="{{url('/admin/profile')}}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+
+                              <a class="grey-text text-darken-1" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"> <span class="material-symbols-outlined">logout</span> {{ __('Logout') }}</a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                 @csrf
+                              </form>
+                           </div>
+                        </li>
                         @endif
-                        <li><a href="#"><span class="material-symbols-outlined">more_vert</span></a></li>
+                        <li class="lnk-with-drop">
+                           <a href="#"><span class="material-symbols-outlined">more_vert</span></a>
+                           <div class="navdroplinks">
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">settings</span> Settings</a>
+                           </div>
+                        </li>
                      </ul>
                      <ul class="mob-right-menu">
                         @if(auth()->user()->profile_pic)
-                        <li><a href="#"><img src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="avatar"></a></li>
+                        <li class="lnk-with-drop">
+                           <a href="#" class="online-badge"><img src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="avatar"></a>
+                           <div class="navdroplinks">
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">home</span> Home</a>
+                              <a href="#"><span class="material-symbols-outlined">auto_stories</span> My Courses</a>
+                              <a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a>
+                              @if(auth()->user()->order_status == 1)
+                              <a href="{{url('/user/profile')}}" class="{{(url()->current() == url('/user/profile')) ? 'active' : '' }}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+                              <?php $permission = DB::table('permission')->where('user_id', auth()->user()->id)->first(); ?>
+                              @if(isset($permission) && ($permission->is_profile == 1))
+                              <a class="grey-text text-darken-1" href="{{url('/admin/profile')}}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+
+                              <a class="grey-text text-darken-1" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"> <span class="material-symbols-outlined">logout</span> {{ __('Logout') }}</a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                 @csrf
+                              </form>
+                           </div>
+                        </li>
                         <!-- <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li> -->
                         @else
-                        <li><a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a></li>
+                        <li class="lnk-with-drop">
+                           <a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a>
+                           <div class="navdroplinks">
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">home</span> Home</a>
+                              <a href="#"><span class="material-symbols-outlined">auto_stories</span> My Courses</a>
+                              <a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a>
+                              @if(auth()->user()->order_status == 1)
+                              <a href="{{url('/user/profile')}}" class="{{(url()->current() == url('/user/profile')) ? 'active' : '' }}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+                              <?php $permission = DB::table('permission')->where('user_id', auth()->user()->id)->first(); ?>
+                              @if(isset($permission) && ($permission->is_profile == 1))
+                              <a class="grey-text text-darken-1" href="{{url('/admin/profile')}}"><span class="material-symbols-outlined">manage_accounts</span>Profile</a>
+                              @endif
+
+                              <a class="grey-text text-darken-1" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();"> <span class="material-symbols-outlined">logout</span> {{ __('Logout') }}</a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                 @csrf
+                              </form>
+                           </div>
+                        </li>
                         @endif
-                        <li><a href="#"><span class="material-symbols-outlined">more_vert</span></a></li>
+                        <li class="lnk-with-drop">
+                           <a href="#"><span class="material-symbols-outlined">more_vert</span></a>
+                           <div class="navdroplinks">
+                              <a href="#" style="background: var(--ter-clr);color:white;border-radius:3px;"> <span class="material-symbols-outlined">package_2</span>Growth Plus +</a>
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">settings</span> Settings</a>
+                           </div>
+                        </li>
                      </ul>
                   </div>
                </div>
@@ -131,6 +216,8 @@
    <!-- END: Footer-->
    <!-- BEGIN VENDOR JS-->
    <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
+   <!-- <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script> -->
+
 
    <!-- BEGIN VENDOR JS-->
    <!-- BEGIN PAGE VENDOR JS-->
@@ -242,6 +329,15 @@
                $(this).addClass('dropped');
             }
          });
+         $('#bottmbar-draw-btn').on('click', function() {
+            if ($('#our-custom-bottombar').hasClass('toggle')) {
+               console.log("aaya idhar");
+               $('#our-custom-bottombar').removeClass('toggle');
+            } else {
+               $('#our-custom-bottombar').addClass('toggle');
+            }
+         });
+
 
          $('#cllps-side-btn').on('click', () => {
             $('#grwth-sidebar').addClass('collapsed');
