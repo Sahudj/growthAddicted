@@ -173,9 +173,7 @@
       </li>
       @endif
 
-
-
-
+      
 
       @if(auth()->user()->id != 231)
       @php
@@ -384,10 +382,6 @@
       </li>
       @endif
     </ul>
-
-
-
-
     <ul class="our-side-collapsed-menu" id="or-sd-cl-menu">
       <li class="logo-cum-btn">
         <div class="logo-collpse"><a href="#"><img width="50" src="{{url('public/admin/')}}/app-assets/images/logo/favicon.png" alt="logo"></a><button title="Expand Sidebar" id="opn-side-btn" class="opn-sidebar-btn">

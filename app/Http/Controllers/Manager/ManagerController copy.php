@@ -472,9 +472,6 @@ class ManagerController extends Controller
         $previous =  date('Y-m-d');
         $previous = strtotime($previous);
         $previous = strtotime("midnight", $previous);
-        $todaytimestamp = strtotime('today midnight'); 
-        $timestamp = date('d-m-Y 11:59:00 A');
-        $timestamp = strtotime($timestamp);
       
 
         $lastThirtydays = date('Y-m-d', strtotime('-30 days'));
@@ -504,50 +501,8 @@ class ManagerController extends Controller
         $query->where('affiliate.status', 1);
         $query->where('affiliate_comm.amount','!=', 0);
         $getDetails = $query->get();
-
-        $totalFunds = DB::table('affiliate_comm')->where('user_id', $userId)
-        ->where('status', 1)->where('comm_status', 3)->sum('amount');
-
-        $todayTeamHelpingBonus = DB::table('affiliate_comm')->where('user_id', $userId)
-        ->whereIn('status', [1,2])
-        ->where('timestamp', '>', $todaytimestamp)
-        /*->whereDate('created_at', Carbon::today())*/
-        ->where('comm_status', 2)->sum('amount');
-
-        $todayEarning = DB::table('affiliate_comm')->where('user_id', $userId)
-        ->where('timestamp', '>', $todaytimestamp)
-        /*->whereDate('created_at', Carbon::today())*/
-        ->whereIn('status', [1,2])
-        ->where('comm_status', 1)->sum('amount');
-
-        $todayPayout = DB::table('affiliate_comm')->where('user_id', $userId)
-        ->where('affiliate_comm.status', 1)
-        ->whereIn('comm_status', [1,2])->sum('amount');
-
-        $teamHelpingBonus = DB::table('affiliate_comm')->where('user_id', $userId)
-        ->whereIn('status', [1,2])
-        ->where('comm_status', 2)->sum('amount');
-
-
-        $lastSevenEarning = DB::table('affiliate_comm')
-        ->where('user_id', $userId)
-        ->whereBetween('timestamp', [ strtotime($lastSevendays) , $timestamp ])
-        ->whereIn('comm_status', [1,2])
-        /*->where('status', 1)*/
-        ->sum('amount');
-
-        $earningthisMonth = DB::table('affiliate_comm')->where('user_id', $userId)
-        ->whereBetween('timestamp', [ strtotime($lastThirtydays) , $timestamp])
-        ->whereIn('comm_status', [1,2])
-        /*->where('status', 1)*/
-        ->sum('amount');
-
-        $alltime = DB::table('affiliate_comm')->where('user_id', $userId)
-        /*->where('status', 1)*/
-        ->whereIn('comm_status', [1,2])->sum('amount');
-        $totalComm =  DB::table('affiliate_comm')->select(DB::raw('group_concat(amount) as amount'), )->where('user_id', $userId)->where('status', 1)->first();
-        $maxValue = !empty($totalComm) ? max(explode(',',$totalComm->amount)) : 0;
-        return view('user.funds.commission', compact('getDetails', 'type','maxValue','todayTeamHelpingBonus','teamHelpingBonus','todayEarning','totalFunds','lastSevenEarning','earningthisMonth','alltime', 'totalComm', 'todayPayout'));
+        //echo "<pre>"; print_r($getDetails); 
+        return view('user.funds.commission', compact('getDetails', 'type'));
     }
     
 

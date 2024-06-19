@@ -1701,7 +1701,7 @@ p {
                                         overflow: hidden;
                                         transition: 0.5s ease;
 
-                                      
+
 
                                         &::before {
                                             content: "";
@@ -1901,6 +1901,390 @@ p {
 
                         }
                     }
+
+                    .commisions-page {
+                        width: 100%;
+
+                        .commisions-pagewrap {
+                            width: 100%;
+
+                            .commison-header {
+                                width: 100%;
+                                min-height: 150x;
+                                padding: 10px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 30px;
+                                position: sticky;
+                                top: 0;
+                                left: 0;
+                                background: rgb(69, 58, 255);
+                                background: -moz-linear-gradient(90deg, rgba(69, 58, 255, 1) 0%, rgba(140, 236, 255, 1) 100%);
+                                background: -webkit-linear-gradient(90deg, rgba(69, 58, 255, 1) 0%, rgba(140, 236, 255, 1) 100%);
+                                background: linear-gradient(90deg, rgba(69, 58, 255, 1) 0%, rgba(140, 236, 255, 1) 100%);
+                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#453aff", endColorstr="#8cecff", GradientType=1);
+                                z-index: 5;
+                                gap: 20px;
+                                border-bottom-left-radius: 25px;
+                                border-bottom-right-radius: 25px;
+                                overflow: hidden;
+
+                                &::before {
+                                    content: "₹";
+                                    font-size: 10em;
+                                    font-weight: 800;
+                                    position: absolute;
+                                    bottom: -50%;
+                                    right: 10px;
+                                    color: rgba(255, 255, 255, 0.253);
+
+                                }
+
+                                .comission-det {
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding: 20px;
+                                    gap: 20px;
+                                    background: url("../../images/user/adbg.gif");
+                                    background-size: cover;
+                                    background-position: center;
+
+                                    h3 {
+                                        font-size: 0.8em;
+                                        color: whitesmoke;
+                                    }
+
+                                    h1 {
+                                        font-size: 2.5em;
+                                        color: whitesmoke;
+
+                                    }
+
+
+                                }
+
+
+
+                            }
+
+                            .transaction-cont {
+                                width: 100%;
+                                background: white;
+                                min-height: 450px;
+                                border-radius: 25px;
+                                box-shadow: 0 0 15px rgba(143, 143, 143, 0.714);
+
+                                .transac-wrap {
+                                    width: 100%;
+
+
+                                    .option-btns {
+                                        width: 100%;
+                                        padding: 20px;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 20px;
+
+                                        button {
+
+                                            display: inline-block;
+                                            outline: 0;
+                                            border: 0;
+                                            cursor: pointer;
+                                            font-weight: 600;
+                                            color: rgb(41, 43, 59);
+                                            font-size: 14px;
+                                            height: 38px;
+                                            padding: 8px 24px;
+                                            border-radius: 10px;
+                                            background-image: linear-gradient(180deg, #d4f8ff, #f5f5fa);
+                                            box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+                                            transition: 0.5s ease;
+
+                                            &.active {
+                                                background: rgb(35, 35, 35);
+                                                color: white;
+                                                transition: 0.5s ease;
+                                            }
+
+                                            :hover {
+                                                box-shadow: 0 8px 22px 0 rgb(37 44 97 / 15%), 0 4px 6px 0 rgb(93 100 148 / 20%);
+                                            }
+
+                                        }
+
+                                    }
+
+                                    #passive-income {
+                                        display: none;
+
+                                        .transctions {
+                                            .transaction-card {
+                                                border-left: 4px solid rgba(255, 216, 107, 0.821);
+                                            }
+                                        }
+                                    }
+
+                                    .individual-transc-cont {
+                                        width: 100%;
+                                        padding: 10px;
+
+                                        .title {
+                                            font-family: var(--karla);
+                                            color: #979797c6;
+                                            font-size: 2em;
+                                            font-weight: 700;
+                                            display: inline;
+                                            margin-left: 10px;
+                                        }
+
+                                        .transctions {
+                                            width: 100%;
+                                            height: 330px;
+                                            border-radius: 25px;
+                                            display: grid;
+                                            grid-template-columns: repeat(3, 1fr);
+                                            grid-template-rows: auto;
+                                            padding: 15px;
+                                            gap: 20px;
+                                            overflow-x: hidden;
+                                            overflow-y: scroll;
+
+
+
+                                            .transaction-card {
+                                                width: 100%;
+                                                height: 180px;
+                                                border: 1px solid rgba(206, 206, 206, 0.686);
+                                                border-radius: 10px;
+                                                background: rgb(255, 255, 255);
+                                                box-shadow: 0 0 15px rgba(199, 199, 199, 0.501);
+                                                padding: 10px;
+                                                border-left: 4px solid rgb(197, 131, 255);
+                                                transition: 0.5s ease-in-out;
+                                                cursor: pointer;
+
+                                                &:hover {
+                                                    translate: 0 -8px 0;
+                                                    transition: 0.5s ease-in-out;
+                                                }
+
+                                                .tran-card-wrap {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    gap: 15px;
+
+                                                    .top {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        gap: 20px;
+
+                                                        .prof-pic {
+                                                            width: 30px;
+                                                            height: 30px;
+                                                            border-radius: 50%;
+                                                            background: black;
+
+                                                            img {
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                object-fit: cover;
+                                                                object-position: center;
+                                                            }
+                                                        }
+
+                                                        .usr-name {
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            gap: 5px;
+
+                                                            h2 {
+                                                                font-size: 1em;
+                                                            }
+
+                                                            h4 {
+                                                                font-size: 0.6em;
+                                                                color: rgb(105, 105, 105);
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .mid {
+
+                                                        width: 100%;
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+
+                                                        .md-lft {
+                                                            width: 50%;
+
+                                                            .amount {
+                                                                font-size: 1.3em;
+                                                                font-weight: 600;
+                                                                font-family: var(--karla);
+                                                            }
+                                                        }
+
+                                                        .md-rt {
+                                                            width: 50%;
+
+                                                            .badge {
+                                                                padding: 3px 10px;
+                                                                display: inline-flex;
+                                                                font-size: 0.6em;
+                                                                background: rgb(255, 241, 187);
+                                                                border-radius: 50px;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                border: 1px solid rgb(255, 204, 0);
+                                                                font-family: var(--karla);
+                                                            }
+
+                                                        }
+                                                    }
+
+                                                    .bottm {
+                                                        width: 100%;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        gap: 10px;
+
+                                                        .sponsor-cont {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: space-between;
+                                                            gap: 10px;
+
+                                                            h4 {
+                                                                font-size: 0.7em;
+                                                            }
+
+                                                            .inc-type {
+                                                                padding: 3px 10px;
+                                                                border-radius: 3px;
+                                                                background: rgba(229, 255, 191, 0.858);
+                                                                color: green;
+                                                                border: 1px solid green;
+                                                                font-family: var(--karla);
+                                                                font-size: 0.7em;
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                            }
+                                                        }
+
+                                                        .timestamp {
+                                                            display: flex;
+                                                            justify-content: flex-end;
+                                                            align-items: center;
+
+                                                            h5 {
+                                                                font-size: 0.7em;
+                                                                font-weight: 500;
+                                                                color: #555555d5;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+
+                    .profile-page {
+                        width: 100%;
+
+                        .profile-profile-cont {
+                            width: 100%;
+
+                            .prf-header {
+                                width: 100%;
+                                padding: 10px;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-bottom: 30px;
+                                position: sticky;
+                                top: 0;
+                                left: 0;
+                                background: #f8f9f9;
+                                z-index: 5;
+
+                                .prf-title {
+                                    h1 {
+                                        font-family: "Karla", sans-serif;
+                                    }
+                                }
+                            }
+
+                            .top-cont{
+                                width: 100%;
+                                height: 70vh;
+                                background: #d9d9d9;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 20px;
+                                border-radius: 10px;
+
+                                .inner-top-cont{
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 15px;
+
+                                    .left-cont{
+                                      width: 320px;
+                                      background: #fff;
+                                      border-radius: 10px;
+                                    }
+                                    .right-cont{
+                                      width: calc(100% - 320px);
+                                      display: flex;
+                                      justify-content: center;
+                                      flex-direction: column;
+                                      gap: 20px;
+                                      .upper-cont{
+                                        height: calc(100% - 40px);
+                                        width: 100%;
+                                        border-radius: 10px;
+                                        background: #fff;
+
+                                      }
+                                      .update-btn{
+                                        height: 40px;
+                                        width: 100%;
+                                        border-radius: 10px;
+                                        background: #fff;
+                                      }
+                                    }
+
+                                }
+                            }
+                        }
+
+                    }
+                    
 
                 }
             }
@@ -2537,6 +2921,193 @@ p {
                                 }
 
 
+                            }
+                        }
+
+                        .commisions-page {
+                            width: 100%;
+
+                            .commisions-pagewrap {
+                                width: 100%;
+
+                                .transaction-cont {
+                                    width: 100%;
+                                    background: white;
+                                    min-height: 450px;
+                                    border-radius: 25px;
+                                    box-shadow: 0 0 15px rgba(143, 143, 143, 0.714);
+
+                                    .transac-wrap {
+                                        width: 100%;
+
+                                        #passive-income {
+                                            display: none;
+
+                                            .transctions {
+                                                .transaction-card {
+                                                    border-left: 4px solid rgba(255, 216, 107, 0.821);
+                                                }
+                                            }
+                                        }
+
+                                        .individual-transc-cont {
+                                            width: 100%;
+                                            padding: 0px;
+
+                                            .transctions {
+                                                
+                                                height: 300px;
+                                                grid-template-columns: repeat(1, 1fr);
+                                                .transaction-card {
+                                                    width: 100%;
+                                                    height: auto;
+                                                    max-height: 180px;
+                                                    border: 1px solid rgba(206, 206, 206, 0.686);
+                                                    border-radius: 10px;
+                                                    background: rgb(255, 255, 255);
+                                                    box-shadow: 0 0 15px rgba(199, 199, 199, 0.501);
+                                                    padding: 10px;
+                                                    border-left: 4px solid rgb(197, 131, 255);
+                                                    transition: 0.5s ease-in-out;
+                                                    cursor: pointer;
+
+                                                    &:hover {
+                                                        translate: 0 -8px 0;
+                                                        transition: 0.5s ease-in-out;
+                                                    }
+
+                                                    .tran-card-wrap {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        display: flex;
+                                                        flex-direction: column;
+                                                        justify-content: center;
+                                                        gap: 15px;
+
+                                                        .top {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            gap: 20px;
+
+                                                            .prof-pic {
+                                                                width: 30px;
+                                                                height: 30px;
+                                                                border-radius: 50%;
+                                                                background: black;
+
+                                                                img {
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    object-fit: cover;
+                                                                    object-position: center;
+                                                                }
+                                                            }
+
+                                                            .usr-name {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                gap: 5px;
+
+                                                                h2 {
+                                                                    font-size: 1em;
+                                                                }
+
+                                                                h4 {
+                                                                    font-size: 0.6em;
+                                                                    color: rgb(105, 105, 105);
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .mid {
+
+                                                            width: 100%;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: space-between;
+
+                                                            .md-lft {
+                                                                width: 50%;
+
+                                                                .amount {
+                                                                    font-size: 1.3em;
+                                                                    font-weight: 600;
+                                                                    font-family: var(--karla);
+                                                                }
+                                                            }
+
+                                                            .md-rt {
+                                                                width: 50%;
+
+                                                                .badge {
+                                                                    padding: 3px 10px;
+                                                                    display: inline-flex;
+                                                                    font-size: 0.6em;
+                                                                    background: rgb(255, 241, 187);
+                                                                    border-radius: 50px;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    border: 1px solid rgb(255, 204, 0);
+                                                                    font-family: var(--karla);
+                                                                }
+
+                                                            }
+                                                        }
+
+                                                        .bottm {
+                                                            width: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            gap: 10px;
+
+                                                            .sponsor-cont {
+                                                                width: 100%;
+                                                                display: flex;
+                                                                align-items: center;
+                                                                justify-content: space-between;
+                                                                gap: 10px;
+
+                                                                h4 {
+                                                                    font-size: 0.7em;
+                                                                }
+
+                                                                .inc-type {
+                                                                    padding: 3px 10px;
+                                                                    border-radius: 3px;
+                                                                    background: rgba(229, 255, 191, 0.858);
+                                                                    color: green;
+                                                                    border: 1px solid green;
+                                                                    font-family: var(--karla);
+                                                                    font-size: 0.7em;
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                }
+                                                            }
+
+                                                            .timestamp {
+                                                                display: flex;
+                                                                justify-content: flex-end;
+                                                                align-items: center;
+
+                                                                h5 {
+                                                                    font-size: 0.7em;
+                                                                    font-weight: 500;
+                                                                    color: #555555d5;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+
+
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
                             }
                         }
 
