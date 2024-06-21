@@ -78,9 +78,16 @@
                <div class="header-wrap">
                   <div class="header-left">
                      <ul class="web-nav-menu">
-                        <li><a href="#"><span class="material-symbols-outlined">home</span>Home</a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">auto_stories</span> My Courses</a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a></li>
+                        <li>
+                           <button title="Collapse Sidebar" id="cllps-side-btn" class="collapse-sidebar-btn">
+                              <span class="material-symbols-outlined">
+                                 menu_open
+                              </span>
+                           </button>
+                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">My Courses</a></li>
+                        <li><a href="#">Become Affiliate</a></li>
                      </ul>
                      <ul class="mob-nav-menu">
                         <li><a href="#"><img width="100" src="{{url('public/admin/')}}/app-assets/images/logo/Logo2.png" alt="logo"></a></li>

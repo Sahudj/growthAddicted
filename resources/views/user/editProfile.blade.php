@@ -17,7 +17,7 @@
   <div class="profile-profile-cont">
     <div class="prf-header">
       <div class="prf-title">
-        <h1>Affiliate Links</h1>
+        <h1>Personal Information</h1>
       </div>
     </div>
     <!-- top container  -->
@@ -25,15 +25,85 @@
       {{ csrf_field() }}
       <div class="top-cont">
         <div class="inner-top-cont">
+          <!-- profile card  -->
           <div class="left-cont">
+            <div class="image-box">
 
+              <div class="img-box">
+                <div class="avatar-wrapper">
+                  @if($getDetails->profile_pic)
+                  <img src="{{url('public/profile_pic/'.$getDetails->profile_pic)}}" width="7s0px">
+                  @endif
+                </div>
+                <div class="edit-btn-wrap">
+                  <label for="pic-change">
+                    <span class="material-symbols-outlined"> add_photo_alternate</span>
+                    <input hidden type="file" name="profile_pic" id="pic-change" class="form-control" accept="image/png, image/jpeg">
+                  </label>
+                </div>
+              </div>
+              <input type="hidden" name="hidden_image" value="{{ !empty($getDetails->profile_pic) ? $getDetails->profile_pic : ''}}">
+
+            </div>
+            <div class="text-box">
+              <h2>{{ $getDetails->name }}</h2>
+              <h2>{{ $getDetails->mobile_no }}</h2>
+              <h2 class="email-cont">{{ $getDetails->email }} </h2>
+              <input type="hidden" name="name" class="form-control @error('name') is-invalid @enderror" value="{{ $getDetails->name }}" placeholder="Enter First Name" required readonly>
+              <input type="hidden" name="email" id="email" autocomplete="on" class="form-control @error('email') is-invalid @enderror" value="{{ $getDetails->email }}" placeholder="Enter email" required readonly>
+              <input type="hidden" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $getDetails->mobile_no }}" placeholder="Enter First phone" required readonly>
+            </div>
           </div>
           <div class="right-cont">
             <div class="upper-cont">
+              <div class="form-row">
+                <label> Gender </label> <br>
+                <p>
+                  <label>
+                    <input type="radio" id="radioPrimary1" name="gender" value="1" {{($getDetails->gender == 1) ? "checked" : "" }}>
+                    <span>Male</span>
+                  </label>
 
+                  <label>
+                    <input type="radio" id="radioPrimary2" name="gender" value="0" {{($getDetails->gender == 0) ? "checked" : "" }}>
+                    <span>Female</span>
+                  </label>
+                </p>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label>DOB <sup style="color:red;">*</sup> </label>
+                  <input type="date" name="dob" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->dob) ? $getDetails->dob : '' }}" placeholder="Enter DOB">
+                </div>
+                <div>
+                  <label>City <sup style="color:red;">*</sup> </label>
+                  <input type="text" name="city" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->city) ? $getDetails->city : '' }}" placeholder="Enter City Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div>
+                  <label> State </label>
+                  <select class="form-control" name="state">
+                    <option value="">Please select</option>
+                    @foreach($states as $row)
+                    <option value="{{$row->id}}" {{($getDetails->state == $row->id) ? "selected" : ""}}>{{$row->state}}</option>
+                    @endforeach
+                  </select>
+                </div>
+                <div>
+                  <label>Pincode</label>
+                  <input type="text" name="pin_code" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->pin_code) ? $getDetails->pin_code : '' }}" placeholder="Enter Pin code">
+                </div>
+              </div>
+              <div class="form-row">
+                <label>Address <sup style="color:red;">*</sup> </label>
+                <input type="text" name="address" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->address) ? $getDetails->address : '' }}" placeholder="Enter Address">
+              </div>
             </div>
-            <div class="update-btn">
-              
+            <div class="update-btn-cont">
+              <input type="hidden" name="userId" value="{{$getDetails->id}}">
+              <button type="submit" class="btn indigo save-change-btn ">Save Change</button>
+
             </div>
           </div>
         </div>
