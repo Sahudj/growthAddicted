@@ -2524,7 +2524,6 @@ p {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
-                                margin-bottom: 30px;
                                 position: sticky;
                                 top: 0;
                                 left: 0;
@@ -2533,7 +2532,7 @@ p {
 
                                 .prf-title {
                                     h1 {
-                                        font-family: "Karla", sans-serif;
+                                        font-family: var(--dosis) !important;
                                     }
                                 }
                             }
@@ -2561,7 +2560,6 @@ p {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                padding: 20px;
                                 border-radius: 10px;
 
                                 .inner-top-cont {
@@ -2703,14 +2701,14 @@ p {
 
                                             .form-row {
                                                 display: flex;
-                                                justify-content: center;
-                                                align-items: center;
+                                                justify-content: space-between;
+                                                align-items: flex-start;
                                                 gap: 15px;
 
 
                                                 .form-grp {
                                                     display: flex;
-                                                    justify-content: center;
+                                                    // justify-content: center;
                                                     flex-direction: column;
                                                     gap: 5px;
                                                     width: 50%;
@@ -2792,9 +2790,17 @@ p {
                                 }
                             }
 
+                            .sponser-heading {
+                                padding: 20px 10px;
+
+                                h1 {
+                                    font-size: 1.5em;
+                                }
+                            }
+
                             .bottom-cont {
                                 width: 100%;
-                               
+
                                 // background: #d9d9d9;
                                 display: flex;
                                 justify-content: flex-start;
@@ -2813,12 +2819,11 @@ p {
                                         background-size: cover;
                                         background-position: center;
                                         border-radius: 3px;
-                                        border: 1px solid rgba(204, 202, 202, 0.705);
                                         padding: 20px;
                                         display: flex;
                                         justify-content: center;
                                         align-items: center;
-                                        
+
 
                                         .sponser-card-wrapper {
                                             width: 100%;
@@ -2828,36 +2833,41 @@ p {
                                             align-items: center;
                                             gap: 20px;
                                             flex-direction: column;
-                                            .card-left{
 
-                                                .card-img-box{
+                                            .card-left {
+
+                                                .card-img-box {
                                                     height: 150px;
-                                                    width:150px;
+                                                    width: 150px;
                                                     padding: 3px;
                                                     border-radius: 50%;
                                                     overflow: hidden;
                                                     border: 2px solid var(--altr-pri-clr);
-                                                    img{
-                                                     width: 100%;
-                                                     height: 100%;
-                                                     border-radius: 50%;
-                                                     object-fit: cover;
-                                                     object-position: center;
+
+                                                    img {
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        border-radius: 50%;
+                                                        object-fit: cover;
+                                                        object-position: center;
                                                     }
                                                 }
                                             }
-                                            .card-right{
+
+                                            .card-right {
                                                 display: flex;
                                                 justify-content: center;
                                                 gap: 10px;
                                                 flex-direction: column;
                                                 align-items: center;
                                                 text-align: center;
-                                                h1{
+
+                                                h1 {
                                                     text-transform: uppercase;
                                                     color: var(--altr-pri-clr);
                                                 }
-                                                h3{
+
+                                                h3 {
                                                     font-family: var(--poppins) !important;
                                                     color: #434343;
                                                 }
@@ -3614,6 +3624,180 @@ p {
 
                                 }
                             }
+                        }
+
+                        .profile-page {
+                            width: 100%;
+
+                            .profile-profile-cont {
+                                width: 100%;
+
+                                .prf-header {
+                                    .prf-title {
+                                        h1 {
+                                            font-size: 1.5em;
+                                            font-family: var(--dosis);
+                                        }
+                                    }
+                                }
+
+                                .custm-label {
+                                    color: #000000 !important;
+                                    font-size: 0.8em !important;
+                                    font-family: var(--dosis);
+                                    font-weight: 600;
+                                }
+
+                                .custom-input {
+                                    height: 45px !important;
+                                    padding: 5px 10px !important;
+                                    border-radius: 3px !important;
+                                    background: #becaf942;
+                                    border: 1px solid #becaf9;
+                                    outline: none !important;
+                                }
+
+                                .top-cont {
+                                    width: 100%;
+                                    height: auto;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 0px;
+                                    border-radius: 10px;
+
+                                    .inner-top-cont {
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 15px;
+
+                                        .left-cont {
+                                            width: 100%;
+                                            padding: 20px;
+                                        }
+
+                                        .right-cont {
+                                            width: 100%;
+
+                                            .upper-cont {
+                                                padding: 10px;
+                                                border: 1px solid rgba(204, 202, 202, 0.705);
+
+
+                                                .form-row {
+                                                    flex-direction: column;
+
+                                                    .form-grp {
+                                                        gap: 5px;
+                                                        width: 100%;
+                                                    }
+
+                                                    .form-grp1 {
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        flex-direction: column;
+                                                        gap: 5px;
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+
+                                            .update-btn-cont {
+                                                padding: 0 10px;
+
+                                                .save-change-btn {
+                                                    cursor: pointer;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    outline: none;
+                                                    border: 2px solid transparent;
+                                                    color: #fff;
+                                                    background: var(--ter-clr);
+                                                    font-size: 1em;
+                                                    border-radius: 5px;
+                                                    transition: 0.5s;
+
+                                                    &:hover {
+                                                        border: 2px solid #7286d3;
+                                                        transition: 0.5s;
+                                                        background: #fff;
+                                                        color: var(--ter-clr);
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+
+                                .sponser-heading {
+                                    padding: 20px 10px;
+
+                                    h1 {
+                                        font-size: 1.5em;
+                                    }
+                                }
+
+                                .bottom-cont {
+                                    width: 100%;
+                                    padding: 10px;
+                                    margin-bottom: 100px;
+
+                                    .sponser-cont {
+                                        width: 100%;
+                                        height: 100%;
+
+                                        .sponser-card {
+
+
+                                            .sponser-card-wrapper {
+                                                width: 100%;
+                                                height: 100%;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                gap: 20px;
+                                                flex-direction: column;
+
+                                                .card-left {
+
+                                                    .card-img-box {
+                                                        height: 100px;
+                                                        width: 100px;
+                                                        padding: 3px;
+                                                        border-radius: 50%;
+                                                        overflow: hidden;
+                                                        border: 2px solid var(--altr-pri-clr);
+
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            border-radius: 50%;
+                                                            object-fit: cover;
+                                                            object-position: center;
+                                                        }
+                                                    }
+                                                }
+
+                                                .card-right {
+
+                                                    h1 {
+                                                        font-size: 1em;
+                                                    }
+
+                                                    h3 {
+                                                        font-size: 0.8em;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
                         }
 
                     }

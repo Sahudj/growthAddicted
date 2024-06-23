@@ -120,30 +120,28 @@
         </div>
       </div>
       <!-- sponser container  -->
-      <div class="prf-header">
-        <div class="prf-title">
-          <h1>Sponser</h1>
-        </div>
-      </div>
-      <div class="bottom-cont">
-        <div class="sponser-cont">
-          <div class="sponser-card">
-            <div class="sponser-card-wrapper">
-              <div class="card-left">
-                <div class="card-img-box">
-                  <img src="{{url('public/profile_pic/'.$getDetails->getRefBy->profile_pic)}}" width="70px">
-                </div>
+    </form>
+    <div class="sponser-heading">
+        <h1>Sponser</h1>
+    </div>
+    <div class="bottom-cont">
+      <div class="sponser-cont">
+        <div class="sponser-card">
+          <div class="sponser-card-wrapper">
+            <div class="card-left">
+              <div class="card-img-box">
+                <img src="{{url('public/profile_pic/'.$getDetails->getRefBy->profile_pic)}}" width="70px">
               </div>
-              <div class="card-right">
-                <h1>{{ !empty($getDetails->getRefBy->name) ? $getDetails->getRefBy->name : '' }}</h1>
-                <h3>{{ !empty($getDetails->getRefBy->mobile_no) ? $getDetails->getRefBy->mobile_no : '' }}</h3>
-                <h3>{{ !empty($getDetails->getRefBy->email) ? $getDetails->getRefBy->email : '' }}</h3>
-              </div>
+            </div>
+            <div class="card-right">
+              <h1>{{ !empty($getDetails->getRefBy->name) ? $getDetails->getRefBy->name : '' }}</h1>
+              <h3>{{ !empty($getDetails->getRefBy->mobile_no) ? $getDetails->getRefBy->mobile_no : '' }}</h3>
+              <h3>{{ !empty($getDetails->getRefBy->email) ? $getDetails->getRefBy->email : '' }}</h3>
             </div>
           </div>
         </div>
       </div>
-    </form>
+    </div>
     <!-- bottom container  -->
     <!-- <div class="bottom-cont">
       <div class="inner-bottom-cont">
@@ -154,7 +152,7 @@
 </div>
 
 <!-- old code  -->
-<div class="row">
+<!-- <div class="row">
   <div class="col-lg-12">
     <div class="card">
       <div class="card-content">
@@ -319,10 +317,10 @@
           </form>
         </div>
       </div>
-    </div><!-- /.card -->
+    </div>
   </div>
 
-</div>
+</div> -->
 
 
 @endsection
