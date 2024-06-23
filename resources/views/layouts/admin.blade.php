@@ -45,6 +45,8 @@
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/quill/monokai-sublime.min.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/quill/quill.snow.css">
    <link rel="stylesheet" type="text/css" href="{{url('public/admin/')}}/app-assets/vendors/quill/quill.bubble.css">
+   <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
+
    <style type="text/css">
       label {
          font-size: 15px !important;
@@ -222,7 +224,6 @@
 
    <!-- END: Footer-->
    <!-- BEGIN VENDOR JS-->
-   <script src="{{url('public/frontend/home/')}}/assets/js/jquery.min.js"></script>
    <!-- <script src="{{url('public/admin/')}}/app-assets/js/vendors.min.js"></script> -->
 
 
@@ -238,7 +239,7 @@
    <script src="{{url('public/admin/')}}/app-assets/js/plugins.js"></script>
    <script src="{{url('public/admin/')}}/app-assets/js/search.js"></script>
    <script src="{{url('public/admin/')}}/app-assets/js/custom/custom-script.js"></script>
-   <script src="{{url('public/admin/')}}/app-assets/js/scripts/customizer.js"></script>
+   <!-- <script src="{{url('public/admin/')}}/app-assets/js/scripts/customizer.js"></script> -->
    <!-- <script src="{{url('public/admin/')}}/app-assets/js/scripts/dashboard-modern.js"></script> -->
    <script src="{{url('public/admin/')}}/app-assets/js/scripts/intro.js"></script>
    <script src="{{url('public/admin/')}}/app-assets/vendors/quill/katex.min.js"></script>

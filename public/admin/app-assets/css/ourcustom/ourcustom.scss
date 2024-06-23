@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Ramaraja&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ramaraja&display=swap');
 
 :root {
     --prim-clr: rgb(0, 133, 228);
     --ter-clr: rgb(85, 85, 255);
     --sec-clr: rgba(91, 192, 255, 0.16);
+    --background-clr: #f9f9f9;
     --altr-pri-clr: #7286D3;
     --shadow: 0 0 15px rgba(183, 183, 183, 0.612);
     --dosis: "Raleway", sans-serif;
     --ramaraj: "Ramaraja", serif;
+    --poppins: "Poppins", sans-serif;
     --color-dfdf: rgba(255, 82, 249, 0.1);
 }
 
@@ -15,6 +17,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -142,7 +145,7 @@ p {
                     justify-content: space-between;
                     /* IE and Edge */
                     scrollbar-width: none;
-                    background: #F9F9F9;
+                    background: #f9f9f9;
 
                     &::-webkit-scrollbar {
                         display: none;
@@ -589,8 +592,6 @@ p {
                                 align-items: center;
                                 gap: 15px;
 
-                                &:hover {}
-
                                 &.dropped {
                                     background: #f7f7f7bf;
                                     border-top-left-radius: 5px;
@@ -895,7 +896,7 @@ p {
                 width: 100%;
                 height: 60px;
                 box-shadow: 0 0 10px rgba(183, 183, 183, 0.355);
-                background: #F9F9F9;
+                background: #f9f9f9;
                 border-bottom: 1px solid rgba(199, 199, 199, 0.582);
 
                 .header-wrap {
@@ -930,6 +931,7 @@ p {
                             display: flex;
                             flex-direction: column;
                             background: rgb(255, 255, 255);
+                            box-shadow: 0 0 15px gray;
                             position: absolute;
                             top: 200%;
                             opacity: 0;
@@ -1202,11 +1204,11 @@ p {
                                 display: flex;
                                 justify-content: space-between;
                                 align-items: center;
+                                background: white;
                                 margin-bottom: 30px;
                                 position: sticky;
                                 top: 0;
                                 left: 0;
-                                background: #f8f9f9;
                                 z-index: 5;
                                 gap: 20px;
 
@@ -1218,174 +1220,202 @@ p {
                                 }
 
                                 .user-details {
-                                    padding: 5px 20px;
-                                    background: white;
-                                    box-shadow: 0 0 15px rgb(190, 190, 190);
-                                    border-radius: 10px;
+                                    padding: 5px 10px;
+                                    background: #f9f9f9;
+                                    border-radius: 3px;
+                                    border: 1px solid rgba(197, 197, 197, 0.497);
+                                    border-right: 4px solid var(--altr-pri-clr);
+
 
                                     .usr-det-row {
                                         display: flex;
                                         align-items: center;
+
                                         gap: 20px;
                                         margin: 10px 0;
 
                                         .prof-pic {
-                                            width: 40px;
-                                            height: 40px;
-                                            border: 2px solid white;
+                                            width: 100px;
+                                            height: 100px;
+                                            border: 1px solid var(--altr-pri-clr);
                                             padding: 3px;
-                                            border-radius: 50%;
+                                            border-radius: 5px;
 
                                             img {
                                                 width: 100%;
                                                 height: 100%;
-                                                border-radius: 50%;
+                                                border-radius: 5px;
                                             }
                                         }
 
                                         .user-name {
-                                            font-family: var(--dosis);
-                                            font-weight: 700;
-                                        }
-
-                                        .copytoclipboard {
                                             display: flex;
-                                            align-items: center;
-                                            justify-content: space-between;
-                                            gap: 5px;
-                                            border-radius: 5px;
-                                            background: rgba(25, 82, 255, 0.299);
-                                            overflow: hidden;
+                                            flex-direction: column;
+                                            gap: 10px;
 
-                                            #textToCopy {
-                                                width: calc(100% - 30px);
-                                                height: 30px;
-                                                border: none;
-                                                padding: 5px;
-                                                border-radius: 4px;
-                                                resize: none;
-                                                outline: none;
-                                                background: transparent;
-                                                color: rgb(0, 0, 0);
-                                                font-weight: 600;
+                                            .name-wrap {
+                                                font-family: var(--dosis);
+                                                font-weight: 700;
+                                                text-transform: capitalize;
                                             }
 
-                                            #copyButton {
-                                                width: 30px;
-                                                height: 30px;
-                                                border: none;
-                                                outline: none;
+                                            .code-wrap {
                                                 display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                color: rgb(0, 0, 0);
-                                                border-radius: 4px;
-                                                background: transparent;
+                                                flex-direction: column;
+                                                gap: 5px;
 
-                                                span {
-                                                    font-size: 1.3em;
+                                                p {
+                                                    font-size: 1em;
                                                     font-weight: 500;
+                                                    color: rgb(150, 150, 150);
                                                 }
 
-                                                &:hover {
-                                                    background: rgba(232, 232, 232, 0.578);
+                                                .copytoclipboard {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: space-between;
+                                                    gap: 5px;
+                                                    border-radius: 5px;
+                                                    background: rgb(255, 255, 255);
+                                                    border: 1px solid rgba(160, 160, 160, 0.493);
+                                                    overflow: hidden;
+
+                                                    #textToCopy {
+                                                        width: calc(100% - 30px);
+                                                        height: 30px;
+                                                        border: none;
+                                                        padding: 5px;
+                                                        border-radius: 4px;
+                                                        resize: none;
+                                                        outline: none;
+                                                        background: transparent;
+                                                        color: rgb(0, 0, 0);
+                                                        font-weight: 600;
+                                                    }
+
+                                                    #copyButton {
+                                                        width: 30px;
+                                                        height: 30px;
+                                                        border: none;
+                                                        outline: none;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        color: rgb(0, 0, 0);
+                                                        border-radius: 4px;
+                                                        background: transparent;
+
+                                                        span {
+                                                            font-size: 1.3em;
+                                                            font-weight: 500;
+                                                        }
+
+                                                        &:hover {
+                                                            background: rgba(232, 232, 232, 0.578);
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
-
                                     }
 
                                 }
                             }
 
-                            .ads-container {
+                            .seperated-section {
+                                display: flex;
                                 width: 100%;
-                                height: 200px;
-                                overflow: hidden;
-                                position: relative;
-                                background: url("../../images/user/demo.png");
-                                background-size: cover;
-                                background-position: center;
-                                background-repeat: no-repeat;
-                                border: 1px solid rgb(198, 198, 198);
-                                // background: rgb(85, 85, 255);
-                                // background: -moz-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
-                                // background: -webkit-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
-                                // background: linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
-                                // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5555ff", endColorstr="#7dc1ff", GradientType=1);
-                                border-radius: 10px;
 
-                                &:hover {
-                                    &::after {
-                                        padding: 15px 20px;
+
+                                .ads-container {
+                                    width: 100%;
+                                    height: 200px;
+                                    overflow: hidden;
+                                    position: relative;
+                                    background: url("../../images/user/demo.png");
+                                    background-size: cover;
+                                    background-position: center;
+                                    background-repeat: no-repeat;
+                                    border: 1px solid rgb(198, 198, 198);
+                                    // background: rgb(85, 85, 255);
+                                    // background: -moz-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
+                                    // background: -webkit-linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
+                                    // background: linear-gradient(139deg, rgba(85, 85, 255, 1) 0%, rgba(125, 193, 255, 1) 100%);
+                                    // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5555ff", endColorstr="#7dc1ff", GradientType=1);
+                                    border-radius: 10px;
+
+                                    &:hover {
+                                        &::after {
+                                            padding: 15px 20px;
+                                            transition: 0.5s ease-in-out;
+                                        }
+                                    }
+
+                                    &:after {
+                                        content: "NEW";
+                                        padding: 5px 20px;
+                                        font-family: var(--dosis);
+                                        background: white;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 20px;
+                                        border-bottom-left-radius: 10px;
+                                        border-bottom-right-radius: 10px;
                                         transition: 0.5s ease-in-out;
                                     }
-                                }
 
-                                &:after {
-                                    content: "NEW";
-                                    padding: 5px 20px;
-                                    font-family: var(--dosis);
-                                    background: white;
-                                    position: absolute;
-                                    top: 0;
-                                    right: 20px;
-                                    border-bottom-left-radius: 10px;
-                                    border-bottom-right-radius: 10px;
-                                    transition: 0.5s ease-in-out;
-                                }
-
-                                .ads-wrapper {
-                                    width: 100%;
-                                    height: 100%;
-                                    background: url("../../images/user/adbg.gif");
-                                    padding: 20px;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 30px;
-
-                                    .ad-ttl {
-                                        font-size: 1.5em;
-                                        font-family: var(--dosis);
-                                        font-weight: 700;
-                                        color: white;
-
-                                    }
-
-                                    .ad-description {
-                                        color: white;
-                                        font-family: var(--dosis);
-                                    }
-
-                                    .ad-link {
+                                    .ads-wrapper {
                                         width: 100%;
-                                        position: absolute;
-                                        bottom: 10px;
-                                        right: 20px;
+                                        height: 100%;
+                                        background: url("../../images/user/adbg.gif");
+                                        padding: 20px;
                                         display: flex;
-                                        justify-content: flex-end;
+                                        flex-direction: column;
+                                        gap: 30px;
 
-
-                                        a {
-                                            padding: 8px 18px;
-                                            display: inline-flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            text-decoration: none;
-                                            background: rgb(0, 0, 0);
-                                            color: white;
-                                            border: 2px solid white;
-                                            font-weight: 700;
-                                            border-radius: 5px;
+                                        .ad-ttl {
+                                            font-size: 1.5em;
                                             font-family: var(--dosis);
-                                            transition: 0.5s ease;
-                                            text-transform: uppercase;
+                                            font-weight: 700;
+                                            color: white;
 
-                                            &:hover {
-                                                background: var(--ter-clr);
+                                        }
+
+                                        .ad-description {
+                                            color: white;
+                                            font-family: var(--dosis);
+                                        }
+
+                                        .ad-link {
+                                            width: 100%;
+                                            position: absolute;
+                                            bottom: 10px;
+                                            right: 20px;
+                                            display: flex;
+                                            justify-content: flex-end;
+
+
+                                            a {
+                                                padding: 8px 18px;
+                                                display: inline-flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                text-decoration: none;
+                                                background: rgb(0, 0, 0);
                                                 color: white;
+                                                border: 2px solid white;
+                                                font-weight: 700;
+                                                border-radius: 5px;
+                                                font-family: var(--dosis);
                                                 transition: 0.5s ease;
+                                                text-transform: uppercase;
 
+                                                &:hover {
+                                                    background: var(--ter-clr);
+                                                    color: white;
+                                                    transition: 0.5s ease;
+
+                                                }
                                             }
                                         }
                                     }
@@ -1395,20 +1425,24 @@ p {
                             .grid-cards-container {
                                 width: 100%;
                                 display: grid;
-                                grid-template-columns: repeat(3, 1fr);
+                                grid-template-columns: repeat(4, 1fr);
                                 grid-template-rows: auto;
                                 justify-content: space-between;
                                 gap: 20px 20px;
                                 margin: 30px 0;
+                                background: var(--background-clr);
+
 
                                 .grid-card {
                                     min-width: 200px;
                                     min-height: 150px;
-                                    border-radius: 8px;
+                                    border-radius: 5px;
                                     overflow: hidden;
-                                    background: rgb(241, 240, 240);
-                                    border: 1px solid rgb(232, 232, 232);
+                                    background-image: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
                                     transition: 0.5s ease;
+                                    opacity: 0;
+                                    transform: translateY(20px);
+                                    transition: opacity 0.6s ease-out, transform 0.6s ease-out, scale 0.5s ease;
 
                                     &:hover {
                                         scale: 1.05;
@@ -1428,7 +1462,7 @@ p {
                                                 content: "";
                                                 width: 100%;
                                                 height: 100%;
-                                                background: url("../../images/user/cardbg3.png");
+                                                background: url("../../images/user/analybg2.png");
                                                 background-size: cover;
                                                 background-position: center;
                                                 opacity: 0.5;
@@ -1451,7 +1485,7 @@ p {
                                                 content: "";
                                                 width: 100%;
                                                 height: 100%;
-                                                background: url("../../images/user/cardbg4.png");
+                                                background: url("../../images/user/analybg.png");
                                                 background-size: cover;
                                                 background-position: center;
                                                 opacity: 0.5;
@@ -1462,12 +1496,12 @@ p {
                                     }
 
                                     &:nth-child(1) {
-                                        background: #ffebc4;
+                                        background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
 
                                         a {
                                             .card-val {
                                                 span {
-                                                    color: #ed9e00;
+                                                    color: #ffffff;
                                                 }
                                             }
                                         }
@@ -1475,7 +1509,7 @@ p {
                                     }
 
                                     &:nth-child(2) {
-                                        background: #c4ffd9;
+                                        background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);
 
                                         a {
                                             .card-val {
@@ -1487,7 +1521,7 @@ p {
                                     }
 
                                     &:nth-child(3) {
-                                        background: #e4cbff;
+                                        background-image: linear-gradient(to right, #7DE2FC 0%, #B9B6E5 100%);
 
                                         a {
                                             .card-val {
@@ -1499,7 +1533,7 @@ p {
                                     }
 
                                     &:nth-child(4) {
-                                        background: #ffcfd4;
+                                        background-image: linear-gradient(to right, #f9d423 0%, #ff4e50 100%);
 
                                         a {
                                             .card-val {
@@ -1520,52 +1554,69 @@ p {
                                         text-decoration: none;
                                         position: relative;
 
-                                        color: black;
+                                        color: rgb(255, 255, 255);
 
-                                        .card-ttl {
-                                            width: 100%;
-                                            padding: 5px;
-                                            font-family: var(--dosis);
-                                            font-weight: 800;
-                                            font-size: 1em;
-                                            position: relative;
-                                            z-index: 2;
+                                        .card-content {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 10px;
 
+                                            .card-ttl {
+                                                width: 100%;
+                                                padding: 5px;
+                                                font-family: var(--dosis);
+                                                font-weight: 800;
+                                                font-size: 0.7em;
+                                                position: relative;
+                                                z-index: 2;
+
+                                            }
+
+                                            .card-val {
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                gap: 20px;
+
+                                                position: relative;
+                                                z-index: 2;
+
+                                                h3 {
+                                                    display: flex;
+                                                    gap: 10px;
+                                                    align-items: center;
+                                                    width: 100%;
+                                                    white-space: initial;
+                                                    overflow-x: scroll;
+                                                    text-overflow: ellipsis;
+                                                    -ms-overflow-style: none;
+                                                    font-family: var(--poppins) !important;
+                                                    /* IE and Edge */
+                                                    scrollbar-width: none;
+
+                                                    /* Firefox */
+                                                    &::-webkit-scrollbar {
+                                                        display: none;
+                                                    }
+
+
+
+                                                }
+                                            }
                                         }
 
-                                        .card-val {
+                                        .ico {
+                                            width: 100%;
                                             display: flex;
-                                            justify-content: space-between;
+                                            justify-content: flex-end;
                                             align-items: center;
-                                            gap: 20px;
-                                            position: relative;
-                                            z-index: 2;
 
                                             span {
+                                                font-size: 1.5em;
                                                 animation: sclblink 0.5s infinite alternate-reverse ease;
                                             }
-
-                                            h3 {
-                                                display: flex;
-                                                gap: 10px;
-                                                align-items: center;
-                                                width: 70%;
-                                                white-space: initial;
-                                                overflow-x: scroll;
-                                                text-overflow: ellipsis;
-                                                -ms-overflow-style: none;
-                                                /* IE and Edge */
-                                                scrollbar-width: none;
-
-                                                /* Firefox */
-                                                &::-webkit-scrollbar {
-                                                    display: none;
-                                                }
-
-
-
-                                            }
                                         }
+
                                     }
 
                                     .no-courses-card {
@@ -1656,6 +1707,7 @@ p {
                                             text-decoration: none;
                                             font-family: var(--dosis);
                                             display: inline;
+                                            color: #000000;
                                             padding: 8px 18px;
                                             border: 2px solid black;
 
@@ -1668,6 +1720,22 @@ p {
                                         }
 
                                     }
+
+                                    &.fade-up.visible {
+                                        opacity: 1;
+                                        transform: translateY(0);
+                                    }
+
+                                    &.fade-left {
+                                        transform: translateX(20px);
+                                    }
+
+                                    &.fade-left.visible {
+                                        opacity: 1;
+                                        transform: translateX(0);
+                                    }
+
+
                                 }
                             }
 
@@ -1685,9 +1753,10 @@ p {
 
                                     .sec-left {
                                         width: calc(100% - 250px);
-                                        border: 1px dashed rgb(134, 134, 134);
-                                        background: white;
-                                        border-radius: 10px;
+                                        border: 1px solid rgba(200, 200, 200, 0.711);
+                                        background: var(--background-clr);
+                                        border-radius: 3px;
+
                                         padding: 15px;
 
                                         .sec-ttl {
@@ -1701,7 +1770,7 @@ p {
 
                                     .sec-right {
                                         width: 250px;
-                                        border-radius: 10px;
+                                        border-radius: 3px;
                                         padding: 10px;
                                         font-family: var(--dosis);
                                         display: flex;
@@ -2062,19 +2131,16 @@ p {
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                margin-bottom: 30px;
+                                margin-bottom: 10px;
                                 position: sticky;
                                 top: 0;
                                 left: 0;
-                                background: rgb(69, 58, 255);
-                                background: -moz-linear-gradient(90deg, rgba(69, 58, 255, 1) 0%, rgba(140, 236, 255, 1) 100%);
-                                background: -webkit-linear-gradient(90deg, rgba(69, 58, 255, 1) 0%, rgba(140, 236, 255, 1) 100%);
-                                background: linear-gradient(90deg, rgba(69, 58, 255, 1) 0%, rgba(140, 236, 255, 1) 100%);
-                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#453aff", endColorstr="#8cecff", GradientType=1);
+                                // background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+                                // background-image: linear-gradient(-225deg, #4d6093 0%, #6e3266 100%);
+                                background-image: linear-gradient(to right, #311e58 0%, #8c4bb2 100%);
+                                // background-image: linear-gradient(to right, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
                                 z-index: 5;
                                 gap: 20px;
-                                border-bottom-left-radius: 25px;
-                                border-bottom-right-radius: 25px;
                                 overflow: hidden;
 
                                 &::before {
@@ -2096,7 +2162,7 @@ p {
                                     align-items: center;
                                     justify-content: center;
                                     padding: 20px;
-                                    gap: 20px;
+                                    gap: 5px;
                                     background: url("../../images/user/adbg.gif");
                                     background-size: cover;
                                     background-position: center;
@@ -2104,11 +2170,13 @@ p {
                                     h3 {
                                         font-size: 0.8em;
                                         color: whitesmoke;
+                                        font-family: var(--poppins) !important;
                                     }
 
                                     h1 {
-                                        font-size: 2.5em;
+                                        font-size: 2em;
                                         color: whitesmoke;
+                                        font-family: var(--poppins) !important;
 
                                     }
 
@@ -2121,10 +2189,10 @@ p {
 
                             .transaction-cont {
                                 width: 100%;
-                                background: white;
+                                background: var(--background-clr);
                                 min-height: 450px;
-                                border-radius: 25px;
-                                box-shadow: 0 0 15px rgba(143, 143, 143, 0.714);
+                                border-radius: 3px;
+                                border: 1px solid rgba(199, 199, 199, 0.732);
 
                                 .transac-wrap {
                                     width: 100%;
@@ -2135,7 +2203,7 @@ p {
                                         padding: 20px;
                                         display: flex;
                                         align-items: center;
-                                        gap: 20px;
+                                        gap: 10px;
 
                                         button {
 
@@ -2148,13 +2216,13 @@ p {
                                             font-size: 14px;
                                             height: 38px;
                                             padding: 8px 24px;
-                                            border-radius: 10px;
-                                            background-image: linear-gradient(180deg, #d4f8ff, #f5f5fa);
-                                            box-shadow: 0 4px 11px 0 rgb(37 44 97 / 15%), 0 1px 3px 0 rgb(93 100 148 / 20%);
+                                            border-radius: 25px;
                                             transition: 0.5s ease;
+                                            background: white;
+                                            border: 1px solid rgba(194, 194, 194, 0.671);
 
                                             &.active {
-                                                background: rgb(35, 35, 35);
+                                                background: rgb(84, 84, 84);
                                                 color: white;
                                                 transition: 0.5s ease;
                                             }
@@ -2172,7 +2240,7 @@ p {
 
                                         .transctions {
                                             .transaction-card {
-                                                border-left: 4px solid rgba(255, 216, 107, 0.821);
+                                                border-left: 4px solid #E2BBE9;
                                             }
                                         }
                                     }
@@ -2183,11 +2251,11 @@ p {
 
                                         .title {
                                             font-family: var(--dosis);
-                                            color: #979797c6;
+                                            color: #4d4d4dc6;
                                             font-size: 2em;
                                             font-weight: 700;
                                             display: inline;
-                                            margin-left: 10px;
+                                            margin-left: 15px;
                                         }
 
                                         .transctions {
@@ -2206,19 +2274,18 @@ p {
 
                                             .transaction-card {
                                                 width: 100%;
-                                                height: 180px;
+                                                height: 160px;
                                                 border: 1px solid rgba(206, 206, 206, 0.686);
-                                                border-radius: 10px;
+                                                border-radius: 3px;
                                                 background: rgb(255, 255, 255);
-                                                box-shadow: 0 0 15px rgba(199, 199, 199, 0.501);
                                                 padding: 10px;
-                                                border-left: 4px solid rgb(197, 131, 255);
+                                                border-left: 4px solid var(--altr-pri-clr);
                                                 transition: 0.5s ease-in-out;
                                                 cursor: pointer;
 
-                                                &:hover {
-                                                    translate: 0 -8px 0;
-                                                    transition: 0.5s ease-in-out;
+                                                * {
+                                                    user-select: none;
+                                                    -webkit-user-select: none;
                                                 }
 
                                                 .tran-card-wrap {
@@ -2227,7 +2294,104 @@ p {
                                                     display: flex;
                                                     flex-direction: column;
                                                     justify-content: center;
-                                                    gap: 15px;
+                                                    gap: 10px;
+                                                    position: relative;
+                                                    overflow: hidden;
+
+                                                    .sponsors-details {
+                                                        position: absolute;
+                                                        bottom: -100%;
+                                                        right: 0;
+                                                        width: 100%;
+                                                        padding: 10px;
+                                                        background: white;
+                                                        display: flex;
+                                                        justify-content: space-between;
+                                                        align-items: center;
+                                                        gap: 5px;
+                                                        border: 1px solid rgba(201, 201, 201, 0.651);
+                                                        border-radius: 3px;
+                                                        border-left: 3px solid var(--altr-pri-clr);
+                                                        border-right: 3px solid var(--altr-pri-clr);
+                                                        transition: 0.8s ease;
+
+                                                        &.show {
+                                                            bottom: 0;
+                                                            transition: 0.8s ease;
+                                                        }
+
+                                                        .spo-det-left {
+                                                            width: 50%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            gap: 5px;
+                                                        }
+
+                                                        .spo-det-right {
+                                                            width: 50%;
+                                                            display: flex;
+                                                            justify-content: flex-end;
+                                                            align-items: center;
+                                                            gap: 15px;
+                                                        }
+
+                                                        .spo-ttl {
+                                                            font-size: 0.6em;
+                                                            color: var(--altr-pri-clr);
+
+                                                        }
+
+                                                        h5 {
+                                                            font-size: 0.6em;
+
+                                                            a {
+                                                                border: 1px solid gray;
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                padding: 3px;
+                                                                text-decoration: none;
+                                                                color: black;
+                                                                border-radius: 2px;
+
+                                                                span {
+                                                                    font-size: 2em;
+                                                                    color: var(--altr-pri-clr);
+                                                                }
+
+                                                                &:hover {
+                                                                    background: black;
+
+                                                                    span {
+                                                                        color: white;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .spo-det-btn {
+                                                        position: absolute;
+                                                        top: 0;
+                                                        right: 0;
+                                                        padding: 2px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        font-size: 1.3em;
+                                                        border-radius: 2px;
+
+                                                        span {
+                                                            color: rgb(255, 127, 47);
+                                                        }
+
+                                                        &:hover {
+                                                            span {
+                                                                color: rgb(0, 0, 0);
+                                                            }
+                                                        }
+
+                                                    }
 
                                                     .top {
                                                         width: 100%;
@@ -2256,10 +2420,12 @@ p {
 
                                                             h2 {
                                                                 font-size: 1em;
+                                                                text-transform: capitalize;
                                                             }
 
                                                             h4 {
                                                                 font-size: 0.6em;
+                                                                font-family: var(--poppins) !important;
                                                                 color: rgb(105, 105, 105);
                                                             }
                                                         }
@@ -2278,12 +2444,15 @@ p {
                                                             .amount {
                                                                 font-size: 1.3em;
                                                                 font-weight: 600;
-                                                                font-family: var(--dosis);
+                                                                font-family: var(--poppins) !important;
                                                             }
                                                         }
 
                                                         .md-rt {
                                                             width: 50%;
+                                                            display: flex;
+                                                            justify-content: flex-end;
+                                                            align-items: center;
 
                                                             .badge {
                                                                 padding: 3px 10px;
@@ -2303,32 +2472,21 @@ p {
                                                     .bottm {
                                                         width: 100%;
                                                         display: flex;
-                                                        flex-direction: column;
+                                                        justify-content: space-between;
+                                                        align-items: center;
                                                         gap: 10px;
 
-                                                        .sponsor-cont {
-                                                            width: 100%;
+                                                        .inc-type {
+                                                            padding: 3px 10px;
+                                                            border-radius: 3px;
+                                                            background: rgba(229, 255, 191, 0.858);
+                                                            color: green;
+                                                            border: 1px solid green;
+                                                            font-family: var(--dosis);
+                                                            font-size: 0.7em;
                                                             display: flex;
+                                                            justify-content: center;
                                                             align-items: center;
-                                                            justify-content: space-between;
-                                                            gap: 10px;
-
-                                                            h4 {
-                                                                font-size: 0.7em;
-                                                            }
-
-                                                            .inc-type {
-                                                                padding: 3px 10px;
-                                                                border-radius: 3px;
-                                                                background: rgba(229, 255, 191, 0.858);
-                                                                color: green;
-                                                                border: 1px solid green;
-                                                                font-family: var(--dosis);
-                                                                font-size: 0.7em;
-                                                                display: flex;
-                                                                justify-content: center;
-                                                                align-items: center;
-                                                            }
                                                         }
 
                                                         .timestamp {
@@ -2339,14 +2497,12 @@ p {
                                                             h5 {
                                                                 font-size: 0.7em;
                                                                 font-weight: 500;
-                                                                color: #555555d5;
+                                                                font-family: var(--poppins) !important;
+                                                                color: #888888d5;
                                                             }
                                                         }
                                                     }
                                                 }
-
-
-
                                             }
                                         }
                                     }
@@ -2355,8 +2511,6 @@ p {
                             }
                         }
                     }
-
-
 
                     .profile-page {
                         width: 100%;
@@ -2382,6 +2536,22 @@ p {
                                         font-family: "Karla", sans-serif;
                                     }
                                 }
+                            }
+
+                            .custm-label {
+                                color: #000000 !important;
+                                font-size: 0.8em !important;
+                                font-family: var(--dosis);
+                                font-weight: 600;
+                            }
+
+                            .custom-input {
+                                height: 45px !important;
+                                padding: 5px 10px !important;
+                                border-radius: 3px !important;
+                                background: #becaf942;
+                                border: 1px solid #becaf9;
+                                outline: none !important;
                             }
 
                             .top-cont {
@@ -2516,12 +2686,75 @@ p {
                                         flex-direction: column;
                                         gap: 20px;
 
+
+
                                         .upper-cont {
                                             height: calc(100% - 40px);
                                             width: 100%;
                                             border-radius: 5px;
                                             background: #fff;
+                                            padding: 10px;
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 15px;
 
+                                            .form-row {
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                gap: 15px;
+
+
+                                                .form-grp {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    flex-direction: column;
+                                                    gap: 5px;
+                                                    width: 50%;
+                                                }
+
+                                                .form-grp1 {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    flex-direction: column;
+                                                    gap: 5px;
+                                                    width: 100%;
+
+                                                    .gender-wrap {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        gap: 15px;
+
+                                                        label {
+                                                            width: 60px;
+                                                            height: 60px;
+                                                            border-radius: 3px;
+                                                            display: flex;
+                                                            justify-content: center;
+                                                            flex-direction: column;
+                                                            align-items: center;
+                                                            background: #becaf942;
+                                                            border: 1px solid #becaf9;
+
+                                                            &.checked {
+                                                                background: #859dff;
+
+                                                                span,
+                                                                p {
+                                                                    color: #fff;
+                                                                }
+                                                            }
+
+                                                            p {
+                                                                font-size: .7em;
+                                                                font-weight: 600;
+                                                                color: #000000;
+                                                                text-transform: uppercase;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
 
                                         .update-btn-cont {
@@ -2612,9 +2845,23 @@ p {
     }
 
     100% {
-        scale: 1.3;
+        scale: 1.1;
     }
 
+}
+
+@keyframes gradanim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -2771,8 +3018,6 @@ p {
                 .growth-header-navbar {
                     width: 100%;
                     height: 60px;
-                    box-shadow: 0 0 10px rgba(183, 183, 183, 0.355);
-                    background: white;
 
                     .header-wrap {
                         width: 100%;
@@ -2830,12 +3075,9 @@ p {
                     height: calc(100% - 60px);
                     overflow-x: hidden;
                     overflow-y: auto;
-                    background: #f8f9f9;
 
                     .dynamic-page-wrapper {
                         padding: 0px;
-
-
 
                         // User Dash Styling
                         .user-dashboard {
@@ -2860,16 +3102,9 @@ p {
 
                                     .user-details {
                                         width: 100%;
-                                        padding: 5px 20px;
-                                        background: white;
-                                        box-shadow: 0 0 15px rgb(190, 190, 190);
-                                        border-radius: 10px;
 
                                         .usr-det-row {
                                             display: flex;
-                                            align-items: center;
-                                            gap: 10px;
-                                            margin: 10px 0;
 
                                             .user-name {
                                                 font-size: 0.8em;
@@ -3172,23 +3407,9 @@ p {
 
                                 .transaction-cont {
                                     width: 100%;
-                                    background: white;
-                                    min-height: 450px;
-                                    border-radius: 25px;
-                                    box-shadow: 0 0 15px rgba(143, 143, 143, 0.714);
 
                                     .transac-wrap {
                                         width: 100%;
-
-                                        #passive-income {
-                                            display: none;
-
-                                            .transctions {
-                                                .transaction-card {
-                                                    border-left: 4px solid rgba(255, 216, 107, 0.821);
-                                                }
-                                            }
-                                        }
 
                                         .individual-transc-cont {
                                             width: 100%;
@@ -3201,21 +3422,6 @@ p {
 
                                                 .transaction-card {
                                                     width: 100%;
-                                                    height: auto;
-                                                    max-height: 180px;
-                                                    border: 1px solid rgba(206, 206, 206, 0.686);
-                                                    border-radius: 10px;
-                                                    background: rgb(255, 255, 255);
-                                                    box-shadow: 0 0 15px rgba(199, 199, 199, 0.501);
-                                                    padding: 10px;
-                                                    border-left: 4px solid rgb(197, 131, 255);
-                                                    transition: 0.5s ease-in-out;
-                                                    cursor: pointer;
-
-                                                    &:hover {
-                                                        translate: 0 -8px 0;
-                                                        transition: 0.5s ease-in-out;
-                                                    }
 
                                                     .tran-card-wrap {
                                                         width: 100%;
@@ -3298,9 +3504,6 @@ p {
 
                                                         .bottm {
                                                             width: 100%;
-                                                            display: flex;
-                                                            flex-direction: column;
-                                                            gap: 10px;
 
                                                             .sponsor-cont {
                                                                 width: 100%;
@@ -3308,23 +3511,6 @@ p {
                                                                 align-items: center;
                                                                 justify-content: space-between;
                                                                 gap: 10px;
-
-                                                                h4 {
-                                                                    font-size: 0.7em;
-                                                                }
-
-                                                                .inc-type {
-                                                                    padding: 3px 10px;
-                                                                    border-radius: 3px;
-                                                                    background: rgba(229, 255, 191, 0.858);
-                                                                    color: green;
-                                                                    border: 1px solid green;
-                                                                    font-family: var(--dosis);
-                                                                    font-size: 0.7em;
-                                                                    display: flex;
-                                                                    justify-content: center;
-                                                                    align-items: center;
-                                                                }
                                                             }
 
                                                             .timestamp {

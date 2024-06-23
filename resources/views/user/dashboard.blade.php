@@ -16,131 +16,142 @@
         <div class="usr-det-row">
           <div class="prof-pic">
             @if(auth()->user()->profile_pic)
-            <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="">
+            <!-- <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt=""> -->
 
-            <!-- <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt=""> -->
+            <img class="responsive-img circle z-depth-5" width="200" src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="">
             @else
-            <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="">
+            <img class="responsive-img circle z-depth-5" width="200" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="">
             @endif
           </div>
           <div class="user-name">
-            Hello, Welcome {{ ucfirst(auth()->user()->name)}}
+            <div class="name-wrap">
+              Welcome {{ ucfirst(auth()->user()->name)}}
+            </div>
+            @if(!empty(auth()->user()->referral_code))
+            <div class="code-wrap">
+              <p>Growth Code</p>
+              <div class="copytoclipboard">
+                <input disabled value="{{ ucfirst(auth()->user()->referral_code)}}" id="textToCopy">
+
+                <!-- The button to trigger the copy action -->
+                <button id="copyButton"><span class="material-symbols-outlined">
+                    content_copy
+                  </span></button>
+              </div>
+            </div>
+            @endif
+
           </div>
         </div>
-        @if(!empty(auth()->user()->referral_code))
-        <div class="usr-det-row">
-          <p>Referal Code</p>
-          <div class="copytoclipboard">
-            <input disabled value="{{ ucfirst(auth()->user()->referral_code)}}" id="textToCopy">
-
-            <!-- The button to trigger the copy action -->
-            <button id="copyButton"><span class="material-symbols-outlined">
-                content_copy
-              </span></button>
-          </div>
-
-        </div>
-        @endif
-
       </div>
       @endif
     </div>
 
 
 
-    <div class="ads-container">
-      <div class="ads-wrapper">
-        <div class="ad-link">
-          <a href="#">Explore</a>
-        </div>
-      </div>
-    </div>
-
 
     @if(auth()->user()->order_status == 1)
     <div class="grid-cards-container">
       @if(auth()->user()->id != 231)
-      <div class="grid-card">
+      <div class="grid-card fade-up">
         <a href="{{url('user/commission/1/1')}}">
-          <div class="card-ttl">Today's Earning</div>
-          <div class="card-val">
-            <h3 class="formatted-number">₹ <div class="timer count-title count-number" data-to="{{(!empty($todayEarning) || !empty($todayTeamHelpingBonus)) ? ($todayEarning+$todayTeamHelpingBonus) : 0 }}" data-speed="1500"></div>
-            </h3>
-            <div class="ico"><span class="material-symbols-outlined">
-                finance_mode
-              </span></div>
+          <div class="card-content">
+            <div class="card-ttl">Today's Earning</div>
+            <div class="card-val">
+              <h3 class="formatted-number">₹ <div class="timer count-title count-number" data-to="{{(!empty($todayEarning) || !empty($todayTeamHelpingBonus)) ? ($todayEarning+$todayTeamHelpingBonus) : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
+          </div>
+          <div class="ico">
+            <span class="material-symbols-outlined">
+              finance_mode
+            </span>
           </div>
         </a>
       </div>
-      <div class="grid-card">
+      <div class="grid-card fade-up">
         <a href="{{url('user/commission/1/4')}}">
-          <div class="card-ttl">Last 7 Days Earning</div>
-          <div class="card-val">
-            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($lastSevenEarning) ? $lastSevenEarning : 0 }}" data-speed="1500"></div>
-            </h3>
-            <div class="ico"><span class="material-symbols-outlined">
-                finance_mode
-              </span></div>
+          <div class="card-content">
+            <div class="card-ttl">Last 7 Days Earning</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($lastSevenEarning) ? $lastSevenEarning : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
+          </div>
+          <div class="ico">
+            <span class="material-symbols-outlined">
+              finance_mode
+            </span>
           </div>
         </a>
       </div>
-      <div class="grid-card">
+      <div class="grid-card fade-left">
         <a href="{{url('user/commission/1/5')}}">
-          <div class="card-ttl">Last 30 Days Earning</div>
-          <div class="card-val">
-            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($earningthisMonth) ? $earningthisMonth : 0 }}" data-speed="1500"></div>
-            </h3>
-            <div class="ico"><span class="material-symbols-outlined">
-                finance_mode
-              </span></div>
+          <div class="card-content">
+            <div class="card-ttl">Last 30 Days Earning</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($earningthisMonth) ? $earningthisMonth : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
+          </div>
+          <div class="ico">
+            <span class="material-symbols-outlined">
+              finance_mode
+            </span>
           </div>
         </a>
       </div>
-      <div class="grid-card">
+      <div class="grid-card fade-left">
         <a href="{{url('user/commission/1/3')}}">
-          <div class="card-ttl">All Time Earning</div>
-          <div class="card-val">
-            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($alltime) ? $alltime : 0 }}" data-speed="1500"></div>
-            </h3>
-            <div class="ico"><span class="material-symbols-outlined">
-                finance_mode
-              </span></div>
+          <div class="card-content">
+            <div class="card-ttl">All Time Earning</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($alltime) ? $alltime : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
           </div>
+          <div class="ico"><span class="material-symbols-outlined">
+              finance_mode
+            </span></div>
         </a>
       </div>
-      <div class="grid-card">
+      <div class="grid-card fade-up">
         <a href="{{url('user/team-helping-bonus/2')}}">
-          <div class="card-ttl">Team Helping Bonus</div>
-          <div class="card-val">
-            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($teamHelpingBonus) ? $teamHelpingBonus : 0 }}" data-speed="1500"></div>
-            </h3>
-            <div class="ico"><span class="material-symbols-outlined">
-                finance_mode
-              </span></div>
+          <div class="card-content">
+            <div class="card-ttl">Team Helping Bonus</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($teamHelpingBonus) ? $teamHelpingBonus : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
           </div>
+          <div class="ico"><span class="material-symbols-outlined">
+              finance_mode
+            </span></div>
         </a>
       </div>
-      <div class="grid-card">
+      <div class="grid-card fade-up">
         <a href="{{url('user/commission/1/2')}}">
-          <div class="card-ttl">Pending Amount</div>
-          <div class="card-val">
-            <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
-            </h3>
-            <div class="ico"><span class="material-symbols-outlined">
-                finance_mode
-              </span></div>
+          <div class="card-content">
+            <div class="card-ttl">Pending Amount</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
           </div>
+          <div class="ico"><span class="material-symbols-outlined">
+              finance_mode
+            </span></div>
         </a>
       </div>
       @else
-      <div class="grid-card">
+      <div class="grid-card fade-up">
         <div class="no-courses-card">
           <h1>Enroll with Package !</h1>
           <h4>Click on link to enroll your package and explore more courses.</h4>
           <a href="{{url('/#wc-ourcourses-wapper')}}" target="_blank" class="enrl-btn">Enroll Now</a>
         </div>
       </div>
-      <div class="grid-card">
+      <div class="grid-card fade-up">
         <div class="play-intro-card">
           <div class="play-ico">
             <span class="material-symbols-outlined">
@@ -153,6 +164,23 @@
       @endif
     </div>
     @endif
+
+    <!-- <div class="seperated-section">
+      <div class="sep-col-left">
+      </div>
+      <div class="sep-col-right">
+        <div class="ads-container">
+          <div class="ads-wrapper">
+            <div class="ad-link">
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> -->
+
+
 
     @if(auth()->user()->order_status == 1)
     @if(auth()->user()->id != 231)
@@ -480,6 +508,24 @@
       alert('Copied the text: ' + textToCopy.val());
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.grid-card');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
 </script>
 
 <script>
@@ -694,7 +740,7 @@
   });
 </script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   (function($) {
     $.fn.countTo = function(options) {
       options = options || {};
@@ -824,5 +870,118 @@
       $this.countTo(options);
     }
   });
+</script> -->
+
+
+<script type="text/javascript">
+  (function($) {
+    $.fn.countTo = function(options) {
+      options = options || {};
+
+      return $(this).each(function() {
+        // set options for current element
+        var settings = $.extend({},
+          $.fn.countTo.defaults, {
+            from: $(this).data("from"),
+            to: $(this).data("to"),
+            speed: $(this).data("speed"),
+            refreshInterval: $(this).data("refresh-interval"),
+            decimals: $(this).data("decimals")
+          },
+          options
+        );
+
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+          increment = (settings.to - settings.from) / loops;
+
+        // references & variables that will change with each update
+        var self = this,
+          $self = $(this),
+          loopCount = 0,
+          value = settings.from,
+          data = $self.data("countTo") || {};
+
+        $self.data("countTo", data);
+
+        // if an existing interval can be found, clear it first
+        if (data.interval) {
+          clearInterval(data.interval);
+        }
+        data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+        // initialize the element with the starting value
+        render(value);
+
+        function updateTimer() {
+          value += increment;
+          loopCount++;
+
+          render(value);
+
+          if (typeof settings.onUpdate == "function") {
+            settings.onUpdate.call(self, value);
+          }
+
+          if (loopCount >= loops) {
+            // remove the interval
+            $self.removeData("countTo");
+            clearInterval(data.interval);
+            value = settings.to;
+
+            if (typeof settings.onComplete == "function") {
+              settings.onComplete.call(self, value);
+            }
+          }
+        }
+
+        function render(value) {
+          var formattedValue = settings.formatter.call(self, value, settings);
+          $self.html(formattedValue);
+          adjustFontSize($self);
+        }
+
+        function adjustFontSize($element) {
+          var length = $element.text().length;
+          var fontSize = Math.max(30 - length, 8); // Example: reduce font size based on length, minimum 8px
+          $element.css('font-size', fontSize + 'px');
+        }
+      });
+    };
+
+    $.fn.countTo.defaults = {
+      from: 0, // the number the element should start at
+      to: 0, // the number the element should end at
+      speed: 1000, // how long it should take to count between the target numbers
+      refreshInterval: 100, // how often the element should be updated
+      decimals: 0, // the number of decimal places to show
+      formatter: formatter, // handler for formatting the value before rendering
+      onUpdate: null, // callback method for every time the element is updated
+      onComplete: null // callback method for when the element finishes updating
+    };
+
+    function formatter(value, settings) {
+      return value.toFixed(settings.decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+  })(jQuery);
+
+  jQuery(function($) {
+    // custom formatting example
+    $(".count-number").data("countToOptions", {
+      formatter: function(value, options) {
+        return value.toFixed(options.decimals).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      }
+    });
+
+    // start all the timers
+    $(".timer").each(count);
+
+    function count(options) {
+      var $this = $(this);
+      options = $.extend({}, options || {}, $this.data("countToOptions") || {});
+      $this.countTo(options);
+    }
+  });
 </script>
+
 @endsection

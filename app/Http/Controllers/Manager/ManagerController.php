@@ -547,7 +547,7 @@ class ManagerController extends Controller
         ->whereIn('comm_status', [1,2])->sum('amount');
         $totalComm =  DB::table('affiliate_comm')->select(DB::raw('group_concat(amount) as amount'), )->where('user_id', $userId)->where('status', 1)->first();
         $maxValue = !empty($totalComm) ? max(explode(',',$totalComm->amount)) : 0;
-        return view('user.funds.commission', compact('getDetails', 'type','maxValue','todayTeamHelpingBonus','teamHelpingBonus','todayEarning','totalFunds','lastSevenEarning','earningthisMonth','alltime', 'totalComm', 'todayPayout'));
+        return view('user.funds.commission', compact('getDetails', 'type','maxValue','todayTeamHelpingBonus','teamHelpingBonus','todayEarning','totalFunds','lastSevenEarning','earningthisMonth','alltime', 'totalComm', 'todayPayout','userId'));
     }
     
 

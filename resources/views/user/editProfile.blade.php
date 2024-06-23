@@ -57,47 +57,58 @@
           <div class="right-cont">
             <div class="upper-cont">
               <div class="form-row">
-                <label> Gender </label> <br>
-                <p>
-                  <label>
-                    <input type="radio" id="radioPrimary1" name="gender" value="1" {{($getDetails->gender == 1) ? "checked" : "" }}>
-                    <span>Male</span>
-                  </label>
+                <div class="form-grp1">
 
-                  <label>
-                    <input type="radio" id="radioPrimary2" name="gender" value="0" {{($getDetails->gender == 0) ? "checked" : "" }}>
-                    <span>Female</span>
-                  </label>
-                </p>
+                  <label class="custm-label"> Gender </label>
+                  <div class="gender-wrap">
+                    <label class='{{($getDetails->gender == 1) ? "checked" : "" }}'>
+                      <input type="radio" hidden id="radioPrimary1" name="gender" value="1"  >
+                      <span class="material-symbols-outlined">
+                        male
+                      </span>
+                      <p>male</p>
+                    </label>
+
+                    <label class='{{($getDetails->gender == 0) ? "checked" : "" }}'>
+                      <input type="radio" hidden id="radioPrimary2" name="gender" value="0" >
+                      <span class="material-symbols-outlined">
+                        female
+                      </span>
+                      <p>female</p>
+                    </label>
+                  </div>
+                </div>
               </div>
               <div class="form-row">
-                <div>
-                  <label>DOB <sup style="color:red;">*</sup> </label>
-                  <input type="date" name="dob" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->dob) ? $getDetails->dob : '' }}" placeholder="Enter DOB">
+                <div class="form-grp">
+                  <label class="custm-label">DOB <span style="color:red;">*</span> </label>
+                  <input type="date" name="dob" class=" custom-input form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->dob) ? $getDetails->dob : '' }}" placeholder="Enter DOB">
                 </div>
-                <div>
-                  <label>City <sup style="color:red;">*</sup> </label>
-                  <input type="text" name="city" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->city) ? $getDetails->city : '' }}" placeholder="Enter City Name">
+                <div class="form-grp">
+                  <label class="custm-label">City <span style="color:red;">*</span> </label>
+                  <input type="text" name="city" class="custom-input form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->city) ? $getDetails->city : '' }}" placeholder="Enter City Name">
                 </div>
               </div>
               <div class="form-row">
-                <div>
-                  <label> State </label>
-                  <select class="form-control" name="state">
+                <div class="form-grp">
+                  <label class="custm-label"> State </label>
+                  <select class="custom-input form-control" name="state">
                     <option value="">Please select</option>
                     @foreach($states as $row)
                     <option value="{{$row->id}}" {{($getDetails->state == $row->id) ? "selected" : ""}}>{{$row->state}}</option>
                     @endforeach
                   </select>
                 </div>
-                <div>
-                  <label>Pincode</label>
-                  <input type="text" name="pin_code" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->pin_code) ? $getDetails->pin_code : '' }}" placeholder="Enter Pin code">
+                <div class="form-grp">
+                  <label class="custm-label">Pincode</label>
+                  <input type="text" name="pin_code" class="custom-input form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->pin_code) ? $getDetails->pin_code : '' }}" placeholder="Enter Pin code">
                 </div>
               </div>
               <div class="form-row">
-                <label>Address <sup style="color:red;">*</sup> </label>
-                <input type="text" name="address" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->address) ? $getDetails->address : '' }}" placeholder="Enter Address">
+                <div class="form-grp1">
+                  <label class="custm-label">Address <span style="color:red;">*</span> </label>
+                  <input type="text" name="address" class="custom-input form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->address) ? $getDetails->address : '' }}" placeholder="Enter Address">
+                </div>
               </div>
             </div>
             <div class="update-btn-cont">
@@ -171,7 +182,7 @@
             {{ csrf_field() }}
             <div class="row">
               <div class="col m6 s12">
-                <label>Name <sup style="color:red;">*</sup> </label>
+                <label>Name <span style="color:red;">*</span> </label>
                 <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" value="{{ $getDetails->name }}" placeholder="Enter First Name" required readonly>
                 @error('name')
                 <span class="invalid-feedback" role="alert">
@@ -181,7 +192,7 @@
               </div>
 
               <div class="col m6 s12">
-                <label> Email <sup style="color:red;">*</sup> </label>
+                <label> Email <span style="color:red;">*</span> </label>
                 <input type="text" name="email" id="email" autocomplete="on" class="form-control @error('email') is-invalid @enderror" value="{{ $getDetails->email }}" placeholder="Enter email" required readonly>
                 @error('email')
                 <span class="invalid-feedback" role="alert">
@@ -192,7 +203,7 @@
 
 
               <div class="col m6 s12">
-                <label>WhatsApp No <sup style="color:red;">*</sup> </label>
+                <label>WhatsApp No <span style="color:red;">*</span> </label>
                 <input type="text" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ $getDetails->mobile_no }}" placeholder="Enter First phone" required readonly>
                 @error('phone')
                 <span class="invalid-feedback" role="alert">
@@ -219,16 +230,16 @@
               </div>
 
               <div class="col m6 s12">
-                <label>DOB <sup style="color:red;">*</sup> </label>
+                <label>DOB <span style="color:red;">*</span> </label>
                 <input type="date" name="dob" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->dob) ? $getDetails->dob : '' }}" placeholder="Enter DOB">
               </div>
               <div class="col m6 s12">
-                <label>Address <sup style="color:red;">*</sup> </label>
+                <label>Address <span style="color:red;">*</span> </label>
                 <input type="text" name="address" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->address) ? $getDetails->address : '' }}" placeholder="Enter Address">
               </div>
 
               <div class="col m6 s12">
-                <label>City <sup style="color:red;">*</sup> </label>
+                <label>City <span style="color:red;">*</span> </label>
                 <input type="text" name="city" class="form-control @error('dob') is-invalid @enderror" value="{{ !empty($getDetails->city) ? $getDetails->city : '' }}" placeholder="Enter City Name">
               </div>
 
