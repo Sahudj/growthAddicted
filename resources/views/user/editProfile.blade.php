@@ -17,7 +17,7 @@
   <div class="profile-profile-cont">
     <div class="prf-header">
       <div class="prf-title">
-        <h1>Personal Information</h1>
+        <h1>Profile</h1>
       </div>
     </div>
     <!-- top container  -->
@@ -62,7 +62,7 @@
                   <label class="custm-label"> Gender </label>
                   <div class="gender-wrap">
                     <label class='{{($getDetails->gender == 1) ? "checked" : "" }}'>
-                      <input type="radio" hidden id="radioPrimary1" name="gender" value="1"  >
+                      <input type="radio" hidden id="radioPrimary1" name="gender" value="1">
                       <span class="material-symbols-outlined">
                         male
                       </span>
@@ -70,7 +70,7 @@
                     </label>
 
                     <label class='{{($getDetails->gender == 0) ? "checked" : "" }}'>
-                      <input type="radio" hidden id="radioPrimary2" name="gender" value="0" >
+                      <input type="radio" hidden id="radioPrimary2" name="gender" value="0">
                       <span class="material-symbols-outlined">
                         female
                       </span>
@@ -119,13 +119,37 @@
           </div>
         </div>
       </div>
+      <!-- sponser container  -->
+      <div class="prf-header">
+        <div class="prf-title">
+          <h1>Sponser</h1>
+        </div>
+      </div>
+      <div class="bottom-cont">
+        <div class="sponser-cont">
+          <div class="sponser-card">
+            <div class="sponser-card-wrapper">
+              <div class="card-left">
+                <div class="card-img-box">
+                  <img src="{{url('public/profile_pic/'.$getDetails->getRefBy->profile_pic)}}" width="70px">
+                </div>
+              </div>
+              <div class="card-right">
+                <h1>{{ !empty($getDetails->getRefBy->name) ? $getDetails->getRefBy->name : '' }}</h1>
+                <h3>{{ !empty($getDetails->getRefBy->mobile_no) ? $getDetails->getRefBy->mobile_no : '' }}</h3>
+                <h3>{{ !empty($getDetails->getRefBy->email) ? $getDetails->getRefBy->email : '' }}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </form>
     <!-- bottom container  -->
-    <div class="bottom-cont">
+    <!-- <div class="bottom-cont">
       <div class="inner-bottom-cont">
         <h1>Sponsor</h1>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
 
@@ -157,7 +181,10 @@
           <hr>
           <div class="row">
             <div class="col m6 s12">
-              <label>Name</label>
+              <label>Name{{ !empty($getDetails->getRefBy->profile_pic) ? $getDetails->getRefBy->profile_pic : '' }}</label>
+
+
+
               <input type="text" readonly class="form-control" value="{{ !empty($getDetails->getRefBy->name) ? $getDetails->getRefBy->name : '' }}">
             </div>
 

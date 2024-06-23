@@ -121,6 +121,7 @@ class ManagerController extends Controller
         $id = Auth()->user()->id;
         $getDetails = User::find($id);
         $states =  States::all();
+        
         return view('user.editProfile', compact('getDetails', 'states'));   
     }
     
