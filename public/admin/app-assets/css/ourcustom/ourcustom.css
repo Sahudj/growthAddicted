@@ -1733,6 +1733,7 @@ p {
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap {
   width: 100%;
+  height: 100%;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .option-btns {
   width: 100%;
@@ -1784,7 +1785,7 @@ p {
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .transctions {
   width: 100%;
-  height: 330px;
+  min-height: 330px;
   border-radius: 25px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1988,6 +1989,217 @@ p {
   align-items: center;
 }
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .transctions .transaction-card .tran-card-wrap .bottm .timestamp h5 {
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: var(--poppins) !important;
+  color: rgba(136, 136, 136, 0.8352941176);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions {
+  width: 100%;
+  height: 450px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  padding: 15px;
+  gap: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card {
+  width: 100%;
+  height: 160px;
+  border: 1px solid rgba(206, 206, 206, 0.686);
+  border-radius: 3px;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-left: 4px solid rgb(100, 216, 89);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card * {
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details {
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgba(201, 201, 201, 0.651);
+  border-radius: 3px;
+  border-left: 3px solid var(--altr-pri-clr);
+  border-right: 3px solid var(--altr-pri-clr);
+  transition: 0.8s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details.show {
+  bottom: 0;
+  transition: 0.8s ease;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details .spo-det-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details .spo-det-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details .spo-ttl {
+  font-size: 0.6em;
+  color: var(--altr-pri-clr);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details h5 {
+  font-size: 0.6em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details h5 a {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  text-decoration: none;
+  color: black;
+  border-radius: 2px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details h5 a span {
+  font-size: 2em;
+  color: var(--altr-pri-clr);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details h5 a:hover {
+  background: black;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .sponsors-details h5 a:hover span {
+  color: white;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .spo-det-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  border-radius: 2px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .spo-det-btn span {
+  color: rgb(255, 127, 47);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .spo-det-btn:hover span {
+  color: rgb(0, 0, 0);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .prof-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .prof-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .usr-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .usr-name h2 {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .usr-name h4 {
+  font-size: 0.6em;
+  font-family: var(--poppins) !important;
+  color: rgb(105, 105, 105);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-lft {
+  width: 50%;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-lft .amount {
+  font-size: 1.3em;
+  font-weight: 600;
+  font-family: var(--poppins) !important;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-rt {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-rt .badge {
+  padding: 3px 10px;
+  display: inline-flex;
+  font-size: 0.6em;
+  background: rgb(255, 241, 187);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 204, 0);
+  font-family: var(--dosis);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm .inc-type {
+  padding: 3px 10px;
+  border-radius: 3px;
+  background: rgba(229, 255, 191, 0.858);
+  color: green;
+  border: 1px solid green;
+  font-family: var(--dosis);
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm .timestamp {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm .timestamp h5 {
   font-size: 0.7em;
   font-weight: 500;
   font-family: var(--poppins) !important;
@@ -2821,6 +3033,101 @@ p {
     align-items: center;
   }
   .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .transctions .transaction-card .tran-card-wrap .bottm .timestamp h5 {
+    font-size: 0.7em;
+    font-weight: 500;
+    color: rgba(85, 85, 85, 0.8352941176);
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions {
+    height: 450px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card {
+    width: 100%;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .prof-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: black;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .prof-pic img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .usr-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .usr-name h2 {
+    font-size: 1em;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .top .usr-name h4 {
+    font-size: 0.6em;
+    color: rgb(105, 105, 105);
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-lft {
+    width: 50%;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-lft .amount {
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: var(--dosis);
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-rt {
+    width: 50%;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .mid .md-rt .badge {
+    padding: 3px 10px;
+    display: inline-flex;
+    font-size: 0.6em;
+    background: rgb(255, 241, 187);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 204, 0);
+    font-family: var(--dosis);
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm {
+    width: 100%;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm .sponsor-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm .timestamp {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .commisions-page .commisions-pagewrap .transaction-cont .transac-wrap .individual-transc-cont .helpingb-transctions .transaction-card .tran-card-wrap .bottm .timestamp h5 {
     font-size: 0.7em;
     font-weight: 500;
     color: rgba(85, 85, 85, 0.8352941176);

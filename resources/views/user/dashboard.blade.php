@@ -9,7 +9,7 @@
 
     <div class="usr-dash-header">
       <div class="dash-title">
-        <h1>Dashboard Overview</h1>
+        <h1>Insights</h1>
       </div>
       @if(auth()->user()->order_status == 1)
       <div class="user-details">
