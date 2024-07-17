@@ -2334,6 +2334,9 @@ p {
   font-size: 1em;
   color: #282828;
 }
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .profile-page .profile-profile-cont .top-cont .inner-top-cont .left-cont .text-box .mobile-nbr {
+  font-family: var(--poppins) !important;
+}
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .profile-page .profile-profile-cont .top-cont .inner-top-cont .left-cont .text-box .email-cont {
   padding: 10px 0;
   position: relative;
@@ -2511,6 +2514,128 @@ p {
 .growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .profile-page .profile-profile-cont .bottom-cont .sponser-cont .sponser-card .sponser-card-wrapper .card-right h3 {
   font-family: var(--poppins) !important;
   color: #434343;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page {
+  width: 100%;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper {
+  width: 100%;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .prf-header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 5;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .prf-header .prf-title h1 {
+  font-family: var(--dosis) !important;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-clr);
+  padding: 10px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .left-card {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(190, 202, 249, 0.2588235294);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--dosis) !important;
+  border-radius: 3px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .left-card .key-val-cont {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #fff;
+  padding: 5px 10px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .left-card .key-val-cont .key-cont {
+  width: 150px;
+  font-weight: 600;
+  font-size: 1em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .left-card .key-val-cont .val-cont {
+  width: calc(100% - 150px);
+  font-weight: 500;
+  font-size: 1em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .left-card .key-val-cont .val-cont-nbr {
+  font-family: var(--poppins) !important;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(190, 202, 249, 0.2588235294);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: var(--dosis) !important;
+  border-radius: 3px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card .key-val-cont {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #fff;
+  padding: 5px 10px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card .key-val-cont .key-cont {
+  width: 150px;
+  font-weight: 600;
+  font-size: 1em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card .key-val-cont .val-cont {
+  width: calc(100% - 150px);
+  font-weight: 500;
+  font-size: 1em;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card .key-val-cont .val-cont-nbr {
+  font-family: var(--poppins) !important;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card .send-request-btn-cont {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card .send-request-btn-cont a {
+  text-decoration: none;
+  background: var(--ter-clr);
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 0.8em;
+  font-weight: 600;
+  transition: 0.5s;
+  border: 1px solid var(--ter-clr);
+}
+.growth-dash .growth-dash-wrapper .growth-right-cont .growth-dynamic-pages .dynamic-page-wrapper .bank-details-page .bank-details-wrapper .bank-card .bank-card-inner .right-card .send-request-btn-cont a:hover {
+  background: #fff;
+  border: 1px solid var(--ter-clr);
+  color: var(--ter-clr);
+  transition: 0.5s;
 }
 
 /* for Firefox */
