@@ -30,7 +30,7 @@ class HomeController extends Controller
         if($userRole == 1){
             return redirect('admin/dashboard');
         }elseif ($userRole == 2) {
-            return redirect('user/dashboard');
+            return redirect('user/courses');
         }
     }
 

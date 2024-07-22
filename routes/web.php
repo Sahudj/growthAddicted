@@ -83,7 +83,7 @@ Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPass
             'namespace' => 'User', //folder
             'middleware' => 'App\Http\Middleware\ManagerMiddleware'
         ], function() {
-            Route::match(['get', 'post'], '/', 'App\Http\Controllers\Manager\ManagerController@index');
+            Route::match(['get', 'post'], '/', 'App\Http\Controllers\Manager\CoursesController@courses');
             Route::get('/dashboard', [ManagerController::class, 'index'])->name('index');
             Route::get('/timestamp', [ManagerController::class, 'timeData'])->name('timeData');
             Route::get('/profile', [ManagerController::class, 'updateProfile'])->name('profile');
@@ -112,6 +112,8 @@ Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPass
             Route::get('/marketing-material', [OffersController::class, 'marketingMaterial'])->name('marketing-material');
             Route::get('/funds', [OffersController::class, 'funds'])->name('funds');
             Route::get('/courses', [CoursesController::class, 'courses'])->name('courses');
+            Route::get('/subcourses/{id}/{name}', [CoursesController::class, 'showsubcourses'])->name('showsubcourses');
+            Route::get('/search/course', [CoursesController::class, 'filtercourses'])->name('filtercourses');
             Route::get('/generatePDF/{courseId}', [CoursesController::class, 'generatePDF'])->name('generatePDF');
             Route::post('/upgrade-courses', [CoursesController::class, 'upgradeCourses'])->name('upgrade-courses');
             

@@ -107,14 +107,14 @@ class CoursesController extends Controller
         //echo "<pre>"; print_r($videos); die();
         $ids = DB::table("gulmetVideo")->select('assets_id')->where('folder_id', $folderId)->first();
         $assetsIds = explode(',', $ids->assets_id);
-        return view('user.courses.all-cources', compact('assetsIds', 'courseName'));    
+        return view('user.courses.all-cources', compact('assetsIds', 'courseName'));
     }
 
-    public function eloboratedSpecificCourse(Request $request,$package_id)
+    public function eloboratedSpecificCourse(Request $request, $package_id)
     {
         $package_id = $this->encryptor('decrypt', $package_id);
         $getCourses = DB::table('courses')->where('package_id', $package_id)->first();
-        return view('alpha-course', compact('getCourses'));  
+        return view('alpha-course', compact('getCourses'));
     }
 
     public function upgradeCourses(Request $request)
@@ -329,5 +329,39 @@ class CoursesController extends Controller
         // $pdf->setPaper(array(0, 0, 600, 786), 'landscape');
         // return $pdf->stream('itsolutionstuff.pdf', array('Attachment'=>0));       
         return $pdf->download($courseName . 'certificate-.pdf');
+    }
+
+    public function showsubcourses($id, $name)
+    {
+        $courses = DB::table('main_course')->where('package_id', $id)->get();
+        return view('user.courses.subcourses', ['courses' => $courses, 'id' => $id, 'name' => $name]);
+    }
+
+    public function filtercourses(Request $request)
+    {
+        if (auth()->user()->order_status == 0) {
+            return redirect()->to('user/dashboard');
+        }
+
+        $searchKeyword = $request->input('search');
+        $category = $request->input('category');
+
+        $query = DB::table('main_course');
+
+        if ($searchKeyword) {
+            $query->where('sub_folder_name', 'LIKE', '%' . $searchKeyword . '%');
+        }
+
+        if ($category) {
+            $query->where('sub_folder_name', 'LIKE', '%' . $category . '%');
+        }
+
+        $courses = $query->get();
+
+        return view('user.courses.searchpage', [
+            'courses' => $courses,
+            'searchKeyword' => $searchKeyword,
+            'category' => $category
+        ]);
     }
 }

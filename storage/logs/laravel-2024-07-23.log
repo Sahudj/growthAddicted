@@ -1,8 +1,4 @@
-[2024-06-13 00:07:01] local.ERROR: Maximum execution time of 30 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\PendingResourceRegistration.php:8)
-[stacktrace]
-#0 {main}
-"} 
-[2024-06-13 02:12:57] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aman.user_account_request' doesn't exist (SQL: select * from `user_account_request` where `user_id` = 12693 and `status` = 0 order by `id` desc limit 1) {"userId":12693,"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aman.user_account_request' doesn't exist (SQL: select * from `user_account_request` where `user_id` = 12693 and `status` = 0 order by `id` desc limit 1) at D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:712)
+[2024-07-23 01:56:38] local.ERROR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aman.bankdetails' doesn't exist (SQL: select * from `bankdetails` where `user_id` = 232 limit 1) {"userId":232,"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aman.bankdetails' doesn't exist (SQL: select * from `bankdetails` where `user_id` = 232 limit 1) at D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:712)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(672): Illuminate\\Database\\Connection->runQueryCallback('select * from `...', Array, Object(Closure))
 #1 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(359): Illuminate\\Database\\Connection->run('select * from `...', Array, Object(Closure))
@@ -11,7 +7,7 @@
 #4 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2936): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
 #5 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2401): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
 #6 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(294): Illuminate\\Database\\Query\\Builder->get(Array)
-#7 D:\\xampp\\htdocs\\aman\\app\\Http\\Controllers\\Manager\\ManagerController.php(259): Illuminate\\Database\\Query\\Builder->first()
+#7 D:\\xampp\\htdocs\\aman\\app\\Http\\Controllers\\Manager\\ManagerController.php(270): Illuminate\\Database\\Query\\Builder->first()
 #8 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Manager\\ManagerController->bankDetails(Object(Illuminate\\Http\\Request))
 #9 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('bankDetails', Array)
 #10 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Manager\\ManagerController), 'bankDetails')
@@ -65,7 +61,7 @@
 #58 D:\\xampp\\htdocs\\aman\\server.php(25): require_once('D:\\\\xampp\\\\htdocs...')
 #59 {main}
 
-[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aman.user_account_request' doesn't exist at D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:368)
+[previous exception] [object] (PDOException(code: 42S02): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'aman.bankdetails' doesn't exist at D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:368)
 [stacktrace]
 #0 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(368): PDO->prepare('select * from `...')
 #1 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(705): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from `...', Array)
@@ -76,7 +72,7 @@
 #6 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2936): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
 #7 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php(2401): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
 #8 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Concerns\\BuildsQueries.php(294): Illuminate\\Database\\Query\\Builder->get(Array)
-#9 D:\\xampp\\htdocs\\aman\\app\\Http\\Controllers\\Manager\\ManagerController.php(259): Illuminate\\Database\\Query\\Builder->first()
+#9 D:\\xampp\\htdocs\\aman\\app\\Http\\Controllers\\Manager\\ManagerController.php(270): Illuminate\\Database\\Query\\Builder->first()
 #10 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): App\\Http\\Controllers\\Manager\\ManagerController->bankDetails(Object(Illuminate\\Http\\Request))
 #11 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('bankDetails', Array)
 #12 D:\\xampp\\htdocs\\aman\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(261): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\Manager\\ManagerController), 'bankDetails')

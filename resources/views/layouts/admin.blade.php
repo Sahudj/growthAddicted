@@ -149,10 +149,13 @@
                         </li>
                      </ul>
                      <ul class="mob-right-menu">
+                        <li><a href="#"><span class="material-symbols-outlined">notifications</span></a></li>
                         @if(auth()->user()->profile_pic)
                         <li class="lnk-with-drop">
                            <a href="#" class="online-badge"><img src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="avatar"></a>
                            <div class="navdroplinks">
+                              <a href="#" style="background: var(--ter-clr);color:white;border-radius:3px;"> <span class="material-symbols-outlined">package_2</span>Growth Plus +</a>
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">settings</span> Settings</a>
                               <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">home</span> Home</a>
                               <a href="#"><span class="material-symbols-outlined">auto_stories</span> My Courses</a>
                               <a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a>
@@ -175,6 +178,8 @@
                         <li class="lnk-with-drop">
                            <a href="#"><img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar"></a>
                            <div class="navdroplinks">
+                              <a href="#" style="background: var(--ter-clr);color:white;border-radius:3px;"> <span class="material-symbols-outlined">package_2</span>Growth Plus +</a>
+                              <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">settings</span> Settings</a>
                               <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">home</span> Home</a>
                               <a href="#"><span class="material-symbols-outlined">auto_stories</span> My Courses</a>
                               <a href="#"><span class="material-symbols-outlined">linked_services</span> Become Affiliate</a>
@@ -193,13 +198,13 @@
                            </div>
                         </li>
                         @endif
-                        <li class="lnk-with-drop">
+                        <!-- <li class="lnk-with-drop">
                            <a href="#"><span class="material-symbols-outlined">more_vert</span></a>
                            <div class="navdroplinks">
                               <a href="#" style="background: var(--ter-clr);color:white;border-radius:3px;"> <span class="material-symbols-outlined">package_2</span>Growth Plus +</a>
                               <a class="grey-text text-darken-1" href="{{url('/')}}"><span class="material-symbols-outlined">settings</span> Settings</a>
                            </div>
-                        </li>
+                        </li> -->
                      </ul>
                   </div>
                </div>

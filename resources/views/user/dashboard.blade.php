@@ -7,7 +7,7 @@
 <div class="user-dashboard">
   <div class="user-dash-wrap">
 
-    <div class="usr-dash-header">
+    <!-- <div class="usr-dash-header">
       <div class="dash-title">
         <h1>Insights</h1>
       </div>
@@ -16,7 +16,6 @@
         <div class="usr-det-row">
           <div class="prof-pic">
             @if(auth()->user()->profile_pic)
-            <!-- <img class="responsive-img circle z-depth-5" width="120" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt=""> -->
 
             <img class="responsive-img circle z-depth-5" width="200" src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="">
             @else
@@ -33,7 +32,6 @@
               <div class="copytoclipboard">
                 <input disabled value="{{ ucfirst(auth()->user()->referral_code)}}" id="textToCopy">
 
-                <!-- The button to trigger the copy action -->
                 <button id="copyButton"><span class="material-symbols-outlined">
                     content_copy
                   </span></button>
@@ -45,6 +43,45 @@
         </div>
       </div>
       @endif
+    </div> -->
+
+    <div class="usr-dash-header">
+      <div class="dash-head-wrap">
+        @if(auth()->user()->order_status == 1)
+        <div class="details-box">
+
+          <div class="bottom">
+            <div class="prof-pic">
+              @if(auth()->user()->profile_pic)
+
+              <img class="responsive-img circle z-depth-5" width="200" src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="">
+              @else
+              <img class="responsive-img circle z-depth-5" width="200" src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="">
+              @endif
+            </div>
+            <div class="user-details">
+              <div class="name-wrap">
+                {{ ucfirst(auth()->user()->name)}}
+              </div>
+              @if(!empty(auth()->user()->referral_code))
+              <div class="code-wrap">
+                <p>Your Growth Code Here</p>
+                <div class="copytoclipboard">
+                  <input disabled value="{{ ucfirst(auth()->user()->referral_code)}}" id="textToCopy">
+                  <button id="copyButton"><span class="material-symbols-outlined">
+                      content_copy
+                    </span></button>
+                </div>
+              </div>
+              @endif
+
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        @endif
+
+      </div>
     </div>
 
 
@@ -62,11 +99,6 @@
               </h3>
             </div>
           </div>
-          <div class="ico">
-            <span class="material-symbols-outlined">
-              finance_mode
-            </span>
-          </div>
         </a>
       </div>
       <div class="grid-card fade-up">
@@ -77,11 +109,6 @@
               <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($lastSevenEarning) ? $lastSevenEarning : 0 }}" data-speed="1500"></div>
               </h3>
             </div>
-          </div>
-          <div class="ico">
-            <span class="material-symbols-outlined">
-              finance_mode
-            </span>
           </div>
         </a>
       </div>
@@ -94,11 +121,6 @@
               </h3>
             </div>
           </div>
-          <div class="ico">
-            <span class="material-symbols-outlined">
-              finance_mode
-            </span>
-          </div>
         </a>
       </div>
       <div class="grid-card fade-left">
@@ -110,12 +132,9 @@
               </h3>
             </div>
           </div>
-          <div class="ico"><span class="material-symbols-outlined">
-              finance_mode
-            </span></div>
         </a>
       </div>
-      <div class="grid-card fade-up">
+      <!-- <div class="grid-card fade-up">
         <a href="{{url('user/team-helping-bonus/2')}}">
           <div class="card-content">
             <div class="card-ttl">Team Helping Bonus</div>
@@ -124,12 +143,9 @@
               </h3>
             </div>
           </div>
-          <div class="ico"><span class="material-symbols-outlined">
-              finance_mode
-            </span></div>
         </a>
-      </div>
-      <div class="grid-card fade-up">
+      </div> -->
+      <!-- <div class="grid-card fade-up">
         <a href="{{url('user/commission/1/2')}}">
           <div class="card-content">
             <div class="card-ttl">Pending Amount</div>
@@ -138,11 +154,8 @@
               </h3>
             </div>
           </div>
-          <div class="ico"><span class="material-symbols-outlined">
-              finance_mode
-            </span></div>
         </a>
-      </div>
+      </div> -->
       @else
       <div class="grid-card fade-up">
         <div class="no-courses-card">
@@ -164,6 +177,20 @@
       @endif
     </div>
     @endif
+
+    <div class="singlecards">
+      <div class="grid-card fade-up">
+        <a href="{{url('user/commission/1/2')}}">
+          <div class="card-content">
+            <div class="card-ttl">Pending Amount</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
 
     <!-- <div class="seperated-section">
       <div class="sep-col-left">
@@ -188,8 +215,7 @@
       <div class="twsecwrap">
         <div class="sec-left">
           <div class="sec-ttl">
-            <h1>Total Transaction</h1>
-            <h4>This month transaction</h4>
+            <h1>Performance</h1>
           </div>
           <div class="sec-graph">
             <div class="total-transaction-container">
