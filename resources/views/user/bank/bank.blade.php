@@ -107,10 +107,6 @@
       </div>
     </div>
 
-    <div class="bank-card-form-cont">
-      
-    </div>
-
     <!-- form  -->
   </div>
 </div>
