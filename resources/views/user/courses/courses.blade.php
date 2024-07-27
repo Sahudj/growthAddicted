@@ -36,6 +36,7 @@
 <body>
   <div class="courses-page">
 
+
     <div class="course-bottom-nav">
       <div class="bottom-nav-wrap">
         <ul class="menu">
@@ -139,9 +140,26 @@
           </div>
           <div class="right">
             <ul class="web-right-menu">
-              <li><a href="#" class="growth-plus-btn">Growth Plus +</a></li>
-              <li><a href="#"><span class="material-symbols-outlined">notifications</span></a></li>
-              <li><a href="#"><span class="material-symbols-outlined">screen_record</span></a></li>
+              <li><a href="{{url('/')}}">Home</a></li>
+              <li><a href="{{url('/')}}">My Learning</a></li>
+              <li><a href="{{url('/user/dashboard')}}">Dash</a></li>
+              @if(auth()->user()->profile_pic)
+              <li>
+                @if(auth()->user()->order_status == 1)
+                <a href="{{url('/user/profile')}}">
+                  <img src="{{url('public/profile_pic/'.auth()->user()->profile_pic)}}" alt="avatar">
+                  <p>Profile</p>
+                </a>
+                @endif
+              </li>
+              @else
+              <li>
+                <a href="{{url('/user/profile')}}">
+                  <img src="{{url('public/admin/')}}/app-assets/images/avatar/avatar-7.png" alt="avatar">
+                  <p>Profile</p>
+                </a>
+              </li>
+              @endif
             </ul>
             <ul class="mob-right-menu">
               <li class="lnk-with-drop">
@@ -162,7 +180,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="cours-car-card">
-                  <img src="https://picsum.photos/500/500?random=1" alt="card">
+                  <img src="{{url('public/admin/')}}/app-assets/images/user/banner2.jpeg" alt="card">
                 </div>
               </div>
               <div class="swiper-slide">

@@ -178,20 +178,6 @@
     </div>
     @endif
 
-    <div class="singlecards">
-      <div class="grid-card fade-up">
-        <a href="{{url('user/commission/1/2')}}">
-          <div class="card-content">
-            <div class="card-ttl">Pending Amount</div>
-            <div class="card-val">
-              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
-              </h3>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
     <!-- <div class="seperated-section">
       <div class="sep-col-left">
       </div>
@@ -234,6 +220,34 @@
     </div>
     @endif
     @endif
+
+    <div class="singlecards">
+      <div class="grid-card fade-up">
+        <a href="{{url('user/commission/1/2')}}">
+          <div class="card-content">
+            <div class="card-ttl">Pending Amount</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($todayPayout) ? $todayPayout : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="grid-card fade-up">
+        <a href="{{url('user/team-helping-bonus/2')}}">
+          <div class="card-content">
+            <div class="card-ttl">Team Helping Bonus</div>
+            <div class="card-val">
+              <h3>₹ <div class="timer count-title count-number" data-to="{{ !empty($teamHelpingBonus) ? $teamHelpingBonus : 0 }}" data-speed="1500"></div>
+              </h3>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
   </div>
 </div>
 
@@ -660,244 +674,6 @@
 </script>
 
 
-<!-- <script type="text/javascript">
-  (function($) {
-    $.fn.countTo = function(options) {
-      options = options || {};
-
-      return $(this).each(function() {
-        // set options for current element
-        var settings = $.extend({},
-          $.fn.countTo.defaults, {
-            from: $(this).data("from"),
-            to: $(this).data("to"),
-            speed: $(this).data("speed"),
-            refreshInterval: $(this).data("refresh-interval"),
-            decimals: $(this).data("decimals")
-          },
-          options
-        );
-
-        // how many times to update the value, and how much to increment the value on each update
-        var loops = Math.ceil(settings.speed / settings.refreshInterval),
-          increment = (settings.to - settings.from) / loops;
-
-        // references & variables that will change with each update
-        var self = this,
-          $self = $(this),
-          loopCount = 0,
-          value = settings.from,
-          data = $self.data("countTo") || {};
-
-        $self.data("countTo", data);
-
-        // if an existing interval can be found, clear it first
-        if (data.interval) {
-          clearInterval(data.interval);
-        }
-        data.interval = setInterval(updateTimer, settings.refreshInterval);
-
-        // initialize the element with the starting value
-        render(value);
-
-        function updateTimer() {
-          value += increment;
-          loopCount++;
-
-          render(value);
-
-          if (typeof settings.onUpdate == "function") {
-            settings.onUpdate.call(self, value);
-          }
-
-          if (loopCount >= loops) {
-            // remove the interval
-            $self.removeData("countTo");
-            clearInterval(data.interval);
-            value = settings.to;
-
-            if (typeof settings.onComplete == "function") {
-              settings.onComplete.call(self, value);
-            }
-          }
-        }
-
-        function render(value) {
-          var formattedValue = settings.formatter.call(self, value, settings);
-          $self.html(formattedValue);
-        }
-      });
-    };
-
-    $.fn.countTo.defaults = {
-      from: 0, // the number the element should start at
-      to: 0, // the number the element should end at
-      speed: 1000, // how long it should take to count between the target numbers
-      refreshInterval: 100, // how often the element should be updated
-      decimals: 0, // the number of decimal places to show
-      formatter: formatter, // handler for formatting the value before rendering
-      onUpdate: null, // callback method for every time the element is updated
-      onComplete: null // callback method for when the element finishes updating
-    };
-
-    function formatter(value, settings) {
-      return value.toFixed(settings.decimals);
-    }
-  })(jQuery);
-
-  jQuery(function($) {
-    // custom formatting example
-    $(".count-number").data("countToOptions", {
-      formatter: function(value, options) {
-        return value
-          .toFixed(options.decimals)
-          .replace(/\B(?=(?:\d{3})+(?!\d))/g, "");
-      }
-    });
-
-    // start all the timers
-    $(".timer").each(count);
-
-    function count(options) {
-      var $this = $(this);
-      options = $.extend({}, options || {}, $this.data("countToOptions") || {});
-      $this.countTo(options);
-    }
-  });
-</script> -->
-
-<!-- <script type="text/javascript">
-  (function($) {
-    $.fn.countTo = function(options) {
-      options = options || {};
-
-      return $(this).each(function() {
-        // set options for current element
-        var settings = $.extend({},
-          $.fn.countTo.defaults, {
-            from: $(this).data("from"),
-            to: $(this).data("to"),
-            speed: $(this).data("speed"),
-            refreshInterval: $(this).data("refresh-interval"),
-            decimals: $(this).data("decimals")
-          },
-          options
-        );
-
-        // how many times to update the value, and how much to increment the value on each update
-        var loops = Math.ceil(settings.speed / settings.refreshInterval),
-          increment = (settings.to - settings.from) / loops;
-
-        // references & variables that will change with each update
-        var self = this,
-          $self = $(this),
-          loopCount = 0,
-          value = settings.from,
-          data = $self.data("countTo") || {};
-
-        $self.data("countTo", data);
-
-        // if an existing interval can be found, clear it first
-        if (data.interval) {
-          clearInterval(data.interval);
-        }
-        data.interval = setInterval(updateTimer, settings.refreshInterval);
-
-        // initialize the element with the starting value
-        render(value);
-
-        function updateTimer() {
-          value += increment;
-          loopCount++;
-
-          render(value);
-
-          if (typeof settings.onUpdate == "function") {
-            settings.onUpdate.call(self, value);
-          }
-
-          if (loopCount >= loops) {
-            // remove the interval
-            $self.removeData("countTo");
-            clearInterval(data.interval);
-            value = settings.to;
-
-            if (typeof settings.onComplete == "function") {
-              settings.onComplete.call(self, value);
-            }
-          }
-        }
-
-        function render(value) {
-          var formattedValue = settings.formatter.call(self, value, settings);
-          $self.html(formattedValue);
-        }
-      });
-    };
-
-    $.fn.countTo.defaults = {
-      from: 0, // the number the element should start at
-      to: 0, // the number the element should end at
-      speed: 1000, // how long it should take to count between the target numbers
-      refreshInterval: 100, // how often the element should be updated
-      decimals: 0, // the number of decimal places to show
-      formatter: formatter, // handler for formatting the value before rendering
-      onUpdate: null, // callback method for every time the element is updated
-      onComplete: null // callback method for when the element finishes updating
-    };
-
-    function formatter(value, settings) {
-      var absValue = Math.abs(value);
-      if (absValue >= 1.0e+15) {
-        return (value / 1.0e+15).toFixed(settings.decimals) + ' P'; // Peta
-      } else if (absValue >= 1.0e+12) {
-        return (value / 1.0e+12).toFixed(settings.decimals) + ' T'; // Tera
-      } else if (absValue >= 1.0e+9) {
-        return (value / 1.0e+9).toFixed(settings.decimals) + ' B'; // Billion
-      } else if (absValue >= 1.0e+6) {
-        return (value / 1.0e+6).toFixed(settings.decimals) + ' M'; // Million
-      } else if (absValue >= 1.0e+5) {
-        return (value / 1.0e+5).toFixed(settings.decimals) + ' Lakh'; // Lakh
-      } else if (absValue >= 1.0e+3) {
-        return (value / 1.0e+3).toFixed(settings.decimals) + ' K'; // Thousand
-      }
-      return value.toFixed(settings.decimals);
-    }
-  })(jQuery);
-
-  jQuery(function($) {
-    // custom formatting example
-    $(".count-number").data("countToOptions", {
-      formatter: function(value, options) {
-        var absValue = Math.abs(value);
-        if (absValue >= 1.0e+15) {
-          return (value / 1.0e+15).toFixed(options.decimals) + ' P'; // Peta
-        } else if (absValue >= 1.0e+12) {
-          return (value / 1.0e+12).toFixed(options.decimals) + ' T'; // Tera
-        } else if (absValue >= 1.0e+9) {
-          return (value / 1.0e+9).toFixed(options.decimals) + ' B'; // Billion
-        } else if (absValue >= 1.0e+6) {
-          return (value / 1.0e+6).toFixed(options.decimals) + ' M'; // Million
-        } else if (absValue >= 1.0e+5) {
-          return (value / 1.0e+5).toFixed(options.decimals) + ' Lakh'; // Lakh
-        } else if (absValue >= 1.0e+3) {
-          return (value / 1.0e+3).toFixed(options.decimals) + ' K'; // Thousand
-        }
-        return value.toFixed(options.decimals);
-      }
-    });
-
-    // start all the timers
-    $(".timer").each(count);
-
-    function count(options) {
-      var $this = $(this);
-      options = $.extend({}, options || {}, $this.data("countToOptions") || {});
-      $this.countTo(options);
-    }
-  });
-</script> -->
-
 
 <script type="text/javascript">
   (function($) {
@@ -912,7 +688,7 @@
             to: $(this).data("to"),
             speed: $(this).data("speed"),
             refreshInterval: $(this).data("refresh-interval"),
-            decimals: $(this).data("decimals")
+            decimals: $(this).data("decimals") !== undefined ? $(this).data("decimals") : 2
           },
           options
         );
@@ -980,7 +756,7 @@
       to: 0, // the number the element should end at
       speed: 1000, // how long it should take to count between the target numbers
       refreshInterval: 100, // how often the element should be updated
-      decimals: 0, // the number of decimal places to show
+      decimals: 2, // the number of decimal places to show
       formatter: formatter, // handler for formatting the value before rendering
       onUpdate: null, // callback method for every time the element is updated
       onComplete: null // callback method for when the element finishes updating
@@ -1009,5 +785,6 @@
     }
   });
 </script>
+
 
 @endsection

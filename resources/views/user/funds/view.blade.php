@@ -86,6 +86,52 @@
     inp.remove();
   }
 
+  // $(document).ready(function() {
+  //   function animateNumbers(element) {
+  //     $(element).each(function() {
+  //       var $this = $(this);
+  //       var finalNumber = parseFloat($this.text().replace(/[^0-9.]/g, ''));
+  //       var currentNumber = 0;
+
+  //       // Define animation duration and intervals
+  //       var duration = 2000;
+  //       var refreshInterval = 50;
+  //       var steps = duration / refreshInterval;
+  //       var increment = finalNumber / steps;
+
+  //       var interval = setInterval(function() {
+  //         currentNumber += increment;
+  //         if (currentNumber >= finalNumber) {
+  //           currentNumber = finalNumber;
+  //           clearInterval(interval);
+  //         }
+  //         $this.text('₹ ' + formatNumber(currentNumber));
+  //       }, refreshInterval);
+  //     });
+  //   }
+
+  //   function formatNumber(number) {
+  //     return number.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  //   }
+
+  //   // Trigger the animation only for elements within comission-det class
+  //   $('.comission-det .format-commas').each(function() {
+  //     animateNumbers($(this));
+  //   });
+
+  //   $('.tran-card-wrap .spo-det-btn').click(function(event) {
+  //     event.stopPropagation();
+  //     $(this).siblings('.sponsors-details').toggleClass('show');
+  //   });
+
+  //   // Hide sponsors-details when clicking outside
+  //   $(document).click(function(event) {
+  //     if (!$(event.target).closest('.tran-card-wrap').length) {
+  //       $('.sponsors-details').removeClass('show');
+  //     }
+  //   });
+
+  // })
   $(document).ready(function() {
     function animateNumbers(element) {
       $(element).each(function() {
@@ -98,6 +144,8 @@
         var refreshInterval = 50;
         var steps = duration / refreshInterval;
         var increment = finalNumber / steps;
+
+        $this.text('₹ ' + formatNumber(currentNumber)); // Initialize with 0.00
 
         var interval = setInterval(function() {
           currentNumber += increment;
@@ -130,8 +178,7 @@
         $('.sponsors-details').removeClass('show');
       }
     });
-
-  })
+  });
 </script>
 
 @endsection
